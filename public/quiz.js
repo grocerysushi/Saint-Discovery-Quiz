@@ -547,53 +547,77 @@ async function revealResult(gender) {
         saintScores.sort((a, b) => b.score - a.score);
         const topCandidates = saintScores.slice(0, 5);
 
-        // Call AI endpoint
-        const response = await fetch('/api/ai-match', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                userAnswers,
-                topCandidates: topCandidates.map(c => ({
-                    saint: {
-                        name: c.saint.name,
-                        knownFor: c.saint.knownFor,
-                        patronOf: c.saint.patronOf,
-                        dates: c.saint.dates
-                    },
-                    score: c.score
-                })),
-                userGender: gender
-            })
-        });
+        // Call AI endpoint with timeout
+        try {
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
 
-        const aiResult = await response.json();
+            const response = await fetch('/api/ai-match', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    userAnswers,
+                    topCandidates: topCandidates.map(c => ({
+                        saint: {
+                            name: c.saint.name,
+                            knownFor: c.saint.knownFor,
+                            patronOf: c.saint.patronOf,
+                            dates: c.saint.dates
+                        },
+                        score: c.score
+                    })),
+                    userGender: gender
+                }),
+                signal: controller.signal
+            });
 
-        if (aiResult.success && aiResult.saintName) {
-            // Find the matched saint from our database
-            const aiMatchedSaint = saintsDatabase.find(s =>
-                s.name.toLowerCase().includes(aiResult.saintName.toLowerCase()) ||
-                aiResult.saintName.toLowerCase().includes(s.name.toLowerCase())
-            );
+            clearTimeout(timeoutId);
 
-            if (aiMatchedSaint) {
-                matchedSaint = aiMatchedSaint;
-                // Use AI-generated explanation
-                matchExplanation = aiResult.explanation || generateExplanation(traitCounts, matchedSaint);
-                if (aiResult.inspiration) {
-                    matchExplanation += ' ' + aiResult.inspiration;
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            const aiResult = await response.json();
+
+            if (aiResult.success && aiResult.saintName) {
+                // Find the matched saint from our database
+                const aiMatchedSaint = saintsDatabase.find(s =>
+                    s.name.toLowerCase().includes(aiResult.saintName.toLowerCase()) ||
+                    aiResult.saintName.toLowerCase().includes(s.name.toLowerCase())
+                );
+
+                if (aiMatchedSaint) {
+                    matchedSaint = aiMatchedSaint;
+                    // Use AI-generated explanation
+                    matchExplanation = aiResult.explanation || generateExplanation(traitCounts, matchedSaint);
+                    if (aiResult.inspiration) {
+                        matchExplanation += ' ' + aiResult.inspiration;
+                    }
+                    console.log('✅ AI match successful:', matchedSaint.name);
+                } else {
+                    // Fallback to original match if AI saint not found
+                    console.warn('AI matched saint not found in database, using original match');
                 }
             } else {
-                // Fallback to original match if AI saint not found
-                console.warn('AI matched saint not found in database, using original match');
+                console.warn('AI matching failed, using original algorithm');
             }
-        } else {
-            console.warn('AI matching failed, using original algorithm');
+        } catch (aiError) {
+            if (aiError.name === 'AbortError') {
+                console.warn('⏱️ AI request timed out after 10 seconds, using original algorithm');
+            } else {
+                console.error('AI matching error:', aiError);
+            }
+            // Fallback to original algorithm already calculated by calculateMatch()
         }
     } catch (error) {
-        console.error('Error in AI matching:', error);
-        // Fallback to original algorithm already calculated
+        console.error('Error in matching process:', error);
+        // Ensure we have a fallback match
+        if (!matchedSaint) {
+            console.warn('No match found, recalculating...');
+            calculateMatch(gender);
+        }
     }
 
     // Display results
