@@ -38,7 +38,7 @@
         content="Discover which Catholic Saint resonates with your personality through our AI-powered quiz.">
     <meta property="twitter:image" content="https://saintdiscoveryquiz.com/favicon.png">
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) - Quiz -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,6 +67,68 @@
     }
     </script>
 
+    <!-- Structured Data (JSON-LD) - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Saint Discovery Quiz",
+      "url": "https://saintdiscoveryquiz.com",
+      "logo": "https://saintdiscoveryquiz.com/favicon.png",
+      "description": "Free AI-powered Catholic saint personality quiz helping people discover their patron saint match"
+    }
+    </script>
+
+    <!-- Structured Data (JSON-LD) - FAQ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a patron saint quiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A patron saint quiz is a personality assessment that matches you with a Catholic saint based on your values, virtues, and spiritual preferences. Our AI-powered quiz analyzes your answers to 12 questions to find the saint whose life and virtues best align with your personality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the Saint Discovery Quiz work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The quiz asks 12 thoughtful questions about your personality, values, and spiritual preferences. Our AI analyzes your responses and matches you with one of 45+ Catholic saints based on trait compatibility, using both traditional matching algorithms and GPT-4o mini for personalized explanations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the Saint Discovery Quiz free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the Saint Discovery Quiz is completely free to take. There are no hidden fees, subscriptions, or data collection. Simply answer the questions and receive your personalized saint match instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many saints can I be matched with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our database includes 45+ Catholic saints from various time periods and backgrounds. The quiz matches you with one saint whose life story, virtues, and spiritual journey best align with your personality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I retake the saint quiz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can retake the quiz as many times as you'd like. Your answers may change over time as you grow in your faith journey, potentially matching you with different saints."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,11 +148,13 @@
             <p class="subtitle">Discover which Catholic Saint resonates with your spirit</p>
 
             <div class="intro-text">
-                <p>Throughout the centuries, the lives of the saints have inspired countless faithful. Each saint's
-                    unique journey of faith, virtues, and calling can offer guidance and inspiration for our own
-                    spiritual paths.</p>
-                <p>This thoughtful quiz will explore your values, priorities, and approach to life to help you discover
-                    a saint whose story may speak to your heart.</p>
+                <p>Take our free <strong>Catholic saint personality quiz</strong> to discover which <strong>patron
+                        saint</strong> best matches your spiritual journey. Our AI-powered <strong>saint quiz</strong>
+                    analyzes your answers to 12 thoughtful questions and matches you with one of 45+ Catholic saints
+                    based on your unique personality, values, and faith journey.</p>
+                <p>Whether you're seeking spiritual guidance, looking for a patron saint, or simply curious about which
+                    saint's life story resonates with yours, this quiz provides personalized insights powered by
+                    artificial intelligence.</p>
             </div>
 
             <div class="features">
