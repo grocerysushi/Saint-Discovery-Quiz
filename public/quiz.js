@@ -34,19 +34,19 @@ const questions = [
         id: 4,
         question: "What type of environment helps you feel closest to God?",
         answers: [
-            { text: "In nature - forests, mountains, or near water", traits: ["nature", "simplicity", "peace"] },
+            { text: "In nature - forests, mountains, or near water", traits: ["nature", "simplicity", "animals"] },
             { text: "In a quiet chapel or during adoration", traits: ["contemplation", "prayer", "mysticism"] },
-            { text: "While actively serving others in need", traits: ["service", "charity", "love"] },
-            { text: "In community with others, sharing faith together", traits: ["community", "teaching", "preaching"] }
+            { text: "While actively serving others in need", traits: ["service", "charity", "healing"] },
+            { text: "In community with others, sharing faith together", traits: ["community", "preaching", "evangelization"] }
         ]
     },
     {
         id: 5,
         question: "How would you describe your approach to personal challenges?",
         answers: [
-            { text: "I persevere steadily, trusting it will work out in time", traits: ["perseverance", "patience", "faith"] },
-            { text: "I face them head-on with determination and courage", traits: ["courage", "strength", "conviction"] },
-            { text: "I look for lessons and growth opportunities in every trial", traits: ["wisdom", "transformation", "hope"] },
+            { text: "I persevere steadily, trusting it will work out in time", traits: ["perseverance", "patience", "hope"] },
+            { text: "I face them head-on with determination and courage", traits: ["endurance", "strength", "heroism"] },
+            { text: "I look for lessons and growth opportunities in every trial", traits: ["transformation", "seeking", "introspection"] },
             { text: "I offer up my suffering and unite it with Christ's", traits: ["sacrifice", "mysticism", "devotion"] }
         ]
     },
@@ -54,10 +54,10 @@ const questions = [
         id: 6,
         question: "What role do you naturally take in a group setting?",
         answers: [
-            { text: "The leader who organizes and guides others", traits: ["leadership", "organization", "reform"] },
-            { text: "The quiet supporter who ensures everyone's needs are met", traits: ["service", "humility", "compassion"] },
-            { text: "The teacher or mentor who shares knowledge", traits: ["teaching", "intellectual", "wisdom"] },
-            { text: "The encourager who brings joy and peace", traits: ["joy", "peace", "love"] }
+            { text: "The leader who organizes and guides others", traits: ["leadership", "organization", "discipline"] },
+            { text: "The quiet supporter who ensures everyone's needs are met", traits: ["service", "humility", "generosity"] },
+            { text: "The teacher or mentor who shares knowledge", traits: ["teaching", "mentorship", "wisdom"] },
+            { text: "The encourager who brings joy and peace", traits: ["joy", "peace", "community"] }
         ]
     },
     {
@@ -94,10 +94,10 @@ const questions = [
         id: 10,
         question: "Which of these callings resonates most with you?",
         answers: [
-            { text: "Bringing the Gospel to people who haven't heard it", traits: ["missionary", "preaching", "adventure"] },
-            { text: "Creating a haven of peace and prayer", traits: ["contemplation", "peace", "community"] },
-            { text: "Standing up for truth in public life", traits: ["courage", "leadership", "conviction"] },
-            { text: "Caring for the sick, poor, or marginalized", traits: ["service", "compassion", "charity"] }
+            { text: "Bringing the Gospel to people who haven't heard it", traits: ["missionary", "evangelization", "adventure"] },
+            { text: "Creating a haven of peace and prayer", traits: ["contemplation", "peace", "balance"] },
+            { text: "Standing up for truth in public life", traits: ["conviction", "justice", "activism"] },
+            { text: "Caring for the sick, poor, or marginalized", traits: ["service", "healing", "charity"] }
         ]
     },
     {
@@ -204,39 +204,98 @@ function calculateMatch(userGender) {
         traitCounts[trait] = (traitCounts[trait] || 0) + 1;
     });
 
-    // Filter saints by gender to match user's gender
+    // Get user's top traits (sorted by frequency)
+    const sortedTraits = Object.entries(traitCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    // Identify the user's dominant trait categories
+    const userCategories = {};
+    sortedTraits.forEach(([trait, count]) => {
+        Object.keys(traitCategories).forEach(category => {
+            if (traitCategories[category].includes(trait)) {
+                userCategories[category] = (userCategories[category] || 0) + count;
+            }
+        });
+    });
+
+    // Get user's top 3 categories
+    const topCategories = Object.entries(userCategories)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3)
+        .map(([cat]) => cat);
+
+    // Filter saints by gender
     const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === userGender);
 
-    // Score each saint of matching gender
-    let bestMatch = null;
-    let bestScore = -1;
-
-    genderFilteredSaints.forEach(saint => {
+    // Score each saint with improved algorithm
+    const saintScores = genderFilteredSaints.map(saint => {
         let score = 0;
+        let directMatches = 0;
+        let categoryMatches = 0;
+
+        // 1. Direct trait matches (weighted by user's trait frequency)
         saint.traits.forEach(trait => {
             if (traitCounts[trait]) {
-                score += traitCounts[trait];
+                // Higher weight for traits the user selected more often
+                score += traitCounts[trait] * 3;
+                directMatches++;
             }
-            // Also check related traits
+        });
+
+        // 2. Bonus for matching user's top categories
+        saint.traits.forEach(trait => {
             Object.keys(traitCategories).forEach(category => {
-                if (traitCategories[category].includes(trait)) {
-                    traitCategories[category].forEach(relatedTrait => {
-                        if (traitCounts[relatedTrait]) {
-                            score += traitCounts[relatedTrait] * 0.5;
-                        }
-                    });
+                if (traitCategories[category].includes(trait) && topCategories.includes(category)) {
+                    // Bonus based on category rank (top category = 3, second = 2, third = 1)
+                    const categoryRank = 3 - topCategories.indexOf(category);
+                    score += categoryRank * 2;
+                    categoryMatches++;
                 }
             });
         });
 
-        if (score > bestScore) {
-            bestScore = score;
-            bestMatch = saint;
+        // 3. Bonus for having multiple direct matches (rewards well-rounded matches)
+        if (directMatches >= 3) {
+            score += directMatches * 2;
         }
+
+        // 4. Uniqueness bonus - saints with less common traits get a small boost
+        // This helps saints with distinctive traits compete with generic ones
+        const uniqueTraits = saint.traits.filter(trait =>
+            !['faith', 'courage', 'perseverance', 'wisdom', 'compassion', 'service'].includes(trait)
+        );
+        uniqueTraits.forEach(trait => {
+            if (traitCounts[trait]) {
+                score += 1.5;
+            }
+        });
+
+        return { saint, score, directMatches, categoryMatches };
     });
 
-    matchedSaint = bestMatch;
-    matchExplanation = generateExplanation(traitCounts, bestMatch);
+    // Sort by score
+    saintScores.sort((a, b) => b.score - a.score);
+
+    // If top scores are very close (within 10%), add slight randomization for variety
+    const topScore = saintScores[0].score;
+    const closeMatches = saintScores.filter(s => s.score >= topScore * 0.9);
+
+    let selectedMatch;
+    if (closeMatches.length > 1) {
+        // Among close matches, prefer those with more direct trait matches
+        closeMatches.sort((a, b) => {
+            // Primary: direct matches, Secondary: small random factor
+            const aScore = a.directMatches * 10 + Math.random() * 3;
+            const bScore = b.directMatches * 10 + Math.random() * 3;
+            return bScore - aScore;
+        });
+        selectedMatch = closeMatches[0];
+    } else {
+        selectedMatch = saintScores[0];
+    }
+
+    matchedSaint = selectedMatch.saint;
+    matchExplanation = generateExplanation(traitCounts, matchedSaint);
 }
 
 // Generate Match Explanation

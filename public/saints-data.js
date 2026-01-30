@@ -48,7 +48,7 @@ const saintsDatabase = [
         dates: "1181-1226",
         origin: "Italy",
         gender: "Male",
-        traits: ["nature", "simplicity", "poverty", "peace", "joy"]
+        traits: ["nature", "simplicity", "poverty", "peace", "animals"]
     },
     {
         name: "St. Clare of Assisi",
@@ -158,7 +158,7 @@ const saintsDatabase = [
         dates: "c. 385-461",
         origin: "Britain/Ireland",
         gender: "Male",
-        traits: ["missionary", "perseverance", "teaching", "courage", "faith"]
+        traits: ["missionary", "perseverance", "teaching", "evangelization", "forgiveness"]
     },
     {
         name: "St. Augustine of Hippo",
@@ -168,7 +168,7 @@ const saintsDatabase = [
         dates: "354-430",
         origin: "North Africa",
         gender: "Male",
-        traits: ["intellectual", "transformation", "writing", "wisdom", "contemplation"]
+        traits: ["philosophy", "transformation", "writing", "seeking", "introspection"]
     },
     {
         name: "St. Benedict",
@@ -208,7 +208,7 @@ const saintsDatabase = [
         dates: "d. c. 303",
         origin: "Turkey",
         gender: "Male",
-        traits: ["courage", "protection", "faith", "strength", "conviction"]
+        traits: ["protection", "chivalry", "strength", "heroism", "justice"]
     },
     {
         name: "St. Cecilia",
@@ -248,7 +248,7 @@ const saintsDatabase = [
         dates: "1815-1888",
         origin: "Italy",
         gender: "Male",
-        traits: ["education", "youth", "joy", "innovation", "compassion"]
+        traits: ["youth", "education", "joy", "innovation", "mentorship"]
     },
     {
         name: "St. John Vianney",
@@ -408,7 +408,7 @@ const saintsDatabase = [
         dates: "Biblical",
         origin: "Heaven",
         gender: "Male",
-        traits: ["courage", "protection", "strength", "justice", "faith"]
+        traits: ["protection", "warrior", "justice", "spiritual-warfare", "strength"]
     },
     {
         name: "St. Anne",
@@ -518,7 +518,7 @@ const saintsDatabase = [
         dates: "d. c. 288",
         origin: "Rome",
         gender: "Male",
-        traits: ["courage", "strength", "faith", "perseverance", "conviction"]
+        traits: ["strength", "endurance", "sacrifice", "military", "protection"]
     },
     {
         name: "St. Dominic",
@@ -544,14 +544,16 @@ const saintsDatabase = [
 
 // Trait categories for matching
 const traitCategories = {
-    intellectual: ["intellectual", "teaching", "writing", "wisdom", "philosophy"],
-    contemplative: ["contemplation", "mysticism", "prayer", "meditation"],
-    service: ["service", "charity", "compassion", "healing", "generosity"],
-    leadership: ["leadership", "courage", "reform", "activism", "conviction"],
-    missionary: ["missionary", "adventure", "cross-cultural", "preaching"],
-    creative: ["arts", "music", "poetry", "nature", "beauty"],
-    humble: ["humility", "simplicity", "obedience", "poverty"],
-    family: ["family", "motherhood", "nurturing", "protection", "children"],
-    transformative: ["transformation", "forgiveness", "hope", "perseverance"],
-    courageous: ["courage", "faith", "conviction", "strength", "sacrifice"]
+    intellectual: ["intellectual", "teaching", "writing", "wisdom", "philosophy", "seeking", "introspection", "mentorship"],
+    contemplative: ["contemplation", "mysticism", "prayer", "meditation", "devotion", "peace", "balance"],
+    service: ["service", "charity", "compassion", "healing", "generosity", "organization"],
+    leadership: ["leadership", "reform", "activism", "conviction", "discipline", "justice"],
+    missionary: ["missionary", "adventure", "cross-cultural", "preaching", "evangelization"],
+    creative: ["arts", "music", "poetry", "nature", "beauty", "animals"],
+    humble: ["humility", "simplicity", "obedience", "poverty", "patience"],
+    family: ["family", "motherhood", "nurturing", "protection", "children", "youth", "community"],
+    transformative: ["transformation", "forgiveness", "hope", "perseverance", "conversion"],
+    courageous: ["courage", "faith", "strength", "sacrifice", "endurance", "heroism"],
+    warrior: ["warrior", "military", "protection", "justice", "chivalry", "spiritual-warfare"],
+    joyful: ["joy", "innovation", "youth", "education", "love"]
 };
