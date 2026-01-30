@@ -646,6 +646,34 @@ h1, h2, h3, h4 {
     color: var(--gold);
 }
 
+/* AI Loading State */
+.ai-loading {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.ai-loading .spinner {
+    width: 60px;
+    height: 60px;
+    border: 4px solid var(--cream);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 25px;
+}
+
+.ai-loading p {
+    color: var(--text-medium);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.ai-loading p:first-of-type {
+    color: var(--primary-navy);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .container {

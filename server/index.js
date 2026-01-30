@@ -18,6 +18,32 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// AI-enhanced saint matching endpoint
+const { getAIEnhancedMatch } = require('./ai-matcher');
+
+app.post('/api/ai-match', async (req, res) => {
+    try {
+        const { userAnswers, topCandidates, userGender } = req.body;
+
+        if (!userAnswers || !topCandidates || !userGender) {
+            return res.status(400).json({
+                success: false,
+                error: 'Missing required fields'
+            });
+        }
+
+        const aiResult = await getAIEnhancedMatch(userAnswers, topCandidates, userGender);
+        res.json({ success: true, ...aiResult });
+    } catch (error) {
+        console.error('AI matching error:', error);
+        res.status(500).json({
+            success: false,
+            error: 'AI analysis failed',
+            message: error.message
+        });
+    }
+});
+
 // Serve the main page for all other routes
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));

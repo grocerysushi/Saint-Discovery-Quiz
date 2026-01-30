@@ -442,11 +442,161 @@ function generateExplanation(traitCounts, saint) {
 }
 
 // Reveal Result - called when user selects gender
-function revealResult(gender) {
-    // Calculate match based on user's gender (matches with saint of same gender)
-    calculateMatch(gender);
+async function revealResult(gender) {
+    // Show loading state
+    showScreen('userInfo');
+    const userInfoScreen = document.getElementById('userInfo');
+    userInfoScreen.innerHTML = `
+        <div class="ai-loading">
+            <div class="spinner"></div>
+            <p>Analyzing your spiritual journey with AI...</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">This may take a few moments</p>
+        </div>
+    `;
 
-    // Display results immediately
+    try {
+        // Calculate match based on user's gender (matches with saint of same gender)
+        calculateMatch(gender);
+
+        // Get top 5 candidates for AI analysis
+        const userTraits = [];
+        userAnswers.forEach(answer => {
+            userTraits.push(...answer.traits);
+        });
+
+        const traitCounts = {};
+        userTraits.forEach(trait => {
+            traitCounts[trait] = (traitCounts[trait] || 0) + 1;
+        });
+
+        const traitFrequency = {};
+        const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === gender);
+
+        genderFilteredSaints.forEach(saint => {
+            saint.traits.forEach(trait => {
+                traitFrequency[trait] = (traitFrequency[trait] || 0) + 1;
+            });
+        });
+
+        const commonTraitThreshold = genderFilteredSaints.length * 0.4;
+        const commonTraits = Object.keys(traitFrequency).filter(
+            trait => traitFrequency[trait] > commonTraitThreshold
+        );
+
+        const sortedTraits = Object.entries(traitCounts)
+            .sort((a, b) => b[1] - a[1]);
+
+        const userCategories = {};
+        sortedTraits.forEach(([trait, count]) => {
+            Object.keys(traitCategories).forEach(category => {
+                if (traitCategories[category].includes(trait)) {
+                    userCategories[category] = (userCategories[category] || 0) + count;
+                }
+            });
+        });
+
+        const topCategories = Object.entries(userCategories)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 3)
+            .map(([cat]) => cat);
+
+        const saintScores = genderFilteredSaints.map(saint => {
+            let score = 0;
+            let directMatches = 0;
+            let rareMatches = 0;
+
+            saint.traits.forEach(trait => {
+                if (traitCounts[trait]) {
+                    const userTraitFreq = traitCounts[trait];
+                    const isCommon = commonTraits.includes(trait);
+                    const rarityBonus = isCommon ? 1 : 2;
+                    const baseScore = userTraitFreq * 2 * rarityBonus;
+                    score += baseScore;
+                    directMatches++;
+                    if (!isCommon) {
+                        rareMatches++;
+                    }
+                }
+            });
+
+            saint.traits.forEach(trait => {
+                Object.keys(traitCategories).forEach(category => {
+                    if (traitCategories[category].includes(trait) && topCategories.includes(category)) {
+                        const categoryRank = 3 - topCategories.indexOf(category);
+                        score += categoryRank * 1.5;
+                    }
+                });
+            });
+
+            if (directMatches >= 3) {
+                score += directMatches * 1.5;
+            }
+
+            if (rareMatches > 0) {
+                score += rareMatches * 3;
+            }
+
+            const matchPercentage = directMatches / saint.traits.length;
+            if (matchPercentage > 0.5) {
+                score += matchPercentage * 5;
+            }
+
+            return { saint, score, directMatches, rareMatches };
+        });
+
+        saintScores.sort((a, b) => b.score - a.score);
+        const topCandidates = saintScores.slice(0, 5);
+
+        // Call AI endpoint
+        const response = await fetch('/api/ai-match', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                userAnswers,
+                topCandidates: topCandidates.map(c => ({
+                    saint: {
+                        name: c.saint.name,
+                        knownFor: c.saint.knownFor,
+                        patronOf: c.saint.patronOf,
+                        dates: c.saint.dates
+                    },
+                    score: c.score
+                })),
+                userGender: gender
+            })
+        });
+
+        const aiResult = await response.json();
+
+        if (aiResult.success && aiResult.saintName) {
+            // Find the matched saint from our database
+            const aiMatchedSaint = saintsDatabase.find(s =>
+                s.name.toLowerCase().includes(aiResult.saintName.toLowerCase()) ||
+                aiResult.saintName.toLowerCase().includes(s.name.toLowerCase())
+            );
+
+            if (aiMatchedSaint) {
+                matchedSaint = aiMatchedSaint;
+                // Use AI-generated explanation
+                matchExplanation = aiResult.explanation || generateExplanation(traitCounts, matchedSaint);
+                if (aiResult.inspiration) {
+                    matchExplanation += ' ' + aiResult.inspiration;
+                }
+            } else {
+                // Fallback to original match if AI saint not found
+                console.warn('AI matched saint not found in database, using original match');
+            }
+        } else {
+            console.warn('AI matching failed, using original algorithm');
+        }
+    } catch (error) {
+        console.error('Error in AI matching:', error);
+        // Fallback to original algorithm already calculated
+    }
+
+    // Display results
     displayResults();
 }
 

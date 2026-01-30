@@ -4,10 +4,12 @@ A web application that helps users discover which Catholic Saint they most ident
 
 ## Features
 
+- 🤖 **AI-Enhanced Matching** - Uses GPT-4o mini to provide personalized saint matches with unique explanations
 - 12 carefully crafted personality questions
 - Matches users with one of 45+ saints based on their responses
 - Gender-based matching (users are matched with saints of the same gender)
-- Personalized explanations for why each saint was matched
+- Personalized, AI-generated explanations for why each saint was matched
+- Intelligent trait-based algorithm with rarity weighting
 - Responsive, reverent design
 - No data collection - results are displayed instantly
 
@@ -24,12 +26,27 @@ A web application that helps users discover which Catholic Saint they most ident
    npm install
    ```
 
-2. **Run the Application**
+2. **Configure OpenAI API Key**
+   
+   Create a `.env` file in the root directory:
+   ```bash
+   cp .env.example .env
+   ```
+   
+   Add your OpenAI API key to `.env`:
+   ```env
+   PORT=3000
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+   
+   > **Note**: Get your API key from [OpenAI Platform](https://platform.openai.com/api-keys)
+
+3. **Run the Application**
    ```bash
    npm start
    ```
 
-3. **Open in Browser**
+4. **Open in Browser**
 
    Navigate to `http://localhost:3000`
 
@@ -43,7 +60,9 @@ Saint-Discovery-Quiz/
 │   ├── quiz.js         # Quiz logic and interactions
 │   └── saints-data.js  # Saint database with traits
 ├── server/
-│   └── index.js        # Express server (serves static files)
+│   ├── index.js        # Express server with API endpoints
+│   └── ai-matcher.js   # GPT-4o mini integration for AI matching
+├── .env                # Environment variables (API keys)
 ├── .env.example        # Template for environment variables
 ├── .gitignore          # Git ignore rules
 ├── package.json        # Dependencies and scripts
@@ -52,11 +71,12 @@ Saint-Discovery-Quiz/
 
 ## How It Works
 
-1. User answers 12 personality questions
-2. Each answer maps to personality traits (e.g., "intellectual", "compassion", "courage")
-3. User selects their gender (Male/Female)
-4. The app matches the user with a saint of the same gender based on trait compatibility
-5. Results display the matched saint with details and a personalized explanation
+1. **User answers 12 personality questions** - Each answer maps to personality traits (e.g., "intellectual", "compassion", "courage")
+2. **User selects their gender** (Male/Female)
+3. **Trait-based algorithm calculates top candidates** - Uses trait rarity weighting and category matching to find the top 5 saints
+4. **AI analyzes personality** - GPT-4o mini receives user answers and top candidates, then selects the best match
+5. **Personalized results** - AI generates a unique explanation of why this saint matches the user's spiritual journey
+6. **Fallback protection** - If AI is unavailable, the original trait-based algorithm provides the match
 
 ## API Endpoints
 
@@ -67,6 +87,28 @@ Health check endpoint.
 ```json
 {
     "status": "ok"
+}
+```
+
+### POST /api/ai-match
+AI-enhanced saint matching endpoint. Receives user answers and top candidate saints, returns AI analysis.
+
+**Request Body:**
+```json
+{
+    "userAnswers": [...],
+    "topCandidates": [...],
+    "userGender": "Male" | "Female"
+}
+```
+
+**Response:**
+```json
+{
+    "success": true,
+    "saintName": "St. Thomas Aquinas",
+    "explanation": "Your thoughtful, intellectual approach...",
+    "inspiration": "Let St. Thomas inspire you..."
 }
 ```
 
@@ -101,6 +143,9 @@ Edit `public/quiz.js` to modify questions or add new ones. Each question should 
 | Variable | Required | Description |
 |----------|----------|-------------|
 | `PORT` | No | Server port (default: 3000) |
+| `OPENAI_API_KEY` | Yes | OpenAI API key for GPT-4o mini integration |
+
+**Security Note**: Never commit your `.env` file to version control. The `.gitignore` file is configured to exclude it.
 
 ## License
 
