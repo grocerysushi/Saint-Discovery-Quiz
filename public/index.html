@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint Discovery Quiz - Find Your Patron Saint</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <section id="landing" class="screen active">
+            <div class="decorative-cross">&#10013;</div>
+            <h1>Saint Discovery Quiz</h1>
+            <div class="divider"></div>
+            <p class="subtitle">Discover which Catholic Saint resonates with your spirit</p>
+
+            <div class="intro-text">
+                <p>Throughout the centuries, the lives of the saints have inspired countless faithful. Each saint's unique journey of faith, virtues, and calling can offer guidance and inspiration for our own spiritual paths.</p>
+                <p>This thoughtful quiz will explore your values, priorities, and approach to life to help you discover a saint whose story may speak to your heart.</p>
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">&#9829;</span>
+                    <span>12 Thoughtful Questions</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&#9733;</span>
+                    <span>Personalized Results</span>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">&#10013;</span>
+                    <span>Matched to Your Gender</span>
+                </div>
+            </div>
+
+            <button class="btn-primary" onclick="startQuiz()">Begin Your Journey</button>
+        </section>
+
+        <!-- Quiz Questions -->
+        <section id="quiz" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">Question 1 of 12</span>
+            </div>
+
+            <div class="question-container" id="questionContainer">
+                <!-- Questions will be inserted here -->
+            </div>
+        </section>
+
+        <!-- Gender Selection -->
+        <section id="userInfo" class="screen">
+            <div class="decorative-cross small">&#10013;</div>
+            <h2>One Last Step!</h2>
+            <p class="form-intro">We'll match you with a saint of the same gender. Please select your gender to see your personalized result.</p>
+
+            <div class="gender-selection">
+                <button class="gender-btn" onclick="revealResult('Male')">
+                    <span class="gender-icon">&#9794;</span>
+                    <span>Male</span>
+                </button>
+                <button class="gender-btn" onclick="revealResult('Female')">
+                    <span class="gender-icon">&#9792;</span>
+                    <span>Female</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Page -->
+        <section id="results" class="screen">
+            <div class="results-container">
+                <div class="results-header">
+                    <span class="match-label">Your Saint Match</span>
+                    <h1 id="resultSaintName"></h1>
+                    <div class="feast-day-badge" id="resultFeastDay"></div>
+                </div>
+
+                <div class="saint-details">
+                    <div class="detail-card">
+                        <h3>Known For</h3>
+                        <p id="resultKnownFor"></p>
+                    </div>
+
+                    <div class="detail-card">
+                        <h3>Patron Saint Of</h3>
+                        <p id="resultPatronOf"></p>
+                    </div>
+
+                    <div class="detail-card full-width">
+                        <h3>Life & Origin</h3>
+                        <p><span id="resultDates"></span> | <span id="resultOrigin"></span></p>
+                    </div>
+
+                    <div class="match-explanation">
+                        <h3>Why This Saint Matches You</h3>
+                        <p id="resultExplanation"></p>
+                    </div>
+                </div>
+
+
+                <div class="inspirational-quote">
+                    <p class="quote-text">"Be who God meant you to be and you will set the world on fire."</p>
+                    <p class="quote-author">- St. Catherine of Siena</p>
+                </div>
+
+                <button class="btn-secondary" onclick="retakeQuiz()">Retake Quiz</button>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="saints-data.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

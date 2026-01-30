@@ -1,0 +1,389 @@
+// Quiz Questions with trait mappings
+const questions = [
+    {
+        id: 1,
+        question: "When facing a difficult problem, what is your first instinct?",
+        answers: [
+            { text: "Study and research until I fully understand every aspect", traits: ["intellectual", "wisdom", "contemplation"] },
+            { text: "Take immediate action to address the situation", traits: ["leadership", "courage", "activism"] },
+            { text: "Pray and reflect, trusting that guidance will come", traits: ["faith", "contemplation", "mysticism"] },
+            { text: "Reach out to help others who may be affected", traits: ["service", "compassion", "charity"] }
+        ]
+    },
+    {
+        id: 2,
+        question: "How do you find the most meaning in your daily life?",
+        answers: [
+            { text: "Through quiet moments of prayer and reflection", traits: ["contemplation", "prayer", "mysticism"] },
+            { text: "By serving others and meeting their needs", traits: ["service", "charity", "compassion"] },
+            { text: "Through learning, reading, and expanding my understanding", traits: ["intellectual", "wisdom", "teaching"] },
+            { text: "By creating beauty in the world through art, music, or nature", traits: ["arts", "nature", "poetry"] }
+        ]
+    },
+    {
+        id: 3,
+        question: "When you see someone being treated unfairly, how do you respond?",
+        answers: [
+            { text: "Speak up immediately, even if it's uncomfortable", traits: ["courage", "conviction", "justice"] },
+            { text: "Quietly support the person and offer help privately", traits: ["compassion", "humility", "service"] },
+            { text: "Work to change systems and structures that cause injustice", traits: ["leadership", "reform", "activism"] },
+            { text: "Pray for the situation and all involved", traits: ["faith", "prayer", "intercession"] }
+        ]
+    },
+    {
+        id: 4,
+        question: "What type of environment helps you feel closest to God?",
+        answers: [
+            { text: "In nature - forests, mountains, or near water", traits: ["nature", "simplicity", "peace"] },
+            { text: "In a quiet chapel or during adoration", traits: ["contemplation", "prayer", "mysticism"] },
+            { text: "While actively serving others in need", traits: ["service", "charity", "love"] },
+            { text: "In community with others, sharing faith together", traits: ["community", "teaching", "preaching"] }
+        ]
+    },
+    {
+        id: 5,
+        question: "How would you describe your approach to personal challenges?",
+        answers: [
+            { text: "I persevere steadily, trusting it will work out in time", traits: ["perseverance", "patience", "faith"] },
+            { text: "I face them head-on with determination and courage", traits: ["courage", "strength", "conviction"] },
+            { text: "I look for lessons and growth opportunities in every trial", traits: ["wisdom", "transformation", "hope"] },
+            { text: "I offer up my suffering and unite it with Christ's", traits: ["sacrifice", "mysticism", "devotion"] }
+        ]
+    },
+    {
+        id: 6,
+        question: "What role do you naturally take in a group setting?",
+        answers: [
+            { text: "The leader who organizes and guides others", traits: ["leadership", "organization", "reform"] },
+            { text: "The quiet supporter who ensures everyone's needs are met", traits: ["service", "humility", "compassion"] },
+            { text: "The teacher or mentor who shares knowledge", traits: ["teaching", "intellectual", "wisdom"] },
+            { text: "The encourager who brings joy and peace", traits: ["joy", "peace", "love"] }
+        ]
+    },
+    {
+        id: 7,
+        question: "What draws you most when learning about a saint's life?",
+        answers: [
+            { text: "Their intellectual contributions and writings", traits: ["intellectual", "writing", "philosophy"] },
+            { text: "Their courage in the face of persecution", traits: ["courage", "faith", "conviction"] },
+            { text: "Their humble service to the poor and suffering", traits: ["service", "charity", "humility"] },
+            { text: "Their deep mystical prayer life and visions", traits: ["mysticism", "contemplation", "prayer"] }
+        ]
+    },
+    {
+        id: 8,
+        question: "How do you prefer to express your faith?",
+        answers: [
+            { text: "Through studying Scripture and Church teachings", traits: ["intellectual", "wisdom", "teaching"] },
+            { text: "Through works of mercy and charitable actions", traits: ["charity", "service", "compassion"] },
+            { text: "Through contemplative prayer and silence", traits: ["contemplation", "mysticism", "prayer"] },
+            { text: "Through sharing my faith with others openly", traits: ["missionary", "preaching", "courage"] }
+        ]
+    },
+    {
+        id: 9,
+        question: "What is your greatest strength?",
+        answers: [
+            { text: "My ability to understand complex ideas and explain them clearly", traits: ["intellectual", "teaching", "wisdom"] },
+            { text: "My compassion and desire to help those who are suffering", traits: ["compassion", "service", "healing"] },
+            { text: "My courage to stand firm in my beliefs no matter the cost", traits: ["courage", "conviction", "faith"] },
+            { text: "My patience and ability to trust in God's timing", traits: ["patience", "perseverance", "hope"] }
+        ]
+    },
+    {
+        id: 10,
+        question: "Which of these callings resonates most with you?",
+        answers: [
+            { text: "Bringing the Gospel to people who haven't heard it", traits: ["missionary", "preaching", "adventure"] },
+            { text: "Creating a haven of peace and prayer", traits: ["contemplation", "peace", "community"] },
+            { text: "Standing up for truth in public life", traits: ["courage", "leadership", "conviction"] },
+            { text: "Caring for the sick, poor, or marginalized", traits: ["service", "compassion", "charity"] }
+        ]
+    },
+    {
+        id: 11,
+        question: "How do you handle times when your faith is tested?",
+        answers: [
+            { text: "I dig deeper into study and seek understanding", traits: ["intellectual", "wisdom", "faith"] },
+            { text: "I increase my prayer and time in silence with God", traits: ["contemplation", "prayer", "perseverance"] },
+            { text: "I reach out to serve others, finding purpose in giving", traits: ["service", "charity", "love"] },
+            { text: "I hold fast to what I believe, trusting through darkness", traits: ["faith", "courage", "hope"] }
+        ]
+    },
+    {
+        id: 12,
+        question: "What legacy would you most want to leave behind?",
+        answers: [
+            { text: "Writings or teachings that help others understand the faith", traits: ["intellectual", "writing", "teaching"] },
+            { text: "A community or organization that serves those in need", traits: ["service", "charity", "leadership"] },
+            { text: "The example of a life lived with courage and conviction", traits: ["courage", "faith", "conviction"] },
+            { text: "Having inspired others through simple acts of love", traits: ["love", "humility", "simplicity"] }
+        ]
+    }
+];
+
+// State
+let currentQuestion = 0;
+let userAnswers = [];
+let matchedSaint = null;
+let matchExplanation = "";
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    // No form to attach - gender buttons handle submission
+});
+
+// Start Quiz
+function startQuiz() {
+    currentQuestion = 0;
+    userAnswers = [];
+    showScreen('quiz');
+    renderQuestion();
+}
+
+// Render Current Question
+function renderQuestion() {
+    const question = questions[currentQuestion];
+    const container = document.getElementById('questionContainer');
+
+    // Update progress
+    const progress = ((currentQuestion) / questions.length) * 100;
+    document.getElementById('progressFill').style.width = `${progress}%`;
+    document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+
+    // Render question
+    container.innerHTML = `
+        <div class="question" key="${question.id}">
+            <h2>${question.question}</h2>
+            <div class="answers">
+                ${question.answers.map((answer, index) => `
+                    <button class="answer-btn" onclick="selectAnswer(${index})">
+                        ${answer.text}
+                    </button>
+                `).join('')}
+            </div>
+        </div>
+    `;
+
+    // Trigger animation
+    container.style.animation = 'none';
+    container.offsetHeight; // Trigger reflow
+    container.style.animation = 'slideIn 0.4s ease';
+}
+
+// Handle Answer Selection
+function selectAnswer(answerIndex) {
+    const question = questions[currentQuestion];
+    userAnswers.push({
+        questionId: question.id,
+        answerIndex: answerIndex,
+        traits: question.answers[answerIndex].traits
+    });
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        renderQuestion();
+    } else {
+        // Quiz complete - show user form (match will be calculated after gender is selected)
+        showScreen('userInfo');
+    }
+}
+
+// Calculate Saint Match - filters by user's gender
+function calculateMatch(userGender) {
+    // Collect all traits from user answers
+    const userTraits = [];
+    userAnswers.forEach(answer => {
+        userTraits.push(...answer.traits);
+    });
+
+    // Count trait frequencies
+    const traitCounts = {};
+    userTraits.forEach(trait => {
+        traitCounts[trait] = (traitCounts[trait] || 0) + 1;
+    });
+
+    // Filter saints by gender to match user's gender
+    const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === userGender);
+
+    // Score each saint of matching gender
+    let bestMatch = null;
+    let bestScore = -1;
+
+    genderFilteredSaints.forEach(saint => {
+        let score = 0;
+        saint.traits.forEach(trait => {
+            if (traitCounts[trait]) {
+                score += traitCounts[trait];
+            }
+            // Also check related traits
+            Object.keys(traitCategories).forEach(category => {
+                if (traitCategories[category].includes(trait)) {
+                    traitCategories[category].forEach(relatedTrait => {
+                        if (traitCounts[relatedTrait]) {
+                            score += traitCounts[relatedTrait] * 0.5;
+                        }
+                    });
+                }
+            });
+        });
+
+        if (score > bestScore) {
+            bestScore = score;
+            bestMatch = saint;
+        }
+    });
+
+    matchedSaint = bestMatch;
+    matchExplanation = generateExplanation(traitCounts, bestMatch);
+}
+
+// Generate Match Explanation
+function generateExplanation(traitCounts, saint) {
+    // Find top traits
+    const sortedTraits = Object.entries(traitCounts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 4)
+        .map(([trait]) => trait);
+
+    const traitNames = {
+        intellectual: "intellectual curiosity",
+        contemplation: "contemplative nature",
+        service: "heart for service",
+        leadership: "leadership qualities",
+        courage: "courage and conviction",
+        faith: "deep faith",
+        compassion: "compassionate spirit",
+        humility: "humble approach",
+        wisdom: "pursuit of wisdom",
+        mysticism: "mystical spirituality",
+        prayer: "devotion to prayer",
+        charity: "charitable heart",
+        teaching: "gift for teaching",
+        perseverance: "perseverance through trials",
+        love: "capacity for love",
+        transformation: "openness to transformation",
+        hope: "spirit of hope",
+        missionary: "missionary zeal",
+        nature: "love of nature",
+        justice: "passion for justice"
+    };
+
+    const topTraitNames = sortedTraits
+        .filter(t => traitNames[t])
+        .map(t => traitNames[t])
+        .slice(0, 3);
+
+    let explanation = `Your responses reveal a beautiful combination of ${topTraitNames.join(', ')}.`;
+
+    // Match to saint
+    const saintConnections = {
+        // Male Saints
+        "St. Francis of Assisi": "Like St. Francis, you find God in simplicity and nature, and your compassion extends to all of creation.",
+        "St. Thomas Aquinas": "Like St. Thomas Aquinas, you seek to understand faith through reason and share that understanding with others.",
+        "St. John of the Cross": "Like St. John of the Cross, you seek deep union with God through contemplative prayer and are not afraid of spiritual darkness.",
+        "St. Ignatius of Loyola": "Like St. Ignatius, you approach faith with discipline and discernment, seeking to find God in all things.",
+        "St. Vincent de Paul": "Like St. Vincent, you see Christ in the poor and organize practical ways to serve them.",
+        "St. Augustine of Hippo": "Like St. Augustine, your journey has been one of searching, transformation, and ultimately finding rest in God.",
+        "St. Maximilian Kolbe": "Like St. Maximilian, you understand that true love means sacrifice, even to the point of giving everything.",
+        "St. John Paul II": "Like St. John Paul II, you combine intellectual depth with pastoral warmth and a heart for youth.",
+        "St. Padre Pio": "Like Padre Pio, your faith is marked by deep prayer and the gift of accompanying others in their spiritual struggles.",
+        "St. Thomas More": "Like St. Thomas More, you understand that faith and integrity must guide all aspects of life, even public service.",
+        "St. Martin de Porres": "Like St. Martin, you serve with humble joy, seeing no task as beneath you when it helps others.",
+        "St. Peter": "Like St. Peter, you have the heart of a leader who, despite human weakness, remains steadfast in faith.",
+        "St. Paul": "Like St. Paul, you have a missionary heart and the gift of communicating the faith to others.",
+        "St. Joseph": "Like St. Joseph, you find holiness in quiet faithfulness, hard work, and protecting those you love.",
+        "St. Patrick": "Like St. Patrick, you have the courage to bring light to dark places and persevere through hardship.",
+        "St. Benedict": "Like St. Benedict, you understand the importance of balance, discipline, and community in the spiritual life.",
+        "St. Francis Xavier": "Like St. Francis Xavier, you have an adventurous spirit and desire to share the Gospel across boundaries.",
+        "St. Anthony of Padua": "Like St. Anthony, you have gifts for teaching and helping others find what they have lost.",
+        "St. John Bosco": "Like St. John Bosco, you have a joyful heart for young people and creative approaches to education.",
+        "St. Nicholas": "Like St. Nicholas, your generous heart delights in giving secretly and caring for those in need.",
+        "St. George": "Like St. George, you face challenges with courage and stand as a protector of the vulnerable.",
+        "St. Sebastian": "Like St. Sebastian, you have the strength to endure trials and remain faithful through persecution.",
+        "St. Dominic": "Like St. Dominic, you combine intellectual pursuit with deep prayer and a love for preaching truth.",
+        "St. Bernard of Clairvaux": "Like St. Bernard, you blend contemplative depth with influential leadership and reform.",
+        "St. Lawrence": "Like St. Lawrence, you serve with joy and courage, seeing the poor as the true treasures of the Church.",
+        "St. Jude Thaddeus": "Like St. Jude, you bring hope to hopeless situations and persist in faithful intercession.",
+        "St. John Vianney": "Like the Cure of Ars, you find holiness in humble service and tireless dedication to souls.",
+        "St. Michael the Archangel": "Like St. Michael, you stand firm against evil and fight for justice and truth.",
+        "St. Raphael the Archangel": "Like St. Raphael, you are a healer and guide, bringing God's comfort to those who journey.",
+
+        // Female Saints
+        "St. Teresa of Calcutta": "Like Mother Teresa, your heart aches for those who suffer, and you find Christ in serving the poorest of the poor.",
+        "St. Joan of Arc": "Like St. Joan, you have the courage to stand firm in your convictions, even when facing opposition.",
+        "St. Therese of Lisieux": "Like the Little Flower, you understand that small acts of love can transform the world.",
+        "St. Teresa of Avila": "Like St. Teresa, you combine deep mystical prayer with practical action and reform.",
+        "St. Catherine of Siena": "Like St. Catherine, you combine contemplative prayer with bold action for the good of the Church.",
+        "St. Elizabeth of Hungary": "Like St. Elizabeth, your noble spirit is expressed through radical generosity to the poor.",
+        "St. Mary Magdalene": "Like St. Mary Magdalene, you are a devoted follower who has experienced the transforming power of Christ's love.",
+        "St. Clare of Assisi": "Like St. Clare, you embrace simplicity and poverty while remaining steadfast in contemplative prayer.",
+        "St. Scholastica": "Like St. Scholastica, you value deep spiritual friendship and devoted community life.",
+        "St. Cecilia": "Like St. Cecilia, you use your gifts to glorify God and remain faithful even unto death.",
+        "St. Bernadette": "Like St. Bernadette, you approach God with childlike simplicity and humble obedience.",
+        "St. Edith Stein": "Like St. Edith Stein, you combine intellectual depth with contemplative spirituality and courageous witness.",
+        "St. Faustina Kowalska": "Like St. Faustina, you are a vessel of God's mercy, called to spread trust in His divine love.",
+        "St. Gianna Molla": "Like St. Gianna, you understand that love sometimes requires the ultimate sacrifice for those we cherish.",
+        "St. Rose of Lima": "Like St. Rose, you find beauty in hidden devotion and mystical union with God.",
+        "St. Rita of Cascia": "Like St. Rita, you persevere through impossible situations and find hope in forgiveness.",
+        "St. Monica": "Like St. Monica, your persistent prayer and patient faith can move mountains.",
+        "St. Anne": "Like St. Anne, you nurture faith in those entrusted to your care with patient, steadfast love.",
+        "St. Dymphna": "Like St. Dymphna, you bring comfort and healing to those who suffer in mind and spirit.",
+        "St. Louise de Marillac": "Like St. Louise, you combine organizational skill with compassionate service to those in need.",
+        "St. Bridget of Sweden": "Like St. Bridget, you receive divine insights and courageously share them for the good of the Church.",
+        "St. Margaret of Scotland": "Like St. Margaret, you use your position to serve the poor and reform society with charity.",
+        "St. Hildegard of Bingen": "Like St. Hildegard, you are a renaissance soul - combining mysticism, music, healing, and wisdom.",
+        "St. Kateri Tekakwitha": "Like St. Kateri, your faith blossoms beautifully despite persecution and hardship.",
+        "St. Josephine Bakhita": "Like St. Josephine, you have found freedom in Christ and live as a witness to His transforming grace."
+    };
+
+    if (saintConnections[saint.name]) {
+        explanation += " " + saintConnections[saint.name];
+    } else {
+        // Generic explanation based on saint's known for
+        explanation += ` ${saint.name} exemplifies these same qualities through their life of ${saint.knownFor.toLowerCase()}. Their example can guide and inspire your own spiritual journey.`;
+    }
+
+    return explanation;
+}
+
+// Reveal Result - called when user selects gender
+function revealResult(gender) {
+    // Calculate match based on user's gender (matches with saint of same gender)
+    calculateMatch(gender);
+
+    // Display results immediately
+    displayResults();
+}
+
+// Display Results
+function displayResults() {
+    document.getElementById('resultSaintName').textContent = matchedSaint.name;
+    document.getElementById('resultFeastDay').textContent = `Feast Day: ${matchedSaint.feastDay}`;
+    document.getElementById('resultKnownFor').textContent = matchedSaint.knownFor;
+    document.getElementById('resultPatronOf').textContent = matchedSaint.patronOf;
+    document.getElementById('resultDates').textContent = matchedSaint.dates;
+    document.getElementById('resultOrigin').textContent = matchedSaint.origin;
+    document.getElementById('resultExplanation').textContent = matchExplanation;
+
+    showScreen('results');
+}
+
+// Retake Quiz
+function retakeQuiz() {
+    currentQuestion = 0;
+    userAnswers = [];
+    matchedSaint = null;
+    matchExplanation = "";
+    showScreen('landing');
+}
+
+// Show Screen Helper
+function showScreen(screenId) {
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    document.getElementById(screenId).classList.add('active');
+    window.scrollTo(0, 0);
+}
