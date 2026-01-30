@@ -198,11 +198,27 @@ function calculateMatch(userGender) {
         userTraits.push(...answer.traits);
     });
 
-    // Count trait frequencies
+    // Count trait frequencies in user's answers
     const traitCounts = {};
     userTraits.forEach(trait => {
         traitCounts[trait] = (traitCounts[trait] || 0) + 1;
     });
+
+    // Calculate trait rarity across all saints (for weighting)
+    const traitFrequency = {};
+    const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === userGender);
+
+    genderFilteredSaints.forEach(saint => {
+        saint.traits.forEach(trait => {
+            traitFrequency[trait] = (traitFrequency[trait] || 0) + 1;
+        });
+    });
+
+    // Identify common traits (appear in more than 40% of saints)
+    const commonTraitThreshold = genderFilteredSaints.length * 0.4;
+    const commonTraits = Object.keys(traitFrequency).filter(
+        trait => traitFrequency[trait] > commonTraitThreshold
+    );
 
     // Get user's top traits (sorted by frequency)
     const sortedTraits = Object.entries(traitCounts)
@@ -224,21 +240,32 @@ function calculateMatch(userGender) {
         .slice(0, 3)
         .map(([cat]) => cat);
 
-    // Filter saints by gender
-    const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === userGender);
+    console.log('User Top Traits:', sortedTraits.slice(0, 5).map(([t, c]) => `${t}(${c})`));
+    console.log('User Top Categories:', topCategories);
 
     // Score each saint with improved algorithm
     const saintScores = genderFilteredSaints.map(saint => {
         let score = 0;
         let directMatches = 0;
         let categoryMatches = 0;
+        let rareMatches = 0;
 
-        // 1. Direct trait matches (weighted by user's trait frequency)
+        // 1. Direct trait matches with rarity weighting
         saint.traits.forEach(trait => {
             if (traitCounts[trait]) {
-                // Higher weight for traits the user selected more often
-                score += traitCounts[trait] * 3;
+                const userTraitFreq = traitCounts[trait];
+                const isCommon = commonTraits.includes(trait);
+
+                // Rare traits get higher weight
+                const rarityBonus = isCommon ? 1 : 2;
+                const baseScore = userTraitFreq * 2 * rarityBonus;
+
+                score += baseScore;
                 directMatches++;
+
+                if (!isCommon) {
+                    rareMatches++;
+                }
             }
         });
 
@@ -246,53 +273,60 @@ function calculateMatch(userGender) {
         saint.traits.forEach(trait => {
             Object.keys(traitCategories).forEach(category => {
                 if (traitCategories[category].includes(trait) && topCategories.includes(category)) {
-                    // Bonus based on category rank (top category = 3, second = 2, third = 1)
                     const categoryRank = 3 - topCategories.indexOf(category);
-                    score += categoryRank * 2;
+                    score += categoryRank * 1.5;
                     categoryMatches++;
                 }
             });
         });
 
-        // 3. Bonus for having multiple direct matches (rewards well-rounded matches)
+        // 3. Bonus for having multiple direct matches
         if (directMatches >= 3) {
-            score += directMatches * 2;
+            score += directMatches * 1.5;
         }
 
-        // 4. Uniqueness bonus - saints with less common traits get a small boost
-        // This helps saints with distinctive traits compete with generic ones
-        const uniqueTraits = saint.traits.filter(trait =>
-            !['faith', 'courage', 'perseverance', 'wisdom', 'compassion', 'service'].includes(trait)
-        );
-        uniqueTraits.forEach(trait => {
-            if (traitCounts[trait]) {
-                score += 1.5;
-            }
-        });
+        // 4. Rare trait bonus - reward saints who match rare user traits
+        if (rareMatches > 0) {
+            score += rareMatches * 3;
+        }
 
-        return { saint, score, directMatches, categoryMatches };
+        // 5. Specificity bonus - reward exact trait combinations
+        const matchPercentage = directMatches / saint.traits.length;
+        if (matchPercentage > 0.5) {
+            score += matchPercentage * 5;
+        }
+
+        return { saint, score, directMatches, categoryMatches, rareMatches };
     });
 
     // Sort by score
     saintScores.sort((a, b) => b.score - a.score);
 
-    // If top scores are very close (within 10%), add slight randomization for variety
+    // Debug: Show top 5 candidates
+    console.log('Top 5 Candidates:');
+    saintScores.slice(0, 5).forEach((s, i) => {
+        console.log(`${i + 1}. ${s.saint.name} - Score: ${s.score.toFixed(1)} (Direct: ${s.directMatches}, Rare: ${s.rareMatches})`);
+    });
+
+    // Enhanced tie-breaking: consider top candidates within 20% of top score
     const topScore = saintScores[0].score;
-    const closeMatches = saintScores.filter(s => s.score >= topScore * 0.9);
+    const closeMatches = saintScores.filter(s => s.score >= topScore * 0.8);
 
     let selectedMatch;
     if (closeMatches.length > 1) {
-        // Among close matches, prefer those with more direct trait matches
+        // Among close matches, add meaningful randomization
         closeMatches.sort((a, b) => {
-            // Primary: direct matches, Secondary: small random factor
-            const aScore = a.directMatches * 10 + Math.random() * 3;
-            const bScore = b.directMatches * 10 + Math.random() * 3;
+            // Combine direct matches, rare matches, and random factor
+            const aScore = (a.directMatches * 5) + (a.rareMatches * 3) + (Math.random() * 10);
+            const bScore = (b.directMatches * 5) + (b.rareMatches * 3) + (Math.random() * 10);
             return bScore - aScore;
         });
         selectedMatch = closeMatches[0];
     } else {
         selectedMatch = saintScores[0];
     }
+
+    console.log('Selected Saint:', selectedMatch.saint.name);
 
     matchedSaint = selectedMatch.saint;
     matchExplanation = generateExplanation(traitCounts, matchedSaint);

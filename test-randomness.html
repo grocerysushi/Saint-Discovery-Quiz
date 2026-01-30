@@ -1,0 +1,480 @@
+< !DOCTYPE html >
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Saint Quiz Randomness Test</title>
+                    <style>
+                        body {
+                            font - family: 'Courier New', monospace;
+                        background: #1e1e1e;
+                        color: #d4d4d4;
+                        padding: 20px;
+                        line-height: 1.6;
+        }
+                        .container {
+                            max - width: 1200px;
+                        margin: 0 auto;
+        }
+                        h1 {
+                            color: #4ec9b0;
+                        border-bottom: 2px solid #4ec9b0;
+                        padding-bottom: 10px;
+        }
+                        h2 {
+                            color: #569cd6;
+                        margin-top: 30px;
+        }
+                        h3 {
+                            color: #dcdcaa;
+                        margin-top: 20px;
+        }
+                        .test-case {
+                            background: #252526;
+                        border-left: 4px solid #007acc;
+                        padding: 15px;
+                        margin: 15px 0;
+        }
+                        .matched-saint {
+                            color: #4ec9b0;
+                        font-weight: bold;
+                        font-size: 1.1em;
+        }
+                        .candidates {
+                            margin - left: 20px;
+                        color: #858585;
+        }
+                        .summary {
+                            background: #264f78;
+                        padding: 15px;
+                        margin: 20px 0;
+                        border-radius: 5px;
+        }
+                        button {
+                            background: #007acc;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        border-radius: 4px;
+                        margin: 10px 5px;
+        }
+                        button:hover {
+                            background: #005a9e;
+        }
+                        .success {color: #4ec9b0; }
+                        .warning {color: #ce9178; }
+                        .error {color: #f48771; }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <h1>🔍 Saint Discovery Quiz - Randomness Test</h1>
+                        <p>This test verifies that the quiz produces varied and appropriate results for different answer patterns.</p>
+
+                        <button onclick="runTests()">▶ Run All Tests</button>
+                        <button onclick="clearResults()">🗑 Clear Results</button>
+
+                        <div id="results"></div>
+                    </div>
+
+                    <script src="saints-data.js"></script>
+                    <script src="quiz.js"></script>
+                    <script>
+        // Test cases simulating different answer patterns
+                        const testCases = [
+                        {
+                            name: "Intellectual/Contemplative Path",
+                        description: "Emphasizes study, prayer, and contemplation",
+                        answers: [
+                        {traits: ["intellectual", "wisdom", "contemplation"] },
+                        {traits: ["contemplation", "prayer", "mysticism"] },
+                        {traits: ["intellectual", "wisdom", "faith"] },
+                        {traits: ["contemplation", "prayer", "mysticism"] },
+                        {traits: ["contemplation", "prayer", "perseverance"] },
+                        {traits: ["intellectual", "teaching", "wisdom"] },
+                        {traits: ["intellectual", "writing", "philosophy"] },
+                        {traits: ["intellectual", "wisdom", "teaching"] },
+                        {traits: ["intellectual", "teaching", "wisdom"] },
+                        {traits: ["contemplation", "prayer", "balance"] },
+                        {traits: ["intellectual", "wisdom", "faith"] },
+                        {traits: ["intellectual", "writing", "teaching"] }
+                        ]
+            },
+                        {
+                            name: "Service/Charity Path",
+                        description: "Emphasizes helping others and compassion",
+                        answers: [
+                        {traits: ["service", "compassion", "charity"] },
+                        {traits: ["service", "charity", "compassion"] },
+                        {traits: ["compassion", "humility", "service"] },
+                        {traits: ["service", "charity", "healing"] },
+                        {traits: ["service", "charity", "love"] },
+                        {traits: ["service", "humility", "generosity"] },
+                        {traits: ["charity", "service", "compassion"] },
+                        {traits: ["charity", "service", "compassion"] },
+                        {traits: ["compassion", "service", "healing"] },
+                        {traits: ["service", "healing", "charity"] },
+                        {traits: ["service", "charity", "love"] },
+                        {traits: ["service", "charity", "leadership"] }
+                        ]
+            },
+                        {
+                            name: "Courage/Leadership Path",
+                        description: "Emphasizes action, leadership, and justice",
+                        answers: [
+                        {traits: ["leadership", "courage", "activism"] },
+                        {traits: ["service", "charity", "compassion"] },
+                        {traits: ["courage", "conviction", "justice"] },
+                        {traits: ["service", "charity", "healing"] },
+                        {traits: ["endurance", "strength", "heroism"] },
+                        {traits: ["leadership", "organization", "discipline"] },
+                        {traits: ["courage", "faith", "conviction"] },
+                        {traits: ["conviction", "justice", "activism"] },
+                        {traits: ["courage", "conviction", "faith"] },
+                        {traits: ["courage", "faith", "hope"] },
+                        {traits: ["leadership", "courage", "perseverance"] },
+                        {traits: ["courage", "faith", "conviction"] }
+                        ]
+            },
+                        {
+                            name: "Nature/Simplicity Path",
+                        description: "Emphasizes nature, simplicity, and peace",
+                        answers: [
+                        {traits: ["intellectual", "wisdom", "contemplation"] },
+                        {traits: ["service", "charity", "compassion"] },
+                        {traits: ["compassion", "humility", "service"] },
+                        {traits: ["nature", "simplicity", "animals"] },
+                        {traits: ["perseverance", "patience", "hope"] },
+                        {traits: ["service", "humility", "generosity"] },
+                        {traits: ["charity", "service", "humility"] },
+                        {traits: ["contemplation", "mysticism", "prayer"] },
+                        {traits: ["patience", "perseverance", "hope"] },
+                        {traits: ["nature", "simplicity", "animals"] },
+                        {traits: ["faith", "courage", "hope"] },
+                        {traits: ["love", "humility", "simplicity"] }
+                        ]
+            },
+                        {
+                            name: "Missionary/Evangelization Path",
+                        description: "Emphasizes spreading faith and courage",
+                        answers: [
+                        {traits: ["leadership", "courage", "activism"] },
+                        {traits: ["service", "charity", "compassion"] },
+                        {traits: ["courage", "conviction", "justice"] },
+                        {traits: ["community", "preaching", "evangelization"] },
+                        {traits: ["endurance", "strength", "heroism"] },
+                        {traits: ["leadership", "organization", "discipline"] },
+                        {traits: ["courage", "faith", "conviction"] },
+                        {traits: ["missionary", "preaching", "courage"] },
+                        {traits: ["courage", "conviction", "faith"] },
+                        {traits: ["missionary", "evangelization", "adventure"] },
+                        {traits: ["leadership", "courage", "perseverance"] },
+                        {traits: ["courage", "faith", "conviction"] }
+                        ]
+            }
+                        ];
+
+                        function runTests() {
+            const resultsDiv = document.getElementById('results');
+                        resultsDiv.innerHTML = '<h2>Running Tests...</h2>';
+
+                        let html = '';
+                        const results = {male: { }, female: { } };
+
+            // Test both genders
+            ['Male', 'Female'].forEach(gender => {
+                            html += `<h2>═══════════════════════════════════════════════════════</h2>`;
+                        html += `<h2>Testing ${gender} Saints</h2>`;
+                        html += `<h2>═══════════════════════════════════════════════════════</h2>`;
+                
+                testCases.forEach(testCase => {
+                            // Simulate the quiz with this answer pattern
+                            userAnswers = testCase.answers.map((answer, index) => ({
+                                questionId: index + 1,
+                                answerIndex: 0,
+                                traits: answer.traits
+                            }));
+
+                        // Calculate match
+                        calculateMatch(gender);
+
+                        // Store result
+                        results[gender.toLowerCase()][testCase.name] = matchedSaint.name;
+
+                        // Display result
+                        html += `<div class="test-case">`;
+                            html += `<h3>📋 ${testCase.name}</h3>`;
+                            html += `<p style="color: #858585;">${testCase.description}</p>`;
+                            html += `<p class="matched-saint">✓ Matched Saint: ${matchedSaint.name}</p>`;
+                            html += `<p style="color: #858585; font-size: 0.9em;">Feast Day: ${matchedSaint.feastDay} | ${matchedSaint.knownFor}</p>`;
+                            html += `</div>`;
+                });
+            });
+
+                        // Summary
+                        html += `<div class="summary">`;
+                            html += `<h2>📊 Test Summary</h2>`;
+
+                            // Check for variety in male results
+                            const maleResults = Object.values(results.male);
+                            const uniqueMale = new Set(maleResults);
+                            const femaleResults = Object.values(results.female);
+                            const uniqueFemale = new Set(femaleResults);
+
+                            html += `<p><strong>Male Saints:</strong></p>`;
+                            html += `<ul>`;
+            maleResults.forEach((saint, i) => {
+                                    html += `<li>${testCases[i].name}: <span class="matched-saint">${saint}</span></li>`;
+            });
+                                html += `</ul>`;
+                            html += `<p class="${uniqueMale.size >= 3 ? 'success' : 'warning'}">`;
+                                html += `✓ Unique matches: ${uniqueMale.size} out of ${maleResults.length} test cases`;
+                                html += `</p>`;
+
+                            html += `<p><strong>Female Saints:</strong></p>`;
+                            html += `<ul>`;
+            femaleResults.forEach((saint, i) => {
+                                    html += `<li>${testCases[i].name}: <span class="matched-saint">${saint}</span></li>`;
+            });
+                                html += `</ul>`;
+                            html += `<p class="${uniqueFemale.size >= 3 ? 'success' : 'warning'}">`;
+                                html += `✓ Unique matches: ${uniqueFemale.size} out of ${femaleResults.length} test cases`;
+                                html += `</p>`;
+
+                            html += `<h3>Expected Behavior:</h3>`;
+                            html += `<ul>`;
+                                html += `<li class="${uniqueMale.size >= 3 ? 'success' : 'error'}">✓ Each test case should produce DIFFERENT saint matches (at least 3 unique)</li>`;
+                                html += `<li class="success">✓ Male and Female tests should show different saints</li>`;
+                                html += `<li class="success">✓ Intellectual path should match contemplative/scholarly saints</li>`;
+                                html += `<li class="success">✓ Service path should match charitable/compassionate saints</li>`;
+                                html += `<li class="success">✓ Courage path should match bold/leadership saints</li>`;
+                                html += `</ul>`;
+            
+            if (uniqueMale.size >= 3 && uniqueFemale.size >= 3) {
+                                html += `<p class="success" style="font-size: 1.2em; font-weight: bold;">✅ TEST PASSED: Algorithm shows good variety!</p>`;
+            } else {
+                                html += `<p class="warning" style="font-size: 1.2em; font-weight: bold;">⚠️ TEST NEEDS IMPROVEMENT: Not enough variety in results</p>`;
+            }
+
+                            html += `</div>`;
+
+                        resultsDiv.innerHTML = html;
+        }
+
+                        function clearResults() {
+                            document.getElementById('results').innerHTML = '';
+        }
+
+        // Auto-run tests on page load
+        window.addEventListener('load', () => {
+                            setTimeout(runTests, 500);
+        });
+                    </script>
+                </body>
+            </html>
+
+
+// Simulate different answer patterns
+            const testCases = [
+            {
+                name: "Intellectual/Contemplative Path",
+            traits: ["intellectual", "contemplation", "wisdom", "teaching", "prayer", "mysticism", "intellectual", "wisdom", "contemplation", "prayer", "intellectual", "teaching"]
+    },
+            {
+                name: "Service/Charity Path",
+            traits: ["service", "charity", "compassion", "service", "healing", "compassion", "service", "charity", "service", "compassion", "charity", "service"]
+    },
+            {
+                name: "Courage/Leadership Path",
+            traits: ["courage", "leadership", "conviction", "courage", "activism", "leadership", "courage", "conviction", "leadership", "courage", "justice", "leadership"]
+    },
+            {
+                name: "Nature/Simplicity Path",
+            traits: ["nature", "simplicity", "animals", "nature", "peace", "simplicity", "nature", "poverty", "simplicity", "nature", "animals", "peace"]
+    },
+            {
+                name: "Mixed/Balanced Path",
+            traits: ["faith", "service", "intellectual", "courage", "compassion", "wisdom", "perseverance", "love", "teaching", "hope", "charity", "prayer"]
+    }
+            ];
+
+            // Trait categories (copied from saints-data.js)
+            const traitCategories = {
+                intellectual: ["intellectual", "teaching", "writing", "wisdom", "philosophy", "seeking", "introspection", "mentorship"],
+            contemplative: ["contemplation", "mysticism", "prayer", "meditation", "devotion", "peace", "balance"],
+            service: ["service", "charity", "compassion", "healing", "generosity", "organization"],
+            leadership: ["leadership", "reform", "activism", "conviction", "discipline", "justice"],
+            missionary: ["missionary", "adventure", "cross-cultural", "preaching", "evangelization"],
+            creative: ["arts", "music", "poetry", "nature", "beauty", "animals"],
+            humble: ["humility", "simplicity", "obedience", "poverty", "patience"],
+            family: ["family", "motherhood", "nurturing", "protection", "children", "youth", "community"],
+            transformative: ["transformation", "forgiveness", "hope", "perseverance", "conversion"],
+            courageous: ["courage", "faith", "strength", "sacrifice", "endurance", "heroism"],
+            warrior: ["warrior", "military", "protection", "justice", "chivalry", "spiritual-warfare"],
+            joyful: ["joy", "innovation", "youth", "education", "love"]
+};
+
+            function calculateMatch(userTraits, userGender) {
+    // Count trait frequencies in user's answers
+    const traitCounts = { };
+    userTraits.forEach(trait => {
+                traitCounts[trait] = (traitCounts[trait] || 0) + 1;
+    });
+
+            // Calculate trait rarity across all saints (for weighting)
+            const traitFrequency = { };
+    const genderFilteredSaints = saintsDatabase.filter(saint => saint.gender === userGender);
+
+    genderFilteredSaints.forEach(saint => {
+                saint.traits.forEach(trait => {
+                    traitFrequency[trait] = (traitFrequency[trait] || 0) + 1;
+                });
+    });
+
+            // Identify common traits (appear in more than 40% of saints)
+            const commonTraitThreshold = genderFilteredSaints.length * 0.4;
+            const commonTraits = Object.keys(traitFrequency).filter(
+        trait => traitFrequency[trait] > commonTraitThreshold
+            );
+
+            // Get user's top traits (sorted by frequency)
+            const sortedTraits = Object.entries(traitCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+            // Identify the user's dominant trait categories
+            const userCategories = { };
+    sortedTraits.forEach(([trait, count]) => {
+                Object.keys(traitCategories).forEach(category => {
+                    if (traitCategories[category].includes(trait)) {
+                        userCategories[category] = (userCategories[category] || 0) + count;
+                    }
+                });
+    });
+
+            // Get user's top 3 categories
+            const topCategories = Object.entries(userCategories)
+        .sort((a, b) => b[1] - a[1])
+            .slice(0, 3)
+        .map(([cat]) => cat);
+
+    // Score each saint with improved algorithm
+    const saintScores = genderFilteredSaints.map(saint => {
+                let score = 0;
+            let directMatches = 0;
+            let categoryMatches = 0;
+            let rareMatches = 0;
+
+        // 1. Direct trait matches with rarity weighting
+        saint.traits.forEach(trait => {
+            if (traitCounts[trait]) {
+                const userTraitFreq = traitCounts[trait];
+            const isCommon = commonTraits.includes(trait);
+
+            // Rare traits get higher weight
+            const rarityBonus = isCommon ? 1 : 2;
+            const baseScore = userTraitFreq * 2 * rarityBonus;
+
+            score += baseScore;
+            directMatches++;
+
+            if (!isCommon) {
+                rareMatches++;
+                }
+            }
+        });
+
+        // 2. Bonus for matching user's top categories
+        saint.traits.forEach(trait => {
+                Object.keys(traitCategories).forEach(category => {
+                    if (traitCategories[category].includes(trait) && topCategories.includes(category)) {
+                        const categoryRank = 3 - topCategories.indexOf(category);
+                        score += categoryRank * 1.5;
+                        categoryMatches++;
+                    }
+                });
+        });
+
+        // 3. Bonus for having multiple direct matches
+        if (directMatches >= 3) {
+                score += directMatches * 1.5;
+        }
+
+        // 4. Rare trait bonus
+        if (rareMatches > 0) {
+                score += rareMatches * 3;
+        }
+
+            // 5. Specificity bonus
+            const matchPercentage = directMatches / saint.traits.length;
+        if (matchPercentage > 0.5) {
+                score += matchPercentage * 5;
+        }
+
+            return {saint, score, directMatches, categoryMatches, rareMatches};
+    });
+
+    // Sort by score
+    saintScores.sort((a, b) => b.score - a.score);
+
+            // Enhanced tie-breaking
+            const topScore = saintScores[0].score;
+    const closeMatches = saintScores.filter(s => s.score >= topScore * 0.8);
+
+            let selectedMatch;
+    if (closeMatches.length > 1) {
+                closeMatches.sort((a, b) => {
+                    const aScore = (a.directMatches * 5) + (a.rareMatches * 3) + (Math.random() * 10);
+                    const bScore = (b.directMatches * 5) + (b.rareMatches * 3) + (Math.random() * 10);
+                    return bScore - aScore;
+                });
+            selectedMatch = closeMatches[0];
+    } else {
+                selectedMatch = saintScores[0];
+    }
+
+            return {
+                saint: selectedMatch.saint,
+            score: selectedMatch.score,
+        topCandidates: saintScores.slice(0, 5).map(s => ({
+                name: s.saint.name,
+            score: s.score.toFixed(1),
+            directMatches: s.directMatches,
+            rareMatches: s.rareMatches
+        }))
+    };
+}
+
+            // Run tests
+            console.log("=".repeat(80));
+            console.log("SAINT DISCOVERY QUIZ - RANDOMNESS TEST");
+            console.log("=".repeat(80));
+
+["Male", "Female"].forEach(gender => {
+                console.log(`\n${"=".repeat(80)}`);
+            console.log(`TESTING ${gender.toUpperCase()} SAINTS`);
+            console.log("=".repeat(80));
+
+    testCases.forEach(testCase => {
+                console.log(`\n--- ${testCase.name} ---`);
+            const result = calculateMatch(testCase.traits, gender);
+            console.log(`✓ Matched Saint: ${result.saint.name}`);
+            console.log(`  Score: ${result.score.toFixed(1)}`);
+            console.log(`  Top 5 Candidates:`);
+        result.topCandidates.forEach((c, i) => {
+                console.log(`    ${i + 1}. ${c.name} - Score: ${c.score} (Direct: ${c.directMatches}, Rare: ${c.rareMatches})`);
+        });
+    });
+});
+
+            console.log(`\n${"=".repeat(80)}`);
+            console.log("TEST COMPLETE");
+            console.log("=".repeat(80));
+            console.log("\nExpected Results:");
+            console.log("- Each test case should produce DIFFERENT saint matches");
+            console.log("- Male and Female tests should show different saints");
+            console.log("- Intellectual path should match contemplative/scholarly saints");
+            console.log("- Service path should match charitable/compassionate saints");
+            console.log("- Courage path should match bold/leadership saints");
+            console.log("- Nature path should match saints connected to creation/simplicity");
