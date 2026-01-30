@@ -4,8 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint Discovery Quiz - Find Your Patron Saint</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Saint Discovery Quiz - Find Your Patron Saint | Catholic Personality Quiz</title>
+    <meta name="title" content="Saint Discovery Quiz - Find Your Patron Saint | Catholic Personality Quiz">
+    <meta name="description"
+        content="Discover which Catholic Saint resonates with your personality through our AI-powered quiz. Answer 12 thoughtful questions to find your patron saint match from 45+ saints.">
+    <meta name="keywords"
+        content="saint quiz, patron saint quiz, Catholic quiz, saint personality test, which saint am I, Catholic personality quiz, find your patron saint, Catholic saints">
+    <meta name="author" content="Saint Discovery Quiz">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://saintdiscoveryquiz.com/">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saintdiscoveryquiz.com/">
+    <meta property="og:title" content="Saint Discovery Quiz - Find Your Patron Saint">
+    <meta property="og:description"
+        content="Discover which Catholic Saint resonates with your personality through our AI-powered quiz. Find your patron saint match today!">
+    <meta property="og:image" content="https://saintdiscoveryquiz.com/favicon.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saintdiscoveryquiz.com/">
+    <meta property="twitter:title" content="Saint Discovery Quiz - Find Your Patron Saint">
+    <meta property="twitter:description"
+        content="Discover which Catholic Saint resonates with your personality through our AI-powered quiz.">
+    <meta property="twitter:image" content="https://saintdiscoveryquiz.com/favicon.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "Saint Discovery Quiz",
+      "description": "Discover which Catholic Saint resonates with your personality through an AI-powered personality quiz",
+      "url": "https://saintdiscoveryquiz.com",
+      "image": "https://saintdiscoveryquiz.com/favicon.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Saint Discovery Quiz"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Catholic Saints",
+        "description": "Patron Saints and their virtues"
+      },
+      "educationalLevel": "All ages",
+      "inLanguage": "en-US",
+      "isAccessibleForFree": true,
+      "hasPart": {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "text": "Personality assessment questions about spiritual preferences and virtues"
+      }
+    }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,10 +77,10 @@
 </head>
 
 <body>
-    <div class="container">
+    <main role="main" class="container">
         <!-- Landing Page -->
         <section id="landing" class="screen active">
-            <div class="decorative-cross">&#10013;</div>
+            <div class="decorative-cross" aria-label="Christian cross symbol">&#10013;</div>
             <h1>Saint Discovery Quiz</h1>
             <div class="divider"></div>
             <p class="subtitle">Discover which Catholic Saint resonates with your spirit</p>
@@ -123,10 +185,11 @@
             </div>
         </section>
 
-    </div>
+        </div>
 
-    <script src="saints-data.js"></script>
-    <script src="quiz.js"></script>
+        <script src="saints-data.js"></script>
+        <script src="quiz.js"></script>
+    </main>
 </body>
 
 </html>
