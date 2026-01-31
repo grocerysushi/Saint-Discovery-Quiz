@@ -219,6 +219,69 @@
             background: var(--gold);
             color: var(--primary-navy);
         }
+        /* Home Button */
+        .home-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-navy);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            text-decoration: none;
+        }
+        .home-btn:hover {
+            background: var(--primary-navy-light);
+            transform: scale(1.1);
+        }
+        .home-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            color: var(--primary-navy);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        .back-to-top:hover {
+            background: var(--gold-light);
+            transform: scale(1.1);
+        }
+        .back-to-top svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-navy);
+        }
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
@@ -235,6 +298,16 @@
 </head>
 
 <body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn" title="Back to Quiz" aria-label="Back to Quiz">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+    </button>
+
     <main role="main" class="container" style="max-width: 1200px;">
         <header class="page-header">
             <div class="decorative-cross">&#10013;</div>
@@ -375,6 +448,19 @@
 
             renderVirtueButtons();
             renderVirtueSections();
+
+            // Back to Top functionality
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
         });
     </script>
 </body>
