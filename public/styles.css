@@ -139,6 +139,92 @@ h1, h2, h3, h4 {
     font-style: italic;
 }
 
+/* Saint of the Day Widget */
+.saint-of-day {
+    background: linear-gradient(145deg, var(--cream-light) 0%, #f0ebe0 100%);
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 550px;
+    text-align: left;
+}
+
+.sotd-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sotd-label {
+    background: var(--gold);
+    color: var(--primary-navy);
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sotd-date {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
+.sotd-name {
+    font-size: 1.5rem;
+    color: var(--primary-navy);
+    margin-bottom: 8px;
+}
+
+.sotd-feast {
+    color: var(--gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.sotd-known {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.sotd-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--primary-navy);
+    font-size: 1.05rem;
+    padding-top: 12px;
+    border-top: 1px solid var(--border-light);
+    line-height: 1.5;
+}
+
+.sotd-quote:empty {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .saint-of-day {
+        padding: 20px;
+        margin: 25px 0;
+    }
+
+    .sotd-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .sotd-name {
+        font-size: 1.3rem;
+    }
+}
+
 /* Buttons */
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%);

@@ -131,7 +131,42 @@ let matchExplanation = "";
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     // No form to attach - gender buttons handle submission
+
+    // Initialize Saint of the Day widget
+    initSaintOfTheDay();
 });
+
+// Saint of the Day - deterministic selection based on date
+function initSaintOfTheDay() {
+    const saintOfDayWidget = document.getElementById('saintOfDay');
+    if (!saintOfDayWidget || typeof saintsDatabase === 'undefined') return;
+
+    // Get today's date components for deterministic selection
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+
+    // Use day of year to pick a saint (same saint for everyone on the same day)
+    const saintIndex = dayOfYear % saintsDatabase.length;
+    const saint = saintsDatabase[saintIndex];
+
+    // Format today's date
+    const dateOptions = { weekday: 'long', month: 'long', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', dateOptions);
+
+    // Populate the widget
+    document.getElementById('sotdDate').textContent = formattedDate;
+    document.getElementById('sotdName').textContent = saint.name;
+    document.getElementById('sotdFeast').textContent = `Feast Day: ${saint.feastDay}`;
+    document.getElementById('sotdKnown').textContent = saint.knownFor;
+
+    // Add quote if available
+    const quoteEl = document.getElementById('sotdQuote');
+    if (saint.quote && saint.quote.trim()) {
+        quoteEl.textContent = `"${saint.quote}"`;
+    } else {
+        quoteEl.textContent = '';
+    }
+}
 
 // Start Quiz
 function startQuiz() {
