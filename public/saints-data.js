@@ -1,815 +1,2737 @@
 // Complete Saints Database from Catholic_Saints_Comprehensive.xlsx
+// Total: 137 saints
+
 const saintsDatabase = [
     {
-        name: "St. Peter",
-        feastDay: "June 29",
-        knownFor: "First Pope, leader of the apostles, martyred in Rome",
-        patronOf: "Fishermen, popes, net makers",
-        dates: "d. c. 64 AD",
-        origin: "Galilee/Rome",
-        gender: "Male",
-        traits: ["leadership", "faith", "courage", "perseverance", "humility"],
-        quotes: [
-            "Lord, you know all things; you know that I love you.",
-            "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have.",
-            "Cast all your anxiety on him because he cares for you."
-        ]
-    },
-    {
-        name: "St. Paul",
-        feastDay: "June 29",
-        knownFor: "Apostle to the Gentiles, wrote much of the New Testament",
-        patronOf: "Missionaries, writers, tentmakers",
-        dates: "d. c. 67 AD",
-        origin: "Tarsus/Rome",
-        gender: "Male",
-        traits: ["intellectual", "missionary", "writing", "transformation", "courage"],
-        quotes: [
-            "I can do all things through Christ who strengthens me.",
-            "Faith, hope, and love remain, but the greatest of these is love.",
-            "For to me, to live is Christ and to die is gain."
-        ]
-    },
-    {
-        name: "St. Mary Magdalene",
-        feastDay: "July 22",
-        knownFor: "First witness to the Resurrection, devoted follower of Jesus",
-        patronOf: "Penitent sinners, women, pharmacists",
-        dates: "1st century",
-        origin: "Magdala",
-        gender: "Female",
-        traits: ["devotion", "transformation", "faith", "perseverance", "love"],
-        quotes: [
-            "I have seen the Lord!",
-            "Love is the greatest gift we can give and receive.",
-            "In seeking Christ, we find ourselves transformed."
-        ]
-    },
-    {
-        name: "St. Joseph",
-        feastDay: "March 19",
-        knownFor: "Foster father of Jesus, husband of Mary, patron of workers",
-        patronOf: "Workers, fathers, dying, carpenters",
-        dates: "1st century",
-        origin: "Nazareth",
-        gender: "Male",
-        traits: ["humility", "service", "family", "work", "protection"],
-        quotes: [
-            "Do whatever He tells you.",
-            "In silence and humble work, we find our greatest purpose.",
-            "A father's love is shown through faithful presence and quiet sacrifice."
-        ]
-    },
-    {
-        name: "St. Francis of Assisi",
-        feastDay: "October 4",
-        knownFor: "Founder of Franciscans, loved nature and animals, embraced poverty",
-        patronOf: "Animals, environment, merchants, Italy",
-        dates: "1181-1226",
-        origin: "Italy",
-        gender: "Male",
-        traits: ["nature", "simplicity", "poverty", "peace", "animals"],
-        quotes: [
-            "Start by doing what is necessary, then do what is possible, and suddenly you are doing the impossible.",
-            "Preach the Gospel at all times. When necessary, use words.",
+        "name": "St. Peter",
+        "feastDay": "June 29",
+        "knownFor": "First Pope, leader of the apostles, martyred in Rome",
+        "patronOf": "Fishermen, popes, net makers",
+        "dates": "d. c. 64 AD",
+        "origin": "Galilee/Rome",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "conviction",
+            "missionary",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
             "Lord, make me an instrument of your peace.",
-            "It is in giving that we receive."
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Clare of Assisi",
-        feastDay: "August 11",
-        knownFor: "Founder of Poor Clares, follower of St. Francis",
-        patronOf: "Television, eye disease, good weather",
-        dates: "1194-1253",
-        origin: "Italy",
-        gender: "Female",
-        traits: ["contemplation", "poverty", "faith", "perseverance", "devotion"],
-        quotes: [
-            "We become what we love and who we love shapes what we become.",
-            "Love Him totally who gave Himself totally for your love.",
-            "Place your mind before the mirror of eternity."
+        "name": "St. Paul",
+        "feastDay": "June 29",
+        "knownFor": "Apostle to the Gentiles, wrote much of the New Testament",
+        "patronOf": "Missionaries, writers, tentmakers",
+        "dates": "d. c. 67 AD",
+        "origin": "Tarsus/Rome",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "missionary",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Anthony of Padua",
-        feastDay: "June 13",
-        knownFor: "Franciscan preacher, known for miracles and finding lost items",
-        patronOf: "Lost items, poor people, travelers",
-        dates: "1195-1231",
-        origin: "Portugal/Italy",
-        gender: "Male",
-        traits: ["preaching", "miracles", "service", "intellectual", "compassion"],
-        quotes: [
-            "Actions speak louder than words; let your words teach and your actions speak.",
-            "The spirit of humility is sweeter than honey.",
-            "Earthly riches are like the reed. Its roots are sunk in the swamp, and its exterior is fair to behold; but inside it is hollow."
+        "name": "St. Mary Magdalene",
+        "feastDay": "July 22",
+        "knownFor": "First witness to the Resurrection, devoted follower of Jesus",
+        "patronOf": "Penitent sinners, women, pharmacists",
+        "dates": "1st century",
+        "origin": "Magdala",
+        "gender": "Female",
+        "traits": [
+            "devotion",
+            "forgiveness",
+            "faith",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Thomas Aquinas",
-        feastDay: "January 28",
-        knownFor: "Dominican theologian, philosopher, wrote Summa Theologica",
-        patronOf: "Students, scholars, universities",
-        dates: "1225-1274",
-        origin: "Italy",
-        gender: "Male",
-        traits: ["intellectual", "contemplation", "teaching", "writing", "wisdom"],
-        quotes: [
-            "To one who has faith, no explanation is necessary. To one without faith, no explanation is possible.",
-            "The things that we love tell us what we are.",
-            "There is nothing on this earth more to be prized than true friendship.",
-            "Wonder is the desire for knowledge."
+        "name": "St. Joseph",
+        "feastDay": "March 19",
+        "knownFor": "Foster father of Jesus, husband of Mary, patron of workers",
+        "patronOf": "Workers, fathers, dying, carpenters",
+        "dates": "1st century",
+        "origin": "Nazareth",
+        "gender": "Male",
+        "traits": [
+            "family",
+            "intercession",
+            "work"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Catherine of Siena",
-        feastDay: "April 29",
-        knownFor: "Doctor of the Church, mystic, influenced papal return to Rome",
-        patronOf: "Europe, fire prevention, nurses",
-        dates: "1347-1380",
-        origin: "Italy",
-        gender: "Female",
-        traits: ["mysticism", "leadership", "courage", "activism", "contemplation"],
-        quotes: [
-            "Be who God meant you to be and you will set the world on fire.",
-            "Nothing great is ever achieved without much enduring.",
-            "Proclaim the truth and do not be silent through fear."
+        "name": "St. Francis of Assisi",
+        "feastDay": "October 4",
+        "knownFor": "Founder of Franciscans, loved nature and animals, embraced poverty",
+        "patronOf": "Animals, environment, merchants, Italy",
+        "dates": "1181-1226",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "poverty",
+            "nature",
+            "animals",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Joan of Arc",
-        feastDay: "May 30",
-        knownFor: "Led French army to victory, martyred at 19",
-        patronOf: "France, soldiers, prisoners",
-        dates: "1412-1431",
-        origin: "France",
-        gender: "Female",
-        traits: ["courage", "leadership", "faith", "perseverance", "conviction"],
-        quotes: [
-            "I am not afraid; I was born to do this.",
-            "Act, and God will act.",
-            "One life is all we have and we live it as we believe in living it."
+        "name": "St. Clare of Assisi",
+        "feastDay": "August 11",
+        "knownFor": "Founder of Poor Clares, follower of St. Francis",
+        "patronOf": "Television, eye disease, good weather",
+        "dates": "1194-1253",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "devotion",
+            "service",
+            "charity",
+            "compassion",
+            "generosity"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Teresa of Avila",
-        feastDay: "October 15",
-        knownFor: "Carmelite reformer, mystic, Doctor of the Church",
-        patronOf: "Headache sufferers, Spain, lace makers",
-        dates: "1515-1582",
-        origin: "Spain",
-        gender: "Female",
-        traits: ["mysticism", "contemplation", "reform", "writing", "perseverance"],
-        quotes: [
-            "Let nothing disturb you, let nothing frighten you. All things pass away: God never changes.",
-            "Prayer is an act of love; words are not needed.",
-            "God alone suffices."
+        "name": "St. Anthony of Padua",
+        "feastDay": "June 13",
+        "knownFor": "Franciscan preacher, known for miracles and finding lost items",
+        "patronOf": "Lost items, poor people, travelers",
+        "dates": "1195-1231",
+        "origin": "Portugal/Italy",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "generosity",
+            "preaching"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Ignatius of Loyola",
-        feastDay: "July 31",
-        knownFor: "Founder of the Jesuits, wrote Spiritual Exercises",
-        patronOf: "Soldiers, educators, retreats",
-        dates: "1491-1556",
-        origin: "Spain",
-        gender: "Male",
-        traits: ["leadership", "education", "transformation", "discipline", "service"],
-        quotes: [
-            "Go forth and set the world on fire.",
-            "Teach us to give and not to count the cost.",
-            "In all things, seek to find God."
+        "name": "St. Thomas Aquinas",
+        "feastDay": "January 28",
+        "knownFor": "Dominican theologian, philosopher, wrote Summa Theologica",
+        "patronOf": "Students, scholars, universities",
+        "dates": "1225-1274",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "writing",
+            "wisdom",
+            "youth"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Francis Xavier",
-        feastDay: "December 3",
-        knownFor: "Jesuit missionary to Asia, brought Christianity to India and Japan",
-        patronOf: "Missionaries, navigators, foreign missions",
-        dates: "1506-1552",
-        origin: "Spain/Asia",
-        gender: "Male",
-        traits: ["missionary", "adventure", "courage", "perseverance", "cross-cultural"],
-        quotes: [
-            "It is not the actual physical exertion that counts towards one's progress, nor the nature of the task, but by the spirit of faith with which it is undertaken.",
-            "Give me the grace to do as you command, and command me to do what you will!",
-            "Tell the students to give up their small ambitions and come eastward to preach the Gospel of Christ."
+        "name": "St. Catherine of Siena",
+        "feastDay": "April 29",
+        "knownFor": "Doctor of the Church, mystic, influenced papal return to Rome",
+        "patronOf": "Europe, fire prevention, nurses",
+        "dates": "1347-1380",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "contemplation",
+            "mysticism",
+            "healing"
+        ],
+        "quotes": [
+            "Prayer is the raising of one's mind and heart to God.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. John of the Cross",
-        feastDay: "December 14",
-        knownFor: "Carmelite mystic, poet, wrote Dark Night of the Soul",
-        patronOf: "Poets, mystics, contemplatives",
-        dates: "1542-1591",
-        origin: "Spain",
-        gender: "Male",
-        traits: ["mysticism", "contemplation", "poetry", "perseverance", "wisdom"],
-        quotes: [
-            "In the evening of life, we will be judged on love alone.",
-            "Where there is no love, put love, and you will find love.",
-            "The soul that is attached to anything, however much good there may be in it, will not arrive at the liberty of divine union."
+        "name": "St. Joan of Arc",
+        "feastDay": "May 30",
+        "knownFor": "Led French army to victory, martyred at 19",
+        "patronOf": "France, soldiers, prisoners",
+        "dates": "1412-1431",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "leadership",
+            "activism",
+            "conviction",
+            "courage",
+            "strength"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Therese of Lisieux",
-        feastDay: "October 1",
-        knownFor: "Carmelite nun, 'Little Flower,' taught the Little Way",
-        patronOf: "Missionaries, florists, tuberculosis",
-        dates: "1873-1897",
-        origin: "France",
-        gender: "Female",
-        traits: ["simplicity", "love", "humility", "faith", "joy"],
-        quotes: [
-            "Miss no single opportunity of making some small sacrifice, here by a smiling look, there by a kindly word.",
-            "I will spend my heaven doing good on earth.",
-            "The splendor of the rose and the whiteness of the lily do not rob the little violet of its scent nor the daisy of its simple charm."
+        "name": "St. Teresa of Ávila",
+        "feastDay": "October 15",
+        "knownFor": "Carmelite reformer, mystic, Doctor of the Church",
+        "patronOf": "Headache sufferers, Spain, lace makers",
+        "dates": "1515-1582",
+        "origin": "Spain",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "contemplation",
+            "mysticism",
+            "reform"
+        ],
+        "quotes": [
+            "Prayer is the raising of one's mind and heart to God.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Patrick",
-        feastDay: "March 17",
-        knownFor: "Missionary to Ireland, used shamrock to explain Trinity",
-        patronOf: "Ireland, engineers, excluded people",
-        dates: "c. 385-461",
-        origin: "Britain/Ireland",
-        gender: "Male",
-        traits: ["missionary", "perseverance", "teaching", "evangelization", "forgiveness"],
-        quotes: [
-            "Christ beside me, Christ before me, Christ behind me, Christ within me.",
-            "I arise today through the strength of heaven.",
-            "If I be worthy, I live for my God to teach the heathen, even though they may despise me."
+        "name": "St. Ignatius of Loyola",
+        "feastDay": "July 31",
+        "knownFor": "Founder of the Jesuits, wrote Spiritual Exercises",
+        "patronOf": "Soldiers, educators, retreats",
+        "dates": "1491-1556",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "writing",
+            "strength",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Augustine of Hippo",
-        feastDay: "August 28",
-        knownFor: "Bishop, philosopher, wrote Confessions and City of God",
-        patronOf: "Theologians, printers, brewers",
-        dates: "354-430",
-        origin: "North Africa",
-        gender: "Male",
-        traits: ["philosophy", "transformation", "writing", "seeking", "introspection"],
-        quotes: [
-            "Our hearts are restless until they rest in you.",
-            "The world is a book and those who do not travel read only one page.",
-            "Late have I loved you, O Beauty ever ancient, ever new, late have I loved you!"
+        "name": "St. Francis Xavier",
+        "feastDay": "December 3",
+        "knownFor": "Jesuit missionary to Asia, brought Christianity to India and Japan",
+        "patronOf": "Missionaries, navigators, foreign missions",
+        "dates": "1506-1552",
+        "origin": "Spain/Asia",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "adventure",
+            "cross-cultural",
+            "evangelization"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Benedict",
-        feastDay: "July 11",
-        knownFor: "Founder of Benedictines, wrote the Rule of St. Benedict",
-        patronOf: "Europe, monks, students, poison sufferers",
-        dates: "c. 480-547",
-        origin: "Italy",
-        gender: "Male",
-        traits: ["contemplation", "discipline", "community", "balance", "wisdom"],
-        quotes: [
-            "Ora et labora - Pray and work.",
-            "Listen with the ear of your heart.",
-            "Idleness is the enemy of the soul."
+        "name": "St. John of the Cross",
+        "feastDay": "December 14",
+        "knownFor": "Carmelite mystic, poet, wrote Dark Night of the Soul",
+        "patronOf": "Poets, mystics, contemplatives",
+        "dates": "1542-1591",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "contemplation",
+            "mysticism",
+            "arts"
+        ],
+        "quotes": [
+            "Prayer is the raising of one's mind and heart to God.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Scholastica",
-        feastDay: "February 10",
-        knownFor: "Twin sister of St. Benedict, founded Benedictine nuns",
-        patronOf: "Nuns, education, convulsive children",
-        dates: "c. 480-543",
-        origin: "Italy",
-        gender: "Female",
-        traits: ["contemplation", "devotion", "community", "prayer", "love"],
-        quotes: [
-            "You see, I asked you and you would not listen; so I asked my God and He did listen.",
-            "Love prevails where reason cannot reach.",
-            "The heart that loves is always young in the eyes of God."
+        "name": "St. Thérèse of Lisieux",
+        "feastDay": "October 1",
+        "knownFor": "Carmelite nun, \"Little Flower,\" taught the Little Way",
+        "patronOf": "Missionaries, florists, tuberculosis",
+        "dates": "1873-1897",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "simplicity",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Nicholas",
-        feastDay: "December 6",
-        knownFor: "Bishop of Myra, known for generosity to the poor",
-        patronOf: "Children, sailors, merchants, Russia",
-        dates: "c. 270-343",
-        origin: "Turkey",
-        gender: "Male",
-        traits: ["generosity", "compassion", "protection", "children", "service"],
-        quotes: [
-            "The giver of every good and perfect gift has called upon us to mimic His giving, by grace, through faith.",
-            "True generosity flows from a heart transformed by love.",
-            "What we do for others in secret, God rewards openly."
+        "name": "St. Patrick",
+        "feastDay": "March 17",
+        "knownFor": "Missionary to Ireland, used shamrock to explain Trinity",
+        "patronOf": "Ireland, engineers, excluded people",
+        "dates": "c. 385-461",
+        "origin": "Britain/Ireland",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. George",
-        feastDay: "April 23",
-        knownFor: "Soldier and martyr, legendary dragon slayer",
-        patronOf: "England, soldiers, knights, skin diseases",
-        dates: "d. c. 303",
-        origin: "Turkey",
-        gender: "Male",
-        traits: ["protection", "chivalry", "strength", "heroism", "justice"],
-        quotes: [
-            "A true knight fights not for glory, but for those who cannot fight for themselves.",
-            "Courage is not the absence of fear, but action in the face of it.",
-            "Stand firm in faith, for God is your shield."
+        "name": "St. Augustine of Hippo",
+        "feastDay": "August 28",
+        "knownFor": "Bishop, philosopher, wrote Confessions and City of God",
+        "patronOf": "Theologians, printers, brewers",
+        "dates": "354-430",
+        "origin": "North Africa",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "wisdom",
+            "leadership",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Cecilia",
-        feastDay: "November 22",
-        knownFor: "Virgin martyr, sang to God during martyrdom",
-        patronOf: "Musicians, singers, poets",
-        dates: "d. c. 230",
-        origin: "Rome",
-        gender: "Female",
-        traits: ["arts", "music", "faith", "courage", "devotion"],
-        quotes: [
-            "I sang in my heart a hymn of love to my true Spouse.",
-            "Let music be the language of your soul's devotion.",
-            "In every note, let there be a prayer; in every song, a sacrifice of praise."
+        "name": "St. Benedict",
+        "feastDay": "July 11",
+        "knownFor": "Founder of Benedictines, wrote the Rule of St. Benedict",
+        "patronOf": "Europe, monks, students, poison sufferers",
+        "dates": "c. 480-547",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "writing",
+            "contemplation",
+            "discipline"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Elizabeth of Hungary",
-        feastDay: "November 17",
-        knownFor: "Princess who gave wealth to poor, founded hospital",
-        patronOf: "Bakers, charities, homeless, nursing services",
-        dates: "1207-1231",
-        origin: "Hungary",
-        gender: "Female",
-        traits: ["charity", "compassion", "service", "humility", "generosity"],
-        quotes: [
-            "How can I wear a crown of gold when the Lord wears a crown of thorns?",
-            "We must give freely what we have freely received.",
-            "In serving the poor, we serve Christ himself."
+        "name": "St. Scholastica",
+        "feastDay": "February 10",
+        "knownFor": "Twin sister of St. Benedict, founded Benedictine nuns",
+        "patronOf": "Nuns, education, convulsive children",
+        "dates": "c. 480-543",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "teaching",
+            "contemplation",
+            "service",
+            "leadership",
+            "family"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Vincent de Paul",
-        feastDay: "September 27",
-        knownFor: "Founded Vincentians and Daughters of Charity, served poor",
-        patronOf: "Charities, volunteers, hospitals",
-        dates: "1581-1660",
-        origin: "France",
-        gender: "Male",
-        traits: ["charity", "service", "leadership", "compassion", "organization"],
-        quotes: [
-            "Go to the poor: you will find God.",
-            "Charity is the cement which binds communities to God and persons to one another.",
-            "We should strive to keep our hearts open to the sufferings and wretchedness of other people."
+        "name": "St. Gregory the Great",
+        "feastDay": "September 3",
+        "knownFor": "Pope, Doctor of the Church, reformed liturgy, sent missionaries",
+        "patronOf": "Musicians, teachers, popes",
+        "dates": "c. 540-604",
+        "origin": "Rome",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "wisdom",
+            "leadership",
+            "reform"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. John Bosco",
-        feastDay: "January 31",
-        knownFor: "Founder of Salesians, educator of poor boys",
-        patronOf: "Youth, students, editors, apprentices",
-        dates: "1815-1888",
-        origin: "Italy",
-        gender: "Male",
-        traits: ["youth", "education", "joy", "innovation", "mentorship"],
-        quotes: [
-            "It is not enough to love the young; they must know they are loved.",
-            "Do not put off till tomorrow the good you can do today.",
-            "Without confidence and love, there can be no true education."
+        "name": "St. Boniface",
+        "feastDay": "June 5",
+        "knownFor": "Apostle to the Germans, martyred while on mission",
+        "patronOf": "Germany, brewers, tailors",
+        "dates": "c. 675-754",
+        "origin": "England/Germany",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "missionary",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. John Vianney",
-        feastDay: "August 4",
-        knownFor: "Cure of Ars, patron of parish priests, confessor",
-        patronOf: "Priests, confessors",
-        dates: "1786-1859",
-        origin: "France",
-        gender: "Male",
-        traits: ["humility", "service", "prayer", "perseverance", "wisdom"],
-        quotes: [
-            "Private prayer is like straw scattered here and there: If you set it on fire, it makes a lot of little flames. But gather these straws into a bundle and light them, and you get a mighty fire.",
-            "The good God does not need years to accomplish His work of love in a soul.",
-            "A priest goes to heaven or to hell with a crowd of others."
+        "name": "St. Nicholas",
+        "feastDay": "December 6",
+        "knownFor": "Bishop of Myra, known for generosity to the poor",
+        "patronOf": "Children, sailors, merchants, Russia",
+        "dates": "c. 270-343",
+        "origin": "Turkey",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "generosity",
+            "leadership"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Bernadette",
-        feastDay: "April 16",
-        knownFor: "Saw visions of Mary at Lourdes, simple peasant girl",
-        patronOf: "Illness, poverty, shepherds",
-        dates: "1844-1879",
-        origin: "France",
-        gender: "Female",
-        traits: ["simplicity", "humility", "faith", "perseverance", "devotion"],
-        quotes: [
-            "I do not promise to make you happy in this world, but in the next.",
-            "My job is to inform, not to convince.",
-            "The Virgin used me as a broom to remove dust. When the work is done, the broom is put behind the door and forgotten."
+        "name": "St. George",
+        "feastDay": "April 23",
+        "knownFor": "Soldier and martyr, legendary dragon slayer",
+        "patronOf": "England, soldiers, knights, skin diseases",
+        "dates": "d. c. 303",
+        "origin": "Turkey",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "strength",
+            "warrior",
+            "military"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Teresa of Calcutta",
-        feastDay: "September 5",
-        knownFor: "Founded Missionaries of Charity, served poorest of poor",
-        patronOf: "World Youth Day, Calcutta",
-        dates: "1910-1997",
-        origin: "Albania/India",
-        gender: "Female",
-        traits: ["service", "compassion", "humility", "perseverance", "love"],
-        quotes: [
-            "Not all of us can do great things. But we can do small things with great love.",
-            "If you judge people, you have no time to love them.",
-            "Spread love everywhere you go. Let no one ever come to you without leaving happier."
+        "name": "St. Lucy",
+        "feastDay": "December 13",
+        "knownFor": "Virgin martyr, name means \"light\"",
+        "patronOf": "Blind, eye disorders, writers",
+        "dates": "d. 304",
+        "origin": "Sicily",
+        "gender": "Female",
+        "traits": [
+            "writing",
+            "discipline",
+            "courage",
+            "community"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Maximilian Kolbe",
-        feastDay: "August 14",
-        knownFor: "Franciscan martyred in Auschwitz, gave life for another",
-        patronOf: "Drug addicts, journalists, prisoners",
-        dates: "1894-1941",
-        origin: "Poland",
-        gender: "Male",
-        traits: ["sacrifice", "courage", "love", "faith", "conviction"],
-        quotes: [
-            "The most deadly poison of our time is indifference.",
-            "No one in the world can change truth. What we can do and should do is to seek truth and to serve it when we have found it.",
-            "I am a Catholic priest. Let me take his place. I am old. He has a wife and children."
+        "name": "St. Sebastian",
+        "feastDay": "January 20",
+        "knownFor": "Roman soldier, martyred by arrows",
+        "patronOf": "Athletes, soldiers, plague victims",
+        "dates": "d. c. 288",
+        "origin": "Rome",
+        "gender": "Male",
+        "traits": [
+            "healing",
+            "conviction",
+            "courage",
+            "strength",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Edith Stein",
-        feastDay: "August 9",
-        knownFor: "Jewish philosopher who converted, Carmelite nun, died in Auschwitz",
-        patronOf: "Europe, loss of parents, martyrs",
-        dates: "1891-1942",
-        origin: "Germany",
-        gender: "Female",
-        traits: ["intellectual", "contemplation", "transformation", "courage", "faith"],
-        quotes: [
-            "The deeper one is drawn into God, the more one must go out of oneself into the world.",
-            "Do not accept anything as truth if it lacks love. And do not accept anything as love which lacks truth.",
-            "Whoever seeks truth seeks God, whether or not he realizes it."
+        "name": "St. Cecilia",
+        "feastDay": "November 22",
+        "knownFor": "Virgin martyr, sang to God during martyrdom",
+        "patronOf": "Musicians, singers, poets",
+        "dates": "d. c. 230",
+        "origin": "Rome",
+        "gender": "Female",
+        "traits": [
+            "courage",
+            "arts",
+            "music",
+            "poetry"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. John Paul II",
-        feastDay: "October 22",
-        knownFor: "Pope for 27 years, World Youth Days, helped end communism",
-        patronOf: "World Youth Day, families, Poland",
-        dates: "1920-2005",
-        origin: "Poland",
-        gender: "Male",
-        traits: ["leadership", "youth", "courage", "forgiveness", "perseverance"],
-        quotes: [
-            "Be not afraid!",
-            "The future starts today, not tomorrow.",
-            "Freedom consists not in doing what we like, but in having the right to do what we ought."
+        "name": "St. Lawrence",
+        "feastDay": "August 10",
+        "knownFor": "Deacon martyred on a gridiron, gave Church treasures to poor",
+        "patronOf": "Cooks, librarians, comedians",
+        "dates": "d. 258",
+        "origin": "Rome",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "generosity",
+            "conviction"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "What you do for the least of these, you do for me."
         ]
     },
     {
-        name: "St. Padre Pio",
-        feastDay: "September 23",
-        knownFor: "Capuchin friar with stigmata, gift of healing and bilocation",
-        patronOf: "Civil defense volunteers, stress relief",
-        dates: "1887-1968",
-        origin: "Italy",
-        gender: "Male",
-        traits: ["mysticism", "healing", "prayer", "humility", "perseverance"],
-        quotes: [
-            "Pray, hope, and don't worry. Worry is useless. God is merciful and will hear your prayer.",
-            "The life of a Christian is nothing but a perpetual struggle against self.",
-            "Prayer is the best weapon we possess. It is the key that opens the heart of God."
+        "name": "St. Stephen",
+        "feastDay": "December 26",
+        "knownFor": "First Christian martyr, deacon stoned to death",
+        "patronOf": "Deacons, stonemasons, headaches",
+        "dates": "d. c. 34",
+        "origin": "Jerusalem",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Faustina Kowalska",
-        feastDay: "October 5",
-        knownFor: "Promoted Divine Mercy devotion through visions of Jesus",
-        patronOf: "Mercy, World Mercy Sunday",
-        dates: "1905-1938",
-        origin: "Poland",
-        gender: "Female",
-        traits: ["mercy", "mysticism", "humility", "obedience", "love"],
-        quotes: [
-            "Jesus, I trust in You.",
-            "From today on, my own will does not exist.",
-            "The mercy of God, hidden in the Blessed Sacrament, the voice of the Lord who speaks to us from the throne of mercy: Come to Me, all of you."
+        "name": "St. Dominic",
+        "feastDay": "August 8",
+        "knownFor": "Founder of Dominican Order, promoted the Rosary",
+        "patronOf": "Astronomers, scientists, Dominican Republic",
+        "dates": "1170-1221",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "prayer",
+            "discipline",
+            "community"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Gianna Molla",
-        feastDay: "April 28",
-        knownFor: "Doctor who chose baby's life over her own",
-        patronOf: "Mothers, physicians, unborn children",
-        dates: "1922-1962",
-        origin: "Italy",
-        gender: "Female",
-        traits: ["sacrifice", "family", "love", "courage", "faith"],
-        quotes: [
-            "If you must decide between me and the child, do not hesitate: choose the child.",
-            "Love and sacrifice are closely linked, like the sun and the light.",
-            "The secret of happiness is to live moment by moment and to thank God for all that He, in His goodness, sends to us day after day."
+        "name": "St. Bernard of Clairvaux",
+        "feastDay": "August 20",
+        "knownFor": "Cistercian abbot, theologian, promoted Second Crusade",
+        "patronOf": "Beekeepers, candle makers, Gibraltar",
+        "dates": "1090-1153",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "contemplation"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Rose of Lima",
-        feastDay: "August 23",
-        knownFor: "First saint of Americas, mystic, practiced severe penance",
-        patronOf: "Latin America, florists, gardeners",
-        dates: "1586-1617",
-        origin: "Peru",
-        gender: "Female",
-        traits: ["contemplation", "mysticism", "humility", "nature", "devotion"],
-        quotes: [
-            "Apart from the cross, there is no other ladder by which we may get to heaven.",
-            "Our Lord and Savior lifted up his voice and said with incomparable majesty: Let all know that grace comes after tribulation.",
-            "When we serve the poor and the sick, we serve Jesus."
+        "name": "St. Bonaventure",
+        "feastDay": "July 15",
+        "knownFor": "Franciscan theologian, Doctor of the Church, Cardinal",
+        "patronOf": "Bowel disorders, theologians",
+        "dates": "1221-1274",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "leadership",
+            "discipline",
+            "poverty"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Martin de Porres",
-        feastDay: "November 3",
-        knownFor: "Dominican lay brother, biracial, healer of sick and animals",
-        patronOf: "Barbers, innkeepers, public health, racial harmony",
-        dates: "1579-1639",
-        origin: "Peru",
-        gender: "Male",
-        traits: ["humility", "service", "healing", "compassion", "justice"],
-        quotes: [
-            "Everything, even sweeping, scraping vegetables, weeding a garden and waiting on the sick could be a prayer, if it were offered to God.",
-            "Compassion, my dear, is preferable to cleanliness.",
-            "I wish I could heal every ill, but since I cannot, I offer my prayers and my small services."
+        "name": "St. Albertus Magnus",
+        "feastDay": "November 15",
+        "knownFor": "Dominican scientist, philosopher, teacher of Aquinas",
+        "patronOf": "Scientists, philosophers, medical technicians",
+        "dates": "c. 1200-1280",
+        "origin": "Germany",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "wisdom"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Thomas More",
-        feastDay: "June 22",
-        knownFor: "Lord Chancellor of England, martyred for refusing oath",
-        patronOf: "Lawyers, politicians, statesmen, adopted children",
-        dates: "1478-1535",
-        origin: "England",
-        gender: "Male",
-        traits: ["intellectual", "conviction", "courage", "family", "integrity"],
-        quotes: [
-            "I die the king's faithful servant, but God's first.",
-            "The devil... the prowde spirite... cannot endure to be mocked.",
-            "Earth has no sorrow that heaven cannot heal."
+        "name": "St. Louis IX",
+        "feastDay": "August 25",
+        "knownFor": "King of France, led crusades, known for justice and charity",
+        "patronOf": "France, tertiary Franciscans, barbers",
+        "dates": "1214-1270",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "generosity",
+            "leadership",
+            "activism"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Jude Thaddeus",
-        feastDay: "October 28",
-        knownFor: "Apostle, patron of hopeless cases",
-        patronOf: "Desperate situations, lost causes, hospitals",
-        dates: "1st century",
-        origin: "Galilee",
-        gender: "Male",
-        traits: ["hope", "faith", "perseverance", "compassion", "intercession"],
-        quotes: [
-            "Keep yourselves in the love of God, looking for the mercy of our Lord Jesus Christ unto eternal life.",
-            "Hope is not lost, for those who trust in God.",
-            "When all seems impossible, God's grace is most powerful."
+        "name": "St. Elizabeth of Hungary",
+        "feastDay": "November 17",
+        "knownFor": "Princess who gave wealth to poor, founded hospital",
+        "patronOf": "Bakers, charities, homeless, nursing services",
+        "dates": "1207-1231",
+        "origin": "Hungary",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "healing",
+            "generosity"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Rita of Cascia",
-        feastDay: "May 22",
-        knownFor: "Widow, nun, received stigmata wound on forehead",
-        patronOf: "Impossible causes, abuse victims, loneliness",
-        dates: "1381-1457",
-        origin: "Italy",
-        gender: "Female",
-        traits: ["perseverance", "forgiveness", "hope", "faith", "transformation"],
-        quotes: [
-            "God does not always grant what we wish, but what we need.",
-            "Forgiveness is the key that unlocks the door of resentment and the handcuffs of hatred.",
-            "Nothing is impossible when we place our trust in God."
+        "name": "St. Margaret of Scotland",
+        "feastDay": "November 16",
+        "knownFor": "Queen who reformed Scottish church, devoted to the poor",
+        "patronOf": "Scotland, queens, large families",
+        "dates": "c. 1045-1093",
+        "origin": "Scotland",
+        "gender": "Female",
+        "traits": [
+            "devotion",
+            "service",
+            "charity",
+            "compassion",
+            "generosity"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Raphael the Archangel",
-        feastDay: "September 29",
-        knownFor: "Healing angel in Book of Tobit",
-        patronOf: "Travelers, blind, nurses, physicians",
-        dates: "Biblical",
-        origin: "Heaven",
-        gender: "Male",
-        traits: ["healing", "protection", "guidance", "compassion", "service"],
-        quotes: [
-            "I am Raphael, one of the seven angels who stand and serve before the Glory of the Lord.",
-            "Do not be afraid; peace be with you. Bless God now and forever.",
-            "God sent me to heal you and to deliver you."
+        "name": "St. Bridget of Sweden",
+        "feastDay": "July 23",
+        "knownFor": "Mystic, founded Bridgettine Order, received revelations",
+        "patronOf": "Sweden, widows, pilgrims",
+        "dates": "c. 1303-1373",
+        "origin": "Sweden",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "mysticism",
+            "service",
+            "leadership",
+            "discipline"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Michael the Archangel",
-        feastDay: "September 29",
-        knownFor: "Warrior angel who defeated Satan",
-        patronOf: "Police, soldiers, paratroopers, Germany",
-        dates: "Biblical",
-        origin: "Heaven",
-        gender: "Male",
-        traits: ["protection", "warrior", "justice", "spiritual-warfare", "strength"],
-        quotes: [
-            "Who is like God?",
-            "Be sober, be vigilant; because your adversary the devil, as a roaring lion, walketh about, seeking whom he may devour.",
-            "Defend us in battle; be our protection against the wickedness and snares of the devil."
+        "name": "St. Catherine of Alexandria",
+        "feastDay": "November 25",
+        "knownFor": "Martyr, debated pagan philosophers, martyred on wheel",
+        "patronOf": "Philosophers, students, wheel makers",
+        "dates": "d. c. 305",
+        "origin": "Egypt",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "wisdom",
+            "conviction",
+            "courage"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "The truth will set you free."
         ]
     },
     {
-        name: "St. Anne",
-        feastDay: "July 26",
-        knownFor: "Mother of Virgin Mary, grandmother of Jesus",
-        patronOf: "Grandmothers, mothers, pregnant women, miners",
-        dates: "1st century BC",
-        origin: "Galilee",
-        gender: "Female",
-        traits: ["family", "motherhood", "patience", "faith", "nurturing"],
-        quotes: [
-            "A mother's prayer for her children is heard in heaven.",
-            "Patience and faith are the foundation of a holy family.",
-            "In teaching our children to love God, we give them the greatest gift."
+        "name": "St. Christopher",
+        "feastDay": "July 25",
+        "knownFor": "Legendary giant who carried Christ child across river",
+        "patronOf": "Travelers, drivers, bachelors",
+        "dates": "3rd century",
+        "origin": "Canaan",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "devotion",
+            "perseverance",
+            "love",
+            "service"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Monica",
-        feastDay: "August 27",
-        knownFor: "Mother of St. Augustine, prayed for his conversion for years",
-        patronOf: "Mothers, widows, victims of abuse",
-        dates: "331-387",
-        origin: "North Africa",
-        gender: "Female",
-        traits: ["perseverance", "prayer", "faith", "patience", "motherhood"],
-        quotes: [
-            "Nothing is far from God.",
-            "A mother's tears cannot be lost; they will surely be heard.",
-            "I do not despair, because I know who holds tomorrow."
+        "name": "St. Martin of Tours",
+        "feastDay": "November 11",
+        "knownFor": "Soldier who shared cloak with beggar, bishop",
+        "patronOf": "Soldiers, France, equestrians",
+        "dates": "c. 316-397",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "strength",
+            "warrior",
+            "military"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Dymphna",
-        feastDay: "May 15",
-        knownFor: "Irish princess martyred by father, patron of mental illness",
-        patronOf: "Mental illness, anxiety, epilepsy",
-        dates: "7th century",
-        origin: "Ireland/Belgium",
-        gender: "Female",
-        traits: ["courage", "healing", "compassion", "faith", "protection"],
-        quotes: [
-            "In my weakness, God's strength is made perfect.",
-            "The wounds of the mind require as much compassion as the wounds of the body.",
-            "God sees the suffering of the heart and draws near to comfort."
+        "name": "St. Ambrose",
+        "feastDay": "December 7",
+        "knownFor": "Bishop of Milan, Doctor of the Church, baptized Augustine",
+        "patronOf": "Milan, beekeepers, learning",
+        "dates": "c. 340-397",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "leadership",
+            "evangelization"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Louise de Marillac",
-        feastDay: "March 15",
-        knownFor: "Co-founder of Daughters of Charity with Vincent de Paul",
-        patronOf: "Social workers, widows, sick people",
-        dates: "1591-1660",
-        origin: "France",
-        gender: "Female",
-        traits: ["service", "charity", "organization", "compassion", "perseverance"],
-        quotes: [
-            "The love of Christ impels us to serve the poor.",
-            "Be diligent in serving the poor. Love the poor, honor them, as you would honor Christ himself.",
-            "True charity is shown in deeds, not just in words."
+        "name": "St. Jerome",
+        "feastDay": "September 30",
+        "knownFor": "Translated Bible into Latin (Vulgate), Doctor of the Church",
+        "patronOf": "Librarians, translators, students",
+        "dates": "c. 347-420",
+        "origin": "Croatia/Palestine",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "wisdom",
+            "youth"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Bridget of Sweden",
-        feastDay: "July 23",
-        knownFor: "Mystic, founded Bridgettine Order, received revelations",
-        patronOf: "Sweden, widows, pilgrims",
-        dates: "c. 1303-1373",
-        origin: "Sweden",
-        gender: "Female",
-        traits: ["mysticism", "leadership", "faith", "writing", "devotion"],
-        quotes: [
-            "The world would have peace if only men of politics would follow the Gospels.",
-            "I saw Him and sought Him; I had Him and wanted Him.",
-            "Let your heart be open to God, and He will speak to you in the silence."
+        "name": "St. Monica",
+        "feastDay": "August 27",
+        "knownFor": "Mother of St. Augustine, prayed for his conversion for years",
+        "patronOf": "Mothers, widows, victims of abuse",
+        "dates": "331-387",
+        "origin": "North Africa",
+        "gender": "Female",
+        "traits": [
+            "family",
+            "motherhood",
+            "transformation",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Margaret of Scotland",
-        feastDay: "November 16",
-        knownFor: "Queen who reformed Scottish church, devoted to the poor",
-        patronOf: "Scotland, queens, large families",
-        dates: "c. 1045-1093",
-        origin: "Scotland",
-        gender: "Female",
-        traits: ["charity", "leadership", "family", "reform", "faith"],
-        quotes: [
-            "A queen's greatest crown is found in serving her people.",
-            "The dignity of the poor reflects the dignity of Christ.",
-            "Let your position be a means of doing good, not of gaining honor."
+        "name": "St. John Chrysostom",
+        "feastDay": "September 13",
+        "knownFor": "Archbishop, greatest preacher, Doctor of the Church",
+        "patronOf": "Preachers, Constantinople, epilepsy",
+        "dates": "c. 347-407",
+        "origin": "Syria/Turkey",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "leadership",
+            "preaching"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Hildegard of Bingen",
-        feastDay: "September 17",
-        knownFor: "Benedictine abbess, mystic, composer, herbalist, Doctor of the Church",
-        patronOf: "Writers, musicians, scientists",
-        dates: "1098-1179",
-        origin: "Germany",
-        gender: "Female",
-        traits: ["intellectual", "mysticism", "arts", "healing", "wisdom"],
-        quotes: [
-            "Humanity, take a good look at yourself. Inside, you've got heaven and earth, and all of creation.",
-            "The soul is a breath of living spirit, that with excellent sensitivity, permeates the entire body to give it life.",
-            "Dare to declare who you are. It is not far from the shores of silence to the boundaries of speech."
+        "name": "St. Athanasius",
+        "feastDay": "May 2",
+        "knownFor": "Bishop, defended Trinity against Arianism, Doctor of the Church",
+        "patronOf": "Theologians, Alexandria",
+        "dates": "c. 296-373",
+        "origin": "Egypt",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "leadership",
+            "activism",
+            "conviction"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Kateri Tekakwitha",
-        feastDay: "July 14",
-        knownFor: "First Native American saint, converted despite persecution",
-        patronOf: "Ecology, Native Americans, exiles",
-        dates: "1656-1680",
-        origin: "USA/Canada",
-        gender: "Female",
-        traits: ["faith", "perseverance", "nature", "courage", "devotion"],
-        quotes: [
-            "Who can tell me what is most pleasing to God, that I may do it?",
-            "I am not my own; I have given myself to Jesus.",
-            "In nature, I see the hand of the Creator everywhere."
+        "name": "St. Cyril and Methodius",
+        "feastDay": "February 14",
+        "knownFor": "Brothers who evangelized Slavs, created Cyrillic alphabet",
+        "patronOf": "Europe, ecumenism, missionaries",
+        "dates": "9th century",
+        "origin": "Greece/Moravia",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "evangelization",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Josephine Bakhita",
-        feastDay: "February 8",
-        knownFor: "Former slave from Sudan, became nun in Italy",
-        patronOf: "Sudan, human trafficking victims",
-        dates: "c. 1869-1947",
-        origin: "Sudan/Italy",
-        gender: "Female",
-        traits: ["forgiveness", "transformation", "faith", "humility", "hope"],
-        quotes: [
-            "If I were to meet those who kidnapped me, and even those who tortured me, I would kneel and kiss their hands.",
-            "I am definitively loved and whatever happens to me, I am awaited by this Love.",
-            "Seeing the sun, the moon and the stars, I said to myself: Who could be the Master of these beautiful things?"
+        "name": "St. John Vianney",
+        "feastDay": "August 4",
+        "knownFor": "Curé of Ars, patron of parish priests, confessor",
+        "patronOf": "Priests, confessors",
+        "dates": "1786-1859",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "intercession",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Lawrence",
-        feastDay: "August 10",
-        knownFor: "Deacon martyred on a gridiron, gave Church treasures to poor",
-        patronOf: "Cooks, librarians, comedians",
-        dates: "d. 258",
-        origin: "Rome",
-        gender: "Male",
-        traits: ["service", "courage", "charity", "joy", "faith"],
-        quotes: [
-            "The poor are the treasure of the Church.",
-            "Turn me over, I'm done on this side!",
-            "He who serves the poor serves Christ himself."
+        "name": "St. Bernadette",
+        "feastDay": "April 16",
+        "knownFor": "Saw visions of Mary at Lourdes, simple peasant girl",
+        "patronOf": "Illness, poverty, shepherds",
+        "dates": "1844-1879",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "humility",
+            "simplicity",
+            "poverty"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Sebastian",
-        feastDay: "January 20",
-        knownFor: "Roman soldier, martyred by arrows",
-        patronOf: "Athletes, soldiers, plague victims",
-        dates: "d. c. 288",
-        origin: "Rome",
-        gender: "Male",
-        traits: ["strength", "endurance", "sacrifice", "military", "protection"],
-        quotes: [
-            "The pain of endurance is momentary, but the glory of perseverance is eternal.",
-            "A soldier of Christ fears nothing but sin.",
-            "In suffering for the faith, we share in Christ's victory."
+        "name": "St. John Bosco",
+        "feastDay": "January 31",
+        "knownFor": "Founder of Salesians, educator of poor boys",
+        "patronOf": "Youth, students, editors, apprentices",
+        "dates": "1815-1888",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "teaching",
+            "service",
+            "charity",
+            "compassion",
+            "generosity"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "The truth will set you free."
         ]
     },
     {
-        name: "St. Dominic",
-        feastDay: "August 8",
-        knownFor: "Founder of Dominican Order, promoted the Rosary",
-        patronOf: "Astronomers, scientists, Dominican Republic",
-        dates: "1170-1221",
-        origin: "Spain",
-        gender: "Male",
-        traits: ["preaching", "intellectual", "prayer", "leadership", "faith"],
-        quotes: [
-            "A man who governs his passions is master of his world.",
-            "Arm yourself with prayer rather than a sword; wear humility rather than fine clothes.",
-            "We must sow the seed, not hoard it."
+        "name": "St. Vincent de Paul",
+        "feastDay": "September 27",
+        "knownFor": "Founded Vincentians and Daughters of Charity, served poor",
+        "patronOf": "Charities, volunteers, hospitals",
+        "dates": "1581-1660",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "healing",
+            "generosity"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     },
     {
-        name: "St. Bernard of Clairvaux",
-        feastDay: "August 20",
-        knownFor: "Cistercian abbot, theologian, promoted Second Crusade",
-        patronOf: "Beekeepers, candle makers, Gibraltar",
-        dates: "1090-1153",
-        origin: "France",
-        gender: "Male",
-        traits: ["contemplation", "leadership", "writing", "mysticism", "reform"],
-        quotes: [
-            "You wish to see; listen. Hearing is a step toward vision.",
-            "Hell is full of good wishes and desires.",
-            "Many who are last will be first, and the first will be last."
+        "name": "St. Louise de Marillac",
+        "feastDay": "March 15",
+        "knownFor": "Co-founder of Daughters of Charity with Vincent de Paul",
+        "patronOf": "Social workers, widows, sick people",
+        "dates": "1591-1660",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "healing",
+            "generosity"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Margaret Mary Alacoque",
+        "feastDay": "October 16",
+        "knownFor": "Promoted devotion to Sacred Heart of Jesus",
+        "patronOf": "Devotees of Sacred Heart, polio",
+        "dates": "1647-1690",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "prayer",
+            "devotion",
+            "faith",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John of God",
+        "feastDay": "March 8",
+        "knownFor": "Founded hospital order, patron of nurses and sick",
+        "patronOf": "Hospitals, nurses, sick people, heart patients",
+        "dates": "1495-1550",
+        "origin": "Portugal/Spain",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "compassion",
+            "healing",
+            "leadership",
+            "discipline"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Camillus de Lellis",
+        "feastDay": "July 14",
+        "knownFor": "Founded nursing order, reformed hospital care",
+        "patronOf": "Nurses, hospitals, sick people",
+        "dates": "1550-1614",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "compassion",
+            "healing",
+            "leadership",
+            "reform"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Alphonsus Liguori",
+        "feastDay": "August 1",
+        "knownFor": "Founded Redemptorists, moral theologian, Doctor of the Church",
+        "patronOf": "Confessors, moral theologians, arthritis",
+        "dates": "1696-1787",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "service",
+            "leadership",
+            "community"
+        ],
+        "quotes": [
+            "The truth will set you free.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John Neumann",
+        "feastDay": "January 5",
+        "knownFor": "Bishop of Philadelphia, built schools and churches",
+        "patronOf": "Catholic education, immigrants",
+        "dates": "1811-1860",
+        "origin": "USA",
+        "gender": "Male",
+        "traits": [
+            "teaching",
+            "leadership",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Frances Xavier Cabrini",
+        "feastDay": "November 13",
+        "knownFor": "Founded Missionary Sisters, first US citizen saint",
+        "patronOf": "Immigrants, hospital administrators",
+        "dates": "1850-1917",
+        "origin": "Italy/USA",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "healing",
+            "leadership",
+            "missionary",
+            "community"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Elizabeth Ann Seton",
+        "feastDay": "January 4",
+        "knownFor": "Founded Sisters of Charity, first native-born US saint",
+        "patronOf": "Catholic schools, widows, seafarers",
+        "dates": "1774-1821",
+        "origin": "USA",
+        "gender": "Female",
+        "traits": [
+            "teaching",
+            "service",
+            "charity",
+            "generosity",
+            "leadership"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Katharine Drexel",
+        "feastDay": "March 3",
+        "knownFor": "Founded Sisters of Blessed Sacrament, served Native Americans",
+        "patronOf": "Racial justice, philanthropists",
+        "dates": "1858-1955",
+        "origin": "USA",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "compassion",
+            "leadership",
+            "community",
+            "justice"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Damien of Molokai",
+        "feastDay": "May 10",
+        "knownFor": "Served lepers in Hawaii, contracted leprosy himself",
+        "patronOf": "Lepers, outcasts, HIV/AIDS patients",
+        "dates": "1840-1889",
+        "origin": "Belgium/Hawaii",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "compassion",
+            "healing",
+            "patience"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Teresa of Calcutta",
+        "feastDay": "September 5",
+        "knownFor": "Founded Missionaries of Charity, served poorest of poor",
+        "patronOf": "World Youth Day, Calcutta",
+        "dates": "1910-1997",
+        "origin": "Albania/India",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "generosity",
+            "leadership"
+        ],
+        "quotes": [
+            "What you do for the least of these, you do for me.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Maximilian Kolbe",
+        "feastDay": "August 14",
+        "knownFor": "Franciscan martyred in Auschwitz, gave life for another",
+        "patronOf": "Drug addicts, journalists, prisoners",
+        "dates": "1894-1941",
+        "origin": "Poland",
+        "gender": "Male",
+        "traits": [
+            "charity",
+            "generosity",
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Edith Stein",
+        "feastDay": "August 9",
+        "knownFor": "Jewish philosopher who converted, Carmelite nun, died in Auschwitz",
+        "patronOf": "Europe, loss of parents, martyrs",
+        "dates": "1891-1942",
+        "origin": "Germany",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "contemplation",
+            "evangelization",
+            "courage"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John Paul II",
+        "feastDay": "October 22",
+        "knownFor": "Pope for 27 years, World Youth Days, helped end communism",
+        "patronOf": "World Youth Day, families, Poland",
+        "dates": "1920-2005",
+        "origin": "Poland",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "leadership",
+            "children",
+            "youth",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Padre Pio",
+        "feastDay": "September 23",
+        "knownFor": "Capuchin friar with stigmata, gift of healing and bilocation",
+        "patronOf": "Civil defense volunteers, stress relief",
+        "dates": "1887-1968",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "mysticism",
+            "healing",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Faustina Kowalska",
+        "feastDay": "October 5",
+        "knownFor": "Promoted Divine Mercy devotion through visions of Jesus",
+        "patronOf": "Mercy, World Mercy Sunday",
+        "dates": "1905-1938",
+        "origin": "Poland",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "prayer",
+            "devotion",
+            "faith",
+            "forgiveness"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Josemaría Escrivá",
+        "feastDay": "June 26",
+        "knownFor": "Founded Opus Dei, promoted sanctification in ordinary life",
+        "patronOf": "Diabetes patients, work",
+        "dates": "1902-1975",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "leadership",
+            "simplicity",
+            "patience",
+            "community"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Gianna Molla",
+        "feastDay": "April 28",
+        "knownFor": "Doctor who chose baby's life over her own",
+        "patronOf": "Mothers, physicians, unborn children",
+        "dates": "1922-1962",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "wisdom",
+            "healing",
+            "family",
+            "motherhood",
+            "nurturing"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Teresa Benedicta",
+        "feastDay": "August 9",
+        "knownFor": "Carmelite philosopher, Jewish convert, martyred at Auschwitz",
+        "patronOf": "Europe, loss of parents",
+        "dates": "1891-1942",
+        "origin": "Germany",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Rose of Lima",
+        "feastDay": "August 23",
+        "knownFor": "First saint of Americas, mystic, practiced severe penance",
+        "patronOf": "Latin America, florists, gardeners",
+        "dates": "1586-1617",
+        "origin": "Peru",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "mysticism",
+            "cross-cultural",
+            "nature"
+        ],
+        "quotes": [
+            "Prayer is the raising of one's mind and heart to God.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Martin de Porres",
+        "feastDay": "November 3",
+        "knownFor": "Dominican lay brother, biracial, healer of sick and animals",
+        "patronOf": "Barbers, innkeepers, public health, racial harmony",
+        "dates": "1579-1639",
+        "origin": "Peru",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "compassion",
+            "healing",
+            "nature",
+            "animals"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Juan Diego",
+        "feastDay": "December 9",
+        "knownFor": "Saw vision of Our Lady of Guadalupe, simple indigenous man",
+        "patronOf": "Indigenous peoples, Mexico",
+        "dates": "1474-1548",
+        "origin": "Mexico",
+        "gender": "Male",
+        "traits": [
+            "humility",
+            "simplicity",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Kateri Tekakwitha",
+        "feastDay": "July 14",
+        "knownFor": "First Native American saint, converted despite persecution",
+        "patronOf": "Ecology, Native Americans, exiles",
+        "dates": "1656-1680",
+        "origin": "USA/Canada",
+        "gender": "Female",
+        "traits": [
+            "evangelization",
+            "transformation",
+            "perseverance",
+            "nature"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Augustine of Canterbury",
+        "feastDay": "May 27",
+        "knownFor": "First Archbishop of Canterbury, brought Christianity to England",
+        "patronOf": "England, bishops",
+        "dates": "d. c. 604",
+        "origin": "Italy/England",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "missionary",
+            "evangelization"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Columba",
+        "feastDay": "June 9",
+        "knownFor": "Irish missionary who evangelized Scotland",
+        "patronOf": "Scotland, Ireland, poets",
+        "dates": "521-597",
+        "origin": "Ireland/Scotland",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "evangelization",
+            "arts",
+            "poetry"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Hilda of Whitby",
+        "feastDay": "November 17",
+        "knownFor": "Abbess, hosted important church synod at Whitby",
+        "patronOf": "Learning, culture, Whitby",
+        "dates": "614-680",
+        "origin": "England",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "contemplation",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Bede the Venerable",
+        "feastDay": "May 25",
+        "knownFor": "Monk, scholar, wrote history of English church",
+        "patronOf": "Historians, scholars, England",
+        "dates": "c. 673-735",
+        "origin": "England",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "contemplation",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Ansgar",
+        "feastDay": "February 3",
+        "knownFor": "Apostle of the North, missionary to Scandinavia",
+        "patronOf": "Denmark, Scandinavia",
+        "dates": "801-865",
+        "origin": "France/Scandinavia",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Olaf",
+        "feastDay": "July 29",
+        "knownFor": "King of Norway, promoted Christianity in Norway",
+        "patronOf": "Norway, kings",
+        "dates": "995-1030",
+        "origin": "Norway",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "evangelization",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Stanislaus",
+        "feastDay": "April 11",
+        "knownFor": "Bishop martyred by King of Poland for defending Church",
+        "patronOf": "Poland, Krakow",
+        "dates": "1030-1079",
+        "origin": "Poland",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Wenceslaus",
+        "feastDay": "September 28",
+        "knownFor": "Duke of Bohemia, martyred by brother",
+        "patronOf": "Czech Republic, Bohemia, brewers",
+        "dates": "c. 907-935",
+        "origin": "Czech Republic",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Vladimir",
+        "feastDay": "July 15",
+        "knownFor": "Prince who brought Christianity to Kievan Rus",
+        "patronOf": "Russia, Ukraine, converts",
+        "dates": "c. 958-1015",
+        "origin": "Ukraine/Russia",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "missionary",
+            "evangelization"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Casimir",
+        "feastDay": "March 4",
+        "knownFor": "Polish prince known for chastity and devotion",
+        "patronOf": "Poland, Lithuania, youth",
+        "dates": "1458-1484",
+        "origin": "Poland",
+        "gender": "Male",
+        "traits": [
+            "prayer",
+            "devotion",
+            "leadership",
+            "faith",
+            "children"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Rose Philippine Duchesne",
+        "feastDay": "November 18",
+        "knownFor": "Missionary to America, educated Native Americans",
+        "patronOf": "Against poverty, opposition of Church authorities",
+        "dates": "1769-1852",
+        "origin": "France/USA",
+        "gender": "Female",
+        "traits": [
+            "writing",
+            "missionary",
+            "poverty",
+            "nurturing"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John de Brébeuf",
+        "feastDay": "October 19",
+        "knownFor": "Jesuit martyred by Iroquois in Canada",
+        "patronOf": "Canada, North American martyrs",
+        "dates": "1593-1649",
+        "origin": "France/Canada",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Isaac Jogues",
+        "feastDay": "October 19",
+        "knownFor": "Jesuit missionary martyred in New York",
+        "patronOf": "Americas, North American martyrs",
+        "dates": "1607-1646",
+        "origin": "France/USA",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "missionary",
+            "cross-cultural",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Go and make disciples of all nations."
+        ]
+    },
+    {
+        "name": "St. Andrew Kim Taegon",
+        "feastDay": "September 20",
+        "knownFor": "First Korean priest, martyred",
+        "patronOf": "Korea, Korean clergy",
+        "dates": "1821-1846",
+        "origin": "Korea",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Paul Miki",
+        "feastDay": "February 6",
+        "knownFor": "Japanese Jesuit, one of 26 martyrs of Japan",
+        "patronOf": "Japan, Japanese martyrs",
+        "dates": "c. 1564-1597",
+        "origin": "Japan",
+        "gender": "Male",
+        "traits": [
+            "cross-cultural",
+            "courage",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Lorenzo Ruiz",
+        "feastDay": "September 28",
+        "knownFor": "Filipino martyr, first Filipino saint",
+        "patronOf": "Philippines, Filipino youth, altar servers",
+        "dates": "c. 1600-1637",
+        "origin": "Philippines",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "children",
+            "youth"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Peter Chanel",
+        "feastDay": "April 28",
+        "knownFor": "Marist missionary martyred in Oceania",
+        "patronOf": "Oceania, Marist priests",
+        "dates": "1803-1841",
+        "origin": "France/Oceania",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "missionary",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Go and make disciples of all nations."
+        ]
+    },
+    {
+        "name": "St. Charles Lwanga",
+        "feastDay": "June 3",
+        "knownFor": "Ugandan martyr, leader of group killed for faith",
+        "patronOf": "African youth, converts",
+        "dates": "c. 1860-1886",
+        "origin": "Uganda",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "activism",
+            "cross-cultural",
+            "courage",
+            "faith"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Josephine Bakhita",
+        "feastDay": "February 8",
+        "knownFor": "Former slave from Sudan, became nun in Italy",
+        "patronOf": "Sudan, human trafficking victims",
+        "dates": "c. 1869-1947",
+        "origin": "Sudan/Italy",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "leadership",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John XXIII",
+        "feastDay": "October 11",
+        "knownFor": "Pope who called Vatican Council II, known for pastoral care",
+        "patronOf": "Papal delegates, Venice",
+        "dates": "1881-1963",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "reform",
+            "activism"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Oscar Romero",
+        "feastDay": "March 24",
+        "knownFor": "Archbishop martyred for defending poor in El Salvador",
+        "patronOf": "Americas, El Salvador, persecuted Christians",
+        "dates": "1917-1980",
+        "origin": "El Salvador",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "charity",
+            "compassion",
+            "generosity",
+            "leadership"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "What you do for the least of these, you do for me."
+        ]
+    },
+    {
+        "name": "St. Thomas More",
+        "feastDay": "June 22",
+        "knownFor": "Lord Chancellor of England, martyred for refusing oath",
+        "patronOf": "Lawyers, politicians, statesmen, adopted children",
+        "dates": "1478-1535",
+        "origin": "England",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice",
+            "family",
+            "nurturing"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John Fisher",
+        "feastDay": "June 22",
+        "knownFor": "Bishop martyred with Thomas More for opposing Henry VIII",
+        "patronOf": "Bishops, theologians, priests",
+        "dates": "1469-1535",
+        "origin": "England",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "wisdom",
+            "leadership",
+            "conviction",
+            "courage"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Edmund Campion",
+        "feastDay": "December 1",
+        "knownFor": "Jesuit priest martyred in England during persecution",
+        "patronOf": "England, Jesuits, scholars",
+        "dates": "1540-1581",
+        "origin": "England",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Margaret Clitherow",
+        "feastDay": "March 25",
+        "knownFor": "Laywoman martyred for hiding priests in England",
+        "patronOf": "Converts, businesswomen, martyrs",
+        "dates": "1556-1586",
+        "origin": "England",
+        "gender": "Female",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Oliver Plunkett",
+        "feastDay": "July 1",
+        "knownFor": "Archbishop martyred in Ireland during persecution",
+        "patronOf": "Ireland, peace, reconciliation",
+        "dates": "1625-1681",
+        "origin": "Ireland",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Brigid of Ireland",
+        "feastDay": "February 1",
+        "knownFor": "Founded monasteries, one of patron saints of Ireland",
+        "patronOf": "Ireland, dairymaids, midwives, scholars",
+        "dates": "c. 451-525",
+        "origin": "Ireland",
+        "gender": "Female",
+        "traits": [
+            "intellectual",
+            "service",
+            "leadership",
+            "community",
+            "intercession"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Brendan the Navigator",
+        "feastDay": "May 16",
+        "knownFor": "Irish monk who voyaged across Atlantic",
+        "patronOf": "Sailors, travelers, whales",
+        "dates": "c. 484-577",
+        "origin": "Ireland",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "adventure",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Kevin",
+        "feastDay": "June 3",
+        "knownFor": "Founded monastery at Glendalough, Ireland",
+        "patronOf": "Dublin, blackbirds",
+        "dates": "d. 618",
+        "origin": "Ireland",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "service",
+            "leadership",
+            "community",
+            "animals"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Malachy",
+        "feastDay": "November 3",
+        "knownFor": "Archbishop of Armagh, reformed Irish Church",
+        "patronOf": "Ireland, peace",
+        "dates": "1094-1148",
+        "origin": "Ireland",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "reform",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. David",
+        "feastDay": "March 1",
+        "knownFor": "Patron saint of Wales, founded monasteries",
+        "patronOf": "Wales, poets",
+        "dates": "c. 500-589",
+        "origin": "Wales",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "leadership",
+            "community",
+            "arts",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Andrew",
+        "feastDay": "November 30",
+        "knownFor": "Apostle, brother of Peter, martyred on X-shaped cross",
+        "patronOf": "Scotland, Russia, fishermen",
+        "dates": "1st century",
+        "origin": "Galilee",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "missionary",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. James the Greater",
+        "feastDay": "July 25",
+        "knownFor": "Apostle, first to be martyred, shrine at Compostela",
+        "patronOf": "Spain, pilgrims, laborers",
+        "dates": "d. 44 AD",
+        "origin": "Galilee/Spain",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "missionary",
+            "courage",
+            "sacrifice",
+            "work"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John the Apostle",
+        "feastDay": "December 27",
+        "knownFor": "Beloved disciple, wrote Gospel and Revelation",
+        "patronOf": "Writers, theologians, Asia Minor",
+        "dates": "d. c. 100",
+        "origin": "Galilee",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "wisdom",
+            "cross-cultural",
+            "preaching"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Thomas the Apostle",
+        "feastDay": "July 3",
+        "knownFor": "Apostle who doubted, brought Christianity to India",
+        "patronOf": "India, architects, doubt",
+        "dates": "1st century",
+        "origin": "Galilee/India",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "cross-cultural",
+            "evangelization"
+        ],
+        "quotes": [
+            "Go and make disciples of all nations.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Matthew",
+        "feastDay": "September 21",
+        "knownFor": "Apostle, tax collector, wrote Gospel",
+        "patronOf": "Tax collectors, accountants, bankers",
+        "dates": "1st century",
+        "origin": "Galilee",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "missionary",
+            "preaching",
+            "poetry"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Mark the Evangelist",
+        "feastDay": "April 25",
+        "knownFor": "Wrote Gospel of Mark, companion of Peter",
+        "patronOf": "Venice, notaries, lawyers",
+        "dates": "1st century",
+        "origin": "Jerusalem/Egypt",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "preaching",
+            "poetry",
+            "justice"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Luke the Evangelist",
+        "feastDay": "October 18",
+        "knownFor": "Wrote Gospel and Acts, physician",
+        "patronOf": "Doctors, artists, surgeons, butchers",
+        "dates": "1st century",
+        "origin": "Syria",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "wisdom",
+            "preaching",
+            "arts"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Barnabas",
+        "feastDay": "June 11",
+        "knownFor": "Apostle, companion of Paul, sold property for Church",
+        "patronOf": "Cyprus, against hailstorms",
+        "dates": "1st century",
+        "origin": "Cyprus",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Timothy",
+        "feastDay": "January 26",
+        "knownFor": "Bishop, disciple of Paul, received epistles",
+        "patronOf": "Stomach disorders, bishops",
+        "dates": "1st century",
+        "origin": "Asia Minor",
+        "gender": "Male",
+        "traits": [
+            "writing",
+            "leadership",
+            "discipline",
+            "community"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Titus",
+        "feastDay": "January 26",
+        "knownFor": "Bishop of Crete, companion of Paul",
+        "patronOf": "Crete, bishops",
+        "dates": "1st century",
+        "origin": "Crete",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Apollonia",
+        "feastDay": "February 9",
+        "knownFor": "Virgin martyr, teeth pulled out during persecution",
+        "patronOf": "Dentists, toothache",
+        "dates": "d. 249",
+        "origin": "Egypt",
+        "gender": "Female",
+        "traits": [
+            "leadership",
+            "activism",
+            "courage"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Blaise",
+        "feastDay": "February 3",
+        "knownFor": "Bishop, healed boy choking on fishbone",
+        "patronOf": "Throat illnesses, animals, wool combers",
+        "dates": "d. c. 316",
+        "origin": "Armenia",
+        "gender": "Male",
+        "traits": [
+            "healing",
+            "leadership",
+            "activism",
+            "nature",
+            "animals"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Agatha",
+        "feastDay": "February 5",
+        "knownFor": "Virgin martyr, breasts cut off during torture",
+        "patronOf": "Breast cancer, nurses, bellfounders",
+        "dates": "d. c. 251",
+        "origin": "Sicily",
+        "gender": "Female",
+        "traits": [
+            "healing",
+            "courage",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Agnes",
+        "feastDay": "January 21",
+        "knownFor": "Virgin martyr at age 12 or 13",
+        "patronOf": "Young girls, chastity, gardeners",
+        "dates": "d. c. 304",
+        "origin": "Rome",
+        "gender": "Female",
+        "traits": [
+            "courage",
+            "children",
+            "youth",
+            "nature"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Barbara",
+        "feastDay": "December 4",
+        "knownFor": "Virgin martyr, killed by father for converting",
+        "patronOf": "Miners, artillerymen, architects, sudden death",
+        "dates": "d. c. 200",
+        "origin": "Lebanon/Egypt",
+        "gender": "Female",
+        "traits": [
+            "leadership",
+            "activism",
+            "courage",
+            "family"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Christopher",
+        "feastDay": "July 25",
+        "knownFor": "Carried Christ child, martyred",
+        "patronOf": "Travelers, motorists, storms",
+        "dates": "3rd century",
+        "origin": "Canaan",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Valentine",
+        "feastDay": "February 14",
+        "knownFor": "Priest who married couples secretly, martyred",
+        "patronOf": "Lovers, epilepsy, beekeepers",
+        "dates": "d. c. 269",
+        "origin": "Rome",
+        "gender": "Male",
+        "traits": [
+            "conviction",
+            "courage",
+            "sacrifice",
+            "love"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Jude Thaddeus",
+        "feastDay": "October 28",
+        "knownFor": "Apostle, patron of hopeless cases",
+        "patronOf": "Desperate situations, lost causes, hospitals",
+        "dates": "1st century",
+        "origin": "Galilee",
+        "gender": "Male",
+        "traits": [
+            "service",
+            "healing",
+            "missionary",
+            "hope",
+            "intercession"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Rita of Cascia",
+        "feastDay": "May 22",
+        "knownFor": "Widow, nun, received stigmata wound on forehead",
+        "patronOf": "Impossible causes, abuse victims, loneliness",
+        "dates": "1381-1457",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "mysticism",
+            "hope"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Peregrine Laziosi",
+        "feastDay": "May 1",
+        "knownFor": "Healed of cancer miraculously",
+        "patronOf": "Cancer patients, AIDS patients",
+        "dates": "1260-1345",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "healing",
+            "leadership",
+            "activism",
+            "patience",
+            "miracles"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Dymphna",
+        "feastDay": "May 15",
+        "knownFor": "Irish princess martyred by father, patron of mental illness",
+        "patronOf": "Mental illness, anxiety, epilepsy",
+        "dates": "7th century",
+        "origin": "Ireland/Belgium",
+        "gender": "Female",
+        "traits": [
+            "leadership",
+            "conviction",
+            "courage",
+            "sacrifice",
+            "family"
+        ],
+        "quotes": [
+            "For to me, to live is Christ and to die is gain.",
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Roch",
+        "feastDay": "August 16",
+        "knownFor": "Cared for plague victims, contracted plague himself",
+        "patronOf": "Dogs, plague, epidemics",
+        "dates": "c. 1348-1376",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "compassion",
+            "healing",
+            "nurturing",
+            "animals"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Raphael the Archangel",
+        "feastDay": "September 29",
+        "knownFor": "Healing angel in Book of Tobit",
+        "patronOf": "Travelers, blind, nurses, physicians",
+        "dates": "Biblical",
+        "origin": "Heaven",
+        "gender": "Male",
+        "traits": [
+            "healing",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Michael the Archangel",
+        "feastDay": "September 29",
+        "knownFor": "Warrior angel who defeated Satan",
+        "patronOf": "Police, soldiers, paratroopers, Germany",
+        "dates": "Biblical",
+        "origin": "Heaven",
+        "gender": "Male",
+        "traits": [
+            "strength",
+            "warrior",
+            "military",
+            "spiritual-warfare"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Gabriel the Archangel",
+        "feastDay": "September 29",
+        "knownFor": "Angel of Annunciation to Mary",
+        "patronOf": "Messengers, postal workers, telecommunications",
+        "dates": "Biblical",
+        "origin": "Heaven",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "work",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Guardian Angels",
+        "feastDay": "October 2",
+        "knownFor": "Angels assigned to protect each person",
+        "patronOf": "Personal protection, safety",
+        "dates": "Biblical",
+        "origin": "Heaven",
+        "gender": "Male",
+        "traits": [
+            "protection",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Anne",
+        "feastDay": "July 26",
+        "knownFor": "Mother of Virgin Mary, grandmother of Jesus",
+        "patronOf": "Grandmothers, mothers, pregnant women, miners",
+        "dates": "1st century BC",
+        "origin": "Galilee",
+        "gender": "Female",
+        "traits": [
+            "family",
+            "motherhood",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Joachim",
+        "feastDay": "July 26",
+        "knownFor": "Father of Virgin Mary, grandfather of Jesus",
+        "patronOf": "Grandfathers, fathers, cabinet makers",
+        "dates": "1st century BC",
+        "origin": "Galilee",
+        "gender": "Female",
+        "traits": [
+            "family",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Elizabeth (mother of John Baptist)",
+        "feastDay": "November 5",
+        "knownFor": "Mother of John the Baptist, cousin of Mary",
+        "patronOf": "Expectant mothers, pregnancy",
+        "dates": "1st century",
+        "origin": "Judea",
+        "gender": "Female",
+        "traits": [
+            "family",
+            "motherhood",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. John the Baptist",
+        "feastDay": "June 24",
+        "knownFor": "Forerunner of Christ, baptized Jesus",
+        "patronOf": "Baptism, tailors, farriers",
+        "dates": "d. c. 30 AD",
+        "origin": "Judea",
+        "gender": "Male",
+        "traits": [
+            "evangelization",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Joseph of Arimathea",
+        "feastDay": "March 17",
+        "knownFor": "Donated tomb for Jesus, buried Jesus",
+        "patronOf": "Funeral directors, pallbearers",
+        "dates": "1st century",
+        "origin": "Judea",
+        "gender": "Male",
+        "traits": [
+            "generosity",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Dismas",
+        "feastDay": "March 25",
+        "knownFor": "Good thief crucified with Jesus",
+        "patronOf": "Prisoners, thieves, funeral directors, death row",
+        "dates": "1st century",
+        "origin": "Judea",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "devotion",
+            "perseverance",
+            "love",
+            "service"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Longinus",
+        "feastDay": "March 15",
+        "knownFor": "Roman soldier who pierced Jesus' side",
+        "patronOf": "Soldiers, cavalry, Mantua",
+        "dates": "1st century",
+        "origin": "Rome",
+        "gender": "Male",
+        "traits": [
+            "strength",
+            "warrior",
+            "military"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "St. Veronica",
+        "feastDay": "July 12",
+        "knownFor": "Wiped Jesus' face on way to Calvary",
+        "patronOf": "Photographers, laundry workers",
+        "dates": "1st century",
+        "origin": "Jerusalem",
+        "gender": "Female",
+        "traits": [
+            "work",
+            "faith",
+            "devotion",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Lord, make me an instrument of your peace.",
+            "All for the greater glory of God."
         ]
     }
 ];
