@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C75CMC27YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C75CMC27YN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,14 +37,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saintdiscoveryquiz.com/all-saints.html">
     <meta property="og:title" content="Complete List of Catholic Saints | Saint Discovery Quiz">
-    <meta property="og:description" content="Browse our complete directory of 135+ Catholic saints with feast days, patronages, and inspiring quotes.">
+    <meta property="og:description"
+        content="Browse our complete directory of 135+ Catholic saints with feast days, patronages, and inspiring quotes.">
     <meta property="og:image" content="https://saintdiscoveryquiz.com/favicon.svg">
     <meta property="og:site_name" content="Saint Discovery Quiz">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Complete List of Catholic Saints">
-    <meta name="twitter:description" content="Browse our complete directory of 135+ Catholic saints with feast days, patronages, and inspiring quotes.">
+    <meta name="twitter:description"
+        content="Browse our complete directory of 135+ Catholic saints with feast days, patronages, and inspiring quotes.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -62,7 +74,9 @@
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .page-header {
@@ -73,15 +87,18 @@
             box-shadow: var(--shadow-lg);
             margin-bottom: 30px;
         }
+
         .page-header h1 {
             font-size: 2.5rem;
             color: var(--primary-navy);
             margin-bottom: 10px;
         }
+
         .page-header p {
             color: var(--text-medium);
             font-size: 1.1rem;
         }
+
         .nav-links {
             display: flex;
             justify-content: center;
@@ -89,6 +106,7 @@
             margin-top: 25px;
             flex-wrap: wrap;
         }
+
         .nav-links a {
             color: var(--primary-navy);
             text-decoration: none;
@@ -98,16 +116,20 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-        .nav-links a:hover, .nav-links a.active {
+
+        .nav-links a:hover,
+        .nav-links a.active {
             background: var(--primary-navy);
             color: white;
         }
+
         .saints-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 25px;
             margin-top: 20px;
         }
+
         .saint-card {
             background: white;
             border-radius: 12px;
@@ -116,15 +138,18 @@
             transition: all 0.3s ease;
             border-left: 4px solid var(--gold);
         }
+
         .saint-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
         }
+
         .saint-card h2 {
             font-size: 1.5rem;
             color: var(--primary-navy);
             margin-bottom: 8px;
         }
+
         .saint-card .feast-day {
             display: inline-block;
             background: var(--gold);
@@ -135,19 +160,23 @@
             font-weight: 600;
             margin-bottom: 12px;
         }
+
         .saint-card .known-for {
             color: var(--text-medium);
             font-size: 0.95rem;
             margin-bottom: 10px;
             line-height: 1.5;
         }
+
         .saint-card .patron-of {
             font-size: 0.85rem;
             color: var(--text-light);
         }
+
         .saint-card .patron-of strong {
             color: var(--text-medium);
         }
+
         .saint-card .dates-origin {
             font-size: 0.85rem;
             color: var(--text-light);
@@ -155,6 +184,7 @@
             padding-top: 10px;
             border-top: 1px solid var(--border-light);
         }
+
         .search-filter {
             background: white;
             border-radius: 12px;
@@ -162,6 +192,7 @@
             margin-bottom: 25px;
             box-shadow: var(--shadow);
         }
+
         .search-filter input {
             width: 100%;
             padding: 14px 20px;
@@ -171,16 +202,19 @@
             font-family: 'Open Sans', sans-serif;
             transition: border-color 0.3s ease;
         }
+
         .search-filter input:focus {
             outline: none;
             border-color: var(--gold);
         }
+
         .saint-count {
             text-align: center;
             color: var(--text-light);
             margin-bottom: 20px;
             font-size: 0.95rem;
         }
+
         /* Home Button */
         .home-btn {
             position: fixed;
@@ -201,15 +235,18 @@
             z-index: 1000;
             text-decoration: none;
         }
+
         .home-btn:hover {
             background: var(--primary-navy-light);
             transform: scale(1.1);
         }
+
         .home-btn svg {
             width: 24px;
             height: 24px;
             fill: white;
         }
+
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
@@ -231,23 +268,28 @@
             opacity: 0;
             visibility: hidden;
         }
+
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
+
         .back-to-top:hover {
             background: var(--gold-light);
             transform: scale(1.1);
         }
+
         .back-to-top svg {
             width: 24px;
             height: 24px;
             fill: var(--primary-navy);
         }
+
         @media (max-width: 768px) {
             .saints-grid {
                 grid-template-columns: 1fr;
             }
+
             .page-header h1 {
                 font-size: 2rem;
             }
@@ -258,12 +300,16 @@
 <body>
     <!-- Home Button -->
     <a href="index.html" class="home-btn" title="Back to Quiz" aria-label="Back to Quiz">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
     </a>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
     </button>
 
     <main role="main" class="container" style="max-width: 1200px;">
@@ -280,7 +326,8 @@
         </header>
 
         <section class="search-filter">
-            <input type="text" id="searchInput" placeholder="Search saints by name, patronage, or virtue..." aria-label="Search saints">
+            <input type="text" id="searchInput" placeholder="Search saints by name, patronage, or virtue..."
+                aria-label="Search saints">
         </section>
 
         <p class="saint-count" id="saintCount">Loading saints...</p>
@@ -292,7 +339,7 @@
 
     <script src="saints-data.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const grid = document.getElementById('saintsGrid');
             const searchInput = document.getElementById('searchInput');
             const countEl = document.getElementById('saintCount');

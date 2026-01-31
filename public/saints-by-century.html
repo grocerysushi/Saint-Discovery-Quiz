@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C75CMC27YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C75CMC27YN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,14 +37,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saintdiscoveryquiz.com/saints-by-century.html">
     <meta property="og:title" content="Catholic Saints by Century | Saints Through History">
-    <meta property="og:description" content="Explore Catholic saints organized by time period from the apostles to modern saints.">
+    <meta property="og:description"
+        content="Explore Catholic saints organized by time period from the apostles to modern saints.">
     <meta property="og:image" content="https://saintdiscoveryquiz.com/favicon.svg">
     <meta property="og:site_name" content="Saint Discovery Quiz">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Catholic Saints by Century">
-    <meta name="twitter:description" content="Explore Catholic saints organized by time period from the apostles to modern saints.">
+    <meta name="twitter:description"
+        content="Explore Catholic saints organized by time period from the apostles to modern saints.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -62,7 +74,9 @@
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .page-header {
@@ -73,15 +87,18 @@
             box-shadow: var(--shadow-lg);
             margin-bottom: 30px;
         }
+
         .page-header h1 {
             font-size: 2.5rem;
             color: var(--primary-navy);
             margin-bottom: 10px;
         }
+
         .page-header p {
             color: var(--text-medium);
             font-size: 1.1rem;
         }
+
         .nav-links {
             display: flex;
             justify-content: center;
@@ -89,6 +106,7 @@
             margin-top: 25px;
             flex-wrap: wrap;
         }
+
         .nav-links a {
             color: var(--primary-navy);
             text-decoration: none;
@@ -98,14 +116,18 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-        .nav-links a:hover, .nav-links a.active {
+
+        .nav-links a:hover,
+        .nav-links a.active {
             background: var(--primary-navy);
             color: white;
         }
+
         .timeline {
             position: relative;
             padding-left: 30px;
         }
+
         .timeline::before {
             content: '';
             position: absolute;
@@ -116,11 +138,13 @@
             background: linear-gradient(180deg, var(--gold), var(--primary-navy));
             border-radius: 2px;
         }
+
         .century-section {
             position: relative;
             margin-bottom: 40px;
             padding-left: 30px;
         }
+
         .century-section::before {
             content: '';
             position: absolute;
@@ -133,41 +157,48 @@
             border: 4px solid white;
             box-shadow: var(--shadow);
         }
+
         .century-header {
             background: linear-gradient(135deg, var(--primary-navy), var(--primary-navy-light));
             color: white;
             padding: 25px 30px;
             border-radius: 12px 12px 0 0;
         }
+
         .century-header h2 {
             font-size: 1.8rem;
             margin-bottom: 5px;
             color: white;
         }
+
         .century-header .era-description {
             color: var(--gold-light);
             font-size: 0.95rem;
             font-style: italic;
         }
+
         .century-header .count {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
             padding: 5px 15px;
             border-radius: 15px;
             font-size: 0.85rem;
             margin-top: 10px;
         }
+
         .century-content {
             background: white;
             padding: 25px;
             border-radius: 0 0 12px 12px;
             box-shadow: var(--shadow);
         }
+
         .saints-timeline-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
         }
+
         .saint-timeline-card {
             background: var(--cream-light);
             padding: 20px;
@@ -175,16 +206,19 @@
             border-left: 4px solid var(--gold);
             transition: all 0.3s ease;
         }
+
         .saint-timeline-card:hover {
             background: white;
             transform: translateX(5px);
             box-shadow: var(--shadow);
         }
+
         .saint-timeline-card h3 {
             font-size: 1.2rem;
             color: var(--primary-navy);
             margin-bottom: 8px;
         }
+
         .saint-timeline-card .dates {
             display: inline-block;
             background: var(--primary-navy);
@@ -194,16 +228,19 @@
             font-size: 0.8rem;
             margin-bottom: 10px;
         }
+
         .saint-timeline-card .known-for {
             color: var(--text-medium);
             font-size: 0.9rem;
             line-height: 1.5;
             margin-bottom: 8px;
         }
+
         .saint-timeline-card .origin {
             color: var(--text-light);
             font-size: 0.85rem;
         }
+
         .era-nav {
             background: white;
             border-radius: 12px;
@@ -211,16 +248,19 @@
             margin-bottom: 25px;
             box-shadow: var(--shadow);
         }
+
         .era-nav h3 {
             font-size: 1rem;
             color: var(--text-medium);
             margin-bottom: 15px;
         }
+
         .era-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
+
         .era-btn {
             background: var(--cream-light);
             border: none;
@@ -232,10 +272,12 @@
             color: var(--text-dark);
             transition: all 0.3s ease;
         }
+
         .era-btn:hover {
             background: var(--gold);
             color: var(--primary-navy);
         }
+
         /* Home Button */
         .home-btn {
             position: fixed;
@@ -256,15 +298,18 @@
             z-index: 1000;
             text-decoration: none;
         }
+
         .home-btn:hover {
             background: var(--primary-navy-light);
             transform: scale(1.1);
         }
+
         .home-btn svg {
             width: 24px;
             height: 24px;
             fill: white;
         }
+
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
@@ -286,29 +331,36 @@
             opacity: 0;
             visibility: hidden;
         }
+
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
+
         .back-to-top:hover {
             background: var(--gold-light);
             transform: scale(1.1);
         }
+
         .back-to-top svg {
             width: 24px;
             height: 24px;
             fill: var(--primary-navy);
         }
+
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
             }
+
             .timeline {
                 padding-left: 20px;
             }
+
             .century-section {
                 padding-left: 20px;
             }
+
             .saints-timeline-grid {
                 grid-template-columns: 1fr;
             }
@@ -319,12 +371,16 @@
 <body>
     <!-- Home Button -->
     <a href="index.html" class="home-btn" title="Back to Quiz" aria-label="Back to Quiz">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
     </a>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
     </button>
 
     <main role="main" class="container" style="max-width: 1200px;">
@@ -354,7 +410,7 @@
 
     <script src="saints-data.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const eras = [
                 {
                     id: 'biblical',

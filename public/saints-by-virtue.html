@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C75CMC27YN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C75CMC27YN');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,14 +37,16 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saintdiscoveryquiz.com/saints-by-virtue.html">
     <meta property="og:title" content="Catholic Saints by Virtue | Find Saints by Character Traits">
-    <meta property="og:description" content="Discover Catholic saints organized by their virtues - courage, humility, charity, wisdom, and more.">
+    <meta property="og:description"
+        content="Discover Catholic saints organized by their virtues - courage, humility, charity, wisdom, and more.">
     <meta property="og:image" content="https://saintdiscoveryquiz.com/favicon.svg">
     <meta property="og:site_name" content="Saint Discovery Quiz">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Catholic Saints by Virtue">
-    <meta name="twitter:description" content="Discover Catholic saints organized by their virtues - courage, humility, charity, wisdom, and more.">
+    <meta name="twitter:description"
+        content="Discover Catholic saints organized by their virtues - courage, humility, charity, wisdom, and more.">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -62,7 +74,9 @@
     <!-- Fonts & Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         .page-header {
@@ -73,15 +87,18 @@
             box-shadow: var(--shadow-lg);
             margin-bottom: 30px;
         }
+
         .page-header h1 {
             font-size: 2.5rem;
             color: var(--primary-navy);
             margin-bottom: 10px;
         }
+
         .page-header p {
             color: var(--text-medium);
             font-size: 1.1rem;
         }
+
         .nav-links {
             display: flex;
             justify-content: center;
@@ -89,6 +106,7 @@
             margin-top: 25px;
             flex-wrap: wrap;
         }
+
         .nav-links a {
             color: var(--primary-navy);
             text-decoration: none;
@@ -98,10 +116,13 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-        .nav-links a:hover, .nav-links a.active {
+
+        .nav-links a:hover,
+        .nav-links a.active {
             background: var(--primary-navy);
             color: white;
         }
+
         .virtue-section {
             background: white;
             border-radius: 16px;
@@ -109,6 +130,7 @@
             margin-bottom: 25px;
             box-shadow: var(--shadow);
         }
+
         .virtue-header {
             display: flex;
             align-items: center;
@@ -117,6 +139,7 @@
             padding-bottom: 15px;
             border-bottom: 2px solid var(--cream);
         }
+
         .virtue-icon {
             width: 50px;
             height: 50px;
@@ -128,11 +151,13 @@
             font-size: 1.5rem;
             color: var(--primary-navy);
         }
+
         .virtue-header h2 {
             font-size: 1.8rem;
             color: var(--primary-navy);
             margin: 0;
         }
+
         .virtue-header .count {
             background: var(--cream);
             padding: 5px 15px;
@@ -141,16 +166,19 @@
             color: var(--text-medium);
             margin-left: auto;
         }
+
         .virtue-description {
             color: var(--text-medium);
             margin-bottom: 20px;
             font-style: italic;
         }
+
         .saints-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 15px;
         }
+
         .saint-item {
             background: var(--cream-light);
             padding: 15px 20px;
@@ -158,27 +186,32 @@
             border-left: 3px solid var(--gold);
             transition: all 0.3s ease;
         }
+
         .saint-item:hover {
             background: white;
             transform: translateX(5px);
             box-shadow: var(--shadow);
         }
+
         .saint-item h3 {
             font-size: 1.1rem;
             color: var(--primary-navy);
             margin-bottom: 5px;
         }
+
         .saint-item p {
             font-size: 0.85rem;
             color: var(--text-light);
             margin: 0;
         }
+
         .saint-item .traits {
             display: flex;
             flex-wrap: wrap;
             gap: 5px;
             margin-top: 8px;
         }
+
         .saint-item .trait-tag {
             background: var(--primary-navy);
             color: white;
@@ -187,6 +220,7 @@
             font-size: 0.7rem;
             text-transform: capitalize;
         }
+
         .virtue-nav {
             background: white;
             border-radius: 12px;
@@ -194,16 +228,19 @@
             margin-bottom: 25px;
             box-shadow: var(--shadow);
         }
+
         .virtue-nav h3 {
             font-size: 1rem;
             color: var(--text-medium);
             margin-bottom: 15px;
         }
+
         .virtue-buttons {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
+
         .virtue-btn {
             background: var(--cream-light);
             border: none;
@@ -215,10 +252,12 @@
             color: var(--text-dark);
             transition: all 0.3s ease;
         }
+
         .virtue-btn:hover {
             background: var(--gold);
             color: var(--primary-navy);
         }
+
         /* Home Button */
         .home-btn {
             position: fixed;
@@ -239,15 +278,18 @@
             z-index: 1000;
             text-decoration: none;
         }
+
         .home-btn:hover {
             background: var(--primary-navy-light);
             transform: scale(1.1);
         }
+
         .home-btn svg {
             width: 24px;
             height: 24px;
             fill: white;
         }
+
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
@@ -269,26 +311,32 @@
             opacity: 0;
             visibility: hidden;
         }
+
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
+
         .back-to-top:hover {
             background: var(--gold-light);
             transform: scale(1.1);
         }
+
         .back-to-top svg {
             width: 24px;
             height: 24px;
             fill: var(--primary-navy);
         }
+
         @media (max-width: 768px) {
             .page-header h1 {
                 font-size: 2rem;
             }
+
             .virtue-header {
                 flex-wrap: wrap;
             }
+
             .virtue-header .count {
                 margin-left: 0;
                 margin-top: 10px;
@@ -300,12 +348,16 @@
 <body>
     <!-- Home Button -->
     <a href="index.html" class="home-btn" title="Back to Quiz" aria-label="Back to Quiz">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
     </a>
 
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
     </button>
 
     <main role="main" class="container" style="max-width: 1200px;">
@@ -335,7 +387,7 @@
 
     <script src="saints-data.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const virtueConfig = {
                 intellectual: {
                     icon: '📚',
