@@ -1,0 +1,24 @@
+{
+  "name": "Saint Discovery Quiz - Find Your Patron Saint",
+  "short_name": "Saint Quiz",
+  "description": "Discover which Catholic Saint resonates with your personality through our AI-powered quiz. Answer 12 questions to find your patron saint match.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF5E6",
+  "theme_color": "#8B4513",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["lifestyle", "education", "entertainment"],
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

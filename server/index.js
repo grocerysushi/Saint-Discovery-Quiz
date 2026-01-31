@@ -1,15 +1,65 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const compression = require('compression');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Enable gzip compression for all responses (improves Core Web Vitals)
+app.use(compression({
+    level: 6, // Balanced compression level
+    threshold: 1024, // Only compress responses > 1KB
+    filter: (req, res) => {
+        // Don't compress if client doesn't accept it
+        if (req.headers['x-no-compression']) {
+            return false;
+        }
+        return compression.filter(req, res);
+    }
+}));
+
+// Security and SEO headers middleware
+app.use((req, res, next) => {
+    // Security headers
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+
+    // SEO-friendly headers
+    res.setHeader('X-Robots-Tag', 'index, follow');
+
+    next();
+});
+
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../public')));
+
+// Static file serving with caching headers for better Core Web Vitals
+app.use(express.static(path.join(__dirname, '../public'), {
+    maxAge: '1d', // Cache static assets for 1 day
+    etag: true,
+    lastModified: true,
+    setHeaders: (res, filePath) => {
+        // Longer cache for fonts and images
+        if (filePath.endsWith('.woff2') || filePath.endsWith('.woff') ||
+            filePath.endsWith('.png') || filePath.endsWith('.jpg') ||
+            filePath.endsWith('.ico') || filePath.endsWith('.svg')) {
+            res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // 1 year
+        }
+        // Medium cache for CSS and JS (1 week)
+        else if (filePath.endsWith('.css') || filePath.endsWith('.js')) {
+            res.setHeader('Cache-Control', 'public, max-age=604800'); // 1 week
+        }
+        // Short cache for HTML (to allow updates)
+        else if (filePath.endsWith('.html')) {
+            res.setHeader('Cache-Control', 'public, max-age=3600'); // 1 hour
+        }
+    }
+}));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {

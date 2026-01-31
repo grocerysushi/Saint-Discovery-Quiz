@@ -1,4 +1,32 @@
+# Robots.txt for Saint Discovery Quiz
+# https://saintdiscoveryquiz.com
+
+# Allow all crawlers full access
 User-agent: *
 Allow: /
 
+# Specifically allow major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Disallow crawling of API endpoints
+User-agent: *
+Disallow: /api/
+
+# Sitemap location
 Sitemap: https://saintdiscoveryquiz.com/sitemap.xml
+
+# Crawl-delay for polite crawling (optional, respected by some bots)
+# Crawl-delay: 1
+
+# Host directive (for Yandex and some other bots)
+Host: https://saintdiscoveryquiz.com
