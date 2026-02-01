@@ -16,7 +16,9 @@
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -30,7 +32,10 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
 }
@@ -54,8 +59,15 @@ h1, h2, h3, h4 {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Landing Page */
@@ -307,8 +319,15 @@ h1, h2, h3, h4 {
 }
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(20px); }
-    to { opacity: 1; transform: translateX(0); }
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .question h2 {
@@ -441,12 +460,12 @@ h1, h2, h3, h4 {
     margin-top: 2px;
 }
 
-.checkbox-label input:checked + .checkbox-custom {
+.checkbox-label input:checked+.checkbox-custom {
     background: var(--gold);
     border-color: var(--gold);
 }
 
-.checkbox-label input:checked + .checkbox-custom::after {
+.checkbox-label input:checked+.checkbox-custom::after {
     content: '✓';
     position: absolute;
     top: 50%;
@@ -724,7 +743,9 @@ h1, h2, h3, h4 {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .loading-content p {
@@ -925,136 +946,4 @@ h1, h2, h3, h4 {
     .breadcrumb-item.current span {
         font-size: 0.85rem;
     }
-}
-
-/* Saint of the Week Widget */
-.saint-of-week {
-    background: linear-gradient(145deg, var(--primary-navy) 0%, var(--primary-navy-light) 100%);
-    border-radius: 12px;
-    padding: 25px;
-    margin: 30px auto;
-    max-width: 550px;
-    text-align: left;
-    color: white;
-}
-
-.sotw-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.sotw-label {
-    background: var(--gold);
-    color: var(--primary-navy);
-    padding: 5px 14px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.sotw-dates {
-    color: var(--gold-light);
-    font-size: 0.85rem;
-}
-
-.sotw-name {
-    font-size: 1.5rem;
-    color: white;
-    margin-bottom: 8px;
-}
-
-.sotw-feast {
-    color: var(--gold);
-    font-weight: 600;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.sotw-section {
-    margin-bottom: 12px;
-}
-
-.sotw-section-title {
-    color: var(--gold);
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 4px;
-    font-weight: 600;
-}
-
-.sotw-section-content {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-.sotw-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    color: var(--gold-light);
-    font-size: 1.05rem;
-    padding-top: 15px;
-    margin-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    line-height: 1.5;
-}
-
-.sotw-quote:empty {
-    display: none;
-}
-
-@media (max-width: 480px) {
-    .saint-of-week {
-        padding: 20px;
-        margin: 25px 0;
-    }
-
-    .sotw-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
-
-    .sotw-name {
-        font-size: 1.3rem;
-    }
-}
-
-/* Language Switcher */
-.language-switcher {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.lang-btn {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    padding: 4px 10px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-.lang-btn:hover {
-    color: var(--primary-navy);
-    background: var(--cream);
-}
-
-.lang-btn.active {
-    color: var(--primary-navy);
-    background: var(--gold);
-}
-
-.lang-divider {
-    color: var(--border-light);
-    font-size: 0.85rem;
 }

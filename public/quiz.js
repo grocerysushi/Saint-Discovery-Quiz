@@ -127,51 +127,14 @@ let currentQuestion = 0;
 let userAnswers = [];
 let matchedSaint = null;
 let matchExplanation = "";
-let currentLang = 'en';
 
 // Initialize
-document.addEventListener('DOMContentLoaded', async () => {
-    // Initialize i18n if available
-    if (typeof i18n !== 'undefined') {
-        currentLang = await i18n.init();
-        updateLanguageSwitcher();
-        i18n.translatePage();
-    }
-
+document.addEventListener('DOMContentLoaded', () => {
     // Initialize Saint of the Day widget
     initSaintOfTheDay();
-
-    // Initialize Saint of the Week widget
-    initSaintOfTheWeek();
 });
 
-// Update language switcher active state
-function updateLanguageSwitcher() {
-    const switcher = document.getElementById('langSwitcher');
-    if (!switcher) return;
 
-    const links = switcher.querySelectorAll('.lang-btn');
-    links.forEach(link => {
-        const linkLang = link.getAttribute('hreflang');
-        link.classList.toggle('active', linkLang === currentLang);
-    });
-}
-
-// Get translated text helper
-function t(key, replacements = {}) {
-    if (typeof i18n !== 'undefined') {
-        return i18n.t(key, replacements);
-    }
-    return key;
-}
-
-// Get translated saint field
-function getSaintField(saint, field) {
-    if (typeof i18n !== 'undefined') {
-        return i18n.getSaintField(saint, field);
-    }
-    return saint[field];
-}
 
 // Saint of the Day - deterministic selection based on date
 function initSaintOfTheDay() {
@@ -186,20 +149,15 @@ function initSaintOfTheDay() {
     const saintIndex = dayOfYear % saintsDatabase.length;
     const saint = saintsDatabase[saintIndex];
 
-    // Format today's date based on language
+    // Format today's date
     const dateOptions = { weekday: 'long', month: 'long', day: 'numeric' };
-    const locale = currentLang === 'es' ? 'es-ES' : 'en-US';
-    const formattedDate = today.toLocaleDateString(locale, dateOptions);
-
-    // Get translated saint fields
-    const knownFor = getSaintField(saint, 'knownFor');
-    const feastDayLabel = currentLang === 'es' ? 'Día de Fiesta' : 'Feast Day';
+    const formattedDate = today.toLocaleDateString('en-US', dateOptions);
 
     // Populate the widget
     document.getElementById('sotdDate').textContent = formattedDate;
     document.getElementById('sotdName').textContent = saint.name;
-    document.getElementById('sotdFeast').textContent = `${feastDayLabel}: ${saint.feastDay}`;
-    document.getElementById('sotdKnown').textContent = knownFor;
+    document.getElementById('sotdFeast').textContent = `Feast Day: ${saint.feastDay}`;
+    document.getElementById('sotdKnown').textContent = saint.knownFor;
 
     // Add quote if available
     const quoteEl = document.getElementById('sotdQuote');
@@ -210,60 +168,7 @@ function initSaintOfTheDay() {
     }
 }
 
-// Saint of the Week - deterministic selection based on week number
-function initSaintOfTheWeek() {
-    const saintOfWeekWidget = document.getElementById('saintOfWeek');
-    if (!saintOfWeekWidget || typeof saintsDatabase === 'undefined') return;
 
-    // Get current date
-    const today = new Date();
-
-    // Calculate week of year (ISO week number)
-    const startOfYear = new Date(today.getFullYear(), 0, 1);
-    const dayOfYear = Math.floor((today - startOfYear) / (1000 * 60 * 60 * 24));
-    const weekOfYear = Math.ceil((dayOfYear + startOfYear.getDay() + 1) / 7);
-
-    // Use offset of 50 to avoid same saint as daily widget
-    const saintIndex = (weekOfYear + 50) % saintsDatabase.length;
-    const saint = saintsDatabase[saintIndex];
-
-    // Calculate week date range (Sunday to Saturday)
-    const currentDay = today.getDay();
-    const sundayOffset = currentDay === 0 ? 0 : -currentDay;
-    const weekStart = new Date(today);
-    weekStart.setDate(today.getDate() + sundayOffset);
-    const weekEnd = new Date(weekStart);
-    weekEnd.setDate(weekStart.getDate() + 6);
-
-    // Format date range based on language
-    const dateOptions = { month: 'short', day: 'numeric' };
-    const locale = currentLang === 'es' ? 'es-ES' : 'en-US';
-    const startStr = weekStart.toLocaleDateString(locale, dateOptions);
-    const endStr = weekEnd.toLocaleDateString(locale, dateOptions);
-
-    // Get translated saint fields
-    const knownFor = getSaintField(saint, 'knownFor');
-    const patronOf = getSaintField(saint, 'patronOf');
-    const feastDayLabel = currentLang === 'es' ? 'Día de Fiesta' : 'Feast Day';
-
-    // Populate the widget
-    document.getElementById('sotwDates').textContent = `${startStr} - ${endStr}`;
-    document.getElementById('sotwName').textContent = saint.name;
-    document.getElementById('sotwFeast').textContent = `${feastDayLabel}: ${saint.feastDay}`;
-    document.getElementById('sotwKnown').textContent = knownFor;
-    document.getElementById('sotwPatron').textContent = patronOf;
-    document.getElementById('sotwLife').textContent = `${saint.dates} | ${saint.origin}`;
-
-    // Add quote if available
-    const quoteEl = document.getElementById('sotwQuote');
-    if (saint.quote && saint.quote.trim()) {
-        quoteEl.textContent = `"${saint.quote}"`;
-    } else if (saint.quotes && saint.quotes.length > 0 && saint.quotes[0].trim()) {
-        quoteEl.textContent = `"${saint.quotes[0]}"`;
-    } else {
-        quoteEl.textContent = '';
-    }
-}
 
 // Start Quiz
 function startQuiz() {
@@ -303,24 +208,16 @@ function renderQuestion() {
     // Update progress
     const progress = ((currentQuestion) / questions.length) * 100;
     document.getElementById('progressFill').style.width = `${progress}%`;
-
-    // Get translated progress text
-    const progressText = currentLang === 'es'
-        ? `Pregunta ${currentQuestion + 1} de ${questions.length}`
-        : `Question ${currentQuestion + 1} of ${questions.length}`;
-    document.getElementById('progressText').textContent = progressText;
-
-    // Get translated question and answers
-    const questionText = getQuestionText(question.id);
+    document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
 
     // Render question
     container.innerHTML = `
         <div class="question" key="${question.id}">
-            <h2>${questionText}</h2>
+            <h2>${question.question}</h2>
             <div class="answers">
                 ${question.answers.map((answer, index) => `
                     <button class="answer-btn" onclick="selectAnswer(${index})">
-                        ${getAnswerText(question.id, index)}
+                        ${answer.text}
                     </button>
                 `).join('')}
             </div>
@@ -609,19 +506,11 @@ async function revealResult(gender) {
     showScreen('userInfo');
     const userInfoScreen = document.getElementById('userInfo');
 
-    // Get translated loading text
-    const analyzingText = currentLang === 'es'
-        ? 'Analizando tu camino espiritual con IA...'
-        : 'Analyzing your spiritual journey with AI...';
-    const waitText = currentLang === 'es'
-        ? 'Esto puede tomar unos momentos'
-        : 'This may take a few moments';
-
     userInfoScreen.innerHTML = `
         <div class="ai-loading">
             <div class="spinner"></div>
-            <p>${analyzingText}</p>
-            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">${waitText}</p>
+            <p>Analyzing your spiritual journey with AI...</p>
+            <p style="font-size: 0.9em; color: #999; margin-top: 10px;">This may take a few moments</p>
         </div>
     `;
 
@@ -797,15 +686,10 @@ async function revealResult(gender) {
 
 // Display Results
 function displayResults() {
-    // Get translated saint fields
-    const knownFor = getSaintField(matchedSaint, 'knownFor');
-    const patronOf = getSaintField(matchedSaint, 'patronOf');
-    const feastDayLabel = currentLang === 'es' ? 'Día de Fiesta' : 'Feast Day';
-
     document.getElementById('resultSaintName').textContent = matchedSaint.name;
-    document.getElementById('resultFeastDay').textContent = `${feastDayLabel}: ${matchedSaint.feastDay}`;
-    document.getElementById('resultKnownFor').textContent = knownFor;
-    document.getElementById('resultPatronOf').textContent = patronOf;
+    document.getElementById('resultFeastDay').textContent = `Feast Day: ${matchedSaint.feastDay}`;
+    document.getElementById('resultKnownFor').textContent = matchedSaint.knownFor;
+    document.getElementById('resultPatronOf').textContent = matchedSaint.patronOf;
     document.getElementById('resultDates').textContent = matchedSaint.dates;
     document.getElementById('resultOrigin').textContent = matchedSaint.origin;
     document.getElementById('resultExplanation').textContent = matchExplanation;
