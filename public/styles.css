@@ -850,6 +850,112 @@ h4 {
     }
 }
 
+/* Quiz Mode Selector */
+.quiz-mode-selector {
+    margin: 35px auto 30px;
+    max-width: 650px;
+}
+
+.mode-selector-title {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--primary-navy);
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.mode-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.mode-option {
+    background: white;
+    border: 3px solid var(--border-light);
+    border-radius: 12px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mode-option:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--gold-light);
+}
+
+.mode-option.selected {
+    border-color: var(--gold);
+    background: linear-gradient(145deg, #fffef9 0%, #faf8f0 100%);
+    box-shadow: var(--shadow);
+}
+
+.mode-option.selected::before {
+    content: '✓';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--gold);
+    color: var(--primary-navy);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.mode-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.mode-icon {
+    font-size: 1.5rem;
+}
+
+.mode-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-navy);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.mode-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.mode-badge {
+    background: var(--cream);
+    color: var(--primary-navy);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.mode-time {
+    color: var(--text-light);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+}
+
+.mode-description {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    margin: 0;
+    font-style: italic;
+}
+
 @media (max-width: 480px) {
     #landing h1 {
         font-size: 1.8rem;
@@ -871,5 +977,13 @@ h4 {
     .answer-btn {
         padding: 15px 20px;
         font-size: 0.95rem;
+    }
+
+    .mode-options {
+        grid-template-columns: 1fr;
+    }
+
+    .mode-selector-title {
+        font-size: 1.1rem;
     }
 }

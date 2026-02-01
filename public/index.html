@@ -320,7 +320,7 @@
       <div class="features">
         <div class="feature">
           <span class="feature-icon">&#9829;</span>
-          <span>12 Thoughtful Questions</span>
+          <span id="featureQuestions">12 Thoughtful Questions</span>
         </div>
         <div class="feature">
           <span class="feature-icon">&#9733;</span>
@@ -329,6 +329,35 @@
         <div class="feature">
           <span class="feature-icon">&#10013;</span>
           <span>Matched to Your Gender</span>
+        </div>
+      </div>
+
+      <!-- Quiz Mode Selector -->
+      <div class="quiz-mode-selector">
+        <h3 class="mode-selector-title">Choose Your Quiz Experience</h3>
+        <div class="mode-options">
+          <div class="mode-option selected" data-mode="standard" onclick="selectQuizMode('standard')">
+            <div class="mode-header">
+              <span class="mode-icon">⚡</span>
+              <span class="mode-name">Standard Quiz</span>
+            </div>
+            <div class="mode-details">
+              <span class="mode-badge">12 Questions</span>
+              <span class="mode-time">~3 minutes</span>
+            </div>
+            <p class="mode-description">Perfect for a quick spiritual insight</p>
+          </div>
+          <div class="mode-option" data-mode="deepdive" onclick="selectQuizMode('deepdive')">
+            <div class="mode-header">
+              <span class="mode-icon">🔍</span>
+              <span class="mode-name">Deep Dive Quiz</span>
+            </div>
+            <div class="mode-details">
+              <span class="mode-badge">24 Questions</span>
+              <span class="mode-time">~6 minutes</span>
+            </div>
+            <p class="mode-description">For the most accurate saint match</p>
+          </div>
         </div>
       </div>
 

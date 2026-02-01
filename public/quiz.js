@@ -122,17 +122,165 @@ const questions = [
     }
 ];
 
+// Deep Dive Questions - Additional 12 questions for more accurate matching
+const deepDiveQuestions = [
+    {
+        id: 13,
+        question: "How do you approach Sacred Scripture and spiritual reading?",
+        answers: [
+            { text: "I study it deeply, analyzing context and theology", traits: ["intellectual", "wisdom", "teaching"] },
+            { text: "I meditate on it slowly, letting it speak to my heart", traits: ["contemplation", "mysticism", "prayer"] },
+            { text: "I look for practical ways to apply it in daily life", traits: ["service", "simplicity", "obedience"] },
+            { text: "I share insights with others to inspire their faith", traits: ["preaching", "evangelization", "teaching"] }
+        ]
+    },
+    {
+        id: 14,
+        question: "When you experience suffering or hardship, what is your response?",
+        answers: [
+            { text: "I offer it up as a sacrifice united with Christ's passion", traits: ["sacrifice", "mysticism", "devotion"] },
+            { text: "I see it as an opportunity to grow in virtue and holiness", traits: ["transformation", "perseverance", "strength"] },
+            { text: "I use it to deepen my compassion for others who suffer", traits: ["compassion", "empathy", "service"] },
+            { text: "I trust that God will bring good from it in His time", traits: ["faith", "hope", "patience"] }
+        ]
+    },
+    {
+        id: 15,
+        question: "What is your relationship with material possessions?",
+        answers: [
+            { text: "I embrace radical poverty and simplicity", traits: ["poverty", "simplicity", "detachment"] },
+            { text: "I use resources generously to help those in need", traits: ["charity", "generosity", "service"] },
+            { text: "I'm grateful for what I have but not attached to it", traits: ["gratitude", "balance", "humility"] },
+            { text: "I see them as tools to serve God's kingdom", traits: ["stewardship", "wisdom", "leadership"] }
+        ]
+    },
+    {
+        id: 16,
+        question: "How do you relate to authority in the Church and society?",
+        answers: [
+            { text: "I obey faithfully, trusting in God's order", traits: ["obedience", "humility", "faith"] },
+            { text: "I respectfully challenge when I see injustice", traits: ["courage", "justice", "conviction"] },
+            { text: "I work within structures to bring about reform", traits: ["reform", "leadership", "wisdom"] },
+            { text: "I submit while maintaining my own discernment", traits: ["balance", "wisdom", "integrity"] }
+        ]
+    },
+    {
+        id: 17,
+        question: "What motivates you to share your faith with others?",
+        answers: [
+            { text: "A burning desire to bring souls to Christ", traits: ["missionary", "evangelization", "zeal"] },
+            { text: "The example of my life speaking louder than words", traits: ["witness", "simplicity", "humility"] },
+            { text: "Teaching others to understand the beauty of truth", traits: ["teaching", "intellectual", "wisdom"] },
+            { text: "Showing Christ's love through acts of service", traits: ["service", "charity", "compassion"] }
+        ]
+    },
+    {
+        id: 18,
+        question: "When you face criticism or opposition for your beliefs, how do you respond?",
+        answers: [
+            { text: "I stand firm with courage, even if it costs me everything", traits: ["courage", "conviction", "martyrdom"] },
+            { text: "I respond with gentleness and prayer for my critics", traits: ["humility", "patience", "forgiveness"] },
+            { text: "I engage intellectually to defend the truth", traits: ["intellectual", "apologetics", "wisdom"] },
+            { text: "I accept it as a cross and offer it to God", traits: ["sacrifice", "patience", "faith"] }
+        ]
+    },
+    {
+        id: 19,
+        question: "How do you balance action and contemplation in your spiritual life?",
+        answers: [
+            { text: "Contemplation is the foundation; action flows from it", traits: ["contemplation", "mysticism", "prayer"] },
+            { text: "Active service is my primary prayer", traits: ["service", "charity", "action"] },
+            { text: "I strive for equal balance between both", traits: ["balance", "wisdom", "integration"] },
+            { text: "I alternate between seasons of each as God calls", traits: ["discernment", "flexibility", "obedience"] }
+        ]
+    },
+    {
+        id: 20,
+        question: "Do you prefer community life or solitude in your spiritual journey?",
+        answers: [
+            { text: "I thrive in community, finding God in fellowship", traits: ["community", "fraternity", "collaboration"] },
+            { text: "I need solitude and silence to encounter God deeply", traits: ["solitude", "contemplation", "hermit"] },
+            { text: "I value both, seeking balance between them", traits: ["balance", "wisdom", "integration"] },
+            { text: "I prefer small, intimate communities", traits: ["family", "intimacy", "friendship"] }
+        ]
+    },
+    {
+        id: 21,
+        question: "How did you recognize and respond to God's call in your life?",
+        answers: [
+            { text: "Through a dramatic conversion or clear moment", traits: ["transformation", "conversion", "calling"] },
+            { text: "Gradually, through prayer and discernment over time", traits: ["discernment", "patience", "listening"] },
+            { text: "Through the needs I saw around me", traits: ["service", "compassion", "responsiveness"] },
+            { text: "Through study and understanding of God's will", traits: ["intellectual", "wisdom", "seeking"] }
+        ]
+    },
+    {
+        id: 22,
+        question: "What is your relationship with Mary and the saints?",
+        answers: [
+            { text: "Deep devotion, especially to Mary as spiritual mother", traits: ["devotion", "marian", "intercession"] },
+            { text: "I see them as examples and companions on the journey", traits: ["communion", "friendship", "inspiration"] },
+            { text: "I study their lives to learn from their wisdom", traits: ["intellectual", "learning", "wisdom"] },
+            { text: "I ask for their prayers and intercession regularly", traits: ["prayer", "intercession", "trust"] }
+        ]
+    },
+    {
+        id: 23,
+        question: "How do you approach penance and self-discipline?",
+        answers: [
+            { text: "I embrace rigorous fasting and mortification", traits: ["asceticism", "discipline", "sacrifice"] },
+            { text: "I practice moderation and balance in all things", traits: ["temperance", "balance", "wisdom"] },
+            { text: "I focus on interior conversion more than external acts", traits: ["interiority", "transformation", "heart"] },
+            { text: "I offer small daily sacrifices with love", traits: ["littleway", "simplicity", "love"] }
+        ]
+    },
+    {
+        id: 24,
+        question: "What is your vision for the Church and the world?",
+        answers: [
+            { text: "Renewal through return to tradition and orthodoxy", traits: ["tradition", "reform", "faithfulness"] },
+            { text: "Transformation through social justice and mercy", traits: ["justice", "mercy", "activism"] },
+            { text: "Evangelization reaching every nation and culture", traits: ["missionary", "evangelization", "universal"] },
+            { text: "Deeper holiness and sanctity in all believers", traits: ["holiness", "sanctification", "perfection"] }
+        ]
+    }
+];
+
+// Combine questions based on quiz mode
+let activeQuestions = questions; // Default to standard quiz
+
 // State
+let quizMode = 'standard'; // 'standard' or 'deepdive'
 let currentQuestion = 0;
 let userAnswers = [];
 let matchedSaint = null;
 let matchExplanation = "";
+
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Saint of the Day widget
     initSaintOfTheDay();
 });
+
+// Quiz Mode Selection
+function selectQuizMode(mode) {
+    quizMode = mode;
+
+    // Update UI
+    document.querySelectorAll('.mode-option').forEach(option => {
+        option.classList.remove('selected');
+    });
+    document.querySelector(`[data-mode="${mode}"]`).classList.add('selected');
+
+    // Update feature text
+    const featureText = mode === 'standard' ? '12 Thoughtful Questions' : '24 In-Depth Questions';
+    const featureElement = document.getElementById('featureQuestions');
+    if (featureElement) {
+        featureElement.textContent = featureText;
+    }
+}
+
 
 
 
@@ -172,11 +320,19 @@ function initSaintOfTheDay() {
 
 // Start Quiz
 function startQuiz() {
+    // Set active questions based on quiz mode
+    if (quizMode === 'deepdive') {
+        activeQuestions = [...questions, ...deepDiveQuestions];
+    } else {
+        activeQuestions = questions;
+    }
+
     currentQuestion = 0;
     userAnswers = [];
     showScreen('quiz');
     renderQuestion();
 }
+
 
 // Get translated question text
 function getQuestionText(questionId) {
@@ -202,13 +358,13 @@ function getAnswerText(questionId, answerIndex) {
 
 // Render Current Question
 function renderQuestion() {
-    const question = questions[currentQuestion];
+    const question = activeQuestions[currentQuestion];
     const container = document.getElementById('questionContainer');
 
     // Update progress
-    const progress = ((currentQuestion) / questions.length) * 100;
+    const progress = ((currentQuestion) / activeQuestions.length) * 100;
     document.getElementById('progressFill').style.width = `${progress}%`;
-    document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${questions.length}`;
+    document.getElementById('progressText').textContent = `Question ${currentQuestion + 1} of ${activeQuestions.length}`;
 
     // Render question
     container.innerHTML = `
@@ -232,7 +388,7 @@ function renderQuestion() {
 
 // Handle Answer Selection
 function selectAnswer(answerIndex) {
-    const question = questions[currentQuestion];
+    const question = activeQuestions[currentQuestion];
     userAnswers.push({
         questionId: question.id,
         answerIndex: answerIndex,
@@ -241,13 +397,14 @@ function selectAnswer(answerIndex) {
 
     currentQuestion++;
 
-    if (currentQuestion < questions.length) {
+    if (currentQuestion < activeQuestions.length) {
         renderQuestion();
     } else {
         // Quiz complete - show user form (match will be calculated after gender is selected)
         showScreen('userInfo');
     }
 }
+
 
 // Calculate Saint Match - filters by user's gender
 function calculateMatch(userGender) {
