@@ -2,12 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English Homepage -->
   <url>
     <loc>https://saintdiscoveryquiz.com/</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/"/>
     <image:image>
       <image:loc>https://saintdiscoveryquiz.com/favicon.svg</image:loc>
@@ -15,22 +17,74 @@
       <image:caption>Discover which Catholic Saint resonates with your personality through our AI-powered quiz</image:caption>
     </image:image>
   </url>
+  <!-- Spanish Homepage -->
+  <url>
+    <loc>https://saintdiscoveryquiz.com/es/</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/"/>
+  </url>
+  <!-- English All Saints -->
   <url>
     <loc>https://saintdiscoveryquiz.com/all-saints.html</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/all-saints.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/all-saints.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/all-saints.html"/>
   </url>
+  <!-- Spanish All Saints -->
+  <url>
+    <loc>https://saintdiscoveryquiz.com/es/all-saints.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/all-saints.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/all-saints.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/all-saints.html"/>
+  </url>
+  <!-- English Saints by Virtue -->
   <url>
     <loc>https://saintdiscoveryquiz.com/saints-by-virtue.html</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/saints-by-virtue.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/saints-by-virtue.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/saints-by-virtue.html"/>
   </url>
+  <!-- Spanish Saints by Virtue -->
+  <url>
+    <loc>https://saintdiscoveryquiz.com/es/saints-by-virtue.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/saints-by-virtue.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/saints-by-virtue.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/saints-by-virtue.html"/>
+  </url>
+  <!-- English Saints by Century -->
   <url>
     <loc>https://saintdiscoveryquiz.com/saints-by-century.html</loc>
     <lastmod>2026-01-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/saints-by-century.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/saints-by-century.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/saints-by-century.html"/>
+  </url>
+  <!-- Spanish Saints by Century -->
+  <url>
+    <loc>https://saintdiscoveryquiz.com/es/saints-by-century.html</loc>
+    <lastmod>2026-01-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/saints-by-century.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/saints-by-century.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/saints-by-century.html"/>
   </url>
 </urlset>

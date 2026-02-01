@@ -77,6 +77,7 @@
   <!-- Additional Link Tags for SEO -->
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="alternate" hreflang="en" href="https://saintdiscoveryquiz.com/">
+  <link rel="alternate" hreflang="es" href="https://saintdiscoveryquiz.com/es/">
   <link rel="alternate" hreflang="x-default" href="https://saintdiscoveryquiz.com/">
 
   <!-- Structured Data (JSON-LD) - WebSite with SearchAction -->
@@ -307,6 +308,13 @@
 
 <body>
   <main role="main" class="container">
+    <!-- Language Switcher -->
+    <div class="language-switcher" id="langSwitcher">
+      <a href="/" class="lang-btn active" hreflang="en">EN</a>
+      <span class="lang-divider">|</span>
+      <a href="/es/" class="lang-btn" hreflang="es">ES</a>
+    </div>
+
     <!-- Landing Page -->
     <section id="landing" class="screen active">
       <div class="decorative-cross" aria-label="Christian cross symbol">&#10013;</div>
@@ -334,6 +342,29 @@
         <p class="sotd-feast" id="sotdFeast"></p>
         <p class="sotd-known" id="sotdKnown"></p>
         <p class="sotd-quote" id="sotdQuote"></p>
+      </div>
+
+      <!-- Saint of the Week Widget -->
+      <div class="saint-of-week" id="saintOfWeek">
+        <div class="sotw-header">
+          <span class="sotw-label">Saint of the Week</span>
+          <span class="sotw-dates" id="sotwDates"></span>
+        </div>
+        <h3 class="sotw-name" id="sotwName"></h3>
+        <p class="sotw-feast" id="sotwFeast"></p>
+        <div class="sotw-section">
+          <div class="sotw-section-title">About</div>
+          <p class="sotw-section-content" id="sotwKnown"></p>
+        </div>
+        <div class="sotw-section">
+          <div class="sotw-section-title">Patron Of</div>
+          <p class="sotw-section-content" id="sotwPatron"></p>
+        </div>
+        <div class="sotw-section">
+          <div class="sotw-section-title">Life</div>
+          <p class="sotw-section-content" id="sotwLife"></p>
+        </div>
+        <p class="sotw-quote" id="sotwQuote"></p>
       </div>
 
       <div class="features">
@@ -446,6 +477,7 @@
     </div>
 
     <script src="saints-data.js" defer></script>
+    <script src="i18n.js" defer></script>
     <script src="quiz.js" defer></script>
   </main>
 </body>

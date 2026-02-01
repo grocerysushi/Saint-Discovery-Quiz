@@ -9,6 +9,7 @@
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "en-US",
+  "dir": "ltr",
   "categories": ["lifestyle", "education", "entertainment"],
   "icons": [
     {
@@ -20,5 +21,28 @@
   ],
   "screenshots": [],
   "related_applications": [],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Take Quiz",
+      "short_name": "Quiz",
+      "description": "Start the Saint Discovery Quiz",
+      "url": "/",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "All Saints",
+      "short_name": "Saints",
+      "description": "Browse all Catholic saints",
+      "url": "/all-saints.html",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Quiz en Español",
+      "short_name": "Quiz ES",
+      "description": "Iniciar el Quiz de Santos",
+      "url": "/es/",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    }
+  ]
 }

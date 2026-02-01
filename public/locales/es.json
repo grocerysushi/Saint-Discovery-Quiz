@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "title": "Quiz de Santos - Encuentra tu Santo Patr\u00f3n | Quiz de Personalidad Cat\u00f3lico",
+    "description": "Descubre qu\u00e9 Santo Cat\u00f3lico resuena con tu personalidad a trav\u00e9s de nuestro quiz impulsado por IA. Responde 12 preguntas reflexivas para encontrar tu santo patr\u00f3n entre m\u00e1s de 135 santos."
+  },
+  "nav": {
+    "home": "Inicio",
+    "takeQuiz": "Hacer el Quiz",
+    "allSaints": "Todos los Santos",
+    "byVirtue": "Por Virtud",
+    "byCentury": "Por Siglo",
+    "backToQuiz": "Volver al Quiz",
+    "backToTop": "Volver Arriba"
+  },
+  "landing": {
+    "title": "Quiz de Descubrimiento de Santos",
+    "subtitle": "Descubre qu\u00e9 Santo Cat\u00f3lico resuena con tu esp\u00edritu",
+    "intro1": "Realiza nuestro <strong>quiz de personalidad de santos cat\u00f3licos</strong> gratuito para descubrir qu\u00e9 <strong>santo patr\u00f3n</strong> mejor coincide con tu camino espiritual. Nuestro <strong>quiz de santos</strong> impulsado por IA analiza tus respuestas a 12 preguntas reflexivas y te empareja con uno de m\u00e1s de 135 santos cat\u00f3licos basado en tu personalidad, valores y camino de fe \u00fanicos.",
+    "intro2": "Ya sea que busques gu\u00eda espiritual, un santo patr\u00f3n, o simplemente tengas curiosidad sobre qu\u00e9 historia de vida de santo resuena con la tuya, este quiz proporciona perspectivas personalizadas impulsadas por inteligencia artificial.",
+    "features": {
+      "questions": "12 Preguntas Reflexivas",
+      "personalized": "Resultados Personalizados",
+      "genderMatch": "Emparejado a tu G\u00e9nero"
+    },
+    "startButton": "Comienza tu Camino",
+    "exploreLinks": "O explora nuestro directorio de santos:"
+  },
+  "saintOfDay": {
+    "label": "Santo del D\u00eda",
+    "feastDay": "D\u00eda de Fiesta: {date}"
+  },
+  "saintOfWeek": {
+    "label": "Santo de la Semana",
+    "feastDay": "D\u00eda de Fiesta: {date}",
+    "about": "Acerca de",
+    "patronOf": "Patr\u00f3n De",
+    "life": "Vida"
+  },
+  "quiz": {
+    "progressText": "Pregunta {current} de {total}",
+    "questions": {
+      "q1": {
+        "question": "\u00bfCu\u00e1ndo enfrentas un problema dif\u00edcil, cu\u00e1l es tu primer instinto?",
+        "a1": "Estudiar e investigar hasta comprender completamente cada aspecto",
+        "a2": "Tomar acci\u00f3n inmediata para abordar la situaci\u00f3n",
+        "a3": "Orar y reflexionar, confiando en que vendr\u00e1 la gu\u00eda",
+        "a4": "Ayudar a otros que puedan estar afectados"
+      },
+      "q2": {
+        "question": "\u00bfC\u00f3mo encuentras m\u00e1s significado en tu vida diaria?",
+        "a1": "A trav\u00e9s de momentos tranquilos de oraci\u00f3n y reflexi\u00f3n",
+        "a2": "Sirviendo a otros y atendiendo sus necesidades",
+        "a3": "A trav\u00e9s del aprendizaje, la lectura y ampliando mi comprensi\u00f3n",
+        "a4": "Creando belleza en el mundo a trav\u00e9s del arte, la m\u00fasica o la naturaleza"
+      },
+      "q3": {
+        "question": "\u00bfCu\u00e1ndo ves a alguien siendo tratado injustamente, c\u00f3mo respondes?",
+        "a1": "Hablo de inmediato, aunque sea inc\u00f3modo",
+        "a2": "Apoyo silenciosamente a la persona y ofrezco ayuda en privado",
+        "a3": "Trabajo para cambiar los sistemas y estructuras que causan injusticia",
+        "a4": "Oro por la situaci\u00f3n y todos los involucrados"
+      },
+      "q4": {
+        "question": "\u00bfQu\u00e9 tipo de ambiente te ayuda a sentirte m\u00e1s cerca de Dios?",
+        "a1": "En la naturaleza - bosques, monta\u00f1as o cerca del agua",
+        "a2": "En una capilla tranquila o durante la adoraci\u00f3n",
+        "a3": "Mientras sirvo activamente a otros necesitados",
+        "a4": "En comunidad con otros, compartiendo la fe juntos"
+      },
+      "q5": {
+        "question": "\u00bfC\u00f3mo describir\u00edas tu enfoque ante los desaf\u00edos personales?",
+        "a1": "Persevero constantemente, confiando en que todo saldr\u00e1 bien con el tiempo",
+        "a2": "Los enfrento directamente con determinaci\u00f3n y coraje",
+        "a3": "Busco lecciones y oportunidades de crecimiento en cada prueba",
+        "a4": "Ofrezco mi sufrimiento y lo uno con el de Cristo"
+      },
+      "q6": {
+        "question": "\u00bfQu\u00e9 rol tomas naturalmente en un grupo?",
+        "a1": "El l\u00edder que organiza y gu\u00eda a otros",
+        "a2": "El apoyo silencioso que se asegura de que las necesidades de todos est\u00e9n cubiertas",
+        "a3": "El maestro o mentor que comparte conocimiento",
+        "a4": "El animador que trae alegr\u00eda y paz"
+      },
+      "q7": {
+        "question": "\u00bfQu\u00e9 te atrae m\u00e1s al aprender sobre la vida de un santo?",
+        "a1": "Sus contribuciones intelectuales y escritos",
+        "a2": "Su coraje ante la persecuci\u00f3n",
+        "a3": "Su humilde servicio a los pobres y sufrientes",
+        "a4": "Su profunda vida de oraci\u00f3n m\u00edstica y visiones"
+      },
+      "q8": {
+        "question": "\u00bfC\u00f3mo prefieres expresar tu fe?",
+        "a1": "A trav\u00e9s del estudio de las Escrituras y las ense\u00f1anzas de la Iglesia",
+        "a2": "A trav\u00e9s de obras de misericordia y acciones caritativas",
+        "a3": "A trav\u00e9s de la oraci\u00f3n contemplativa y el silencio",
+        "a4": "Compartiendo mi fe abiertamente con otros"
+      },
+      "q9": {
+        "question": "\u00bfCu\u00e1l es tu mayor fortaleza?",
+        "a1": "Mi capacidad para entender ideas complejas y explicarlas claramente",
+        "a2": "Mi compasi\u00f3n y deseo de ayudar a quienes sufren",
+        "a3": "Mi coraje para mantenerme firme en mis creencias sin importar el costo",
+        "a4": "Mi paciencia y capacidad de confiar en el tiempo de Dios"
+      },
+      "q10": {
+        "question": "\u00bfCu\u00e1l de estos llamados resuena m\u00e1s contigo?",
+        "a1": "Llevar el Evangelio a personas que no lo han escuchado",
+        "a2": "Crear un refugio de paz y oraci\u00f3n",
+        "a3": "Defender la verdad en la vida p\u00fablica",
+        "a4": "Cuidar a los enfermos, pobres o marginados"
+      },
+      "q11": {
+        "question": "\u00bfC\u00f3mo manejas los momentos en que tu fe es probada?",
+        "a1": "Profundizo en el estudio y busco comprensi\u00f3n",
+        "a2": "Aumento mi oraci\u00f3n y tiempo en silencio con Dios",
+        "a3": "Busco servir a otros, encontrando prop\u00f3sito en dar",
+        "a4": "Me mantengo firme en lo que creo, confiando a trav\u00e9s de la oscuridad"
+      },
+      "q12": {
+        "question": "\u00bfQu\u00e9 legado te gustar\u00eda m\u00e1s dejar?",
+        "a1": "Escritos o ense\u00f1anzas que ayuden a otros a entender la fe",
+        "a2": "Una comunidad u organizaci\u00f3n que sirva a los necesitados",
+        "a3": "El ejemplo de una vida vivida con coraje y convicci\u00f3n",
+        "a4": "Haber inspirado a otros a trav\u00e9s de simples actos de amor"
+      }
+    }
+  },
+  "userInfo": {
+    "title": "\u00a1Un \u00daltimo Paso!",
+    "subtitle": "Te emparejaremos con un santo de tu mismo g\u00e9nero. Por favor selecciona tu g\u00e9nero para ver tu resultado personalizado.",
+    "male": "Masculino",
+    "female": "Femenino"
+  },
+  "loading": {
+    "analyzing": "Analizando tu camino espiritual con IA...",
+    "wait": "Esto puede tomar unos momentos"
+  },
+  "results": {
+    "matchLabel": "Tu Santo Compatible",
+    "feastDay": "D\u00eda de Fiesta: {date}",
+    "knownFor": "Conocido Por",
+    "patronOf": "Santo Patr\u00f3n De",
+    "lifeOrigin": "Vida y Origen",
+    "whyMatch": "Por Qu\u00e9 Este Santo Te Coincide",
+    "inspirationalQuote": "\"S\u00e9 quien Dios quiso que fueras y encender\u00e1s el mundo.\"",
+    "quoteAuthor": "- Santa Catalina de Siena",
+    "retakeButton": "Repetir el Quiz"
+  },
+  "directory": {
+    "allSaints": {
+      "title": "Todos los Santos Cat\u00f3licos",
+      "subtitle": "Explora nuestro directorio completo de santos con sus d\u00edas de fiesta, patronazgos y virtudes",
+      "searchPlaceholder": "Buscar santos por nombre, patronazgo o virtud...",
+      "showing": "Mostrando {count} de {total} santos",
+      "loading": "Cargando santos..."
+    },
+    "byVirtue": {
+      "title": "Santos por Virtud",
+      "subtitle": "Descubre santos cat\u00f3licos organizados por sus virtudes definitorias y cualidades espirituales",
+      "jumpTo": "Ir a Virtud:"
+    },
+    "byCentury": {
+      "title": "Santos a Trav\u00e9s de los Siglos",
+      "subtitle": "Viaja a trav\u00e9s de 2000 a\u00f1os de fe con santos de cada era de la historia de la Iglesia",
+      "jumpTo": "Ir a Era:"
+    }
+  },
+  "virtues": {
+    "intellectual": {
+      "title": "Intelectual y Acad\u00e9mico",
+      "description": "Santos conocidos por su b\u00fasqueda del conocimiento, escritos teol\u00f3gicos y contribuciones educativas"
+    },
+    "contemplative": {
+      "title": "Contemplativo y M\u00edstico",
+      "description": "Santos dedicados a la oraci\u00f3n, meditaci\u00f3n y experiencias espirituales profundas"
+    },
+    "service": {
+      "title": "Caritativo y de Servicio",
+      "description": "Santos que dedicaron sus vidas a servir a los pobres, enfermos y marginados"
+    },
+    "leadership": {
+      "title": "Liderazgo y Reforma",
+      "description": "Santos que lideraron movimientos, reformaron instituciones e inspiraron cambios"
+    },
+    "missionary": {
+      "title": "Misionero y Evang\u00e9lico",
+      "description": "Santos que difundieron la fe a trav\u00e9s de culturas y continentes"
+    },
+    "courage": {
+      "title": "Valientes y M\u00e1rtires",
+      "description": "Santos que mostraron extraordinaria valent\u00eda, a menudo hasta la muerte por su fe"
+    },
+    "humble": {
+      "title": "Humilde y Simple",
+      "description": "Santos caracterizados por humildad, simplicidad y fe como la de un ni\u00f1o"
+    },
+    "family": {
+      "title": "Familia y Comunidad",
+      "description": "Santos conocidos por su devoci\u00f3n a la vida familiar, los ni\u00f1os y la construcci\u00f3n de comunidad"
+    },
+    "transformation": {
+      "title": "Transformaci\u00f3n y Conversi\u00f3n",
+      "description": "Santos cuyas vidas demuestran una conversi\u00f3n dram\u00e1tica y el poder de la redenci\u00f3n"
+    },
+    "creative": {
+      "title": "Creativo y Art\u00edstico",
+      "description": "Santos que expresaron su fe a trav\u00e9s del arte, la m\u00fasica, la poes\u00eda y la apreciaci\u00f3n de la naturaleza"
+    },
+    "mercy": {
+      "title": "Misericordioso y Amoroso",
+      "description": "Santos que ejemplificaron la misericordia divina y el amor incondicional"
+    }
+  },
+  "eras": {
+    "biblical": {
+      "title": "B\u00edblico y Ang\u00e9lico",
+      "years": "Eterno / Siglo I a.C. - Siglo I d.C.",
+      "description": "La Sagrada Familia, los Ap\u00f3stoles y los seres celestiales"
+    },
+    "earlyChurch": {
+      "title": "Iglesia Primitiva y M\u00e1rtires",
+      "years": "Siglos I - IV",
+      "description": "La era de la persecuci\u00f3n y los Padres de la Iglesia"
+    },
+    "medievalEarly": {
+      "title": "Alta Edad Media",
+      "years": "Siglos V - X",
+      "description": "El monacato se extiende y da forma a la civilizaci\u00f3n europea"
+    },
+    "medievalHigh": {
+      "title": "Plena Edad Media",
+      "years": "Siglos XI - XIII",
+      "description": "La edad de oro del escolasticismo y las \u00f3rdenes mendicantes"
+    },
+    "lateMedieval": {
+      "title": "Baja Edad Media y Renacimiento",
+      "years": "Siglos XIV - XV",
+      "description": "M\u00edsticos, reformadores y el amanecer de nuevos horizontes"
+    },
+    "counterReformation": {
+      "title": "Contrarreforma",
+      "years": "Siglos XVI - XVII",
+      "description": "La era de los grandes fundadores y misioneros"
+    },
+    "modernEarly": {
+      "title": "Era Moderna Temprana",
+      "years": "Siglos XVIII - XIX",
+      "description": "Santos de la educaci\u00f3n, la caridad y la justicia social"
+    },
+    "contemporary": {
+      "title": "Santos Contempor\u00e1neos",
+      "years": "Siglos XX - XXI",
+      "description": "Santos que vivieron en nuestro mundo moderno, enfrentando sus desaf\u00edos \u00fanicos"
+    }
+  },
+  "common": {
+    "feastDay": "D\u00eda de Fiesta",
+    "patronOf": "Patr\u00f3n de",
+    "origin": "Origen",
+    "saints": "santos"
+  }
+}

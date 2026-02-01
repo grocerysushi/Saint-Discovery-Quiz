@@ -1,0 +1,566 @@
+{
+  "St. Peter": {
+    "knownFor": "Primer Papa, l\u00edder de los ap\u00f3stoles, martirizado en Roma",
+    "patronOf": "Pescadores, papas, fabricantes de redes"
+  },
+  "St. Paul": {
+    "knownFor": "Ap\u00f3stol de los gentiles, escribi\u00f3 gran parte del Nuevo Testamento",
+    "patronOf": "Misioneros, escritores, fabricantes de tiendas"
+  },
+  "St. Mary Magdalene": {
+    "knownFor": "Primera testigo de la Resurrecci\u00f3n, seguidora devota de Jes\u00fas",
+    "patronOf": "Pecadores penitentes, mujeres, farmac\u00e9uticos"
+  },
+  "St. Joseph": {
+    "knownFor": "Padre adoptivo de Jes\u00fas, esposo de Mar\u00eda, patr\u00f3n de los trabajadores",
+    "patronOf": "Trabajadores, padres, moribundos, carpinteros"
+  },
+  "St. Francis of Assisi": {
+    "knownFor": "Fundador de los franciscanos, am\u00f3 la naturaleza y los animales, abraz\u00f3 la pobreza",
+    "patronOf": "Animales, medio ambiente, comerciantes, Italia"
+  },
+  "St. Teresa of Calcutta": {
+    "knownFor": "Fundadora de las Misioneras de la Caridad, sirvi\u00f3 a los m\u00e1s pobres de los pobres",
+    "patronOf": "Misioneros, voluntarios, enfermos de SIDA"
+  },
+  "St. Thomas Aquinas": {
+    "knownFor": "Doctor de la Iglesia, escribi\u00f3 la Summa Theologica, unific\u00f3 fe y raz\u00f3n",
+    "patronOf": "Acad\u00e9micos, estudiantes, escuelas cat\u00f3licas"
+  },
+  "St. Teresa of Avila": {
+    "knownFor": "M\u00edstica, reformadora carmelita, Doctora de la Iglesia",
+    "patronOf": "Escritores, dolor de cabeza, personas enfermas del coraz\u00f3n"
+  },
+  "St. John of the Cross": {
+    "knownFor": "M\u00edstico, poeta, Doctor de la Iglesia, escribi\u00f3 'La Noche Oscura del Alma'",
+    "patronOf": "Poetas, m\u00edsticos, contemplativos"
+  },
+  "St. Ignatius of Loyola": {
+    "knownFor": "Fundador de los jesuitas, escribi\u00f3 los Ejercicios Espirituales",
+    "patronOf": "Soldados, educadores, retiros"
+  },
+  "St. Catherine of Siena": {
+    "knownFor": "M\u00edstica, Doctora de la Iglesia, aconsej\u00f3 papas",
+    "patronOf": "Italia, Europa, bomberos, enfermeras"
+  },
+  "St. Augustine of Hippo": {
+    "knownFor": "Doctor de la Iglesia, escribi\u00f3 Confesiones y La Ciudad de Dios",
+    "patronOf": "Cervecer\u00edas, impresores, te\u00f3logos"
+  },
+  "St. Thomas More": {
+    "knownFor": "Canciller de Inglaterra, martirizado por oponerse al divorcio de Enrique VIII",
+    "patronOf": "Abogados, pol\u00edticos, hijos adoptados"
+  },
+  "St. Joan of Arc": {
+    "knownFor": "Heroica militar francesa guiada por visiones, martirizada a los 19 a\u00f1os",
+    "patronOf": "Francia, soldados, prisioneros"
+  },
+  "St. Patrick": {
+    "knownFor": "Evangeliz\u00f3 Irlanda, us\u00f3 el tr\u00e9bol para ense\u00f1ar la Trinidad",
+    "patronOf": "Irlanda, ingenieros, excluyendo serpientes"
+  },
+  "St. Anthony of Padua": {
+    "knownFor": "Predicador franciscano, Doctor de la Iglesia, encontraba objetos perdidos",
+    "patronOf": "Objetos perdidos, pobres, viajeros"
+  },
+  "St. Therese of Lisieux": {
+    "knownFor": "Carmelita, Doctora de la Iglesia, 'El Peque\u00f1o Camino' de amor",
+    "patronOf": "Misioneros, floristas, pilotos"
+  },
+  "St. John Paul II": {
+    "knownFor": "Papa 1978-2005, viaj\u00f3 por el mundo, ayud\u00f3 a acabar con el comunismo",
+    "patronOf": "J\u00f3venes, familias, Jornada Mundial de la Juventud"
+  },
+  "St. Padre Pio": {
+    "knownFor": "M\u00edstico capuchino, llevaba los estigmas, don de bilocaci\u00f3n",
+    "patronOf": "Defensa civil, confesores, voluntarios"
+  },
+  "St. Maximilian Kolbe": {
+    "knownFor": "Sacerdote franciscano, ofreci\u00f3 su vida por un extra\u00f1o en Auschwitz",
+    "patronOf": "Adictos, familias, prisioneros"
+  },
+  "St. Elizabeth of Hungary": {
+    "knownFor": "Princesa que renunci\u00f3 a la riqueza para servir a los pobres",
+    "patronOf": "Panaderos, mendigos, enfermeras, novias"
+  },
+  "St. Vincent de Paul": {
+    "knownFor": "Fund\u00f3 organizaciones caritativas, campe\u00f3n de los pobres",
+    "patronOf": "Obras de caridad, voluntarios, hospitales"
+  },
+  "St. Clare of Assisi": {
+    "knownFor": "Fundadora de las Clarisas, compa\u00f1era de San Francisco",
+    "patronOf": "Televisi\u00f3n, lavanderas, bordadoras"
+  },
+  "St. Benedict": {
+    "knownFor": "Padre del monasticismo occidental, escribi\u00f3 la Regla de San Benito",
+    "patronOf": "Europa, estudiantes, monjes"
+  },
+  "St. Scholastica": {
+    "knownFor": "Hermana de San Benito, fundadora de monjas benedictinas",
+    "patronOf": "Monjas, tormentas, convulsiones"
+  },
+  "St. Francis Xavier": {
+    "knownFor": "Misionero jesuita en Asia, bautiz\u00f3 a miles",
+    "patronOf": "Misioneros, turistas, navegantes"
+  },
+  "St. Rose of Lima": {
+    "knownFor": "Primera santa de las Am\u00e9ricas, m\u00edstica, asceta severa",
+    "patronOf": "Am\u00e9rica Latina, Per\u00fa, floristas"
+  },
+  "St. Martin de Porres": {
+    "knownFor": "Hermano laico dominico, conocido por la humildad y caridad",
+    "patronOf": "Justicia racial, peluqueros, trabajadores de salud p\u00fablica"
+  },
+  "St. Bernadette": {
+    "knownFor": "Visiones de Mar\u00eda en Lourdes, humilde monja",
+    "patronOf": "Enfermos, pastor, pobres"
+  },
+  "St. John Bosco": {
+    "knownFor": "Fundador de los salesianos, educador de j\u00f3venes",
+    "patronOf": "J\u00f3venes, aprendices, editores"
+  },
+  "St. Monica": {
+    "knownFor": "Madre de San Agust\u00edn, or\u00f3 por su conversi\u00f3n durante a\u00f1os",
+    "patronOf": "Madres, viudas, mujeres abusadas"
+  },
+  "St. Anne": {
+    "knownFor": "Madre de la Virgen Mar\u00eda, abuela de Jes\u00fas",
+    "patronOf": "Abuelas, madres, ebanistas"
+  },
+  "St. Dominic": {
+    "knownFor": "Fundador de los dominicos, promovi\u00f3 el Rosario",
+    "patronOf": "Astr\u00f3nomos, acusados falsamente"
+  },
+  "St. Cecilia": {
+    "knownFor": "M\u00e1rtir virgen, patrona de la m\u00fasica",
+    "patronOf": "M\u00fasicos, poetas, cantantes"
+  },
+  "St. Lucy": {
+    "knownFor": "M\u00e1rtir virgen, patrona de la vista",
+    "patronOf": "Ciegos, escritores, electricistas"
+  },
+  "St. Agnes": {
+    "knownFor": "M\u00e1rtir joven, s\u00edmbolo de pureza",
+    "patronOf": "Ni\u00f1as, v\u00edrgenes, jardineros"
+  },
+  "St. Agatha": {
+    "knownFor": "M\u00e1rtir virgen, torturada por rechazar a un pret\u00e9ndiente",
+    "patronOf": "Enfermeras, sobrevivientes de c\u00e1ncer de mama, panaderos"
+  },
+  "St. Sebastian": {
+    "knownFor": "Soldado romano martirizado con flechas",
+    "patronOf": "Soldados, atletas, personas moribundas"
+  },
+  "St. George": {
+    "knownFor": "M\u00e1rtir soldado, leyenda del drag\u00f3n",
+    "patronOf": "Inglaterra, soldados, boy scouts"
+  },
+  "St. Nicholas": {
+    "knownFor": "Obispo generoso, inspir\u00f3 a Santa Claus",
+    "patronOf": "Ni\u00f1os, marineros, prestamistas"
+  },
+  "St. Christopher": {
+    "knownFor": "Portador de Cristo a trav\u00e9s del r\u00edo, leyenda popular",
+    "patronOf": "Viajeros, atletas, conductores"
+  },
+  "St. Michael the Archangel": {
+    "knownFor": "Arc\u00e1ngel, l\u00edder de los ej\u00e9rcitos celestiales contra Satan\u00e1s",
+    "patronOf": "Polic\u00edas, militares, personas moribundas"
+  },
+  "St. Raphael the Archangel": {
+    "knownFor": "Arc\u00e1ngel de la sanaci\u00f3n, gui\u00f3 a Tob\u00edas",
+    "patronOf": "M\u00e9dicos, viajeros, ciegos"
+  },
+  "St. Gabriel the Archangel": {
+    "knownFor": "Arc\u00e1ngel mensajero, anunci\u00f3 a Mar\u00eda",
+    "patronOf": "Trabajadores de comunicaciones, diplomacia"
+  },
+  "St. John the Baptist": {
+    "knownFor": "Precursor de Jes\u00fas, bautiz\u00f3 a Cristo",
+    "patronOf": "Convertidos, monjes, curtidores"
+  },
+  "St. John the Evangelist": {
+    "knownFor": "Ap\u00f3stol amado, escribi\u00f3 el Evangelio de Juan",
+    "patronOf": "Escritores, te\u00f3logos, editores"
+  },
+  "St. James the Greater": {
+    "knownFor": "Ap\u00f3stol, primer ap\u00f3stol m\u00e1rtir, santuario en Santiago de Compostela",
+    "patronOf": "Espa\u00f1a, peregrinos, farmac\u00e9uticos"
+  },
+  "St. Andrew": {
+    "knownFor": "Ap\u00f3stol, hermano de Pedro, crucificado en cruz en X",
+    "patronOf": "Escocia, Rusia, pescadores"
+  },
+  "St. Matthew": {
+    "knownFor": "Ap\u00f3stol, antiguo recaudador de impuestos, escribi\u00f3 el Evangelio de Mateo",
+    "patronOf": "Contadores, banqueros, agentes de aduanas"
+  },
+  "St. Mark": {
+    "knownFor": "Evangelista, escribi\u00f3 el Evangelio de Marcos",
+    "patronOf": "Notarios, abogados, Venecia"
+  },
+  "St. Luke": {
+    "knownFor": "Evangelista y m\u00e9dico, escribi\u00f3 el Evangelio de Lucas y Hechos",
+    "patronOf": "M\u00e9dicos, artistas, cirujanos"
+  },
+  "St. Philip": {
+    "knownFor": "Ap\u00f3stol, trajo a Natanael a Jes\u00fas",
+    "patronOf": "Sombrereros, pasteleros"
+  },
+  "St. Bartholomew": {
+    "knownFor": "Ap\u00f3stol, misionero en Armenia, desollado vivo",
+    "patronOf": "Curtidores, encuadernadores, carniceros"
+  },
+  "St. Thomas the Apostle": {
+    "knownFor": "Ap\u00f3stol, dudoso que luego crey\u00f3, misionero en India",
+    "patronOf": "Arquitectos, alba\u00f1iles, India"
+  },
+  "St. Simon the Zealot": {
+    "knownFor": "Ap\u00f3stol, antiguo zelote",
+    "patronOf": "Curtidores, le\u00f1adores"
+  },
+  "St. Jude Thaddeus": {
+    "knownFor": "Ap\u00f3stol, patr\u00f3n de causas imposibles",
+    "patronOf": "Causas perdidas, desesperados, hospitales"
+  },
+  "St. Matthias": {
+    "knownFor": "Elegido para reemplazar a Judas Iscariote",
+    "patronOf": "Alcoh\u00f3licos en recuperaci\u00f3n, carpinteros"
+  },
+  "St. Stephen": {
+    "knownFor": "Primer m\u00e1rtir cristiano, apedreado hasta la muerte",
+    "patronOf": "Di\u00e1conos, alba\u00f1iles, dolores de cabeza"
+  },
+  "St. Lawrence": {
+    "knownFor": "Di\u00e1cono m\u00e1rtir, asado en una parrilla",
+    "patronOf": "Cocineros, comediantes, pobres"
+  },
+  "St. Ambrose": {
+    "knownFor": "Obispo de Mil\u00e1n, Doctor de la Iglesia, bautiz\u00f3 a Agust\u00edn",
+    "patronOf": "Apicultores, aprendizaje, Mil\u00e1n"
+  },
+  "St. Jerome": {
+    "knownFor": "Doctor de la Iglesia, tradujo la Biblia al lat\u00edn (Vulgata)",
+    "patronOf": "Bibliotecarios, traductores, estudiosos"
+  },
+  "St. Gregory the Great": {
+    "knownFor": "Papa, Doctor de la Iglesia, reform\u00f3 la liturgia",
+    "patronOf": "M\u00fasicos, maestros, cantantes"
+  },
+  "St. Athanasius": {
+    "knownFor": "Doctor de la Iglesia, defendi\u00f3 contra el arrianismo",
+    "patronOf": "Te\u00f3logos"
+  },
+  "St. Basil the Great": {
+    "knownFor": "Doctor de la Iglesia, padre del monasticismo oriental",
+    "patronOf": "Administradores de hospitales, Rusia"
+  },
+  "St. John Chrysostom": {
+    "knownFor": "Doctor de la Iglesia, famoso predicador, 'Boca de Oro'",
+    "patronOf": "Predicadores, oradores, ep\u00edlepticos"
+  },
+  "St. Cyril of Alexandria": {
+    "knownFor": "Doctor de la Iglesia, defendi\u00f3 la maternidad divina de Mar\u00eda",
+    "patronOf": "Alejandr\u00eda"
+  },
+  "St. Leo the Great": {
+    "knownFor": "Papa, Doctor de la Iglesia, detuvo a Atila el Huno",
+    "patronOf": "Papas, m\u00fasicos de iglesia"
+  },
+  "St. Albert the Great": {
+    "knownFor": "Doctor de la Iglesia, maestro de Tom\u00e1s de Aquino, cient\u00edfico",
+    "patronOf": "Cient\u00edficos, fil\u00f3sofos, tecnolog\u00eda"
+  },
+  "St. Bonaventure": {
+    "knownFor": "Doctor de la Iglesia, te\u00f3logo franciscano",
+    "patronOf": "Trabajadores intestinales"
+  },
+  "St. Bernard of Clairvaux": {
+    "knownFor": "Doctor de la Iglesia, reform\u00f3 el monasticismo cisterciense",
+    "patronOf": "Apicultores, velas, Gibraltar"
+  },
+  "St. Anselm": {
+    "knownFor": "Doctor de la Iglesia, 'Padre de la Escol\u00e1stica'",
+    "patronOf": "Fil\u00f3sofos"
+  },
+  "St. Peter Damian": {
+    "knownFor": "Doctor de la Iglesia, reformador, cardenal",
+    "patronOf": "Fuentes"
+  },
+  "St. Isidore of Seville": {
+    "knownFor": "Doctor de la Iglesia, enciclopedista, escribi\u00f3 Etimolog\u00edas",
+    "patronOf": "Internet, programadores, estudiantes"
+  },
+  "St. Bede the Venerable": {
+    "knownFor": "Doctor de la Iglesia, historiador, 'Padre de la Historia Inglesa'",
+    "patronOf": "Historiadores, acad\u00e9micos"
+  },
+  "St. Ephrem the Syrian": {
+    "knownFor": "Doctor de la Iglesia, poeta, escritor de himnos",
+    "patronOf": "Directores espirituales"
+  },
+  "St. Hilary of Poitiers": {
+    "knownFor": "Doctor de la Iglesia, luch\u00f3 contra el arrianismo",
+    "patronOf": "Abogados, serpientes mordedoras"
+  },
+  "St. Peter Canisius": {
+    "knownFor": "Doctor de la Iglesia, catequista de la Contrarreforma",
+    "patronOf": "Alemania, catequistas, prensa cat\u00f3lica"
+  },
+  "St. Robert Bellarmine": {
+    "knownFor": "Doctor de la Iglesia, ap\u00f3logo, cardenal jesuita",
+    "patronOf": "Catequistas, canonistas"
+  },
+  "St. Francis de Sales": {
+    "knownFor": "Doctor de la Iglesia, escribi\u00f3 'Introducci\u00f3n a la Vida Devota'",
+    "patronOf": "Escritores, periodistas, sordos"
+  },
+  "St. Alphonsus Liguori": {
+    "knownFor": "Doctor de la Iglesia, fundador de los redentoristas, te\u00f3logo moral",
+    "patronOf": "Confesores, te\u00f3logos morales"
+  },
+  "St. Therese of the Child Jesus": {
+    "knownFor": "Doctora de la Iglesia, 'El Peque\u00f1o Camino'",
+    "patronOf": "Misioneros, floristas, Francia"
+  },
+  "St. Edith Stein": {
+    "knownFor": "Fil\u00f3sofa, conversa jud\u00eda, monja carmelita martirizada en Auschwitz",
+    "patronOf": "Europa, convertidos del juda\u00edsmo"
+  },
+  "St. Hildegard of Bingen": {
+    "knownFor": "Doctora de la Iglesia, m\u00edstica, compositora, herbolaria",
+    "patronOf": "M\u00fasicos, escritores, fil\u00f3logos"
+  },
+  "St. John of Avila": {
+    "knownFor": "Doctor de la Iglesia, reformador del clero espa\u00f1ol",
+    "patronOf": "Clero diocesano, Andaluc\u00eda"
+  },
+  "St. Gregory of Narek": {
+    "knownFor": "Doctor de la Iglesia, poeta m\u00edstico armenio",
+    "patronOf": "Poetas"
+  },
+  "St. Irenaeus of Lyon": {
+    "knownFor": "Doctor de la Iglesia, luch\u00f3 contra el gnosticismo",
+    "patronOf": "Catequistas, apolog\u00e9tica"
+  },
+  "St. Rita of Cascia": {
+    "knownFor": "Santa de lo imposible, llevaba una herida del estigma en la frente",
+    "patronOf": "Causas imposibles, matrimonios dif\u00edciles, heridas"
+  },
+  "St. Dymphna": {
+    "knownFor": "M\u00e1rtir irlandesa, patrona de la salud mental",
+    "patronOf": "Enfermedades mentales, depresi\u00f3n, ansiedad"
+  },
+  "St. Philomena": {
+    "knownFor": "M\u00e1rtir virgen, conocida como 'querida del Cura de Ars'",
+    "patronOf": "Ni\u00f1os, j\u00f3venes, causas desesperadas"
+  },
+  "St. Faustina Kowalska": {
+    "knownFor": "Ap\u00f3stol de la Divina Misericordia, visionaria",
+    "patronOf": "Misericordia, personas moribundas"
+  },
+  "St. Gianna Molla": {
+    "knownFor": "M\u00e9dico que rechaz\u00f3 el aborto, muriendo para salvar a su hijo",
+    "patronOf": "M\u00e9dicos, madres, ni\u00f1os no nacidos"
+  },
+  "St. Kateri Tekakwitha": {
+    "knownFor": "Primera santa ind\u00edgena norteamericana, 'Lirio de los Mohawk'",
+    "patronOf": "Medio ambiente, pueblos ind\u00edgenas"
+  },
+  "St. Josephine Bakhita": {
+    "knownFor": "Antigua esclava sudanesa, monja, canonizada en 2000",
+    "patronOf": "V\u00edctimas de tr\u00e1fico humano, Sudan"
+  },
+  "St. Juan Diego": {
+    "knownFor": "Visionario de Nuestra Se\u00f1ora de Guadalupe",
+    "patronOf": "Pueblos ind\u00edgenas, Am\u00e9rica Latina"
+  },
+  "St. Oscar Romero": {
+    "knownFor": "Arzobispo asesinado por defender a los pobres en El Salvador",
+    "patronOf": "Am\u00e9rica Central, perseguidos"
+  },
+  "St. Damien of Molokai": {
+    "knownFor": "Sacerdote que sirvi\u00f3 a leprosos en Haw\u00e1i, contray\u00f3 lepra",
+    "patronOf": "Enfermos de lepra, marginados, Haw\u00e1i"
+  },
+  "St. Marianne Cope": {
+    "knownFor": "Monja que continu\u00f3 la obra del Padre Damien en Molokai",
+    "patronOf": "Leprosos, marginados, Haw\u00e1i"
+  },
+  "St. Elizabeth Ann Seton": {
+    "knownFor": "Primera santa nacida en Am\u00e9rica, fundadora de escuelas cat\u00f3licas",
+    "patronOf": "Escuelas cat\u00f3licas, viudas, padres perdidos"
+  },
+  "St. John Neumann": {
+    "knownFor": "Obispo, estableci\u00f3 primer sistema de escuelas cat\u00f3licas en EE.UU.",
+    "patronOf": "Educaci\u00f3n cat\u00f3lica, inmigrantes"
+  },
+  "St. Frances Xavier Cabrini": {
+    "knownFor": "Primera ciudadana estadounidense canonizada, fundadora de hospitales",
+    "patronOf": "Inmigrantes, administradores de hospitales"
+  },
+  "St. Katharine Drexel": {
+    "knownFor": "Heredera que don\u00f3 fortuna para ayudar a ind\u00edgenas y afroamericanos",
+    "patronOf": "Justicia racial, filantrop\u00eda"
+  },
+  "St. Junipero Serra": {
+    "knownFor": "Misionero franciscano, fund\u00f3 misiones en California",
+    "patronOf": "Vocaciones, California"
+  },
+  "St. Margaret Mary Alacoque": {
+    "knownFor": "M\u00edstica, promovi\u00f3 la devoci\u00f3n al Sagrado Coraz\u00f3n",
+    "patronOf": "Devoci\u00f3n al Sagrado Coraz\u00f3n, personas que perdieron padres"
+  },
+  "St. Claude de la Colombiere": {
+    "knownFor": "Director espiritual de Santa Margarita Mar\u00eda, difundi\u00f3 devoci\u00f3n al Sagrado Coraz\u00f3n",
+    "patronOf": "Directores de retiros"
+  },
+  "St. Louis de Montfort": {
+    "knownFor": "Devoci\u00f3n mariana, escribi\u00f3 'Verdadera Devoci\u00f3n a Mar\u00eda'",
+    "patronOf": "Predicadores"
+  },
+  "St. John Vianney": {
+    "knownFor": "Cura de Ars, famoso confesor, patrono de los sacerdotes",
+    "patronOf": "Sacerdotes parroquiales, confesores"
+  },
+  "St. Br\u00edgida of Ireland": {
+    "knownFor": "Fundadora de monasterios irlandeses, uno de los santos patronos de Irlanda",
+    "patronOf": "Irlanda, ni\u00f1os, lecheras"
+  },
+  "St. Columba": {
+    "knownFor": "Misionero irland\u00e9s a Escocia, fund\u00f3 Iona",
+    "patronOf": "Irlanda, Escocia, poetas"
+  },
+  "St. Boniface": {
+    "knownFor": "Ap\u00f3stol de Alemania, tal\u00f3 el Roble de Thor",
+    "patronOf": "Alemania, cervecer\u00edas"
+  },
+  "St. Cyril": {
+    "knownFor": "Cre\u00f3 el alfabeto cir\u00edlico, evangeliz\u00f3 a los eslavos",
+    "patronOf": "Unidad de la Iglesia, pueblos eslavos"
+  },
+  "St. Methodius": {
+    "knownFor": "Hermano de Cirilo, evangeliz\u00f3 a los eslavos",
+    "patronOf": "Unidad de la Iglesia, pueblos eslavos"
+  },
+  "St. Bridget of Sweden": {
+    "knownFor": "M\u00edstica, fundadora de las brigidinas, revelaciones",
+    "patronOf": "Europa, Suecia, viudas"
+  },
+  "St. Catherine of Bologna": {
+    "knownFor": "M\u00edstica, artista, escritora, abadesa",
+    "patronOf": "Artistas"
+  },
+  "St. Catherine of Genoa": {
+    "knownFor": "M\u00edstica, sirvi\u00f3 en hospitales, escritos sobre el purgatorio",
+    "patronOf": "Tentaciones, almas dif\u00edciles"
+  },
+  "St. Angela Merici": {
+    "knownFor": "Fundadora de las ursulinas, educadora de ni\u00f1as",
+    "patronOf": "Personas discapacitadas, enfermas"
+  },
+  "St. Louise de Marillac": {
+    "knownFor": "Cofundadora de las Hijas de la Caridad con San Vicente de Pa\u00fal",
+    "patronOf": "Trabajadores sociales, cuidadores"
+  },
+  "St. Jane Frances de Chantal": {
+    "knownFor": "Cofundadora de las Visitandinas con San Francisco de Sales",
+    "patronOf": "Padres olvidados, viudas, personas en la ley"
+  },
+  "St. Margaret of Scotland": {
+    "knownFor": "Reina de Escocia, reformadora, caritativa",
+    "patronOf": "Escocia, viudas, familias numerosas"
+  },
+  "St. Elizabeth of Portugal": {
+    "knownFor": "Reina pacificadora, santa caritativa",
+    "patronOf": "Portugal, Tercera Orden Franciscana"
+  },
+  "St. Hedwig of Silesia": {
+    "knownFor": "Duquesa, fundadora de iglesias y hospitales",
+    "patronOf": "Silesia, matrimonios dif\u00edciles"
+  },
+  "St. Louis IX": {
+    "knownFor": "Rey santo de Francia, cruzado, justo gobernante",
+    "patronOf": "Francia, Tercera Orden Franciscana"
+  },
+  "St. Ferdinand III": {
+    "knownFor": "Rey santo de Espa\u00f1a, Reconquista, patrono de ingenieros",
+    "patronOf": "Ingenieros, gobernantes, prisioneros"
+  },
+  "St. Wenceslaus": {
+    "knownFor": "Duque de Bohemia, martirizado por su hermano",
+    "patronOf": "Rep\u00fablica Checa, cervecer\u00edas"
+  },
+  "St. Stanislaus of Krakow": {
+    "knownFor": "Obispo m\u00e1rtir, patrono de Polonia",
+    "patronOf": "Polonia, soldados, orden moral"
+  },
+  "St. Casimir": {
+    "knownFor": "Pr\u00edncipe polaco, conocido por piedad y castidad",
+    "patronOf": "Polonia, Lituania, j\u00f3venes"
+  },
+  "St. Charles Borromeo": {
+    "knownFor": "Cardenal reformador, implement\u00f3 el Concilio de Trento",
+    "patronOf": "Seminarios, catequistas, obispos"
+  },
+  "St. Philip Neri": {
+    "knownFor": "Ap\u00f3stol de Roma, fundador del Oratorio, alegre y humor\u00edstico",
+    "patronOf": "Roma, humoristas, alegr\u00eda"
+  },
+  "St. Aloysius Gonzaga": {
+    "knownFor": "Pr\u00edncipe jesuita, muri\u00f3 cuidando a enfermos de peste",
+    "patronOf": "J\u00f3venes, estudiantes, v\u00edctimas de SIDA"
+  },
+  "St. Stanislaus Kostka": {
+    "knownFor": "Novicio jesuita, muri\u00f3 joven pero muy santo",
+    "patronOf": "Novicios, j\u00f3venes, Polonia"
+  },
+  "St. Camillus de Lellis": {
+    "knownFor": "Fundador de los Ministros de los Enfermos, patr\u00f3n de hospitales",
+    "patronOf": "Hospitales, enfermeros, enfermos"
+  },
+  "St. John of God": {
+    "knownFor": "Fundador de los Hermanos Hospitalarios, sirvi\u00f3 a enfermos mentales",
+    "patronOf": "Hospitales, enfermos, enfermeras"
+  },
+  "St. Peter Claver": {
+    "knownFor": "Jesuita que ministr\u00f3 a esclavos africanos en Colombia",
+    "patronOf": "Esclavos, misiones afroamericanas, Colombia"
+  },
+  "St. Turibius of Mogrovejo": {
+    "knownFor": "Arzobispo de Lima, defendi\u00f3 a los ind\u00edgenas",
+    "patronOf": "Per\u00fa, obispos latinoamericanos"
+  },
+  "St. Rose Philippine Duchesne": {
+    "knownFor": "Misionera en Am\u00e9rica, fundadora de escuelas",
+    "patronOf": "Perseverancia en la adversidad"
+  },
+  "St. Isaac Jogues": {
+    "knownFor": "M\u00e1rtir jesuita entre los mohawk",
+    "patronOf": "Am\u00e9ricas, Can\u00e1da"
+  },
+  "St. Jean de Brebeuf": {
+    "knownFor": "M\u00e1rtir jesuita entre los hurones",
+    "patronOf": "Can\u00e1da"
+  },
+  "St. Marguerite Bourgeoys": {
+    "knownFor": "Fundadora de la Congregaci\u00f3n de Notre-Dame en Montreal",
+    "patronOf": "Contra la pobreza, personas rechazadas"
+  },
+  "St. Marie of the Incarnation": {
+    "knownFor": "M\u00edstica ursulina, misionera en Canad\u00e1",
+    "patronOf": "Contra la p\u00e9rdida de padres"
+  },
+  "St. Marguerite d'Youville": {
+    "knownFor": "Fundadora de las Hermanas Grises en Canad\u00e1",
+    "patronOf": "Viudas, matrimonios dif\u00edciles"
+  },
+  "St. Andre Bessette": {
+    "knownFor": "Hermano portero, fundador del Oratorio de San Jos\u00e9 en Montreal",
+    "patronOf": "Cuidadores, enfermos"
+  },
+  "St. Karol Wojtyla": {
+    "knownFor": "Papa Juan Pablo II, papa viajero, l\u00edder de la paz",
+    "patronOf": "J\u00f3venes, familias"
+  }
+}
