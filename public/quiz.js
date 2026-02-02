@@ -334,27 +334,7 @@ function startQuiz() {
 }
 
 
-// Get translated question text
-function getQuestionText(questionId) {
-    const key = `quiz.questions.q${questionId}.question`;
-    const translated = t(key);
-    // If translation not found, return from questions array
-    if (translated === key) {
-        return questions[questionId - 1].question;
-    }
-    return translated;
-}
 
-// Get translated answer text
-function getAnswerText(questionId, answerIndex) {
-    const key = `quiz.questions.q${questionId}.a${answerIndex + 1}`;
-    const translated = t(key);
-    // If translation not found, return from questions array
-    if (translated === key) {
-        return questions[questionId - 1].answers[answerIndex].text;
-    }
-    return translated;
-}
 
 // Render Current Question
 function renderQuestion() {
