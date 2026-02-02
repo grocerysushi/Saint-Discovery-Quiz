@@ -704,9 +704,17 @@ h4 {
     font-size: 0.95rem;
 }
 
-#results .btn-secondary {
-    display: block;
-    margin: 0 auto 40px;
+.results-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px auto 40px;
+    flex-wrap: wrap;
+}
+
+.results-actions .btn-primary,
+.results-actions .btn-secondary {
+    min-width: 160px;
 }
 
 /* Loading Overlay */
@@ -845,7 +853,7 @@ h4 {
         font-size: 1.2rem;
     }
 
-    #results .btn-secondary {
+    .results-actions {
         margin-bottom: 25px;
     }
 }

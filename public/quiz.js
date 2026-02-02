@@ -843,6 +843,28 @@ function retakeQuiz() {
     showScreen('landing');
 }
 
+// Download Result as PDF
+function downloadResult() {
+    const resultsContainer = document.querySelector('.results-container');
+    const actionsDiv = document.querySelector('.results-actions');
+
+    // Temporarily hide the buttons for the PDF
+    actionsDiv.style.display = 'none';
+
+    const opt = {
+        margin: [10, 10, 10, 10],
+        filename: `Saint-Match-${matchedSaint.name.replace(/\s+/g, '-')}.pdf`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    html2pdf().set(opt).from(resultsContainer).save().then(() => {
+        // Restore buttons after PDF is generated
+        actionsDiv.style.display = '';
+    });
+}
+
 // Show Screen Helper
 function showScreen(screenId) {
     document.querySelectorAll('.screen').forEach(screen => {

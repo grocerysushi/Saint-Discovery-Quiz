@@ -448,12 +448,16 @@
           <p class="quote-author">- St. Catherine of Siena</p>
         </div>
 
-        <button class="btn-secondary" onclick="retakeQuiz()">Retake Quiz</button>
+        <div class="results-actions">
+          <button class="btn-primary" onclick="downloadResult()">Download PDF</button>
+          <button class="btn-secondary" onclick="retakeQuiz()">Retake Quiz</button>
+        </div>
       </div>
     </section>
 
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <script src="saints-data.js" defer></script>
     <script src="quiz.js" defer></script>
   </main>
