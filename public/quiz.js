@@ -852,22 +852,15 @@ function downloadResult() {
     actionsDiv.style.display = 'none';
 
     const opt = {
-        margin: [8, 8, 8, 8],
+        margin: [10, 10, 10, 10],
         filename: `Saint-Match-${matchedSaint.name.replace(/\s+/g, '-')}.pdf`,
-        image: { type: 'jpeg', quality: 0.92 },
-        html2canvas: {
-            scale: 2,
-            useCORS: true,
-            width: 550,
-            windowWidth: 550
-        },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak: { mode: 'avoid-all' }
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
     };
 
     html2pdf().set(opt).from(resultsContainer).save().then(() => {
-        actionsDiv.style.display = '';
-    }).catch(() => {
+        // Restore buttons after PDF is generated
         actionsDiv.style.display = '';
     });
 }
