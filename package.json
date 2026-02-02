@@ -5,7 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "node server/index.js"
+    "dev": "node server/index.js",
+    "generate-saints": "node generate-saint-pages.js"
   },
   "dependencies": {
     "compression": "^1.7.4",

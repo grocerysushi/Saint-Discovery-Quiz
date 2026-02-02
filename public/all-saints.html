@@ -132,11 +132,18 @@
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
             border-left: 4px solid var(--gold);
+            text-decoration: none;
+            display: block;
+            color: inherit;
         }
 
         .saint-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow-lg);
+        }
+
+        .saint-card:visited {
+            color: inherit;
         }
 
         .saint-card h2 {
@@ -349,15 +356,26 @@
                 a.name.replace('St. ', '').localeCompare(b.name.replace('St. ', ''))
             );
 
+            function slugify(name) {
+                return name
+                    .toLowerCase()
+                    .replace(/\./g, '')
+                    .replace(/['']/g, '')
+                    .replace(/[^\w\s-]/g, '')
+                    .replace(/\s+/g, '-')
+                    .replace(/-+/g, '-')
+                    .trim();
+            }
+
             function renderSaints(saints) {
                 grid.innerHTML = saints.map(saint => `
-                    <article class="saint-card">
+                    <a href="/saints/${slugify(saint.name)}.html" class="saint-card">
                         <h2>${saint.name}</h2>
                         <span class="feast-day">Feast Day: ${saint.feastDay}</span>
                         <p class="known-for">${saint.knownFor}</p>
                         <p class="patron-of"><strong>Patron of:</strong> ${saint.patronOf}</p>
                         <p class="dates-origin">${saint.dates} | ${saint.origin}</p>
-                    </article>
+                    </a>
                 `).join('');
                 countEl.textContent = `Showing ${saints.length} of ${saintsDatabase.length} saints`;
             }
