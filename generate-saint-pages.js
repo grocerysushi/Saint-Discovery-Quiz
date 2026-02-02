@@ -101,10 +101,10 @@ function formatTrait(trait) {
 }
 
 /**
- * Generate JSON-LD structured data for a saint
+ * Generate JSON-LD structured data for a saint (Person + BreadcrumbList)
  */
 function generateJsonLd(saint, slug) {
-    const data = {
+    const personData = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": saint.name,
@@ -123,20 +123,47 @@ function generateJsonLd(saint, slug) {
         const dateMatch = saint.dates.match(/(\d{1,4})(?:\s*-\s*(\d{1,4}))?/);
         if (dateMatch) {
             if (dateMatch[2]) {
-                data.birthDate = dateMatch[1];
-                data.deathDate = dateMatch[2];
+                personData.birthDate = dateMatch[1];
+                personData.deathDate = dateMatch[2];
             } else if (saint.dates.toLowerCase().includes('d.')) {
-                data.deathDate = dateMatch[1];
+                personData.deathDate = dateMatch[1];
             }
         }
     }
 
     // Remove undefined values
-    Object.keys(data).forEach(key => {
-        if (data[key] === undefined) delete data[key];
+    Object.keys(personData).forEach(key => {
+        if (personData[key] === undefined) delete personData[key];
     });
 
-    return JSON.stringify(data, null, 2);
+    // BreadcrumbList schema
+    const breadcrumbData = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": SITE_URL
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "All Saints",
+                "item": `${SITE_URL}/all-saints.html`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": saint.name,
+                "item": `${SITE_URL}/saints/${slug}.html`
+            }
+        ]
+    };
+
+    // Return array of both schemas
+    return JSON.stringify([personData, breadcrumbData], null, 2);
 }
 
 /**
@@ -209,6 +236,8 @@ function generateHTML(saint) {
 
     <!-- Canonical URL -->
     <link rel="canonical" href="${SITE_URL}/saints/${slug}.html">
+    <link rel="alternate" hreflang="en" href="${SITE_URL}/saints/${slug}.html">
+    <link rel="alternate" hreflang="x-default" href="${SITE_URL}/saints/${slug}.html">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">

@@ -61,40 +61,6 @@ app.use(express.static(path.join(__dirname, '../public'), {
     }
 }));
 
-// Spanish language routes
-// Serve Spanish version of the main pages
-app.get('/es', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-});
-
-app.get('/es/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
-});
-
-app.get('/es/all-saints', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/all-saints.html'));
-});
-
-app.get('/es/all-saints.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/all-saints.html'));
-});
-
-app.get('/es/saints-by-virtue', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/saints-by-virtue.html'));
-});
-
-app.get('/es/saints-by-virtue.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/saints-by-virtue.html'));
-});
-
-app.get('/es/saints-by-century', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/saints-by-century.html'));
-});
-
-app.get('/es/saints-by-century.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/saints-by-century.html'));
-});
-
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({

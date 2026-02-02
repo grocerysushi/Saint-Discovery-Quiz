@@ -36,13 +36,6 @@
       "description": "Browse all Catholic saints",
       "url": "/all-saints.html",
       "icons": [{ "src": "favicon.svg", "sizes": "any" }]
-    },
-    {
-      "name": "Quiz en Español",
-      "short_name": "Quiz ES",
-      "description": "Iniciar el Quiz de Santos",
-      "url": "/es/",
-      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
     }
   ]
 }
