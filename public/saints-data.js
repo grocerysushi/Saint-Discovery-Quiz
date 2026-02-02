@@ -1,5 +1,5 @@
 // Complete Saints Database from Catholic_Saints_Comprehensive.xlsx
-// Total: 137 saints
+// Total: 186 saints (including beatified)
 
 const saintsDatabase = [
     {
@@ -2732,6 +2732,1035 @@ const saintsDatabase = [
         "quotes": [
             "Lord, make me an instrument of your peace.",
             "All for the greater glory of God."
+        ]
+    },
+    {
+        "name": "Bl. Carlo Acutis",
+        "feastDay": "October 12",
+        "knownFor": "Teen who documented Eucharistic miracles online, died of leukemia at 15",
+        "patronOf": "Internet, computer programmers, youth",
+        "dates": "1991-2006",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "youth",
+            "innovation",
+            "devotion",
+            "joy",
+            "faith"
+        ],
+        "quotes": [
+            "The Eucharist is my highway to heaven.",
+            "To always be united with Jesus, this is my life's program.",
+            "Our aim has to be the infinite and not the finite. The infinite is our homeland."
+        ]
+    },
+    {
+        "name": "Bl. Pier Giorgio Frassati",
+        "feastDay": "July 4",
+        "knownFor": "Young Italian who served the poor while excelling in athletics and mountaineering",
+        "patronOf": "Students, athletes, young Catholics",
+        "dates": "1901-1925",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "youth",
+            "charity",
+            "adventure",
+            "joy",
+            "service"
+        ],
+        "quotes": [
+            "To live without faith, without a patrimony to defend, without a steady struggle for truth, that is not living but existing.",
+            "Verso l'alto! (To the heights!)",
+            "Charity is not enough; we need social reform."
+        ]
+    },
+    {
+        "name": "Bl. Chiara Badano",
+        "feastDay": "October 29",
+        "knownFor": "Italian teen who faced terminal cancer with profound faith and joy",
+        "patronOf": "Sick teenagers, cancer patients",
+        "dates": "1971-1990",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "youth",
+            "joy",
+            "faith",
+            "sacrifice",
+            "love"
+        ],
+        "quotes": [
+            "If you want it, Jesus, I want it too.",
+            "I have nothing left, but I still have my heart, and with that I can always love.",
+            "It's for you, Jesus."
+        ]
+    },
+    {
+        "name": "Bl. Miguel Pro",
+        "feastDay": "November 23",
+        "knownFor": "Mexican Jesuit priest martyred during religious persecution, known for disguises to minister",
+        "patronOf": "Persecuted Christians, Mexico",
+        "dates": "1891-1927",
+        "origin": "Mexico",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "missionary",
+            "sacrifice",
+            "joy",
+            "faith"
+        ],
+        "quotes": [
+            "Viva Cristo Rey! (Long live Christ the King!)",
+            "May God have mercy on you! May God bless you! Lord, You know that I am innocent! With all my heart I forgive my enemies!",
+            "Do not be afraid, death is not the end of the road."
+        ]
+    },
+    {
+        "name": "Bl. Franz Jägerstätter",
+        "feastDay": "May 21",
+        "knownFor": "Austrian farmer who refused to serve in Nazi army and was executed",
+        "patronOf": "Conscientious objectors, moral courage",
+        "dates": "1907-1943",
+        "origin": "Austria",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "conviction",
+            "faith",
+            "sacrifice",
+            "justice"
+        ],
+        "quotes": [
+            "I cannot and may not take an oath in favor of a government that is fighting an unjust war.",
+            "It is better to suffer injustice than to do it.",
+            "I am convinced that it is best that I speak the truth, even if it costs me my life."
+        ]
+    },
+    {
+        "name": "Bl. Solanus Casey",
+        "feastDay": "July 30",
+        "knownFor": "American Capuchin friar known for healings, prophecy, and porter ministry",
+        "patronOf": "Detroit, doorkeepers, the sick",
+        "dates": "1870-1957",
+        "origin": "United States",
+        "gender": "Male",
+        "traits": [
+            "humility",
+            "healing",
+            "service",
+            "faith",
+            "patience"
+        ],
+        "quotes": [
+            "Thank God ahead of time.",
+            "We must be faithful to the present moment or we will frustrate the plan of God for our lives.",
+            "Blessed be God in all His designs."
+        ]
+    },
+    {
+        "name": "Bl. Stanley Rother",
+        "feastDay": "July 28",
+        "knownFor": "American priest martyred in Guatemala while serving indigenous people",
+        "patronOf": "Missionaries, Oklahoma, Guatemala",
+        "dates": "1935-1981",
+        "origin": "United States",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "courage",
+            "service",
+            "sacrifice",
+            "love"
+        ],
+        "quotes": [
+            "The shepherd cannot run at the first sign of danger.",
+            "I have always been ready to put into practice the principal vow, the giving of my own life.",
+            "A priest is a priest forever."
+        ]
+    },
+    {
+        "name": "Bl. Michael McGivney",
+        "feastDay": "August 13",
+        "knownFor": "American priest who founded the Knights of Columbus to support Catholic families",
+        "patronOf": "Knights of Columbus, family protection",
+        "dates": "1852-1890",
+        "origin": "United States",
+        "gender": "Male",
+        "traits": [
+            "family",
+            "charity",
+            "organization",
+            "community",
+            "service"
+        ],
+        "quotes": [
+            "Keep close to your spiritual guides and your hearts will be warmed with the fire of charity.",
+            "Unity and charity are the bonds of brotherhood.",
+            "The best means of promoting Christian friendship is the frequent reception of the sacraments."
+        ]
+    },
+    {
+        "name": "Bl. Anne Catherine Emmerich",
+        "feastDay": "February 9",
+        "knownFor": "German Augustinian nun and mystic who had visions of Jesus' life",
+        "patronOf": "Mystics, the sick",
+        "dates": "1774-1824",
+        "origin": "Germany",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "contemplation",
+            "suffering",
+            "devotion",
+            "faith"
+        ],
+        "quotes": [
+            "I saw the Church of Peter and the Church on the Mount in great tribulation.",
+            "The only true happiness on earth is to be unknown and counted as nothing.",
+            "If the soul turns itself entirely to God, all sufferings will be easy."
+        ]
+    },
+    {
+        "name": "Bl. Imelda Lambertini",
+        "feastDay": "May 13",
+        "knownFor": "Young girl who died in ecstasy after receiving First Communion",
+        "patronOf": "First Communicants, children",
+        "dates": "1322-1333",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "devotion",
+            "youth",
+            "faith",
+            "innocence",
+            "love"
+        ],
+        "quotes": [
+            "Can anyone receive Jesus into his heart and not die?",
+            "Tell me, can anyone receive Jesus into his heart and not die of joy?",
+            "Lord, come to me."
+        ]
+    },
+    {
+        "name": "Bl. Isidore Bakanja",
+        "feastDay": "August 15",
+        "knownFor": "Congolese layman martyred for wearing scapular and teaching faith",
+        "patronOf": "Catechists, persecution victims, Congo",
+        "dates": "1887-1909",
+        "origin": "Congo",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "courage",
+            "forgiveness",
+            "teaching",
+            "sacrifice"
+        ],
+        "quotes": [
+            "The white man did not like Christians. But I shall pray for him.",
+            "When I am in heaven, I shall pray much for him.",
+            "I forgive him because he did not know what he was doing."
+        ]
+    },
+    {
+        "name": "Bl. Jacinta Marto",
+        "feastDay": "February 20",
+        "knownFor": "Youngest Fatima visionary who offered sufferings for sinners",
+        "patronOf": "Captives, children ridiculed for their faith",
+        "dates": "1910-1920",
+        "origin": "Portugal",
+        "gender": "Female",
+        "traits": [
+            "devotion",
+            "sacrifice",
+            "youth",
+            "prayer",
+            "faith"
+        ],
+        "quotes": [
+            "I so love the Immaculate Heart of Mary! It is the heart of our dear Mother in heaven!",
+            "I offer this sacrifice for the conversion of sinners.",
+            "More souls go to hell because of sins of the flesh than for any other reason."
+        ]
+    },
+    {
+        "name": "Bl. Francisco Marto",
+        "feastDay": "February 20",
+        "knownFor": "Fatima visionary who loved to console Jesus in prayer",
+        "patronOf": "Children, contemplatives",
+        "dates": "1908-1919",
+        "origin": "Portugal",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "devotion",
+            "prayer",
+            "youth",
+            "peace"
+        ],
+        "quotes": [
+            "I loved seeing the Angel, but I loved seeing Our Lady even more.",
+            "I want to console Jesus and make Him happy.",
+            "When I am alone, I love to think about Jesus."
+        ]
+    },
+    {
+        "name": "St. Philip Neri",
+        "feastDay": "May 26",
+        "knownFor": "Apostle of Rome known for joy, humor, and founding the Oratory",
+        "patronOf": "Rome, humor, joy, US Army Special Forces",
+        "dates": "1515-1595",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "joy",
+            "humility",
+            "teaching",
+            "community",
+            "love"
+        ],
+        "quotes": [
+            "A joyful heart is more easily made perfect than a downcast one.",
+            "Cast yourself into the arms of God and be very sure that if He wants anything of you, He will fit you for the work and give you strength.",
+            "Cheerfulness strengthens the heart and makes us persevere in a good life."
+        ]
+    },
+    {
+        "name": "St. Robert Bellarmine",
+        "feastDay": "September 17",
+        "knownFor": "Jesuit cardinal, Doctor of the Church, defender of Catholic doctrine",
+        "patronOf": "Catechists, canon lawyers, catechumens",
+        "dates": "1542-1621",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "wisdom",
+            "writing",
+            "faith"
+        ],
+        "quotes": [
+            "The school of Christ is the school of charity. On the last day, when the general examination takes place, there will be no question at all on the text of Aristotle, the aphorisms of Hippocrates, or the paragraphs of Justinian. Charity will be the whole syllabus.",
+            "He who wishes to be perfectly obeyed should give but few orders.",
+            "To explain certain things, I have no other way than to stretch up toward the heavens."
+        ]
+    },
+    {
+        "name": "St. Francis de Sales",
+        "feastDay": "January 24",
+        "knownFor": "Bishop of Geneva, Doctor of the Church, wrote Introduction to the Devout Life",
+        "patronOf": "Writers, journalists, deaf people",
+        "dates": "1567-1622",
+        "origin": "France/Savoy",
+        "gender": "Male",
+        "traits": [
+            "writing",
+            "gentleness",
+            "patience",
+            "teaching",
+            "love"
+        ],
+        "quotes": [
+            "Be who you are and be that well.",
+            "Have patience with all things, but chiefly have patience with yourself.",
+            "Nothing is so strong as gentleness, nothing so gentle as real strength."
+        ]
+    },
+    {
+        "name": "St. Jane Frances de Chantal",
+        "feastDay": "August 12",
+        "knownFor": "French widow who co-founded the Visitation Order with St. Francis de Sales",
+        "patronOf": "Widows, forgotten people, in-law problems",
+        "dates": "1572-1641",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "family",
+            "forgiveness",
+            "perseverance",
+            "love"
+        ],
+        "quotes": [
+            "Hold your eyes on God and leave the doing to Him. That is all the doing you have to worry about.",
+            "The crosses that we shape for ourselves are always lighter than the ones laid upon us.",
+            "It is true that the world has many crosses. But then, we have a good God."
+        ]
+    },
+    {
+        "name": "St. Charles Borromeo",
+        "feastDay": "November 4",
+        "knownFor": "Cardinal who reformed the Church after Council of Trent, served plague victims",
+        "patronOf": "Seminarians, bishops, catechists, apple orchards",
+        "dates": "1538-1584",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "reform",
+            "leadership",
+            "charity",
+            "discipline",
+            "service"
+        ],
+        "quotes": [
+            "If we wish to make any progress in the service of God we must begin every day of our life with new eagerness.",
+            "Be sure that you first preach by the way you live.",
+            "I am a bishop and I must die serving my people."
+        ]
+    },
+    {
+        "name": "St. Isidore of Seville",
+        "feastDay": "April 4",
+        "knownFor": "Bishop and Doctor of the Church who compiled vast encyclopedias of knowledge",
+        "patronOf": "Internet, computer users, students, programmers",
+        "dates": "c. 560-636",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "teaching",
+            "wisdom",
+            "organization"
+        ],
+        "quotes": [
+            "Learning unsupported by grace may get into our ears; it never reaches the heart.",
+            "Prayer purifies us, reading instructs us. Both are good when both are possible. Otherwise, prayer is better than reading.",
+            "If a man wants to be always in God's company, he must pray regularly and read regularly."
+        ]
+    },
+    {
+        "name": "St. Angela Merici",
+        "feastDay": "January 27",
+        "knownFor": "Founded the Ursulines, first teaching order of women",
+        "patronOf": "Sick people, disabled people, teachers",
+        "dates": "1474-1540",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "teaching",
+            "innovation",
+            "leadership",
+            "community",
+            "service"
+        ],
+        "quotes": [
+            "Disorder in society is the result of disorder in the family.",
+            "Act, move, believe, strive, hope, cry out to God with all your heart.",
+            "Beware of trying to accomplish anything by force."
+        ]
+    },
+    {
+        "name": "St. Gerard Majella",
+        "feastDay": "October 16",
+        "knownFor": "Redemptorist lay brother known for miracles, especially with expectant mothers",
+        "patronOf": "Expectant mothers, childbirth, unborn children",
+        "dates": "1726-1755",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "humility",
+            "obedience",
+            "faith",
+            "healing",
+            "service"
+        ],
+        "quotes": [
+            "Who except God can give you peace? Has the world ever been able to satisfy the heart?",
+            "Consider that this day will never dawn for you again.",
+            "Here the will of God is done, as God wills, and as long as God wills."
+        ]
+    },
+    {
+        "name": "St. John of Capistrano",
+        "feastDay": "October 23",
+        "knownFor": "Franciscan preacher who led crusaders at the Siege of Belgrade",
+        "patronOf": "Military chaplains, jurists, Belgrade",
+        "dates": "1386-1456",
+        "origin": "Italy",
+        "gender": "Male",
+        "traits": [
+            "preaching",
+            "courage",
+            "leadership",
+            "warrior",
+            "faith"
+        ],
+        "quotes": [
+            "The man who truly loves God seeks neither reward nor honor in return, only the greater glory of God.",
+            "Fight for what is right, even if it means your death.",
+            "If men refuse to listen to reason, there is no choice but to appeal to their fear."
+        ]
+    },
+    {
+        "name": "St. Peter Canisius",
+        "feastDay": "December 21",
+        "knownFor": "Jesuit Doctor of the Church, second apostle of Germany, catechism writer",
+        "patronOf": "Germany, catechists, Catholic press",
+        "dates": "1521-1597",
+        "origin": "Netherlands/Germany",
+        "gender": "Male",
+        "traits": [
+            "teaching",
+            "intellectual",
+            "writing",
+            "missionary",
+            "perseverance"
+        ],
+        "quotes": [
+            "Better to be a heretic than an ignorant Catholic.",
+            "If you have too much to do, with God's help you will find time to do it all.",
+            "My God, I am resolved to do whatever You will. Whatever You will, let that be done."
+        ]
+    },
+    {
+        "name": "St. Marianne Cope",
+        "feastDay": "January 23",
+        "knownFor": "Franciscan sister who served leprosy patients in Hawaii with Fr. Damien",
+        "patronOf": "Lepers, outcasts, Hawaii",
+        "dates": "1838-1918",
+        "origin": "Germany/United States",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "compassion",
+            "courage",
+            "healing",
+            "sacrifice"
+        ],
+        "quotes": [
+            "I am not afraid of any disease.",
+            "I am hungry for the work and I wish with all my heart to be one of the chosen ones.",
+            "Make the best of every opportunity that comes your way."
+        ]
+    },
+    {
+        "name": "St. André Bessette",
+        "feastDay": "January 6",
+        "knownFor": "Holy Cross brother who built St. Joseph's Oratory in Montreal through healings",
+        "patronOf": "Doorkeepers, the sick, Montreal",
+        "dates": "1845-1937",
+        "origin": "Canada",
+        "gender": "Male",
+        "traits": [
+            "humility",
+            "healing",
+            "faith",
+            "devotion",
+            "perseverance"
+        ],
+        "quotes": [
+            "When I was young, I was so ignorant I had to pray to God for help. I still pray, and it's still the same.",
+            "It is with the smallest brushes that the artist paints the most exquisitely beautiful pictures.",
+            "Put yourself in God's hands. He abandons no one."
+        ]
+    },
+    {
+        "name": "St. Junípero Serra",
+        "feastDay": "July 1",
+        "knownFor": "Franciscan missionary who founded California missions",
+        "patronOf": "California, vocations, Hispanic Americans",
+        "dates": "1713-1784",
+        "origin": "Spain/California",
+        "gender": "Male",
+        "traits": [
+            "missionary",
+            "perseverance",
+            "courage",
+            "faith",
+            "evangelization"
+        ],
+        "quotes": [
+            "Always go forward, never turn back.",
+            "In California is my life, and there, God willing, I hope to die.",
+            "Were I to express my full heart, the letter would never end."
+        ]
+    },
+    {
+        "name": "St. Marguerite Bourgeoys",
+        "feastDay": "January 12",
+        "knownFor": "Foundress of the Congregation of Notre Dame, educated girls in New France",
+        "patronOf": "Against poverty, loss of parents, teachers",
+        "dates": "1620-1700",
+        "origin": "France/Canada",
+        "gender": "Female",
+        "traits": [
+            "teaching",
+            "missionary",
+            "community",
+            "service",
+            "perseverance"
+        ],
+        "quotes": [
+            "Do good wherever you are, whenever you can.",
+            "Leave God to act.",
+            "We must never weary of doing little things for the love of God."
+        ]
+    },
+    {
+        "name": "St. Marguerite d'Youville",
+        "feastDay": "October 16",
+        "knownFor": "Canadian widow who founded the Grey Nuns to serve the poor",
+        "patronOf": "Widows, difficult marriages, grieving parents",
+        "dates": "1701-1771",
+        "origin": "Canada",
+        "gender": "Female",
+        "traits": [
+            "charity",
+            "perseverance",
+            "forgiveness",
+            "service",
+            "hope"
+        ],
+        "quotes": [
+            "The poor are our masters; we must love and obey them.",
+            "Everything passes; let us think only of eternal things.",
+            "We must forgive. We must love. We must serve."
+        ]
+    },
+    {
+        "name": "St. Maria Goretti",
+        "feastDay": "July 6",
+        "knownFor": "Young Italian martyr who forgave her attacker and is a model of purity",
+        "patronOf": "Youth, young women, purity, forgiveness, victims of assault",
+        "dates": "1890-1902",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "purity",
+            "forgiveness",
+            "courage",
+            "faith",
+            "youth"
+        ],
+        "quotes": [
+            "I forgive Alessandro and I want him to be with me in Heaven.",
+            "No! It is a sin! God does not want it!",
+            "May God forgive him; I have already forgiven him."
+        ]
+    },
+    {
+        "name": "St. Gemma Galgani",
+        "feastDay": "April 11",
+        "knownFor": "Italian mystic who received the stigmata and had ecstatic visions",
+        "patronOf": "Students, pharmacists, those suffering back injuries, loss of parents",
+        "dates": "1878-1903",
+        "origin": "Italy",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "suffering",
+            "devotion",
+            "contemplation",
+            "love"
+        ],
+        "quotes": [
+            "Jesus, I love You always, I love You much, I love You with my whole heart.",
+            "Let us bind ourselves tightly to the Sorrowful Heart of our Heavenly Mother and reflect on its boundless grief and its anguish.",
+            "I long to love Jesus more and more."
+        ]
+    },
+    {
+        "name": "St. Leopold Mandić",
+        "feastDay": "May 12",
+        "knownFor": "Croatian Capuchin known as apostle of confession who heard confessions 15 hours daily",
+        "patronOf": "Confessors, Christian unity",
+        "dates": "1866-1942",
+        "origin": "Croatia",
+        "gender": "Male",
+        "traits": [
+            "forgiveness",
+            "patience",
+            "humility",
+            "healing",
+            "service"
+        ],
+        "quotes": [
+            "May God's will be done; I give myself to Him without any reserve.",
+            "The Lord measures out our sufferings according to our strength.",
+            "We are not the master of our tongue while hearing confessions but only the servant."
+        ]
+    },
+    {
+        "name": "St. Charbel Makhlouf",
+        "feastDay": "July 24",
+        "knownFor": "Lebanese Maronite monk and hermit known for miracles after death",
+        "patronOf": "Lebanon, prayer, perseverance",
+        "dates": "1828-1898",
+        "origin": "Lebanon",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "silence",
+            "prayer",
+            "peace",
+            "devotion"
+        ],
+        "quotes": [
+            "A person who prays is never alone.",
+            "May your will be done and not mine.",
+            "In silence we find God."
+        ]
+    },
+    {
+        "name": "St. Pedro Calungsod",
+        "feastDay": "April 2",
+        "knownFor": "Filipino teenage catechist martyred in Guam while protecting a priest",
+        "patronOf": "Filipino youth, catechists, altar servers",
+        "dates": "1654-1672",
+        "origin": "Philippines",
+        "gender": "Male",
+        "traits": [
+            "youth",
+            "courage",
+            "missionary",
+            "sacrifice",
+            "faith"
+        ],
+        "quotes": [
+            "Be faithful to your faith, even unto death.",
+            "To serve God is to reign.",
+            "Greater love has no man than this, that he lay down his life for his friends."
+        ]
+    },
+    {
+        "name": "St. Turibius of Mogrovejo",
+        "feastDay": "March 23",
+        "knownFor": "Archbishop of Lima who evangelized Peru and defended indigenous rights",
+        "patronOf": "Peru, Latin American bishops, native rights",
+        "dates": "1538-1606",
+        "origin": "Spain/Peru",
+        "gender": "Male",
+        "traits": [
+            "justice",
+            "missionary",
+            "reform",
+            "leadership",
+            "compassion"
+        ],
+        "quotes": [
+            "Christ said 'I am the Truth,' He did not say 'I am the custom.'",
+            "Time is not our own, and we must give a strict account of it.",
+            "The salvation of souls must be the supreme law."
+        ]
+    },
+    {
+        "name": "St. José Sánchez del Río",
+        "feastDay": "February 10",
+        "knownFor": "Mexican teenage martyr during Cristero War who refused to deny Christ",
+        "patronOf": "Persecuted Christians, Mexican youth",
+        "dates": "1913-1928",
+        "origin": "Mexico",
+        "gender": "Male",
+        "traits": [
+            "courage",
+            "faith",
+            "youth",
+            "sacrifice",
+            "conviction"
+        ],
+        "quotes": [
+            "Viva Cristo Rey! Viva la Virgen de Guadalupe!",
+            "I will never give in. Viva Cristo Rey!",
+            "Tell my parents I will see them in Heaven."
+        ]
+    },
+    {
+        "name": "St. Mariana de Jesús",
+        "feastDay": "May 26",
+        "knownFor": "Lily of Quito, Ecuadorian mystic who offered her life during plague and earthquake",
+        "patronOf": "Ecuador, sick people, Americas",
+        "dates": "1618-1645",
+        "origin": "Ecuador",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "sacrifice",
+            "devotion",
+            "contemplation",
+            "love"
+        ],
+        "quotes": [
+            "Lord, I offer my life for the cessation of these calamities.",
+            "My God, I love You above all things.",
+            "Take my life, but spare my people."
+        ]
+    },
+    {
+        "name": "St. Peter of Alcántara",
+        "feastDay": "October 19",
+        "knownFor": "Spanish Franciscan mystic known for extreme penance and advising St. Teresa of Ávila",
+        "patronOf": "Brazil, watchmen, extreme penance",
+        "dates": "1499-1562",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "poverty",
+            "mysticism",
+            "discipline",
+            "prayer"
+        ],
+        "quotes": [
+            "He who wishes to do anything for God must first die to himself.",
+            "Prayer is the gate to enter into God.",
+            "The more completely we give ourselves to God, the more perfectly does He give Himself to us."
+        ]
+    },
+    {
+        "name": "St. John of Ávila",
+        "feastDay": "May 10",
+        "knownFor": "Spanish priest, Doctor of the Church, spiritual director to many saints",
+        "patronOf": "Spanish diocesan clergy, Andalusia",
+        "dates": "1500-1569",
+        "origin": "Spain",
+        "gender": "Male",
+        "traits": [
+            "preaching",
+            "teaching",
+            "wisdom",
+            "mentorship",
+            "reform"
+        ],
+        "quotes": [
+            "One act of thanksgiving, when things go wrong, is worth a thousand thanks when things go well.",
+            "Those who truly love God love all good wherever they find it.",
+            "From the cross flows all our strength."
+        ]
+    },
+    {
+        "name": "St. Anthony Mary Claret",
+        "feastDay": "October 24",
+        "knownFor": "Spanish archbishop and founder of Claretians, prolific writer and preacher",
+        "patronOf": "Catholic press, weavers, textile merchants",
+        "dates": "1807-1870",
+        "origin": "Spain/Cuba",
+        "gender": "Male",
+        "traits": [
+            "preaching",
+            "writing",
+            "missionary",
+            "reform",
+            "courage"
+        ],
+        "quotes": [
+            "A son of the Immaculate Heart of Mary is a man on fire with love.",
+            "Love is the most necessary of all virtues.",
+            "I must be ever ready to leave whatever I am doing to go wherever the Lord sends me."
+        ]
+    },
+    {
+        "name": "St. Peter Julian Eymard",
+        "feastDay": "August 2",
+        "knownFor": "Apostle of the Eucharist, founded Blessed Sacrament Fathers",
+        "patronOf": "Eucharistic congresses, Eucharistic adoration",
+        "dates": "1811-1868",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "devotion",
+            "contemplation",
+            "teaching",
+            "love",
+            "faith"
+        ],
+        "quotes": [
+            "The Eucharist is the supreme proof of the love of Jesus.",
+            "Happy is the soul that knows how to find Jesus in the Eucharist.",
+            "The Eucharist is the life of the people."
+        ]
+    },
+    {
+        "name": "St. John Eudes",
+        "feastDay": "August 19",
+        "knownFor": "French priest who promoted devotion to Sacred Hearts of Jesus and Mary",
+        "patronOf": "Sacred Heart devotion",
+        "dates": "1601-1680",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "devotion",
+            "teaching",
+            "missionary",
+            "reform",
+            "love"
+        ],
+        "quotes": [
+            "The Heart of Jesus is the source of all graces and of all blessings.",
+            "Our wish, our object, our chief preoccupation must be to form Jesus in ourselves.",
+            "The greatest honor we can pay to truth is to use it."
+        ]
+    },
+    {
+        "name": "St. Claude de la Colombière",
+        "feastDay": "February 15",
+        "knownFor": "Jesuit priest who was spiritual director to St. Margaret Mary Alacoque",
+        "patronOf": "Toy makers, turners",
+        "dates": "1641-1682",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "devotion",
+            "faith",
+            "teaching",
+            "mentorship",
+            "love"
+        ],
+        "quotes": [
+            "Grant that I may praise You, O Sacred Heart; that I may praise You forever.",
+            "To trust God when we have securities in our own hands is easy; but to trust Him when we have nothing is the real thing.",
+            "His Heart is an inexhaustible source of mercy."
+        ]
+    },
+    {
+        "name": "St. Josaphat",
+        "feastDay": "November 12",
+        "knownFor": "Ukrainian archbishop and martyr for unity between Eastern and Western Churches",
+        "patronOf": "Ukraine, Eastern Catholic Churches, ecumenism",
+        "dates": "1580-1623",
+        "origin": "Ukraine",
+        "gender": "Male",
+        "traits": [
+            "unity",
+            "courage",
+            "leadership",
+            "sacrifice",
+            "faith"
+        ],
+        "quotes": [
+            "You people of Vitebsk want to put me to death. You are waiting for me at the door, in the streets. But I am your shepherd and you should know that I am ready to die for you.",
+            "If I am worthy, I am ready to die for the unity of the Church.",
+            "Unity! Unity! That all may be one."
+        ]
+    },
+    {
+        "name": "St. Elizabeth of the Trinity",
+        "feastDay": "November 8",
+        "knownFor": "French Carmelite mystic who taught about the indwelling Trinity",
+        "patronOf": "Sick people, loss of parents",
+        "dates": "1880-1906",
+        "origin": "France",
+        "gender": "Female",
+        "traits": [
+            "contemplation",
+            "mysticism",
+            "devotion",
+            "prayer",
+            "peace"
+        ],
+        "quotes": [
+            "In the Heaven of my soul, I am always adoring a God who dwells within me.",
+            "Let yourself be loved more than you love.",
+            "I have found my Heaven on earth, since Heaven is God and God is in my soul."
+        ]
+    },
+    {
+        "name": "St. Marcellin Champagnat",
+        "feastDay": "June 6",
+        "knownFor": "French priest who founded the Marist Brothers to educate youth",
+        "patronOf": "Teachers, educators",
+        "dates": "1789-1840",
+        "origin": "France",
+        "gender": "Male",
+        "traits": [
+            "teaching",
+            "youth",
+            "humility",
+            "service",
+            "community"
+        ],
+        "quotes": [
+            "To educate children well, we must love them, and love them all equally.",
+            "All to Jesus through Mary; all to Mary for Jesus.",
+            "We need Brothers who are saints."
+        ]
+    },
+    {
+        "name": "St. Mary MacKillop",
+        "feastDay": "August 8",
+        "knownFor": "Australian foundress of Sisters of St. Joseph, educated the poor and Aboriginal children",
+        "patronOf": "Australia, Archdiocese of Brisbane",
+        "dates": "1842-1909",
+        "origin": "Australia",
+        "gender": "Female",
+        "traits": [
+            "teaching",
+            "service",
+            "perseverance",
+            "courage",
+            "compassion"
+        ],
+        "quotes": [
+            "Never see a need without doing something about it.",
+            "We must teach more by example than by word.",
+            "Let us be true to the end."
+        ]
+    },
+    {
+        "name": "St. Alphonsa of the Immaculate Conception",
+        "feastDay": "July 28",
+        "knownFor": "First woman from India to be canonized, offered suffering for souls",
+        "patronOf": "India, sick people, those facing opposition",
+        "dates": "1910-1946",
+        "origin": "India",
+        "gender": "Female",
+        "traits": [
+            "suffering",
+            "faith",
+            "devotion",
+            "patience",
+            "love"
+        ],
+        "quotes": [
+            "I am espoused to Christ whom the angels serve.",
+            "I have been chosen to suffer and to offer my life as a sacrifice.",
+            "Jesus, I accept all sufferings for love of You."
+        ]
+    },
+    {
+        "name": "St. Teresa of the Andes",
+        "feastDay": "July 13",
+        "knownFor": "Chilean Carmelite who became one of the youngest canonized saints",
+        "patronOf": "Chile, young people, sick people",
+        "dates": "1900-1920",
+        "origin": "Chile",
+        "gender": "Female",
+        "traits": [
+            "joy",
+            "love",
+            "youth",
+            "contemplation",
+            "faith"
+        ],
+        "quotes": [
+            "I am God's, He created me, so in His arms I shall rest.",
+            "Infinite joy fills my soul when I see God so loved.",
+            "The most beautiful thing is to love and to suffer."
+        ]
+    },
+    {
+        "name": "St. Laura Montoya",
+        "feastDay": "October 21",
+        "knownFor": "Colombian foundress who evangelized indigenous peoples of Latin America",
+        "patronOf": "Colombia, indigenous peoples, missionaries",
+        "dates": "1874-1949",
+        "origin": "Colombia",
+        "gender": "Female",
+        "traits": [
+            "missionary",
+            "teaching",
+            "courage",
+            "compassion",
+            "perseverance"
+        ],
+        "quotes": [
+            "Lord, I want to be holy! Help me!",
+            "Love overcomes all difficulties.",
+            "Let us go to the indigenous people, not to change their culture, but to bring them Christ."
         ]
     }
 ];
