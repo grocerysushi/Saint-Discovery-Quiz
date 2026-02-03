@@ -118,6 +118,24 @@
             color: white;
         }
 
+        .nav-btn {
+            color: var(--primary-navy);
+            background: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border: 2px solid var(--primary-navy);
+            border-radius: 25px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-btn:hover {
+            background: var(--primary-navy);
+            color: white;
+        }
+
         .timeline {
             position: relative;
             padding-left: 30px;
@@ -392,6 +410,8 @@
                 <a href="all-saints.html">All Saints</a>
                 <a href="saints-by-virtue.html">By Virtue</a>
                 <a href="saints-by-century.html" class="active">By Century</a>
+                <a href="feast-day-calendar.html">Feast Calendar</a>
+                <button onclick="goToRandomSaint()" class="nav-btn">Random Saint</button>
             </nav>
         </header>
 
@@ -410,6 +430,15 @@
     <script src="saints-data.js"></script>
 
     <script>
+        function slugify(name) {
+            return name.toLowerCase().replace(/\./g, '').replace(/['']/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();
+        }
+
+        function goToRandomSaint() {
+            const saint = saintsDatabase[Math.floor(Math.random() * saintsDatabase.length)];
+            window.location.href = '/saints/' + slugify(saint.name) + '.html';
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             const eras = [
                 {

@@ -376,6 +376,12 @@
           <a href="saints-by-century.html"
             style="color: #1a365d; text-decoration: none; padding: 8px 18px; border: 1px solid #1a365d; border-radius: 20px; font-size: 0.9rem; transition: all 0.3s ease;">By
             Century</a>
+          <a href="feast-day-calendar.html"
+            style="color: #1a365d; text-decoration: none; padding: 8px 18px; border: 1px solid #1a365d; border-radius: 20px; font-size: 0.9rem; transition: all 0.3s ease;">Feast
+            Calendar</a>
+          <button onclick="goToRandomSaint()"
+            style="color: #1a365d; background: none; cursor: pointer; padding: 8px 18px; border: 1px solid #1a365d; border-radius: 20px; font-size: 0.9rem; font-family: inherit; transition: all 0.3s ease;">Random
+            Saint</button>
         </div>
       </nav>
     </section>
@@ -458,6 +464,17 @@
 
     <script src="saints-data.js" defer></script>
     <script src="quiz.js" defer></script>
+    <script>
+      function slugify(name) {
+        return name.toLowerCase().replace(/\./g, '').replace(/['']/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();
+      }
+      function goToRandomSaint() {
+        if (typeof saintsDatabase !== 'undefined') {
+          const saint = saintsDatabase[Math.floor(Math.random() * saintsDatabase.length)];
+          window.location.href = '/saints/' + slugify(saint.name) + '.html';
+        }
+      }
+    </script>
   </main>
 </body>
 
