@@ -101,16 +101,30 @@ function formatTrait(trait) {
 }
 
 /**
- * Generate JSON-LD structured data for a saint (Person + BreadcrumbList)
+ * Generate JSON-LD structured data for a saint (Person + BreadcrumbList + Article + FAQPage)
  */
 function generateJsonLd(saint, slug) {
+    const century = extractCentury(saint.dates);
+
+    // Enhanced Person schema
     const personData = {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": saint.name,
+        "alternateName": saint.name.replace('St.', 'Saint').replace('Bl.', 'Blessed'),
         "description": saint.knownFor,
-        "jobTitle": saint.patronOf ? `Patron of ${saint.patronOf}` : undefined,
+        "jobTitle": saint.patronOf ? `Patron Saint of ${saint.patronOf}` : undefined,
         "url": `${SITE_URL}/saints/${slug}.html`,
+        "sameAs": [],
+        "nationality": {
+            "@type": "Country",
+            "name": saint.origin
+        },
+        "knowsAbout": saint.traits || [],
+        "memberOf": {
+            "@type": "Organization",
+            "name": "Catholic Church"
+        },
         "isPartOf": {
             "@type": "WebSite",
             "name": "Saint Discovery Quiz",
@@ -120,7 +134,7 @@ function generateJsonLd(saint, slug) {
 
     // Parse dates if available
     if (saint.dates) {
-        const dateMatch = saint.dates.match(/(\d{1,4})(?:\s*-\s*(\d{1,4}))?/);
+        const dateMatch = saint.dates.match(/(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?/);
         if (dateMatch) {
             if (dateMatch[2]) {
                 personData.birthDate = dateMatch[1];
@@ -162,8 +176,107 @@ function generateJsonLd(saint, slug) {
         ]
     };
 
-    // Return array of both schemas
-    return JSON.stringify([personData, breadcrumbData], null, 2);
+    // Article schema for better search appearance
+    const articleData = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": `${saint.name} - Life, Feast Day & Patronage`,
+        "description": `${saint.knownFor}. Patron of ${saint.patronOf}. Feast day: ${saint.feastDay}.`,
+        "author": {
+            "@type": "Organization",
+            "name": "Saint Discovery Quiz",
+            "url": SITE_URL
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Saint Discovery Quiz",
+            "url": SITE_URL,
+            "logo": {
+                "@type": "ImageObject",
+                "url": `${SITE_URL}/favicon.svg`
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `${SITE_URL}/saints/${slug}.html`
+        },
+        "image": `${SITE_URL}/favicon.svg`,
+        "articleSection": "Catholic Saints",
+        "keywords": [saint.name, "Catholic saint", "patron saint", saint.patronOf, ...(saint.traits || [])].filter(Boolean).join(", "),
+        "about": {
+            "@type": "Person",
+            "name": saint.name
+        }
+    };
+
+    // FAQPage schema for common questions about the saint
+    const faqData = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": `When is ${saint.name}'s feast day?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": `${saint.name}'s feast day is celebrated on ${saint.feastDay}.`
+                }
+            },
+            {
+                "@type": "Question",
+                "name": `What is ${saint.name} the patron saint of?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": `${saint.name} is the patron saint of ${saint.patronOf}.`
+                }
+            },
+            {
+                "@type": "Question",
+                "name": `What is ${saint.name} known for?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": saint.knownFor
+                }
+            },
+            {
+                "@type": "Question",
+                "name": `Where was ${saint.name} from?`,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": `${saint.name} was from ${saint.origin}${saint.dates ? ` and lived during ${saint.dates}` : ''}.`
+                }
+            }
+        ]
+    };
+
+    // Return array of all schemas
+    return JSON.stringify([personData, breadcrumbData, articleData, faqData], null, 2);
+}
+
+/**
+ * Extract century from dates string
+ */
+function extractCentury(dates) {
+    if (!dates) return null;
+    const match = dates.match(/(\d{1,4})/);
+    if (match) {
+        const year = parseInt(match[1]);
+        if (year < 100) return '1st century';
+        const century = Math.ceil(year / 100);
+        const suffix = century === 1 ? 'st' : century === 2 ? 'nd' : century === 3 ? 'rd' : 'th';
+        return `${century}${suffix} century`;
+    }
+    return null;
+}
+
+/**
+ * Determine saint type from name prefix
+ */
+function getSaintType(name) {
+    if (name.startsWith('Bl.')) return 'Blessed';
+    if (name.startsWith('St.')) return 'Saint';
+    if (name.startsWith('Sts.')) return 'Saints';
+    return 'Saint';
 }
 
 /**
@@ -176,19 +289,42 @@ function generateHTML(saint) {
     const escapedPatronOf = escapeHtml(saint.patronOf);
     const relatedSaints = getRelatedSaints(saint);
     const primaryCategory = getPrimaryCategory(saint);
+    const century = extractCentury(saint.dates);
+    const saintType = getSaintType(saint.name);
 
-    // Create meta description
-    const metaDescription = `Learn about ${saint.name}: ${saint.knownFor}. Feast day: ${saint.feastDay}. Patron of ${saint.patronOf}.`;
+    // Create comprehensive meta description
+    const metaDescription = `Discover ${saint.name}${century ? ` (${century})` : ''}: ${saint.knownFor}. Feast day: ${saint.feastDay}. Patron saint of ${saint.patronOf}. Learn about their life, virtues, quotes, and spiritual legacy.`;
 
-    // Create keywords
-    const keywords = [
+    // Create expanded keywords with multiple variations
+    const keywordsList = [
         saint.name,
+        saint.name.replace('St.', 'Saint').replace('Bl.', 'Blessed'),
+        `${saint.name} biography`,
+        `${saint.name} feast day`,
+        `${saint.name} patron saint`,
+        `${saint.name} quotes`,
+        `${saint.name} prayer`,
         'Catholic saint',
         'patron saint',
+        `patron saint of ${saint.patronOf}`,
         saint.patronOf,
+        ...(saint.traits || []).map(t => t),
         ...(saint.traits || []).map(t => `${t} saint`),
-        saint.origin
-    ].filter(Boolean).join(', ');
+        saint.origin,
+        `saints from ${saint.origin}`,
+        century,
+        `${century} saints`,
+        `${saintType.toLowerCase()} ${saint.name.replace(/^(St\.|Bl\.|Sts\.)\s*/, '')}`,
+        'Catholic Church',
+        'Christian saints',
+        'holy men and women',
+        'inspirational saints',
+        'saint biography',
+        'feast day calendar',
+        'patron saints list'
+    ].filter(Boolean);
+
+    const keywords = [...new Set(keywordsList)].join(', ');
 
     const traitsHtml = (saint.traits || [])
         .map(trait => `<span class="trait-tag">${formatTrait(trait)}</span>`)
@@ -227,35 +363,84 @@ function generateHTML(saint) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>${escapedName} - Saint Discovery Quiz</title>
-    <meta name="title" content="${escapedName} - Saint Discovery Quiz">
+    <title>${escapedName} - Life, Feast Day & Patronage | Saint Discovery Quiz</title>
+    <meta name="title" content="${escapedName} - Life, Feast Day & Patronage | Saint Discovery Quiz">
     <meta name="description" content="${escapeHtml(metaDescription)}">
     <meta name="keywords" content="${escapeHtml(keywords)}">
     <meta name="author" content="Saint Discovery Quiz">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="global">
+    <meta name="language" content="English">
+    <meta name="coverage" content="Worldwide">
+    <meta name="classification" content="Religion, Catholic Saints, Christianity">
+    <meta name="subject" content="${escapedName} - Catholic Saint Biography and Patronage">
+    <meta name="abstract" content="Complete guide to ${escapedName}: biography, feast day (${saint.feastDay}), patronage, virtues, and inspirational quotes.">
+    <meta name="topic" content="Catholic Saints, ${escapedName}, Christian History">
+    <meta name="summary" content="${escapeHtml(saint.knownFor)}. Patron of ${escapeHtml(saint.patronOf)}.">
+
+    <!-- Geographic Meta Tags -->
+    <meta name="geo.region" content="${escapeHtml(saint.origin)}">
+    <meta name="geo.placename" content="${escapeHtml(saint.origin)}">
 
     <!-- Canonical URL -->
     <link rel="canonical" href="${SITE_URL}/saints/${slug}.html">
     <link rel="alternate" hreflang="en" href="${SITE_URL}/saints/${slug}.html">
     <link rel="alternate" hreflang="x-default" href="${SITE_URL}/saints/${slug}.html">
 
-    <!-- Favicon -->
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/favicon.svg">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#8B4513">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="brown-translucent">
+    <meta name="apple-mobile-web-app-title" content="${escapedName}">
+    <meta name="application-name" content="Saint Discovery Quiz">
+    <meta name="msapplication-TileColor" content="#8B4513">
+    <meta name="msapplication-config" content="/browserconfig.xml">
 
-    <!-- Open Graph -->
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="${SITE_URL}/saints/${slug}.html">
-    <meta property="og:title" content="${escapedName} - Saint Discovery Quiz">
+    <meta property="og:title" content="${escapedName} - Life, Feast Day & Patronage">
     <meta property="og:description" content="${escapeHtml(metaDescription)}">
     <meta property="og:image" content="${SITE_URL}/favicon.svg">
+    <meta property="og:image:alt" content="${escapedName} - Catholic Saint">
     <meta property="og:site_name" content="Saint Discovery Quiz">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="${escapeHtml(saint.name.replace(/^(St\.|Bl\.|Sts\.)\s*/, '').split(' ')[0])}">
+    <meta property="article:author" content="Saint Discovery Quiz">
+    <meta property="article:section" content="Catholic Saints">
+    <meta property="article:tag" content="${escapedName}">
+    <meta property="article:tag" content="Catholic Saint">
+    <meta property="article:tag" content="${escapeHtml(saint.patronOf)}">
 
-    <!-- Twitter -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="${escapedName}">
+    <meta name="twitter:site" content="@SaintDiscovery">
+    <meta name="twitter:creator" content="@SaintDiscovery">
+    <meta name="twitter:title" content="${escapedName} - Catholic Saint Biography">
     <meta name="twitter:description" content="${escapeHtml(metaDescription)}">
+    <meta name="twitter:image" content="${SITE_URL}/favicon.svg">
+    <meta name="twitter:image:alt" content="${escapedName}">
+
+    <!-- Pinterest -->
+    <meta property="pin:description" content="${escapedName}: ${escapeHtml(saint.knownFor)}. Feast day: ${saint.feastDay}. Patron of ${escapeHtml(saint.patronOf)}.">
+    <meta property="pin:media" content="${SITE_URL}/favicon.svg">
+
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.title" content="${escapedName}">
+    <meta name="DC.creator" content="Saint Discovery Quiz">
+    <meta name="DC.subject" content="Catholic Saints, ${escapedName}, Christian Biography">
+    <meta name="DC.description" content="${escapeHtml(metaDescription)}">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="en">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
