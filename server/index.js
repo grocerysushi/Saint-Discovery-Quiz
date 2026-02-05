@@ -3,6 +3,27 @@ const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
 const path = require('path');
+const fs = require('fs');
+
+// Load saints database from the public JS file
+function loadSaintsDatabase() {
+    const saintsFile = fs.readFileSync(path.join(__dirname, '../public/saints-data.js'), 'utf8');
+    // Extract the array from the JS file (it's assigned to const saintsDatabase = [...])
+    const match = saintsFile.match(/const saintsDatabase = (\[[\s\S]*?\]);/);
+    if (match) {
+        return JSON.parse(match[1]);
+    }
+    throw new Error('Could not parse saints database');
+}
+
+let saintsDatabase;
+try {
+    saintsDatabase = loadSaintsDatabase();
+    console.log(`Loaded ${saintsDatabase.length} saints from database`);
+} catch (error) {
+    console.error('Failed to load saints database:', error);
+    saintsDatabase = [];
+}
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -92,6 +113,106 @@ app.post('/api/ai-match', async (req, res) => {
             message: error.message
         });
     }
+});
+
+// Saint of the Day endpoint
+app.get('/api/saint-of-the-day', (req, res) => {
+    if (!saintsDatabase.length) {
+        return res.status(500).json({ error: 'Saints database not loaded' });
+    }
+
+    const today = new Date();
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+    const saintIndex = dayOfYear % saintsDatabase.length;
+    const saint = saintsDatabase[saintIndex];
+
+    const dateOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', dateOptions);
+
+    res.json({
+        date: formattedDate,
+        dayOfYear,
+        saint: {
+            name: saint.name,
+            feastDay: saint.feastDay,
+            knownFor: saint.knownFor,
+            patronOf: saint.patronOf,
+            dates: saint.dates,
+            origin: saint.origin,
+            gender: saint.gender,
+            quote: saint.quotes && saint.quotes.length > 0 ? saint.quotes[0] : null
+        }
+    });
+});
+
+// All saints data endpoint
+app.get('/api/saints', (req, res) => {
+    if (!saintsDatabase.length) {
+        return res.status(500).json({ error: 'Saints database not loaded' });
+    }
+
+    // Support optional query params for filtering
+    let results = saintsDatabase;
+
+    if (req.query.gender) {
+        results = results.filter(s => s.gender.toLowerCase() === req.query.gender.toLowerCase());
+    }
+
+    if (req.query.trait) {
+        results = results.filter(s => s.traits && s.traits.includes(req.query.trait.toLowerCase()));
+    }
+
+    if (req.query.search) {
+        const search = req.query.search.toLowerCase();
+        results = results.filter(s =>
+            s.name.toLowerCase().includes(search) ||
+            s.knownFor.toLowerCase().includes(search) ||
+            s.patronOf.toLowerCase().includes(search)
+        );
+    }
+
+    res.json({
+        count: results.length,
+        saints: results.map(s => ({
+            name: s.name,
+            feastDay: s.feastDay,
+            knownFor: s.knownFor,
+            patronOf: s.patronOf,
+            dates: s.dates,
+            origin: s.origin,
+            gender: s.gender,
+            traits: s.traits
+        }))
+    });
+});
+
+// Single saint by name endpoint
+app.get('/api/saints/:name', (req, res) => {
+    if (!saintsDatabase.length) {
+        return res.status(500).json({ error: 'Saints database not loaded' });
+    }
+
+    const searchName = req.params.name.toLowerCase().replace(/-/g, ' ');
+    const saint = saintsDatabase.find(s =>
+        s.name.toLowerCase() === searchName ||
+        s.name.toLowerCase().replace(/st\.\s*/i, '').trim() === searchName.replace(/st\.\s*/i, '').trim()
+    );
+
+    if (!saint) {
+        return res.status(404).json({ error: 'Saint not found' });
+    }
+
+    res.json({
+        name: saint.name,
+        feastDay: saint.feastDay,
+        knownFor: saint.knownFor,
+        patronOf: saint.patronOf,
+        dates: saint.dates,
+        origin: saint.origin,
+        gender: saint.gender,
+        traits: saint.traits,
+        quotes: saint.quotes
+    });
 });
 
 // Serve the main page for all other routes
