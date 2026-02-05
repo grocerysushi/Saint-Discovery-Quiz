@@ -115,7 +115,7 @@ app.post('/api/ai-match', async (req, res) => {
     }
 });
 
-// Saint of the Day endpoint
+// Saint of the Day endpoint (deterministic rotation through database)
 app.get('/api/saint-of-the-day', (req, res) => {
     if (!saintsDatabase.length) {
         return res.status(500).json({ error: 'Saints database not loaded' });
@@ -142,6 +142,51 @@ app.get('/api/saint-of-the-day', (req, res) => {
             gender: saint.gender,
             quote: saint.quotes && saint.quotes.length > 0 ? saint.quotes[0] : null
         }
+    });
+});
+
+// Saints by feast day endpoint (returns saints whose actual feast day matches)
+app.get('/api/feast-day', (req, res) => {
+    if (!saintsDatabase.length) {
+        return res.status(500).json({ error: 'Saints database not loaded' });
+    }
+
+    // Use provided date or default to today
+    let targetDate;
+    if (req.query.date) {
+        targetDate = new Date(req.query.date);
+        if (isNaN(targetDate.getTime())) {
+            return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD or MM-DD' });
+        }
+    } else {
+        targetDate = new Date();
+    }
+
+    // Format date to match feast day format (e.g., "February 4")
+    const month = targetDate.toLocaleDateString('en-US', { month: 'long' });
+    const day = targetDate.getDate();
+    const feastDayString = `${month} ${day}`;
+
+    // Find all saints with matching feast day
+    const matchingSaints = saintsDatabase.filter(s => s.feastDay === feastDayString);
+
+    const dateOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+    const formattedDate = targetDate.toLocaleDateString('en-US', dateOptions);
+
+    res.json({
+        date: formattedDate,
+        feastDay: feastDayString,
+        count: matchingSaints.length,
+        saints: matchingSaints.map(s => ({
+            name: s.name,
+            feastDay: s.feastDay,
+            knownFor: s.knownFor,
+            patronOf: s.patronOf,
+            dates: s.dates,
+            origin: s.origin,
+            gender: s.gender,
+            quote: s.quotes && s.quotes.length > 0 ? s.quotes[0] : null
+        }))
     });
 });
 
