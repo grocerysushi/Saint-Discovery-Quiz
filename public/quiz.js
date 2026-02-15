@@ -284,18 +284,29 @@ function selectQuizMode(mode) {
 
 
 
-// Saint of the Day - deterministic selection based on date
+// Saint of the Day - matches today's actual feast day when possible
 function initSaintOfTheDay() {
     const saintOfDayWidget = document.getElementById('saintOfDay');
     if (!saintOfDayWidget || typeof saintsDatabase === 'undefined') return;
 
-    // Get today's date components for deterministic selection
     const today = new Date();
-    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'];
+    const todayFeastDay = monthNames[today.getMonth()] + ' ' + today.getDate();
 
-    // Use day of year to pick a saint (same saint for everyone on the same day)
-    const saintIndex = dayOfYear % saintsDatabase.length;
-    const saint = saintsDatabase[saintIndex];
+    // Find saints whose feast day matches today
+    const matchingSaints = saintsDatabase.filter(s => s.feastDay === todayFeastDay);
+
+    let saint;
+    if (matchingSaints.length > 0) {
+        // If multiple saints share today's feast day, rotate by year
+        saint = matchingSaints[today.getFullYear() % matchingSaints.length];
+    } else {
+        // Fallback: deterministic rotation for days with no matching feast day
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+        const saintIndex = dayOfYear % saintsDatabase.length;
+        saint = saintsDatabase[saintIndex];
+    }
 
     // Format today's date
     const dateOptions = { weekday: 'long', month: 'long', day: 'numeric' };

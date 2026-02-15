@@ -1,5 +1,5 @@
 // Complete Saints Database from Catholic_Saints_Comprehensive.xlsx
-// Total: 186 saints (including beatified)
+// Total: 224 saints (including beatified)
 
 const saintsDatabase = [
     {
@@ -3761,6 +3761,846 @@ const saintsDatabase = [
             "Lord, I want to be holy! Help me!",
             "Love overcomes all difficulties.",
             "Let us go to the indigenous people, not to change their culture, but to bring them Christ."
+        ]
+    },
+    {
+        "name": "St. Basil the Great",
+        "feastDay": "January 2",
+        "knownFor": "Doctor of the Church, established monastic rules, defended Trinitarian doctrine",
+        "patronOf": "Hospital administrators, monks, education",
+        "dates": "329-379",
+        "origin": "Cappadocia (Turkey)",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "leadership",
+            "reform",
+            "charity",
+            "teaching"
+        ],
+        "quotes": [
+            "The bread you store up belongs to the hungry; the cloak that lies in your chest belongs to the naked.",
+            "A tree is known by its fruit; a man by his deeds.",
+            "Do not liken God to any of the things that exist according to human understanding."
+        ]
+    },
+    {
+        "name": "St. Gregory of Nazianzus",
+        "feastDay": "January 2",
+        "knownFor": "Doctor of the Church, great theologian, briefly served as Patriarch of Constantinople",
+        "patronOf": "Poets, theologians",
+        "dates": "329-390",
+        "origin": "Cappadocia (Turkey)",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "poetry",
+            "contemplation",
+            "teaching",
+            "wisdom"
+        ],
+        "quotes": [
+            "If you are a theologian you truly pray. If you truly pray you are a theologian.",
+            "What has not been assumed has not been healed.",
+            "He who does not know God will not know himself."
+        ]
+    },
+    {
+        "name": "St. Leo the Great",
+        "feastDay": "November 10",
+        "knownFor": "Pope who confronted Attila the Hun, defined Christological doctrine at Chalcedon",
+        "patronOf": "Popes, confessors",
+        "dates": "c. 400-461",
+        "origin": "Tuscany, Italy",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "courage",
+            "teaching",
+            "diplomacy",
+            "conviction"
+        ],
+        "quotes": [
+            "Christian, recognize your dignity.",
+            "Through the sacrament of baptism you have become a temple of the Holy Spirit.",
+            "Our Lord Jesus Christ, born of a virgin, does not cease to be God."
+        ]
+    },
+    {
+        "name": "St. Pius X",
+        "feastDay": "August 21",
+        "knownFor": "Pope who promoted early Communion for children, reformed liturgical music",
+        "patronOf": "First communicants, pilgrims",
+        "dates": "1835-1914",
+        "origin": "Riese, Italy",
+        "gender": "Male",
+        "traits": [
+            "reform",
+            "humility",
+            "teaching",
+            "leadership",
+            "simplicity"
+        ],
+        "quotes": [
+            "To restore all things in Christ.",
+            "Holy Communion is the shortest and safest way to Heaven.",
+            "Do what you can and pray for what you cannot yet do."
+        ]
+    },
+    {
+        "name": "St. Irenaeus of Lyon",
+        "feastDay": "June 28",
+        "knownFor": "Early Church Father, combated Gnosticism, wrote Against Heresies",
+        "patronOf": "Catechists, apologists",
+        "dates": "c. 130-202",
+        "origin": "Smyrna (Turkey)/Lyon (France)",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "teaching",
+            "conviction",
+            "writing",
+            "faith"
+        ],
+        "quotes": [
+            "The glory of God is man fully alive.",
+            "Where the Church is, there is the Spirit of God.",
+            "Error, indeed, is never set forth in its naked deformity, lest being thus exposed it should at once be detected."
+        ]
+    },
+    {
+        "name": "St. Justin Martyr",
+        "feastDay": "June 1",
+        "knownFor": "Early Christian apologist, philosopher who defended the faith before pagan intellectuals",
+        "patronOf": "Philosophers, lecturers, apologists",
+        "dates": "c. 100-165",
+        "origin": "Flavia Neapolis (Palestine)",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "philosophy",
+            "courage",
+            "writing",
+            "conviction"
+        ],
+        "quotes": [
+            "We worship the God of truth and are not afraid of death.",
+            "Reason directs those who are truly pious and philosophical to honour and love only what is true.",
+            "The seed of the Word is implanted in all mankind."
+        ]
+    },
+    {
+        "name": "St. Polycarp",
+        "feastDay": "February 23",
+        "knownFor": "Bishop of Smyrna, disciple of St. John the Apostle, martyred by fire",
+        "patronOf": "Earache sufferers, against dysentery",
+        "dates": "c. 69-155",
+        "origin": "Smyrna (Turkey)",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "courage",
+            "endurance",
+            "leadership",
+            "sacrifice"
+        ],
+        "quotes": [
+            "Eighty-six years have I served Him, and He has done me no wrong. How can I blaspheme my King and Savior?",
+            "Stand fast in the faith, and love one another.",
+            "I bless You for having judged me worthy of this day and hour."
+        ]
+    },
+    {
+        "name": "St. Perpetua",
+        "feastDay": "March 7",
+        "knownFor": "Young noblewoman martyred in Carthage, wrote an account of her imprisonment",
+        "patronOf": "Mothers, expectant mothers, cattle, butchers",
+        "dates": "c. 181-203",
+        "origin": "Carthage (Tunisia)",
+        "gender": "Female",
+        "traits": [
+            "courage",
+            "faith",
+            "motherhood",
+            "sacrifice",
+            "endurance"
+        ],
+        "quotes": [
+            "I am a Christian, and I cannot deny it.",
+            "Stand firm in the faith and love one another.",
+            "We shall suffer as God wills."
+        ]
+    },
+    {
+        "name": "St. Cyprian",
+        "feastDay": "September 16",
+        "knownFor": "Bishop of Carthage, wrote on Church unity, martyred under Valerian",
+        "patronOf": "North Africa, Algeria",
+        "dates": "c. 210-258",
+        "origin": "Carthage (Tunisia)",
+        "gender": "Male",
+        "traits": [
+            "leadership",
+            "writing",
+            "conviction",
+            "courage",
+            "teaching"
+        ],
+        "quotes": [
+            "You cannot have God for your Father if you have not the Church for your mother.",
+            "He can no longer have God for his Father who has not the Church for his mother.",
+            "The Lord does not promise ease but endurance."
+        ]
+    },
+    {
+        "name": "St. Hilary of Poitiers",
+        "feastDay": "January 13",
+        "knownFor": "Doctor of the Church, defended Trinitarianism against Arianism in the West",
+        "patronOf": "Against snake bites, backward children",
+        "dates": "c. 310-367",
+        "origin": "Poitiers, France",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "courage",
+            "teaching",
+            "conviction",
+            "writing"
+        ],
+        "quotes": [
+            "Everything that seems empty is full of the angels of God.",
+            "Blessed is the man who has gained wisdom and who lives in peace.",
+            "The nature of God is goodness."
+        ]
+    },
+    {
+        "name": "St. Norbert",
+        "feastDay": "June 6",
+        "knownFor": "Founded the Premonstratensian order, reformed from worldly life to deep holiness",
+        "patronOf": "Bohemia, expectant mothers, peace",
+        "dates": "c. 1080-1134",
+        "origin": "Xanten, Germany",
+        "gender": "Male",
+        "traits": [
+            "conversion",
+            "reform",
+            "preaching",
+            "leadership",
+            "discipline"
+        ],
+        "quotes": [
+            "O Priest! You are not yourself because you are of God.",
+            "The spirit of penance and prayer is the spirit of the saint.",
+            "Lord, convert sinners and sanctify the just."
+        ]
+    },
+    {
+        "name": "St. Bruno",
+        "feastDay": "October 6",
+        "knownFor": "Founded the Carthusian order, embraced radical solitude and silence",
+        "patronOf": "Carthusians, possessed people",
+        "dates": "c. 1030-1101",
+        "origin": "Cologne, Germany",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "silence",
+            "simplicity",
+            "prayer",
+            "humility"
+        ],
+        "quotes": [
+            "While the world changes, the Cross stands firm.",
+            "What joy the solitude and silence of the hermitage bring to those who love it.",
+            "Only those who have experienced it can know the benefit and delight of the solitary life."
+        ]
+    },
+    {
+        "name": "St. Romuald",
+        "feastDay": "June 19",
+        "knownFor": "Founded the Camaldolese order, great reformer of monastic life",
+        "patronOf": "Camaldolese monks",
+        "dates": "c. 951-1027",
+        "origin": "Ravenna, Italy",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "reform",
+            "discipline",
+            "prayer",
+            "solitude"
+        ],
+        "quotes": [
+            "Sit in your cell as in paradise.",
+            "Put the whole world behind you and forget it.",
+            "Empty yourself completely and sit waiting, content with the grace of God."
+        ]
+    },
+    {
+        "name": "St. Anthony the Great",
+        "feastDay": "January 17",
+        "knownFor": "Father of all monks, lived as a desert hermit, fought spiritual battles",
+        "patronOf": "Monks, hermits, animals, basket makers",
+        "dates": "c. 251-356",
+        "origin": "Egypt",
+        "gender": "Male",
+        "traits": [
+            "contemplation",
+            "spiritual-warfare",
+            "discipline",
+            "humility",
+            "endurance"
+        ],
+        "quotes": [
+            "I no longer fear God, but I love Him.",
+            "Be watchful, that you may pray continually.",
+            "The devil fears fasting, prayer, humility, and good works."
+        ]
+    },
+    {
+        "name": "St. John Damascene",
+        "feastDay": "December 4",
+        "knownFor": "Doctor of the Church, defended icons, wrote extensively on theology",
+        "patronOf": "Pharmacists, icon painters, theologians",
+        "dates": "c. 676-749",
+        "origin": "Damascus, Syria",
+        "gender": "Male",
+        "traits": [
+            "intellectual",
+            "writing",
+            "arts",
+            "courage",
+            "teaching"
+        ],
+        "quotes": [
+            "I do not worship matter, I worship the Creator of matter.",
+            "Since the Word became flesh, we depict the invisible God in visible form.",
+            "The whole earth is a living icon of the face of God."
+        ]
+    },
+    {
+        "name": "St. Ephrem the Syrian",
+        "feastDay": "June 9",
+        "knownFor": "Doctor of the Church, prolific hymn writer, the Harp of the Holy Spirit",
+        "patronOf": "Spiritual directors, spiritual leaders",
+        "dates": "c. 306-373",
+        "origin": "Nisibis (Turkey)",
+        "gender": "Male",
+        "traits": [
+            "poetry",
+            "music",
+            "teaching",
+            "humility",
+            "devotion"
+        ],
+        "quotes": [
+            "Place your hope in God, and you will never be shaken.",
+            "Lord, if Your grace does not lead me, I shall go astray.",
+            "Virtues are formed by prayer. Prayer preserves temperance, suppresses anger, and restrains pride."
+        ]
+    },
+    {
+        "name": "St. Cajetan",
+        "feastDay": "August 7",
+        "knownFor": "Co-founded the Theatines, worked with the poor and sick, trusted in Divine Providence",
+        "patronOf": "Job seekers, unemployed workers, good fortune",
+        "dates": "1480-1547",
+        "origin": "Vicenza, Italy",
+        "gender": "Male",
+        "traits": [
+            "charity",
+            "service",
+            "reform",
+            "faith",
+            "generosity"
+        ],
+        "quotes": [
+            "Cast yourself into the arms of God and be very sure that if He wants anything of you, He will fit you for the work.",
+            "Seek first the kingdom of God and His justice, and all else shall be given to you.",
+            "Trust in the Lord with all your heart."
+        ]
+    },
+    {
+        "name": "St. Aloysius Gonzaga",
+        "feastDay": "June 21",
+        "knownFor": "Young Jesuit who renounced wealth, died caring for plague victims",
+        "patronOf": "Youth, students, AIDS patients",
+        "dates": "1568-1591",
+        "origin": "Lombardy, Italy",
+        "gender": "Male",
+        "traits": [
+            "youth",
+            "purity",
+            "sacrifice",
+            "service",
+            "discipline"
+        ],
+        "quotes": [
+            "It is better to be a child of God than king of the whole world.",
+            "I am a crooked piece of iron and have come into religion to be made straight by the hammer of mortification.",
+            "What are we doing? What are we thinking about? Why do we not hasten to worship Christ?"
+        ]
+    },
+    {
+        "name": "St. Stanislaus Kostka",
+        "feastDay": "November 13",
+        "knownFor": "Young Polish Jesuit novice who walked 450 miles to join the order",
+        "patronOf": "Poland, novices, students",
+        "dates": "1550-1568",
+        "origin": "Rostkow, Poland",
+        "gender": "Male",
+        "traits": [
+            "youth",
+            "perseverance",
+            "devotion",
+            "courage",
+            "purity"
+        ],
+        "quotes": [
+            "I was not born for this world.",
+            "If I do not become a saint, I shall have accomplished nothing.",
+            "Mary is my Mother; she will obtain for me all that I need."
+        ]
+    },
+    {
+        "name": "St. John Baptist de la Salle",
+        "feastDay": "April 7",
+        "knownFor": "Founded the Brothers of the Christian Schools, pioneer of modern education",
+        "patronOf": "Teachers, educators",
+        "dates": "1651-1719",
+        "origin": "Reims, France",
+        "gender": "Male",
+        "traits": [
+            "education",
+            "innovation",
+            "leadership",
+            "charity",
+            "teaching"
+        ],
+        "quotes": [
+            "Lord, the work is Yours.",
+            "You carry out a work that requires you to touch hearts, but this you cannot do except by the Spirit of God.",
+            "Faith is a light that guides you through the darkness."
+        ]
+    },
+    {
+        "name": "St. Vincent Ferrer",
+        "feastDay": "April 5",
+        "knownFor": "Great Dominican preacher, miracle worker, Angel of the Judgment",
+        "patronOf": "Builders, fishermen, plumbers",
+        "dates": "1350-1419",
+        "origin": "Valencia, Spain",
+        "gender": "Male",
+        "traits": [
+            "preaching",
+            "evangelization",
+            "courage",
+            "healing",
+            "missionary"
+        ],
+        "quotes": [
+            "If you truly want to help the soul of your neighbor, you should approach God first with all your heart.",
+            "He who preaches without zeal is like a lamp without oil.",
+            "It is necessary to pray always and without ceasing."
+        ]
+    },
+    {
+        "name": "St. Bernardine of Siena",
+        "feastDay": "May 20",
+        "knownFor": "Popularized devotion to the Holy Name of Jesus, great Franciscan preacher",
+        "patronOf": "Advertising, communications, public relations",
+        "dates": "1380-1444",
+        "origin": "Massa Marittima, Italy",
+        "gender": "Male",
+        "traits": [
+            "preaching",
+            "devotion",
+            "evangelization",
+            "joy",
+            "reform"
+        ],
+        "quotes": [
+            "The name of Jesus is the glory of preachers, because the shining splendor of that name causes His word to be proclaimed and heard.",
+            "Make friends with the angels.",
+            "Jesus! The very thought of Thee with sweetness fills my breast."
+        ]
+    },
+    {
+        "name": "St. Catherine Labouré",
+        "feastDay": "November 28",
+        "knownFor": "Received visions of the Miraculous Medal from the Blessed Virgin Mary",
+        "patronOf": "Miraculous Medal, senior citizens",
+        "dates": "1806-1876",
+        "origin": "Fain-lès-Moutiers, France",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "humility",
+            "devotion",
+            "obedience",
+            "simplicity"
+        ],
+        "quotes": [
+            "The ball you see represents the whole world, especially France, and each person in particular.",
+            "One must see God in everyone.",
+            "I saw the Blessed Virgin. She was standing, dressed in white."
+        ]
+    },
+    {
+        "name": "St. Geneviève",
+        "feastDay": "January 3",
+        "knownFor": "Patroness of Paris, protected the city through prayer during barbarian invasions",
+        "patronOf": "Paris, disasters, fevers, plague",
+        "dates": "c. 419-512",
+        "origin": "Nanterre, France",
+        "gender": "Female",
+        "traits": [
+            "prayer",
+            "courage",
+            "leadership",
+            "faith",
+            "protection"
+        ],
+        "quotes": [
+            "Let us not lose heart. God will protect us.",
+            "Arm yourselves with prayer and fasting.",
+            "Trust in God and He will deliver you."
+        ]
+    },
+    {
+        "name": "St. Isidore the Farmer",
+        "feastDay": "May 15",
+        "knownFor": "Holy farmer who attended daily Mass, known for his generosity to the poor",
+        "patronOf": "Farmers, laborers, agriculture, Madrid",
+        "dates": "c. 1070-1130",
+        "origin": "Madrid, Spain",
+        "gender": "Male",
+        "traits": [
+            "humility",
+            "work",
+            "generosity",
+            "devotion",
+            "simplicity"
+        ],
+        "quotes": [
+            "God will provide; let us attend to His service.",
+            "Pray and work, and leave the rest to God.",
+            "One must be generous not from what is left over, but from what is needed."
+        ]
+    },
+    {
+        "name": "St. Martha",
+        "feastDay": "July 29",
+        "knownFor": "Sister of Mary and Lazarus, hosted Jesus, known for her active service",
+        "patronOf": "Cooks, dietitians, homemakers, servants",
+        "dates": "1st century",
+        "origin": "Bethany",
+        "gender": "Female",
+        "traits": [
+            "service",
+            "hospitality",
+            "faith",
+            "family",
+            "devotion"
+        ],
+        "quotes": [
+            "Yes, Lord, I believe that you are the Messiah, the Son of God.",
+            "Lord, if you had been here, my brother would not have died.",
+            "I know that whatever you ask of God, God will give you."
+        ]
+    },
+    {
+        "name": "St. Philip the Apostle",
+        "feastDay": "May 3",
+        "knownFor": "One of the Twelve Apostles, brought Nathanael to Jesus, preached in Asia Minor",
+        "patronOf": "Pastry chefs, hatters",
+        "dates": "1st century",
+        "origin": "Bethsaida, Galilee",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "missionary",
+            "seeking",
+            "simplicity",
+            "evangelization"
+        ],
+        "quotes": [
+            "Lord, show us the Father, and it is enough for us.",
+            "Come and see.",
+            "We have found Him of whom Moses wrote."
+        ]
+    },
+    {
+        "name": "St. Bartholomew",
+        "feastDay": "August 24",
+        "knownFor": "One of the Twelve Apostles, traditionally identified with Nathanael, martyred by flaying",
+        "patronOf": "Tanners, plasterers, bookbinders, leather workers",
+        "dates": "1st century",
+        "origin": "Cana, Galilee",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "courage",
+            "missionary",
+            "sacrifice",
+            "honesty"
+        ],
+        "quotes": [
+            "Can anything good come out of Nazareth?",
+            "Lord, make me worthy of Your call.",
+            "Rabbi, you are the Son of God!"
+        ]
+    },
+    {
+        "name": "St. Matthias",
+        "feastDay": "May 14",
+        "knownFor": "Chosen by lot to replace Judas as one of the Twelve Apostles",
+        "patronOf": "Alcoholics, carpenters, tailors",
+        "dates": "1st century",
+        "origin": "Judea",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "obedience",
+            "perseverance",
+            "humility",
+            "missionary"
+        ],
+        "quotes": [
+            "It is necessary that one become a witness of the resurrection.",
+            "Lord, You who know the hearts of all, show us which one You have chosen.",
+            "God's will be done in all things."
+        ]
+    },
+    {
+        "name": "St. Simon the Apostle",
+        "feastDay": "October 28",
+        "knownFor": "One of the Twelve Apostles, called the Zealot, preached in Persia",
+        "patronOf": "Curriers, sawyers, tanners",
+        "dates": "1st century",
+        "origin": "Cana, Galilee",
+        "gender": "Male",
+        "traits": [
+            "zeal",
+            "missionary",
+            "courage",
+            "sacrifice",
+            "faith"
+        ],
+        "quotes": [
+            "Lord, increase our faith.",
+            "To serve God is to reign.",
+            "I give my life for the truth of Christ."
+        ]
+    },
+    {
+        "name": "St. Hedwig",
+        "feastDay": "October 16",
+        "knownFor": "Duchess of Silesia, devoted to the poor and religious life after her husband's death",
+        "patronOf": "Silesia, brides, duchesses, widows",
+        "dates": "1174-1243",
+        "origin": "Bavaria, Germany",
+        "gender": "Female",
+        "traits": [
+            "charity",
+            "humility",
+            "family",
+            "generosity",
+            "prayer"
+        ],
+        "quotes": [
+            "What we give to the poor, we carry with us into eternity.",
+            "Lord, grant me the grace to serve You in the poorest of the poor.",
+            "True nobility is found in virtue, not in birth."
+        ]
+    },
+    {
+        "name": "St. Gertrude the Great",
+        "feastDay": "November 16",
+        "knownFor": "Benedictine mystic, received visions of the Sacred Heart, great spiritual writer",
+        "patronOf": "West Indies, souls in Purgatory, mystics",
+        "dates": "1256-1302",
+        "origin": "Eisleben, Germany",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "contemplation",
+            "writing",
+            "devotion",
+            "love"
+        ],
+        "quotes": [
+            "When I turn to You in prayer, I want nothing else but You.",
+            "Lord, through the Heart of Jesus, I offer You all my thoughts, words, and actions.",
+            "You have wounded my heart with love; I can never recover."
+        ]
+    },
+    {
+        "name": "St. Hildegard of Bingen",
+        "feastDay": "September 17",
+        "knownFor": "Doctor of the Church, polymath, mystic, composer, herbalist, abbess",
+        "patronOf": "Musicians, writers, natural scientists",
+        "dates": "1098-1179",
+        "origin": "Bermersheim, Germany",
+        "gender": "Female",
+        "traits": [
+            "mysticism",
+            "music",
+            "writing",
+            "nature",
+            "wisdom"
+        ],
+        "quotes": [
+            "The soul is symphonic.",
+            "Dare to declare who you are. It is not far from the shores of silence to the boundaries of speech.",
+            "Glance at the sun. See the moon and the stars. Gaze at the beauty of earth's greenings. Now, think."
+        ]
+    },
+    {
+        "name": "St. Rose of Viterbo",
+        "feastDay": "September 4",
+        "knownFor": "Young visionary who preached in the streets, defended the faith against Emperor Frederick II",
+        "patronOf": "Florists, exiles, rejected by religious orders",
+        "dates": "1233-1251",
+        "origin": "Viterbo, Italy",
+        "gender": "Female",
+        "traits": [
+            "courage",
+            "youth",
+            "preaching",
+            "faith",
+            "conviction"
+        ],
+        "quotes": [
+            "I want to live and die for Christ.",
+            "If you love Jesus, carry His cross with joy.",
+            "I will go where God sends me."
+        ]
+    },
+    {
+        "name": "St. Colette",
+        "feastDay": "March 6",
+        "knownFor": "Reformed the Poor Clares, founded seventeen convents, mystic and visionary",
+        "patronOf": "Expectant mothers, sick children, women seeking to conceive",
+        "dates": "1381-1447",
+        "origin": "Corbie, France",
+        "gender": "Female",
+        "traits": [
+            "reform",
+            "contemplation",
+            "leadership",
+            "humility",
+            "perseverance"
+        ],
+        "quotes": [
+            "We must faithfully keep what we have promised. If through human weakness we fail, we must always get up again.",
+            "Lord, I place all my trust in You.",
+            "Silence and solitude are the wings of prayer."
+        ]
+    },
+    {
+        "name": "St. Hubert",
+        "feastDay": "November 3",
+        "knownFor": "Converted while hunting when he saw a crucifix between a stag's antlers",
+        "patronOf": "Hunters, dogs, forest workers, metalworkers",
+        "dates": "c. 656-727",
+        "origin": "Toulouse, France",
+        "gender": "Male",
+        "traits": [
+            "conversion",
+            "nature",
+            "leadership",
+            "faith",
+            "preaching"
+        ],
+        "quotes": [
+            "Lord, You found me in the forest and changed my heart forever.",
+            "Seek God in all creatures.",
+            "The beauty of creation leads us to the Creator."
+        ]
+    },
+    {
+        "name": "St. Fiacre",
+        "feastDay": "September 1",
+        "knownFor": "Irish hermit in France, known for his miraculous garden and healing powers",
+        "patronOf": "Gardeners, taxi drivers, florists",
+        "dates": "c. 600-670",
+        "origin": "Ireland/France",
+        "gender": "Male",
+        "traits": [
+            "nature",
+            "healing",
+            "solitude",
+            "hospitality",
+            "simplicity"
+        ],
+        "quotes": [
+            "Let the garden be a place of prayer.",
+            "In tending the earth, we tend the soul.",
+            "God provides all that is needed from the ground He has made."
+        ]
+    },
+    {
+        "name": "St. Lydwina of Schiedam",
+        "feastDay": "April 14",
+        "knownFor": "Suffered a severe injury at 15, offered decades of suffering for the conversion of sinners",
+        "patronOf": "Chronic illness, ice skaters, the disabled",
+        "dates": "1380-1433",
+        "origin": "Schiedam, Netherlands",
+        "gender": "Female",
+        "traits": [
+            "sacrifice",
+            "endurance",
+            "mysticism",
+            "patience",
+            "intercession"
+        ],
+        "quotes": [
+            "Lord, let my suffering bring others closer to You.",
+            "In suffering we find our deepest union with Christ.",
+            "I embrace this cross for love of my Savior."
+        ]
+    },
+    {
+        "name": "St. Elizabeth of Portugal",
+        "feastDay": "July 4",
+        "knownFor": "Queen known for her peacemaking between warring family members and her charity",
+        "patronOf": "Peace, brides, queens, charitable societies",
+        "dates": "1271-1336",
+        "origin": "Zaragoza, Spain/Portugal",
+        "gender": "Female",
+        "traits": [
+            "peace",
+            "charity",
+            "diplomacy",
+            "generosity",
+            "family"
+        ],
+        "quotes": [
+            "Better to give than to receive, for in giving we find peace.",
+            "Lord, make me an instrument of Your peace.",
+            "War destroys what charity builds."
+        ]
+    },
+    {
+        "name": "St. Bénézet",
+        "feastDay": "April 14",
+        "knownFor": "Shepherd boy who built the famous bridge of Avignon following a divine vision",
+        "patronOf": "Bridge builders, engineers, shepherds",
+        "dates": "c. 1163-1184",
+        "origin": "Hermillon, France",
+        "gender": "Male",
+        "traits": [
+            "faith",
+            "humility",
+            "obedience",
+            "youth",
+            "innovation"
+        ],
+        "quotes": [
+            "Lord, You commanded me to build, and I obeyed.",
+            "With God, all things are possible.",
+            "Even a shepherd boy can do great things through faith."
         ]
     }
 ];

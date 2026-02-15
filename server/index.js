@@ -115,16 +115,28 @@ app.post('/api/ai-match', async (req, res) => {
     }
 });
 
-// Saint of the Day endpoint (deterministic rotation through database)
+// Saint of the Day endpoint (matches actual feast day when possible)
 app.get('/api/saint-of-the-day', (req, res) => {
     if (!saintsDatabase.length) {
         return res.status(500).json({ error: 'Saints database not loaded' });
     }
 
     const today = new Date();
-    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
-    const saintIndex = dayOfYear % saintsDatabase.length;
-    const saint = saintsDatabase[saintIndex];
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'];
+    const todayFeastDay = monthNames[today.getMonth()] + ' ' + today.getDate();
+
+    // Find saints whose feast day matches today
+    const matchingSaints = saintsDatabase.filter(s => s.feastDay === todayFeastDay);
+
+    let saint;
+    if (matchingSaints.length > 0) {
+        saint = matchingSaints[today.getFullYear() % matchingSaints.length];
+    } else {
+        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+        const saintIndex = dayOfYear % saintsDatabase.length;
+        saint = saintsDatabase[saintIndex];
+    }
 
     const dateOptions = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
     const formattedDate = today.toLocaleDateString('en-US', dateOptions);
