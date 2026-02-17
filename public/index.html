@@ -36,8 +36,10 @@
   <meta name="classification" content="Religion, Spirituality, Catholic, Christianity">
   <meta name="subject" content="Catholic Saints Personality Quiz">
   <meta name="topic" content="Catholic Saints, Patron Saints, Personality Quiz, Spiritual Discovery">
-  <meta name="summary" content="Free AI-powered Catholic saint personality quiz. Discover your patron saint match from 224 saints based on your personality and virtues.">
-  <meta name="abstract" content="Take the Saint Discovery Quiz to find which Catholic saint matches your personality. Features 224 saints, AI-powered matching, and instant personalized results.">
+  <meta name="summary"
+    content="Free AI-powered Catholic saint personality quiz. Discover your patron saint match from 224 saints based on your personality and virtues.">
+  <meta name="abstract"
+    content="Take the Saint Discovery Quiz to find which Catholic saint matches your personality. Features 224 saints, AI-powered matching, and instant personalized results.">
   <meta name="pagename" content="Saint Discovery Quiz - Find Your Patron Saint">
   <meta name="category" content="Religion/Christianity/Catholicism">
   <meta name="page-topic" content="Catholic Saint Quiz">
@@ -101,7 +103,8 @@
 
   <!-- Pinterest -->
   <meta name="pinterest" content="nopin" description="Saint Discovery Quiz - Find Your Patron Saint">
-  <meta property="pinterest:description" content="Take our free Catholic saint personality quiz to discover which patron saint matches you!">
+  <meta property="pinterest:description"
+    content="Take our free Catholic saint personality quiz to discover which patron saint matches you!">
 
   <!-- Additional Social/Discovery Meta -->
   <meta property="fb:app_id" content="">
@@ -400,8 +403,8 @@
 
   <!-- Preload Critical Resources -->
   <link rel="preload" href="styles.css" as="style">
-  <link rel="preload" href="saints-data.js" as="script">
-  <link rel="preload" href="quiz.js" as="script">
+  <link rel="preload" href="saints-data.min.js" as="script">
+  <link rel="preload" href="quiz.min.js" as="script">
 
   <!-- Fonts -->
   <link
@@ -510,8 +513,61 @@
             style="color: #1a365d; background: none; cursor: pointer; padding: 8px 18px; border: 1px solid #1a365d; border-radius: 20px; font-size: 0.9rem; font-family: inherit; transition: all 0.3s ease;">Random
             Saint</button>
         </div>
-        <p style="color: #888; font-size: 0.85rem; margin-top: 20px;">Daily Catholic insights: <a href="https://thecatholicbrief.com" target="_blank" rel="noopener" style="color: #1a365d; text-decoration: underline;">The Catholic Brief</a></p>
+        <p style="color: #888; font-size: 0.85rem; margin-top: 20px;">Daily Catholic insights: <a
+            href="https://thecatholicbrief.com" target="_blank" rel="noopener"
+            style="color: #1a365d; text-decoration: underline;">The Catholic Brief</a></p>
       </nav>
+      <!-- SEO Content -->
+      <div class="seo-content">
+        <h2>Why Take a Patron Saint Quiz?</h2>
+        <p>Finding your <strong>patron saint</strong> is a time-honored Catholic tradition. Saints act as our spiritual
+          older brothers and sisters, offering us guidance, prayer, and example. Whether you are looking for a saint for
+          <strong>Confirmation</strong>, a heavenly intercessor for a specific cause, or simply a spiritual friend, this
+          quiz helps you discover the saint whose virtues align with your own.
+        </p>
+        <p>Our database includes detailed biographies, feast days, and patronage information for over 220 saints, making
+          it the most comprehensive <strong>Catholic saint finder</strong> available online.</p>
+
+        <h2>Featured Catholic Saints</h2>
+        <div class="featured-grid">
+          <a href="/saints/st-peter.html" class="featured-card">
+            <h3>St. Peter</h3>
+            <span class="tag">The First Pope</span>
+          </a>
+          <a href="/saints/st-francis-of-assisi.html" class="featured-card">
+            <h3>St. Francis of Assisi</h3>
+            <span class="tag">Nature & Poverty</span>
+          </a>
+          <a href="/saints/st-teresa-of-calcutta.html" class="featured-card">
+            <h3>Mother Teresa</h3>
+            <span class="tag">Service & Charity</span>
+          </a>
+          <a href="/saints/st-patrick.html" class="featured-card">
+            <h3>St. Patrick</h3>
+            <span class="tag">Ireland & Evangelization</span>
+          </a>
+          <a href="/saints/st-joseph.html" class="featured-card">
+            <h3>St. Joseph</h3>
+            <span class="tag">Universal Church</span>
+          </a>
+          <a href="/saints/st-anthony-of-padua.html" class="featured-card">
+            <h3>St. Anthony</h3>
+            <span class="tag">Lost Items</span>
+          </a>
+        </div>
+
+        <div style="margin-top: 40px; text-align: center;">
+          <h3>Catholic Resources</h3>
+          <p>Explore more about the faith:</p>
+          <nav style="display: flex; gap: 15px; justify-content: center; margin-top: 15px;">
+            <a href="https://www.vatican.va" target="_blank" rel="noopener" style="color: var(--primary-navy);">The
+              Vatican</a>
+            <a href="https://www.usccb.org" target="_blank" rel="noopener" style="color: var(--primary-navy);">USCCB</a>
+            <a href="https://www.catholic.com" target="_blank" rel="noopener"
+              style="color: var(--primary-navy);">Catholic Answers</a>
+          </nav>
+        </div>
+      </div>
     </section>
 
     <!-- Quiz Questions -->
@@ -590,8 +646,8 @@
 
     </div>
 
-    <script src="saints-data.js" defer></script>
-    <script src="quiz.js" defer></script>
+    <script src="saints-data.min.js" defer></script>
+    <script src="quiz.min.js" defer></script>
     <script>
       function slugify(name) {
         return name.toLowerCase().replace(/\./g, '').replace(/['']/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();

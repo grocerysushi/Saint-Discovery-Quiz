@@ -6,9 +6,11 @@
   "scripts": {
     "start": "node server/index.js",
     "dev": "node server/index.js",
-    "generate-saints": "node generate-saint-pages.js"
+    "generate-saints": "node generate-saint-pages.js",
+    "minify": "terser public/saints-data.js -o public/saints-data.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -19,6 +21,7 @@
     "node": ">=16.0.0"
   },
   "devDependencies": {
+    "terser": "^5.46.0",
     "xlsx": "^0.18.5"
   }
 }
