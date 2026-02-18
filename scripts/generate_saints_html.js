@@ -34,7 +34,7 @@ const saintsHtml = saintsDatabase.map(saint => `
                 <span class="feast-day">Feast Day: ${saint.feastDay}</span>
                 <p class="known-for">${saint.knownFor}</p>
                 <p class="patron-of"><strong>Patron of:</strong> ${saint.patronOf}</p>
-                <p class="dates-origin">${saint.dates} | ${saint.origin}</p>
+                <p class="dates-origin">${saint.dates || saint.lived} | ${saint.origin}</p>
             </a>`).join('');
 
 // 3. Inject into all-saints.html

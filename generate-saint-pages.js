@@ -104,7 +104,7 @@ function formatTrait(trait) {
  * Generate JSON-LD structured data for a saint (Person + BreadcrumbList + Article + FAQPage)
  */
 function generateJsonLd(saint, slug) {
-    const century = extractCentury(saint.dates);
+    const century = extractCentury(saint.dates || saint.lived);
 
     // Enhanced Person schema
     const personData = {
@@ -133,13 +133,14 @@ function generateJsonLd(saint, slug) {
     };
 
     // Parse dates if available
-    if (saint.dates) {
-        const dateMatch = saint.dates.match(/(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?/);
+    const dates = saint.dates || saint.lived;
+    if (dates) {
+        const dateMatch = dates.match(/(\d{1,4})(?:\s*[-–]\s*(\d{1,4}))?/);
         if (dateMatch) {
             if (dateMatch[2]) {
                 personData.birthDate = dateMatch[1];
                 personData.deathDate = dateMatch[2];
-            } else if (saint.dates.toLowerCase().includes('d.')) {
+            } else if (dates.toLowerCase().includes('d.')) {
                 personData.deathDate = dateMatch[1];
             }
         }
@@ -289,7 +290,7 @@ function generateHTML(saint) {
     const escapedPatronOf = escapeHtml(saint.patronOf);
     const relatedSaints = getRelatedSaints(saint);
     const primaryCategory = getPrimaryCategory(saint);
-    const century = extractCentury(saint.dates);
+    const century = extractCentury(saint.dates || saint.lived);
     const saintType = getSaintType(saint.name);
 
     // Create comprehensive meta description

@@ -772,7 +772,7 @@ async function revealResult(gender) {
                             name: c.saint.name,
                             knownFor: c.saint.knownFor,
                             patronOf: c.saint.patronOf,
-                            dates: c.saint.dates
+                            dates: c.saint.dates || c.saint.lived
                         },
                         score: c.score
                     })),
@@ -838,7 +838,7 @@ function displayResults() {
     document.getElementById('resultFeastDay').textContent = `Feast Day: ${matchedSaint.feastDay}`;
     document.getElementById('resultKnownFor').textContent = matchedSaint.knownFor;
     document.getElementById('resultPatronOf').textContent = matchedSaint.patronOf;
-    document.getElementById('resultDates').textContent = matchedSaint.dates;
+    document.getElementById('resultDates').textContent = matchedSaint.dates || matchedSaint.lived;
     document.getElementById('resultOrigin').textContent = matchedSaint.origin;
     document.getElementById('resultExplanation').textContent = matchExplanation;
 

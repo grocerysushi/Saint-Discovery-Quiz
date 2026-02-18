@@ -479,7 +479,10 @@
                     title: 'Biblical & Angelic',
                     years: 'Eternal / 1st Century BC - 1st Century AD',
                     description: 'The Holy Family, Apostles, and Heavenly beings',
-                    filter: (saint) => saint.dates.includes('Biblical') || saint.dates.includes('1st century') || saint.origin === 'Heaven'
+                    filter: (saint) => {
+                        const dateStr = saint.dates || saint.lived || '';
+                        return dateStr.includes('Biblical') || dateStr.includes('1st century') || saint.origin === 'Heaven';
+                    }
                 },
                 {
                     id: 'early-church',
@@ -487,10 +490,11 @@
                     years: '1st - 4th Century',
                     description: 'The age of persecution and the Church Fathers',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
-                        return year < 500 && !saint.dates.includes('Biblical') && saint.origin !== 'Heaven' && !saint.dates.includes('1st century');
+                        return year < 500 && !dateStr.includes('Biblical') && saint.origin !== 'Heaven' && !dateStr.includes('1st century');
                     }
                 },
                 {
@@ -499,7 +503,8 @@
                     years: '5th - 10th Century',
                     description: 'Monasticism spreads and shapes European civilization',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 400 && year < 1000;
@@ -511,7 +516,8 @@
                     years: '11th - 13th Century',
                     description: 'The golden age of scholasticism and mendicant orders',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 1000 && year < 1300;
@@ -523,7 +529,8 @@
                     years: '14th - 15th Century',
                     description: 'Mystics, reformers, and the dawn of new horizons',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 1300 && year < 1500;
@@ -535,7 +542,8 @@
                     years: '16th - 17th Century',
                     description: 'The age of great founders and missionaries',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 1500 && year < 1700;
@@ -547,7 +555,8 @@
                     years: '18th - 19th Century',
                     description: 'Saints of education, charity, and social justice',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 1700 && year < 1900;
@@ -559,7 +568,8 @@
                     years: '20th - 21st Century',
                     description: 'Saints who lived in our modern world, facing its unique challenges',
                     filter: (saint) => {
-                        const match = saint.dates.match(/(\d+)/);
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         if (!match) return false;
                         const year = parseInt(match[0]);
                         return year >= 1880;
@@ -569,11 +579,12 @@
 
             function getSaintsByEra(filter) {
                 return saintsDatabase.filter(filter).sort((a, b) => {
-                    const getYear = (dates) => {
-                        const match = dates.match(/(\d+)/);
+                    const getYear = (saint) => {
+                        const dateStr = saint.dates || saint.lived || '';
+                        const match = dateStr.match(/(\d+)/);
                         return match ? parseInt(match[0]) : 0;
                     };
-                    return getYear(a.dates) - getYear(b.dates);
+                    return getYear(a) - getYear(b);
                 });
             }
 
@@ -601,7 +612,7 @@
                                     ${saints.map(saint => `
                                         <article class="saint-timeline-card">
                                             <h3>${saint.name}</h3>
-                                            <span class="dates">${saint.dates}</span>
+                                            <span class="dates">${saint.dates || saint.lived}</span>
                                             <p class="known-for">${saint.knownFor}</p>
                                             <p class="origin">Origin: ${saint.origin}</p>
                                         </article>
