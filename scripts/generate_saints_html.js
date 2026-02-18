@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Paths
-const saintsDataPath = path.join(__dirname, '../public/saints-data.js');
+const saintsDataPath = path.join(__dirname, '../public/saints-data-enriched.js');
 const allSaintsPath = path.join(__dirname, '../public/all-saints.html');
 
 // 1. Read and Parse Data

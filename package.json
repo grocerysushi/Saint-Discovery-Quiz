@@ -7,7 +7,7 @@
     "start": "node server/index.js",
     "dev": "node server/index.js",
     "generate-saints": "node generate-saint-pages.js",
-    "minify": "terser public/saints-data.js -o public/saints-data.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m"
+    "minify": "terser public/saints-data-enriched.js -o public/saints-data-enriched.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",

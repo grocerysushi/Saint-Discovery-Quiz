@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Read the saints data file
-const saintsDataPath = path.join(__dirname, 'public', 'saints-data.js');
+const saintsDataPath = path.join(__dirname, 'public', 'saints-data-enriched.js');
 const saintsDataContent = fs.readFileSync(saintsDataPath, 'utf8');
 
 // Parse the file to extract saintsDatabase and traitCategories
@@ -743,9 +743,13 @@ function generateHTML(saint) {
         </header>
 
         <section class="saint-content">
-            <article class="info-card">
-                <h2>Known For</h2>
-                <p>${escapedKnownFor}</p>
+            <article class="info-card full-width">
+                <h2>Biography</h2>
+                <p>${escapeHtml(saint.bio || saint.knownFor)}</p>
+                ${saint.funFact ? `
+                <div style="margin-top: 15px; padding: 15px; background: var(--cream-light); border-radius: 8px; border-left: 3px solid var(--gold);">
+                    <strong>Did you know?</strong> ${escapeHtml(saint.funFact)}
+                </div>` : ''}
             </article>
 
             <article class="info-card">
@@ -755,7 +759,8 @@ function generateHTML(saint) {
 
             <article class="info-card">
                 <h2>Life & Origin</h2>
-                <p><strong>Dates:</strong> ${escapeHtml(saint.dates)}</p>
+                <p><strong>Feast Day:</strong> ${escapeHtml(saint.feastDay)}</p>
+                <p><strong>Lived:</strong> ${escapeHtml(saint.lived || saint.dates)}</p>
                 <p><strong>Origin:</strong> ${escapeHtml(saint.origin)}</p>
             </article>
 
