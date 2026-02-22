@@ -1,5 +1,5 @@
 // Enriched Saints Database
-// Total: 413
+// Total: 513
 // Generated: 2026-02-18T00:09:53.122Z
 
 const saintsDatabase = [
@@ -11210,6 +11210,2429 @@ const saintsDatabase = [
         "lived": "d. 717 AD",
         "knownFor": "He is known for founding the Abbey of Evesham and fostering monastic life in England."
     }
+,
+{
+    "name": "St. Maximilian Kolbe",
+    "feastDay": "August 14",
+    "knownFor": "A Polish priest who volunteered to die in place of a stranger in the Auschwitz death camp.",
+    "patronOf": "drug addicts, political prisoners, families, journalists, pro-life movement",
+    "dates": "1894-1941",
+    "origin": "Poland",
+    "gender": "Male",
+    "traits": [
+        "self-sacrifice",
+        "courage",
+        "charity",
+        "devotion",
+        "piety"
+    ],
+    "quotes": [
+        "The most deadly poison of our times is indifference.",
+        "For Jesus Christ, I am prepared to suffer still more."
+    ],
+    "title": "St. Maximilian Kolbe",
+    "lived": "1894-1941",
+    "bio": "St. Maximilian Kolbe was a Polish Conventual Franciscan friar who volunteered to die in place of a stranger in the German death camp of Auschwitz. He was active in promoting the veneration of the Immaculate Virgin Mary and founded the Militia Immaculatae. He was canonized as a martyr of charity by Pope John Paul II in 1982.",
+    "funFact": "He was a pioneer in using mass media, publishing a magazine that reached a circulation of nearly one million.",
+    "enriched": true
+},
+{
+    "name": "St. Maria Goretti",
+    "feastDay": "July 6",
+    "knownFor": "One of the youngest canonized saints, known for her purity and forgiveness of her murderer.",
+    "patronOf": "youth, young women, purity, victims of rape",
+    "dates": "1890-1902",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "purity",
+        "forgiveness",
+        "fortitude",
+        "faithfulness",
+        "innocence"
+    ],
+    "quotes": [
+        "I forgive Alessandro Serenelli... and I want him with me in Paradise forever."
+    ],
+    "title": "St. Maria Goretti",
+    "lived": "1890-1902",
+    "bio": "St. Maria Goretti was an Italian virgin-martyr of the Catholic Church, and one of the youngest canonized saints. She died from multiple stab wounds inflicted by her neighbor, Alessandro Serenelli, after she refused his sexual advances. On her deathbed, she forgave him, and her forgiveness eventually led to his conversion.",
+    "funFact": "At her canonization in 1950, her mother was present, along with the man who had killed her.",
+    "enriched": true
+},
+{
+    "name": "St. Josephine Bakhita",
+    "feastDay": "February 8",
+    "knownFor": "A Sudanese-Italian Canossian religious sister who was kidnapped and sold into slavery as a child.",
+    "patronOf": "Sudan, victims of human trafficking",
+    "dates": "1869-1947",
+    "origin": "Sudan",
+    "gender": "Female",
+    "traits": [
+        "resilience",
+        "forgiveness",
+        "hope",
+        "humility",
+        "joy"
+    ],
+    "quotes": [
+        "I am definitively loved—and whatever happens to me—I am awaited by this Love."
+    ],
+    "title": "St. Josephine Bakhita",
+    "lived": "1869-1947",
+    "bio": "St. Josephine Bakhita was born in the Darfur region of Sudan. Kidnapped by Arab slave traders at a young age, she was sold multiple times until she was brought to Italy. There, she discovered Christianity and joined the Canossian Sisters. She is remembered for her gentle spirit and her profound message of hope and freedom.",
+    "funFact": "The word 'Bakhita' means 'fortunate' or 'lucky,' a name given to her by her kidnappers because she had forgotten her original name due to the trauma.",
+    "enriched": true
+},
+{
+    "name": "St. Padre Pio",
+    "feastDay": "September 23",
+    "knownFor": "A Capuchin friar, priest, and mystic known for his stigmata and spiritual guidance.",
+    "patronOf": "civil defense volunteers, adolescents, stress relief, January blues",
+    "dates": "1887-1968",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "mysticism",
+        "piety",
+        "endurance",
+        "wisdom",
+        "compassion"
+    ],
+    "quotes": [
+        "Pray, hope, and don't worry. Worry is useless.",
+        "Prayer is the best weapon we have; it is the key to God's heart."
+    ],
+    "title": "St. Padre Pio",
+    "lived": "1887-1968",
+    "bio": "St. Padre Pio, born Francesco Forgione, was an Italian friar and priest who is famous for exhibiting the stigmata (the wounds of Christ) for much of his life. He was a popular confessor and spiritual director, known for his deep reading of souls and his dedication to the sick. He founded the 'Home for the Relief of Suffering' in San Giovanni Rotondo.",
+    "funFact": "It is said that Padre Pio could bilocate, or be in two places at once, and many witnesses claimed to have smelled a sweet 'odor of sanctity' around him.",
+    "enriched": true
+},
+{
+    "name": "St. Faustina Kowalska",
+    "feastDay": "October 5",
+    "knownFor": "A Polish nun who received visions of Jesus as the Divine Mercy.",
+    "patronOf": "mercy",
+    "dates": "1905-1938",
+    "origin": "Poland",
+    "gender": "Female",
+    "traits": [
+        "humility",
+        "trust",
+        "mercy",
+        "obedience",
+        "piety"
+    ],
+    "quotes": [
+        "Jesus, I trust in You!",
+        "My heart is overflowing with great mercy for souls, and especially for poor sinners."
+    ],
+    "title": "St. Faustina Kowalska",
+    "lived": "1905-1938",
+    "bio": "St. Maria Faustina Kowalska was a Polish Roman Catholic nun and mystic. She is known as the 'Apostle of Divine Mercy' for her record of visions from Jesus Christ, which she documented in her diary. Her messages led to the establishment of the Feast of Divine Mercy, the Divine Mercy Chaplet, and the Divine Mercy image.",
+    "funFact": "Jesus instructed her to paint an image based on the vision she saw, which is now the world-famous Divine Mercy image.",
+    "enriched": true
+},
+{
+    "name": "St. John Paul II",
+    "feastDay": "October 22",
+    "knownFor": "Pope from 1978 to 2005, known for his role in ending communism in Poland and Europe.",
+    "patronOf": "families, youth, World Youth Day",
+    "dates": "1920-2005",
+    "origin": "Poland",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "courage",
+        "zeal",
+        "intellect",
+        "compassion"
+    ],
+    "quotes": [
+        "Be not afraid!",
+        "Open wide the doors for Christ.",
+        "The future starts today, not tomorrow."
+    ],
+    "title": "St. John Paul II",
+    "lived": "1920-2005",
+    "bio": "St. John Paul II, born Karol Józef Wojtyła, was the first non-Italian pope in 455 years. He was a globally influential leader who traveled extensively, visiting 129 countries. He was a key figure in the fall of the Soviet bloc and worked tirelessly for interfaith dialogue and the 'Culture of Life.'",
+    "funFact": "He was a gifted athlete and outdoorsman, enjoying skiing and hiking even during his papacy.",
+    "enriched": true
+},
+{
+    "name": "St. Mother Teresa",
+    "feastDay": "September 5",
+    "knownFor": "Founder of the Missionaries of Charity, dedicated to serving the 'poorest of the poor'.",
+    "patronOf": "World Youth Day, Missionaries of Charity",
+    "dates": "1910-1997",
+    "origin": "North Macedonia/India",
+    "gender": "Female",
+    "traits": [
+        "charity",
+        "humility",
+        "compassion",
+        "service",
+        "faithfulness"
+    ],
+    "quotes": [
+        "Not all of us can do great things. But we can do small things with great love.",
+        "If you judge people, you have no time to love them."
+    ],
+    "title": "St. Mother Teresa",
+    "lived": "1910-1997",
+    "bio": "St. Teresa of Calcutta was an Albanian-Indian Roman Catholic nun and missionary. She founded the Missionaries of Charity, a religious congregation which grew to have thousands of members in over 130 countries. She received the Nobel Peace Prize in 1979 and was world-renowned for her humble service to those dying in the streets of Calcutta.",
+    "funFact": "Despite her public visibility, she experienced a 'dark night of the soul' for many years, feeling a persistent spiritual emptiness while remaining perfectly faithful.",
+    "enriched": true
+},
+{
+    "name": "St. Edith Stein",
+    "feastDay": "August 9",
+    "knownFor": "A Jewish philosopher who converted to Catholicism, became a Carmelite nun, and was martyred in Auschwitz.",
+    "patronOf": "Europe, converts, philosophers",
+    "dates": "1891-1942",
+    "origin": "Germany",
+    "gender": "Female",
+    "traits": [
+        "intellect",
+        "truth-seeking",
+        "courage",
+        "wisdom",
+        "fortitude"
+    ],
+    "quotes": [
+        "God is truth. All who seek truth are seeking God, whether this is known to them or not."
+    ],
+    "title": "St. Edith Stein",
+    "lived": "1891-1942",
+    "bio": "Also known as St. Teresa Benedicta of the Cross, she was a brilliant philosopher and a student of Edmund Husserl. Her conversion was sparked by reading the autobiography of St. Teresa of Avila. She entered the Carmelites in Cologne but was arrested by the Nazis in the Netherlands due to her Jewish heritage and died in the gas chambers of Auschwitz.",
+    "funFact": "She was the first woman to earn a PhD in philosophy from a German university.",
+    "enriched": true
+},
+{
+    "name": "St. Gianna Beretta Molla",
+    "feastDay": "April 28",
+    "knownFor": "A pediatrician and mother who chose to save her child's life over her own during a medical crisis.",
+    "patronOf": "mothers, physicians, unborn children",
+    "dates": "1922-1962",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "sacrifice",
+        "love",
+        "professionalism",
+        "courage",
+        "service"
+    ],
+    "quotes": [
+        "If you must decide between me and the child, do not hesitate: choose the child."
+    ],
+    "title": "St. Gianna Beretta Molla",
+    "lived": "1922-1962",
+    "bio": "St. Gianna was a working mother and a pediatrician. During her fourth pregnancy, she developed a fibroma on her uterus. She refused an abortion or a hysterectomy that would have killed the child, opting for a surgery that carried high risk for her. She died a week after giving birth to a healthy daughter.",
+    "funFact": "Her husband and four children were present at her canonization in 2004.",
+    "enriched": true
+},
+{
+    "name": "St. Damien of Molokai",
+    "feastDay": "May 10",
+    "knownFor": "A Belgian priest who dedicated his life to serving those with leprosy in Hawaii.",
+    "patronOf": "lepers, outcasts, people with HIV/AIDS",
+    "dates": "1840-1889",
+    "origin": "Belgium/USA",
+    "gender": "Male",
+    "traits": [
+        "service",
+        "courage",
+        "compassion",
+        "endurance",
+        "zeal"
+    ],
+    "quotes": [
+        "I make myself a leper with the lepers to gain all to Jesus Christ."
+    ],
+    "title": "St. Damien of Molokai",
+    "lived": "1840-1889",
+    "bio": "St. Damien de Veuster was a member of the Congregation of the Sacred Hearts of Jesus and Mary. He volunteered to go to the leper colony on the island of Molokai, Hawaii, where he provided medical care, built houses, and established a community for those abandoned by society. He eventually contracted and died from the disease himself.",
+    "funFact": "He was known for 'preaching' not just with words, but by eating, working, and living exactly like those he served, including sharing his pipe with them.",
+    "enriched": true
+},
+{
+    "name": "St. Elizabeth Ann Seton",
+    "feastDay": "January 4",
+    "knownFor": "The first native-born citizen of the United States to be canonized, and founder of the parochial school system in the US.",
+    "patronOf": "Catholic schools, widows, seafarers",
+    "dates": "1774-1821",
+    "origin": "USA",
+    "gender": "Female",
+    "traits": [
+        "education",
+        "resilience",
+        "leadership",
+        "pioneer",
+        "faithfulness"
+    ],
+    "quotes": [
+        "The first end I propose in our daily work is to do the will of God."
+    ],
+    "title": "St. Elizabeth Ann Seton",
+    "lived": "1774-1821",
+    "bio": "A convert from Anglicanism and a widow with five children, Elizabeth founded the Sisters of Charity of St. Joseph, the first community for religious women established in the US. She also began St. Joseph's Academy and Free School, setting the foundation for the American Catholic school system.",
+    "funFact": "She grew up in high society in New York and was a prominent socialite before her conversion and widowhood.",
+    "enriched": true
+},
+{
+    "name": "St. Katharine Drexel",
+    "feastDay": "March 3",
+    "knownFor": "An American socialite and heiress who gave away her fortune to serve Native and African Americans.",
+    "patronOf": "racial justice, philanthropists",
+    "dates": "1858-1955",
+    "origin": "USA",
+    "gender": "Female",
+    "traits": [
+        "generosity",
+        "justice",
+        "service",
+        "visionary",
+        "dedication"
+    ],
+    "quotes": [
+        "The patient and humble endurance of suffering is more pleasing to God than all the works in the world."
+    ],
+    "title": "St. Katharine Drexel",
+    "lived": "1858-1955",
+    "bio": "Katharine Drexel was born into extreme wealth in Philadelphia. After meeting Pope Leo XIII, she decided to become a nun and founded the Sisters of the Blessed Sacrament. She used her inheritance to establish over 100 schools for disadvantaged people, including Xavier University of Louisiana.",
+    "funFact": "She inherited a fortune of about $20 million (equivalent to over $500 million today) and spent every penny on her mission.",
+    "enriched": true
+},
+{
+    "name": "St. Kateri Tekakwitha",
+    "feastDay": "July 14",
+    "knownFor": "The first Native American woman to be canonized, known as the 'Lily of the Mohawks'.",
+    "patronOf": "ecology, environment, loss of parents, Native Americans",
+    "dates": "1656-1680",
+    "origin": "North America",
+    "gender": "Female",
+    "traits": [
+        "piety",
+        "fortitude",
+        "purity",
+        "nature-loving",
+        "faithfulness"
+    ],
+    "quotes": [
+        "Who will teach me what is most agreeable to God, that I may do it?"
+    ],
+    "title": "St. Kateri Tekakwitha",
+    "lived": "1656-1680",
+    "bio": "Kateri was a Mohawk-Algonquin woman who converted to Catholicism at age 20. She faced significant opposition and mockery from her tribe for her faith. She eventually fled to a Jesuit mission near Montreal, where she dedicated herself to a life of prayer and severe penance until her death at age 24.",
+    "funFact": "Upon her death, her smallpox scars reportedly vanished, leaving her face beautiful and radiant.",
+    "enriched": true
+},
+{
+    "name": "St. Bernadette Soubirous",
+    "feastDay": "April 16",
+    "knownFor": "The visionary of Lourdes, who witnessed 18 apparitions of the Virgin Mary.",
+    "patronOf": "illness, poor people, shepherds, Lourdes",
+    "dates": "1844-1879",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "humility",
+        "simplicity",
+        "obedience",
+        "endurance",
+        "piety"
+    ],
+    "quotes": [
+        "The Virgin used me as a broom to remove the dust. When the work is done, the broom is put behind the door again."
+    ],
+    "title": "St. Bernadette Soubirous",
+    "lived": "1844-1879",
+    "bio": "Bernadette was a poor, uneducated girl from a struggling family in Lourdes. In 1858, she began seeing apparitions of 'a Lady' in a grotto. The Lady identified herself as the 'Immaculate Conception' and instructed Bernadette to dig in the ground, revealing a spring that has since been the site of thousands of miracles.",
+    "funFact": "Her body remains incorrupt and is on display in a glass coffin in Nevers, France.",
+    "enriched": true
+},
+{
+    "name": "St. John Vianney",
+    "feastDay": "August 4",
+    "knownFor": "The 'Curé d'Ars', a humble priest known for his extraordinary pastoral work and long hours in the confessional.",
+    "patronOf": "parish priests",
+    "dates": "1786-1859",
+    "origin": "France",
+    "gender": "Male",
+    "traits": [
+        "dedication",
+        "humility",
+        "compassion",
+        "service",
+        "faithfulness"
+    ],
+    "quotes": [
+        "The heart of Mary is so tender and so compassionate that no one could ever despair."
+    ],
+    "title": "St. John Vianney",
+    "lived": "1786-1859",
+    "bio": "John Vianney struggled significantly with his studies, especially Latin, and was nearly refused ordination. He was sent to the tiny, remote village of Ars, which he transformed into a spiritual center. People traveled from all over Europe to hear him preach and to confess their sins to him.",
+    "funFact": "In his final years, he spent up to 16 hours a day in the confessional, listening to tens of thousands of pilgrims annually.",
+    "enriched": true
+},
+{
+    "name": "St. Rita of Cascia",
+    "feastDay": "May 22",
+    "knownFor": "The 'Saint of the Impossible', known for her endurance of a difficult marriage and her mystical stigmata.",
+    "patronOf": "impossible causes, abused women, loneliness",
+    "dates": "1381-1457",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "patience",
+        "forgiveness",
+        "piety",
+        "mysticism",
+        "fortitude"
+    ],
+    "quotes": [
+        "Let me share in Your suffering, Lord, even in a small way."
+    ],
+    "title": "St. Rita of Cascia",
+    "lived": "1381-1457",
+    "bio": "Rita married a cruel man against her will and endured 18 years of abuse before his murder. After her husband and two sons died, she entered an Augustinian convent. She is famous for a wound on her forehead that resembled a thorn from Christ's crown which she bore for 15 years.",
+    "funFact": "On her deathbed, she asked for a rose from her garden in mid-winter, and a single blooming rose was miraculously found.",
+    "enriched": true
+},
+{
+    "name": "St. Jude Thaddeus",
+    "feastDay": "October 28",
+    "knownFor": "One of the twelve apostles, often invoked for help in desperate situations.",
+    "patronOf": "lost causes, desperate situations, hospitals",
+    "dates": "1st century",
+    "origin": "Galilee",
+    "gender": "Male",
+    "traits": [
+        "faithfulness",
+        "courage",
+        "leadership",
+        "hope",
+        "loyalty"
+    ],
+    "quotes": [
+        "Mercy, peace, and love be yours in abundance."
+    ],
+    "title": "St. Jude Thaddeus",
+    "lived": "d. 1st century",
+    "bio": "Jude (also known as Thaddeus) was a relative of Jesus and a loyal apostle. He is believed to have preached the Gospel in Mesopotamia and Armenia. He is distinct from Judas Iscariot and is often depicted with an image of Jesus on his chest and a tongue of fire above his head.",
+    "funFact": "Devotion to St. Jude as the 'Saint of Lost Causes' became widespread in modern times because people mistakenly avoided his name due to Judas Iscariot, making him wait for only the most desperate cases.",
+    "enriched": true
+},
+{
+    "name": "St. Polycarp",
+    "feastDay": "February 23",
+    "knownFor": "A direct disciple of St. John the Apostle and a courageous early Christian martyr.",
+    "patronOf": "earaches, dysentery",
+    "dates": "c. 69-155",
+    "origin": "Smyrna",
+    "gender": "Male",
+    "traits": [
+        "fortitude",
+        "loyalty",
+        "wisdom",
+        "courage",
+        "faithfulness"
+    ],
+    "quotes": [
+        "Eighty and six years have I served Him, and He never did me any injury. How then can I blaspheme my King and Savior?"
+    ],
+    "title": "St. Polycarp",
+    "lived": "c. 69-155",
+    "bio": "Polycarp was the Bishop of Smyrna and one of the Apostolic Fathers. He was a link between the apostles and the next generation of Christians. He refused to burn incense to the Roman Emperor and was sentenced to death by fire, but when the flames did not consume him, he was ultimately stabbed.",
+    "funFact": "According to accounts, the fire arched around his body like a wind-filled sail, and he smelled like baking bread rather than burning flesh.",
+    "enriched": true
+},
+{
+    "name": "St. Ignatius of Antioch",
+    "feastDay": "October 17",
+    "knownFor": "The third Bishop of Antioch and a martyr who wrote seven influential letters on his way to execution in Rome.",
+    "patronOf": "throat ailments",
+    "dates": "c. 35-107",
+    "origin": "Antioch",
+    "gender": "Male",
+    "traits": [
+        "zeal",
+        "theology",
+        "courage",
+        "sacrifice",
+        "leadership"
+    ],
+    "quotes": [
+        "I am the wheat of God; let me be ground by the teeth of the wild beasts, that I may be found the pure bread of Christ."
+    ],
+    "title": "St. Ignatius of Antioch",
+    "lived": "c. 35-107",
+    "bio": "Ignatius was a disciple of St. John. Arrested for his faith, he was marched to Rome to be fed to lions. During this journey, he wrote letters that are foundational for understanding the early Church's views on the Eucharist, the papacy, and the structure of the Church.",
+    "funFact": "He was the first to use the term 'Catholic' (universal) to describe the Church in his letters.",
+    "enriched": true
+},
+{
+    "name": "St. Monica",
+    "feastDay": "August 27",
+    "knownFor": "The mother of St. Augustine, who prayed for his conversion for over 30 years.",
+    "patronOf": "mothers, wives, difficult marriages, alcoholics",
+    "dates": "331-387",
+    "origin": "North Africa",
+    "gender": "Female",
+    "traits": [
+        "persistence",
+        "piety",
+        "patience",
+        "love",
+        "hope"
+    ],
+    "quotes": [
+        "Nothing is far from God."
+    ],
+    "title": "St. Monica",
+    "lived": "331-387",
+    "bio": "Monica was a Berber woman who lived in Roman North Africa. She married a pagan man named Patricius who was violent and unfaithful. She spent decades tearfully praying for her brilliant but wayward son, Augustine, until he finally converted and became one of the greatest saints in history.",
+    "funFact": "A bishop once told her: 'It is impossible that the son of these tears should perish.'",
+    "enriched": true
+},
+{
+    "name": "St. Ambrose",
+    "feastDay": "December 7",
+    "knownFor": "A great Bishop of Milan and a Doctor of the Church who baptized St. Augustine.",
+    "patronOf": "beekeepers, learning, students",
+    "dates": "c. 340-397",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "leadership",
+        "eloquence",
+        "courage",
+        "theology"
+    ],
+    "quotes": [
+        "When in Rome, do as the Romans do.",
+        "The Church is like a ship; it is tossed by waves, but it does not sink."
+    ],
+    "title": "St. Ambrose",
+    "lived": "c. 340-397",
+    "bio": "Ambrose was a high-ranking Roman official when he was unexpectedly elected Bishop of Milan by popular acclaim, even before he was baptized. He became a fierce defender of the Church against the Arian heresy and was a mentor to St. Augustine. He is one of the four original Great Doctors of the Church.",
+    "funFact": "When he was an infant, a swarm of bees settled on his face, leaving behind a drop of honey—seen as a sign of his future 'honeyed' eloquence.",
+    "enriched": true
+},
+{
+    "name": "St. Jerome",
+    "feastDay": "September 30",
+    "knownFor": "A Doctor of the Church who translated the entire Bible into Latin (the Vulgate).",
+    "patronOf": "librarians, translators, scholars",
+    "dates": "c. 347-420",
+    "origin": "Dalmatia/Bethlehem",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "discipline",
+        "asceticism",
+        "curiosity",
+        "precision"
+    ],
+    "quotes": [
+        "Ignorance of Scripture is ignorance of Christ."
+    ],
+    "title": "St. Jerome",
+    "lived": "c. 347-420",
+    "bio": "Jerome was a brilliant scholar and polyglot who spent much of his life as a hermit in Bethlehem. He was tasked by the Pope to translate the Greek and Hebrew scriptures into the common Latin of the day. He was known for his sharp tongue and somewhat difficult personality, which he spent his life trying to tame through penance.",
+    "funFact": "Legend says that while he was in the desert, he pulled a thorn out of a lion's paw, and the lion became his loyal companion.",
+    "enriched": true
+},
+{
+    "name": "St. Seraphim of Sarov",
+    "feastDay": "January 2",
+    "knownFor": "One of the most beloved Russian mystics, known for his joy and hospitality to all.",
+    "patronOf": "nature, joy, peace",
+    "dates": "1754-1833",
+    "origin": "Russia",
+    "gender": "Male",
+    "traits": [
+        "joy",
+        "humility",
+        "kindness",
+        "mysticism",
+        "peace"
+    ],
+    "quotes": [
+        "My joy, I pray you, acquire a peaceful spirit, and then thousands around you will be saved."
+    ],
+    "title": "St. Seraphim of Sarov",
+    "lived": "1754-1833",
+    "bio": "Seraphim lived as a hermit in the forest for 25 years. He spent a thousand nights standing on a rock in prayer. Later, he opened his door to pilgrims, greeting everyone with the words 'My joy, Christ is risen!' He emphasized the 'acquisition of the Holy Spirit' as the goal of the Christian life.",
+    "funFact": "He was often seen feeding a giant wild bear from his hand in the forest.",
+    "enriched": true
+},
+{
+    "name": "St. Herman of Alaska",
+    "feastDay": "August 9",
+    "knownFor": "The first Orthodox saint of North America, a monk who protected the Aleut people from exploitation.",
+    "patronOf": "Alaska, North America",
+    "dates": "1751-1837",
+    "origin": "Russia/Alaska",
+    "gender": "Male",
+    "traits": [
+        "compassion",
+        "justice",
+        "simplicity",
+        "nature-loving",
+        "piety"
+    ],
+    "quotes": [
+        "From this day, from this hour, from this minute, let us love God above all, and do His holy will."
+    ],
+    "title": "St. Herman of Alaska",
+    "lived": "1751-1837",
+    "bio": "Herman was a humble Russian monk who came to Kodiak Island as part of a mission. He became the sole survivor of the mission and lived as a hermit on Spruce Island. He dedicated his life to teaching the native population and bravely stood up against the abuse of the Russian-American Company.",
+    "funFact": "The native Aleut people called him 'Apa' (Grandfather) and deeply loved him for his kindness and protection.",
+    "enriched": true
+},
+{
+    "name": "St. Paisios of Mount Athos",
+    "feastDay": "July 12",
+    "knownFor": "A modern Athonite elder known for his profound spiritual wisdom and prophecies.",
+    "patronOf": "radio operators, signaling corps",
+    "dates": "1924-1994",
+    "origin": "Greece",
+    "gender": "Male",
+    "traits": [
+        "wisdom",
+        "humility",
+        "charity",
+        "insight",
+        "patience"
+    ],
+    "quotes": [
+        "God is the only one who can fill the void in a person's life.",
+        "Spiritual progress requires humility and love."
+    ],
+    "title": "St. Paisios of Mount Athos",
+    "lived": "1924-1994",
+    "bio": "Paisios was an Athonite monk who became world-famous in his later years. Thousands of people flocked to his small cell on Mount Athos for advice. He was known for his extreme asceticism, his sense of humor, and his ability to see the spiritual root of people's modern psychological struggles.",
+    "funFact": "He was an expert in spiritual 'philotimo'—a Greek word he used to describe a selfless, generous, and noble orientation of the heart.",
+    "enriched": true
+}
+,
+{
+    "name": "St. Athanasius",
+    "feastDay": "May 2",
+    "knownFor": "Bishop of Alexandria and champion of the divinity of Christ against Arianism.",
+    "patronOf": "theologians",
+    "dates": "c. 296-373",
+    "origin": "Egypt",
+    "gender": "Male",
+    "traits": [
+        "fortitude",
+        "intellect",
+        "leadership",
+        "theology",
+        "determination"
+    ],
+    "quotes": [
+        "The Son of God became man so that we might become God."
+    ],
+    "title": "St. Athanasius",
+    "lived": "c. 296-373",
+    "bio": "Athanasius was a brilliant theologian who spent over 17 years in exile for defending the Nicene Creed. He is known as the 'Father of Orthodoxy' and his work 'On the Incarnation' remains a classic of Christian thought.",
+    "funFact": "He was so persistent in his defense of the faith that his enemies called him 'Athanasius contra mundum' (Athanasius against the world).",
+    "enriched": true
+},
+{
+    "name": "St. Basil the Great",
+    "feastDay": "January 2",
+    "knownFor": "One of the Three Holy Hierarchs, father of Eastern monasticism and defender of the Holy Spirit.",
+    "patronOf": "hospital administrators, reformers",
+    "dates": "329-379",
+    "origin": "Cappadocia",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "theology",
+        "charity",
+        "discipline",
+        "wisdom"
+    ],
+    "quotes": [
+        "A tree is known by its fruit; a man by his deeds."
+    ],
+    "title": "St. Basil the Great",
+    "lived": "329-379",
+    "bio": "Basil was the Bishop of Caesarea and a key figure in the development of the doctrine of the Trinity. He established the 'Basiliad', a massive complex for the care of the poor and sick, and wrote the Rule that still guides Eastern monks today.",
+    "funFact": "He was part of a family of many saints, including his parents, grandmother, and brothers Gregory of Nyssa and Peter of Sebaste.",
+    "enriched": true
+},
+{
+    "name": "St. Gregory of Nazianzus",
+    "feastDay": "January 2",
+    "knownFor": "The 'Theologian', known for his eloquent defense of the Trinity and his beautiful poetry.",
+    "patronOf": "poets, harvests",
+    "dates": "c. 329-389",
+    "origin": "Cappadocia",
+    "gender": "Male",
+    "traits": [
+        "eloquence",
+        "theology",
+        "poetry",
+        "contemplation",
+        "intellect"
+    ],
+    "quotes": [
+        "That which He has not assumed, He has not healed."
+    ],
+    "title": "St. Gregory of Nazianzus",
+    "lived": "c. 329-389",
+    "bio": "Gregory was the Archbishop of Constantinople and a close friend of St. Basil. He played a pivotal role at the Council of Constantinople and is one of the Greatest Doctors of the Church.",
+    "funFact": "He preferred a life of quiet solitude and was often reluctant to take on positions of power, even fleeing into the forest when first ordained.",
+    "enriched": true
+},
+{
+    "name": "St. John Chrysostom",
+    "feastDay": "September 13",
+    "knownFor": "The 'Golden-Mouthed' preacher, Archbishop of Constantinople, and protector of the poor.",
+    "patronOf": "preachers, speakers",
+    "dates": "c. 347-407",
+    "origin": "Antioch/Constantinople",
+    "gender": "Male",
+    "traits": [
+        "eloquence",
+        "justice",
+        "courage",
+        "charity",
+        "leadership"
+    ],
+    "quotes": [
+        "The rich exist for the sake of the poor; the poor exist for the salvation of the rich."
+    ],
+    "title": "St. John Chrysostom",
+    "lived": "c. 347-407",
+    "bio": "Known for his powerful sermons, John was a fearless critic of the corruption in the imperial court. His emphasis on practical Christian charity and the beauty of the liturgy made him beloved by the common people.",
+    "funFact": "His name 'Chrysostom' is not a last name but a title meaning 'Golden-Mouthed', given to him for his legendary speaking ability.",
+    "enriched": true
+},
+{
+    "name": "St. Leo the Great",
+    "feastDay": "November 10",
+    "knownFor": "Pope who saved Rome from Attila the Hun and solidified the authority of the papacy.",
+    "patronOf": "popes, singers",
+    "dates": "c. 400-461",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "courage",
+        "theology",
+        "diplomacy",
+        "visionary"
+    ],
+    "quotes": [
+        "Christian, recognize your dignity."
+    ],
+    "title": "St. Leo the Great",
+    "lived": "c. 400-461",
+    "bio": "Leo was a strong and clear-thinking pope during a time of great upheaval. His 'Tome of Leo' was instrumental at the Council of Chalcedon in defining the two natures of Christ.",
+    "funFact": "He is famously depicted meeting Attila the Hun outside the walls of Rome, convincing the fierce conqueror to turn back without a fight.",
+    "enriched": true
+},
+{
+    "name": "St. Martin of Tours",
+    "feastDay": "November 11",
+    "knownFor": "The soldier-saint who cut his cloak in half to share it with a beggar.",
+    "patronOf": "soldiers, beggars, geese, France",
+    "dates": "316-397",
+    "origin": "Hungary/France",
+    "gender": "Male",
+    "traits": [
+        "charity",
+        "humility",
+        "courage",
+        "simplicity",
+        "service"
+    ],
+    "quotes": [
+        "I am a soldier of Christ; it is not lawful for me to fight."
+    ],
+    "title": "St. Martin of Tours",
+    "lived": "316-397",
+    "bio": "A Roman soldier who converted to Christianity, Martin became a pioneer of monasticism in Gaul and eventually the Bishop of Tours. He was known for his humility and his refusal to shed blood.",
+    "funFact": "Martinmas, his feast day, was historically the day when the fall harvest was finished and people celebrated with a final feast before the fast of Advent.",
+    "enriched": true
+},
+{
+    "name": "St. Ephrem the Syrian",
+    "feastDay": "June 9",
+    "knownFor": "The 'Harp of the Spirit', a deacon and poet who wrote thousands of hymns defending the faith.",
+    "patronOf": "spiritual directors, poets",
+    "dates": "c. 306-373",
+    "origin": "Syria",
+    "gender": "Male",
+    "traits": [
+        "poetry",
+        "theology",
+        "humility",
+        "piety",
+        "artistic"
+    ],
+    "quotes": [
+        "The heights of God's wisdom are beyond our understanding."
+    ],
+    "title": "St. Ephrem the Syrian",
+    "lived": "c. 306-373",
+    "bio": "Ephrem was a prolific author of hymns and biblical commentaries in Syriac. He used music and verse to teach complex theological truths to the people, especially against the heresies of his day.",
+    "funFact": "He is often credited with introducing congregational singing into the church liturgy.",
+    "enriched": true
+},
+{
+    "name": "St. John Damascene",
+    "feastDay": "December 4",
+    "knownFor": "A high-ranking official in the Arab Caliphate who became a monk and defended holy icons.",
+    "patronOf": "artists, pharmacists, iconography",
+    "dates": "c. 675-749",
+    "origin": "Syria",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "courage",
+        "theology",
+        "artistic",
+        "patience"
+    ],
+    "quotes": [
+        "I do not worship matter; I worship the Creator of matter who became matter for my sake."
+    ],
+    "title": "St. John Damascene",
+    "lived": "c. 675-749",
+    "bio": "John was a brilliant polymath and the last of the Greek Fathers. He wrote the first systematic work of theology, 'The Fountain of Wisdom', and a powerful defense of the use of images in worship during the Iconoclast period.",
+    "funFact": "Legend says his hand was cut off by the Caliph due to a forged letter, but he was miraculously healed through the intercession of the Virgin Mary.",
+    "enriched": true
+},
+{
+    "name": "St. Gregory Palamas",
+    "feastDay": "November 14",
+    "knownFor": "Archbishop of Thessaloniki and defender of Hesychasm (the practice of silent prayer).",
+    "patronOf": "Hesychasm",
+    "dates": "1296-1359",
+    "origin": "Constantinople/Greece",
+    "gender": "Male",
+    "traits": [
+        "mysticism",
+        "theology",
+        "intellect",
+        "contemplation",
+        "fortitude"
+    ],
+    "quotes": [
+        "God is called 'Light', not according to His essence, but according to His energy."
+    ],
+    "title": "St. Gregory Palamas",
+    "lived": "1296-1359",
+    "bio": "A monk of Mount Athos, Gregory defended the traditional Orthodox understanding that humans can truly experience God's 'uncreated energies' through prayer, even though His 'essence' remains unknowable.",
+    "funFact": "He is so highly regarded that the second Sunday of Great Lent in the Orthodox Church is dedicated to his memory.",
+    "enriched": true
+},
+{
+    "name": "St. Anthony the Great",
+    "feastDay": "January 17",
+    "knownFor": "The 'Father of Monasticism' who lived in the Egyptian desert for over 80 years.",
+    "patronOf": "gravediggers, skin diseases, animals",
+    "dates": "c. 251-356",
+    "origin": "Egypt",
+    "gender": "Male",
+    "traits": [
+        "discipline",
+        "asceticism",
+        "wisdom",
+        "perseverance",
+        "fortitude"
+    ],
+    "quotes": [
+        "The world is a prison for the soul, and the soul is the prison for the spirit."
+    ],
+    "title": "St. Anthony the Great",
+    "lived": "c. 251-356",
+    "bio": "After hearing the Gospel call to sell all he had, Anthony went into the desert to live a life of prayer and solitude. His fame spread so far that thousands of seekers traveled to learn from him, eventually forming the first communities of monks.",
+    "funFact": "He reportedly lived to be 105 years old, having spent most of his life on a diet of mostly bread and water in the extreme heat of the desert.",
+    "enriched": true
+},
+{
+    "name": "St. Pachomius",
+    "feastDay": "May 9",
+    "knownFor": "The founder of 'cenobitic' (community) monasticism.",
+    "patronOf": "monastic communities",
+    "dates": "c. 292-348",
+    "origin": "Egypt",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "discipline",
+        "humility",
+        "visionary",
+        "service"
+    ],
+    "quotes": [
+        "True virtue consists in doing God's will with a joyful heart."
+    ],
+    "title": "St. Pachomius",
+    "lived": "c. 292-348",
+    "bio": "A former Roman soldier, Pachomius sought a way for monks to live together in community rather than as hermits. He wrote the first monastic Rule, emphasizing obedience, labor, and mutual support.",
+    "funFact": "He is said to have been taught how to organize the monks by an angel, who gave him a tablet with the community's rule engraved on it.",
+    "enriched": true
+},
+{
+    "name": "St. Mary of Egypt",
+    "feastDay": "April 1",
+    "knownFor": "A legendary desert mother and symbol of radical repentance.",
+    "patronOf": "chastity, skin diseases",
+    "dates": "c. 344-421",
+    "origin": "Egypt",
+    "gender": "Female",
+    "traits": [
+        "repentance",
+        "asceticism",
+        "perseverance",
+        "faithfulness",
+        "humility"
+    ],
+    "quotes": [
+        "God's mercy is deeper than the sea."
+    ],
+    "title": "St. Mary of Egypt",
+    "lived": "c. 344-421",
+    "bio": "After a life of extreme worldliness in Alexandria, Mary experienced a sudden conversion at the Church of the Holy Sepulchre. She spent the next 47 years in the Jordanian desert in solitude and prayer, becoming a model of spiritual transformation.",
+    "funFact": "Legend says that when she died, a lion helped a monk named Zosimas dig her grave.",
+    "enriched": true
+},
+{
+    "name": "St. Sergius of Radonezh",
+    "feastDay": "September 25",
+    "knownFor": "The greatest spiritual leader of medieval Russia and founder of the Trinity Lavra.",
+    "patronOf": "Russia, students",
+    "dates": "c. 1314-1392",
+    "origin": "Russia",
+    "gender": "Male",
+    "traits": [
+        "humility",
+        "peacemaking",
+        "piety",
+        "leadership",
+        "simplicity"
+    ],
+    "quotes": [
+        "Love God and love one another."
+    ],
+    "title": "St. Sergius of Radonezh",
+    "lived": "c. 1314-1392",
+    "bio": "Sergius was a humble monk who revitalized Russian monasticism. He was known for his extreme poverty, his love for work, and his ability to reconcile quarreling princes, helping to unite Russia during the Mongol yoke.",
+    "funFact": "He reportedly spoke to a bear in the woods, which became a frequent visitor and friend to the humble hermit.",
+    "enriched": true
+},
+{
+    "name": "St. Bridget of Sweden",
+    "feastDay": "July 23",
+    "knownFor": "A mystic, mother, and founder of the Brigittine Order who advised popes and kings.",
+    "patronOf": "Sweden, Europe, widows",
+    "dates": "1303-1373",
+    "origin": "Sweden",
+    "gender": "Female",
+    "traits": [
+        "visionary",
+        "courage",
+        "leadership",
+        "piety",
+        "determination"
+    ],
+    "quotes": [
+        "Lord, show me the way and make me ready to follow it."
+    ],
+    "title": "St. Bridget of Sweden",
+    "lived": "1303-1373",
+    "bio": "Bridget was a noblewoman and mother of eight (including St. Catherine of Sweden). After her husband's death, she moved to Rome and spent the rest of her life as a mystic and a prophetess, calling for the reform of the Church and the return of the Pope from Avignon.",
+    "funFact": "She is one of the six patron saints of Europe.",
+    "enriched": true
+},
+{
+    "name": "St. Catherine of Genoa",
+    "feastDay": "September 15",
+    "knownFor": "A mystic known for her work with the sick and her profound writings on Purgatory.",
+    "patronOf": "hospitals, Italian brides",
+    "dates": "1447-1510",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "mysticism",
+        "charity",
+        "intellect",
+        "service",
+        "insight"
+    ],
+    "quotes": [
+        "God is our love, His will is our peace."
+    ],
+    "title": "St. Catherine of Genoa",
+    "lived": "1447-1510",
+    "bio": "After a difficult marriage and a period of spiritual coldness, Catherine had a sudden mystical experience of God's love. She dedicated the rest of her life to caring for victims of the plague in Genoa and wrote a famous 'Treatise on Purgatory'.",
+    "funFact": "Unlike many mystics, she never joined a religious order, remaining a laywoman while living a life of intense spiritual depth.",
+    "enriched": true
+},
+{
+    "name": "St. Philip Neri",
+    "feastDay": "May 26",
+    "knownFor": "The 'Apostle of Rome' and founder of the Oratory, known for his humor and joy.",
+    "patronOf": "Rome, joy, humor",
+    "dates": "1515-1595",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "joy",
+        "humor",
+        "charity",
+        "humility",
+        "friendliness"
+    ],
+    "quotes": [
+        "A joyful heart is more easily made perfect than a downcast one.",
+        "Cheerfulness strengthens the heart and helps us to persevere."
+    ],
+    "title": "St. Philip Neri",
+    "lived": "1515-1595",
+    "bio": "Philip was a beloved priest in Rome who won hearts through his warmth, his witty personality, and his informal gatherings for prayer and music. He had a profound influence on the Counter-Reformation by making holiness attractive and accessible.",
+    "funFact": "He was known to play practical jokes and wear his clothes inside out in public just to keep himself humble and prevent people from taking him too seriously.",
+    "enriched": true
+},
+{
+    "name": "St. Charles Borromeo",
+    "feastDay": "November 4",
+    "knownFor": "A key figure of the Counter-Reformation and Archbishop of Milan who reformed the clergy.",
+    "patronOf": "seminarians, bishops, catechists",
+    "dates": "1538-1584",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "reform",
+        "discipline",
+        "charity",
+        "courage",
+        "leadership"
+    ],
+    "quotes": [
+        "If we wish to help others, we must first make ourselves useful to God."
+    ],
+    "title": "St. Charles Borromeo",
+    "lived": "1538-1584",
+    "bio": "Born into a noble family, Charles became a cardinal at age 22. He was a driving force behind the Council of Trent and was later a model bishop, personally feeding thousands during the famine and plague in Milan.",
+    "funFact": "At his funeral, a cardinal said: 'Milan has had many bishops, but only one Charles.'",
+    "enriched": true
+},
+{
+    "name": "St. Robert Bellarmine",
+    "feastDay": "September 17",
+    "knownFor": "A Jesuit cardinal and Doctor of the Church who was one of the most important figures of the Counter-Reformation.",
+    "patronOf": "catechists, canon lawyers",
+    "dates": "1542-1621",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "theology",
+        "justice",
+        "humility",
+        "leadership"
+    ],
+    "quotes": [
+        "The school of Christ is a school of charity."
+    ],
+    "title": "St. Robert Bellarmine",
+    "lived": "1542-1621",
+    "bio": "Bellarmine was a brilliant scholar who wrote the definitive defense of Catholic teaching against Protestantism. Despite his high rank, he lived a simple, ascetic life, giving his cardinal's pension to the poor.",
+    "funFact": "He was a friend to Galileo and was involved in the early stages of the scientific conflicts of the day, famously stating that if there were real proof the earth moved, the Church would have to be careful in how it interpreted its texts.",
+    "enriched": true
+},
+{
+    "name": "St. Francis de Sales",
+    "feastDay": "January 24",
+    "knownFor": "Bishop of Geneva and Doctor of the Church known for his gentleness and his 'Introduction to the Devout Life'.",
+    "patronOf": "writers, journalists, the deaf",
+    "dates": "1567-1622",
+    "origin": "France",
+    "gender": "Male",
+    "traits": [
+        "gentleness",
+        "wisdom",
+        "patience",
+        "eloquence",
+        "kindness"
+    ],
+    "quotes": [
+        "A spoonful of honey attracts more flies than a barrel of vinegar.",
+        "Be who you are and be that well."
+    ],
+    "title": "St. Francis de Sales",
+    "lived": "1567-1622",
+    "bio": "Francis was a master of spiritual direction who specialized in helping laypeople live holy lives in the midst of the world. He was known for his incredible patience and his success in bringing thousands back to the faith through his gentle persuasion.",
+    "funFact": "He was naturally quite hot-tempered but spent 20 years practicing gentleness until it became his most famous virtue.",
+    "enriched": true
+},
+{
+    "name": "St. Jane Frances de Chantal",
+    "feastDay": "August 12",
+    "knownFor": "A mother who became a nun and co-founded the Order of the Visitation with St. Francis de Sales.",
+    "patronOf": "forgotten people, widows",
+    "dates": "1572-1641",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "perseverance",
+        "service",
+        "patience",
+        "love",
+        "friendliness"
+    ],
+    "quotes": [
+        "The heart that loves God is always happy."
+    ],
+    "title": "St. Jane Frances de Chantal",
+    "lived": "1572-1641",
+    "bio": "Jane was a young widow with four children when she met Francis de Sales. After her children were grown, she founded a religious order for women who were unable to join the more austere orders due to health or age.",
+    "funFact": "Legend says that to join the convent, she literally had to step over the body of her son, who had laid across the doorway to stop her—showing the intense conflict of her vocation.",
+    "enriched": true
+},
+{
+    "name": "St. Vincent de Paul",
+    "feastDay": "September 27",
+    "knownFor": "The great 'Apostle of Charity' who revolutionized social work and the care of the poor.",
+    "patronOf": "charitable societies, horses",
+    "dates": "1581-1660",
+    "origin": "France",
+    "gender": "Male",
+    "traits": [
+        "charity",
+        "humility",
+        "practicality",
+        "compassion",
+        "service"
+    ],
+    "quotes": [
+        "The poor are our masters; they are our kings.",
+        "Go to the poor; you will find God."
+    ],
+    "title": "St. Vincent de Paul",
+    "lived": "1581-1660",
+    "bio": "Vincent founded the Congregation of the Mission (Vincentians) and co-founded the Daughters of Charity. He was a brilliant organizer who harnessed the energy of the wealthy to provide systematic aid to the suffering across France.",
+    "funFact": "In his youth, he was captured by Barbary pirates and spent two years as a slave in North Africa before escaping.",
+    "enriched": true
+},
+{
+    "name": "St. Louise de Marillac",
+    "feastDay": "March 15",
+    "knownFor": "Widow and co-founder of the Daughters of Charity, known for her dedication to the sick and poor.",
+    "patronOf": "social workers",
+    "dates": "1591-1660",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "service",
+        "compassion",
+        "leadership",
+        "organization",
+        "patience"
+    ],
+    "quotes": [
+        "Serve the poor with great humility and love."
+    ],
+    "title": "St. Louise de Marillac",
+    "lived": "1591-1660",
+    "bio": "Louise was a collaborator of St. Vincent de Paul. She helped transform the way religious women served the poor, leading them out of cloistered walls and into the hospitals, homes, and streets of France.",
+    "funFact": "She had a 'lumière' (light) experience on Pentecost, where she saw that she would one day serve God in a new kind of community.",
+    "enriched": true
+},
+{
+    "name": "St. Margaret Mary Alacoque",
+    "feastDay": "October 16",
+    "knownFor": "A Visitation nun who received visions of the Sacred Heart of Jesus.",
+    "patronOf": "those suffering from the loss of parents",
+    "dates": "1647-1690",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "devotion",
+        "piety",
+        "endurance",
+        "humility",
+        "mysticism"
+    ],
+    "quotes": [
+        "This is the Heart which has so loved men."
+    ],
+    "title": "St. Margaret Mary Alacoque",
+    "lived": "1647-1690",
+    "bio": "Margaret Mary received several visions of Jesus while praying before the Blessed Sacrament. He revealed His heart to her as a symbol of His immense love for humanity and asked for a feast day to be established in its honor.",
+    "funFact": "She initially faced disbelief and even ridicule from her own community for her visions until she was supported by her spiritual director, St. Claude de la Colombiere.",
+    "enriched": true
+},
+{
+    "name": "St. Louis de Montfort",
+    "feastDay": "April 28",
+    "knownFor": "Promoter of the Rosary and 'True Devotion to Mary'.",
+    "patronOf": "preachers",
+    "dates": "1673-1716",
+    "origin": "France",
+    "gender": "Male",
+    "traits": [
+        "zeal",
+        "devotion",
+        "piety",
+        "preaching",
+        "humility"
+    ],
+    "quotes": [
+        "To Jesus through Mary.",
+        "Totus Tuus."
+    ],
+    "title": "St. Louis de Montfort",
+    "lived": "1673-1716",
+    "bio": "Louis was a tireless missionary who traveled across western France, preaching the Gospel and the Rosary. He founded the Company of Mary and the Daughters of Wisdom and wrote the classic 'True Devotion to the Blessed Virgin'.",
+    "funFact": "His motto 'Totus Tuus' was later adopted by Pope John Paul II as his papal motto.",
+    "enriched": true
+},
+{
+    "name": "St. Alphonsus Liguori",
+    "feastDay": "August 18",
+    "knownFor": "Founder of the Redemptorists and one of the most prolific writers on moral theology and prayer.",
+    "patronOf": "confessors, scrupulous people",
+    "dates": "1696-1787",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "compassion",
+        "theology",
+        "determination",
+        "music"
+    ],
+    "quotes": [
+        "The person who prays will be saved; the person who does not pray will be damned."
+    ],
+    "title": "St. Alphonsus Liguori",
+    "lived": "1696-1787",
+    "bio": "A brilliant lawyer who became a priest, Alphonsus was a master of moral theology who balanced rigor with compassion. He was also a talented painter, musician, and poet, composing the famous Italian hymn 'Tu Scendi Dalle Stelle'.",
+    "funFact": "He was so dedicated to his work that he reportedly made a vow never to waste a single minute of his life.",
+    "enriched": true
+}
+,
+{
+    "name": "St. Elizabeth of Hungary",
+    "feastDay": "November 17",
+    "knownFor": "A princess who used her wealth and position to serve the poor and sick.",
+    "patronOf": "bakers, beggars, hospitals, nursing, widows",
+    "dates": "1207-1231",
+    "origin": "Hungary/Germany",
+    "gender": "Female",
+    "traits": [
+        "charity",
+        "humility",
+        "compassion",
+        "sacrifice",
+        "piety"
+    ],
+    "quotes": [
+        "We must make others happy."
+    ],
+    "title": "St. Elizabeth of Hungary",
+    "lived": "1207-1231",
+    "bio": "Elizabeth was a princess who married the Landgrave of Thuringia. She dedicated herself to works of charity, spending her dowry on a hospital where she personally served the sick. After her husband's death, she joined the Third Order of St. Francis.",
+    "funFact": "The 'Miracle of the Roses' tells of how her husband once met her while she was secretly carrying bread to the poor, and when he asked to see what was in her apron, it was filled with beautiful roses instead of bread.",
+    "enriched": true
+},
+{
+    "name": "St. Catherine of Alexandria",
+    "feastDay": "November 25",
+    "knownFor": "A brilliant philosopher and martyr who defeated 50 pagan scholars in debate.",
+    "patronOf": "philosophers, students, lawyers, librarians",
+    "dates": "c. 287-305",
+    "origin": "Egypt",
+    "gender": "Female",
+    "traits": [
+        "intellect",
+        "courage",
+        "eloquence",
+        "wisdom",
+        "fortitude"
+    ],
+    "quotes": [
+        "I am a bride of Christ, and no mortal can take His place."
+    ],
+    "title": "St. Catherine of Alexandria",
+    "lived": "c. 287-305",
+    "bio": "Catherine was a noblewoman of Alexandria who rebuked the Emperor Maxentius for his persecution of Christians. She was so persuasive that many of the scholars sent to debate her converted on the spot. She was martyred on a breaking wheel, which reportedly shattered at her touch.",
+    "funFact": "She is one of the Fourteen Holy Helpers and was one of the voices that spoke to St. Joan of Arc.",
+    "enriched": true
+},
+{
+    "name": "St. Barbara",
+    "feastDay": "December 4",
+    "knownFor": "A virgin martyr who was imprisoned in a tower by her father for her faith.",
+    "patronOf": "artillerymen, miners, firemen, architects, protection against lightning",
+    "dates": "3rd century",
+    "origin": "Turkey",
+    "gender": "Female",
+    "traits": [
+        "fortitude",
+        "courage",
+        "faithfulness",
+        "patience",
+        "purity"
+    ],
+    "quotes": [
+        "The Lord is my light and my salvation."
+    ],
+    "title": "St. Barbara",
+    "lived": "d. 3rd century",
+    "bio": "Barbara's father was a wealthy pagan who locked her in a tower to keep her from the world. She secretly became a Christian and added a third window to the bathhouse he built to symbolize the Trinity. Upon her execution by her own father, he was reportedly struck down by lightning.",
+    "funFact": "She is often depicted with a tower and a palm branch, and is the patron of people who work with explosives and sudden danger.",
+    "enriched": true
+},
+{
+    "name": "St. Margaret of Antioch",
+    "feastDay": "July 20",
+    "knownFor": "A virgin martyr who reportedly defeated a dragon through the sign of the cross.",
+    "patronOf": "expectant mothers, childbirth, peasants",
+    "dates": "c. 289-304",
+    "origin": "Turkey",
+    "gender": "Female",
+    "traits": [
+        "courage",
+        "purity",
+        "faithfulness",
+        "determination",
+        "piety"
+    ],
+    "quotes": [
+        "My faith in Christ is my strength."
+    ],
+    "title": "St. Margaret of Antioch",
+    "lived": "c. 289-304",
+    "bio": "Margaret was disowned by her father for her conversion. She was tortured and imprisoned, and according to legend, she was swallowed by a dragon in her cell but emerged unharmed when the cross she held caused the dragon to burst open.",
+    "funFact": "She was also one of the voices that spoke to St. Joan of Arc.",
+    "enriched": true
+},
+{
+    "name": "St. Apollonia",
+    "feastDay": "February 9",
+    "knownFor": "An elderly deaconess and martyr who had her teeth shattered for her faith.",
+    "patronOf": "dentists, toothache sufferers",
+    "dates": "d. c. 249",
+    "origin": "Egypt",
+    "gender": "Female",
+    "traits": [
+        "courage",
+        "steadfastness",
+        "sacrifice",
+        "faithfulness",
+        "patience"
+    ],
+    "quotes": [
+        "I go to the flames with a joyful heart for my Lord."
+    ],
+    "title": "St. Apollonia",
+    "lived": "d. c. 249",
+    "bio": "During a riot against Christians in Alexandria, Apollonia was seized by a mob. They knocked out all her teeth and threatened to burn her alive if she did not renounce Christ. She voluntarily jumped into the fire to prove her willingness to die for her faith.",
+    "funFact": "She is often depicted in art holding a pair of pincers with a tooth in them.",
+    "enriched": true
+},
+{
+    "name": "St. Agatha",
+    "feastDay": "February 5",
+    "knownFor": "A Sicilian martyr who endured horrific torture for her commitment to her faith and her vow of virginity.",
+    "patronOf": "breast cancer patients, nurses, bell-founders, bakers",
+    "dates": "c. 231-251",
+    "origin": "Sicily",
+    "gender": "Female",
+    "traits": [
+        "purity",
+        "fortitude",
+        "patience",
+        "faithfulness",
+        "bravery"
+    ],
+    "quotes": [
+        "Lord, my creator, you have always protected me since I was in the cradle."
+    ],
+    "title": "St. Agatha",
+    "lived": "c. 231-251",
+    "bio": "Agatha was a beautiful noblewoman who was pursued by a Roman official. When she refused him, he had her tortured, including the amputation of her breasts. Legend says St. Peter appeared to her in a vision and healed her wounds before she was finally martyred.",
+    "funFact": "She is the patron of bakers because the round bells or objects on her tray in art were sometimes mistaken for loaves of bread.",
+    "enriched": true
+},
+{
+    "name": "St. Anastasia",
+    "feastDay": "December 25",
+    "knownFor": "A Roman martyr who was known for visiting and caring for imprisoned Christians.",
+    "patronOf": "healers, weavers, widows, martyrs",
+    "dates": "d. c. 304",
+    "origin": "Rome",
+    "gender": "Female",
+    "traits": [
+        "charity",
+        "compassion",
+        "courage",
+        "service",
+        "piety"
+    ],
+    "quotes": [
+        "Christ is my hope."
+    ],
+    "title": "St. Anastasia",
+    "lived": "d. c. 304",
+    "bio": "Anastasia was the daughter of a pagan father and a Christian mother. She spent her life and fortune ministering to those suffering in prison for their faith. She was finally martyred by being burned at the stake during the Diocletian persecution.",
+    "funFact": "In the Roman Rite, she is the only saint, besides the Virgin Mary, to have a special commemoration in the liturgy of Christmas Day (at the second Mass, 'at dawn').",
+    "enriched": true
+},
+{
+    "name": "St. Genevieve",
+    "feastDay": "January 3",
+    "knownFor": "Patroness of Paris who saved the city from Attila the Hun through prayer and fasting.",
+    "patronOf": "Paris, security forces, protection against disasters",
+    "dates": "c. 419-512",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "piety",
+        "leadership",
+        "courage",
+        "patriotism",
+        "simplicity"
+    ],
+    "quotes": [
+        "If you pray, God will save us."
+    ],
+    "title": "St. Genevieve",
+    "lived": "c. 419-512",
+    "bio": "Genevieve dedicated her life to God at a young age. When Attila the Hun's army approached Paris, she encouraged the citizens not to flee but to pray and fast. Attila diverted his army away from the city, and she was hailed as a savior.",
+    "funFact": "Initially, the people were so angry at her 'unrealistic' advice that they actually tried to drown her, until she was defended by a nearby bishop.",
+    "enriched": true
+},
+{
+    "name": "St. Ursula",
+    "feastDay": "October 21",
+    "knownFor": "A legendary British princess who traveled across Europe with 11,000 virgins and was martyred by the Huns.",
+    "patronOf": "students, orphans, teachers, good marriage",
+    "dates": "4th or 5th century",
+    "origin": "Britain/Germany",
+    "gender": "Female",
+    "traits": [
+        "leadership",
+        "loyalty",
+        "faithfulness",
+        "courage",
+        "purity"
+    ],
+    "quotes": [
+        "We follow the King of Kings."
+    ],
+    "title": "St. Ursula",
+    "lived": "d. 4th/5th century",
+    "bio": "Ursula's story is one of the most famous legends of the Middle Ages. She led a group of young women on a pilgrimage to Rome. On their return trip, they were intercepted at Cologne by the Huns, who martyred them when they refused to renounce their faith or marry the Hun army.",
+    "funFact": "The Order of St. Ursula (Ursulines), the first teaching order for women, was named in her honor.",
+    "enriched": true
+},
+{
+    "name": "St. Valentine",
+    "feastDay": "February 14",
+    "knownFor": "A priest and martyr who secretly married Christian couples under Roman persecution.",
+    "patronOf": "love, marriage, young people, beekeepers",
+    "dates": "d. c. 269",
+    "origin": "Rome",
+    "gender": "Male",
+    "traits": [
+        "love",
+        "courage",
+        "kindness",
+        "loyalty",
+        "piety"
+    ],
+    "quotes": [
+        "Love one another as Christ has loved you."
+    ],
+    "title": "St. Valentine",
+    "lived": "d. c. 269",
+    "bio": "Valentine lived during the reign of Emperor Claudius II, who had banned marriage to encourage more young men to join the army. Valentine defied the law to perform Christian weddings and was imprisoned and eventually martyred for it.",
+    "funFact": "Legend says that while in prison, he healed the blind daughter of his jailer and wrote her a letter signed 'From your Valentine'.",
+    "enriched": true
+},
+{
+    "name": "St. Blaise",
+    "feastDay": "February 3",
+    "knownFor": "A bishop and martyr famous for healing diseases of the throat.",
+    "patronOf": "throat ailments, veterinarians, wool-combers",
+    "dates": "d. c. 316",
+    "origin": "Armenia",
+    "gender": "Male",
+    "traits": [
+        "healing",
+        "leadership",
+        "courage",
+        "kindness",
+        "humility"
+    ],
+    "quotes": [
+        "Through the intercession of St. Blaise, may God deliver you from every disease of the throat."
+    ],
+    "title": "St. Blaise",
+    "lived": "d. c. 316",
+    "bio": "Blaise was a bishop in Armenia during a time of persecution. He lived as a hermit in a cave, where even wild animals reportedly came to him to be healed. He was captured and martyred with iron combs.",
+    "funFact": "He is most famous for the tradition of the 'Blessing of the Throats', where two blessed candles are held in a cross against the throat.",
+    "enriched": true
+},
+{
+    "name": "St. John Bosco",
+    "feastDay": "January 31",
+    "knownFor": "Founder of the Salesians, dedicated to the education and care of poor youth.",
+    "patronOf": "youth, apprentices, editors, magicians",
+    "dates": "1815-1888",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "joy",
+        "kindness",
+        "leadership",
+        "education",
+        "optimism"
+    ],
+    "quotes": [
+        "Servite Domino in laetitia (Serve the Lord with joy).",
+        "It is enough that you are young for me to love you very much."
+    ],
+    "title": "St. John Bosco",
+    "lived": "1815-1888",
+    "bio": "Don Bosco devoted his life to the betterment and education of street children in Turin. He developed the 'Preventive System' based on 'reason, religion, and loving-kindness', rejecting corporal punishment and emphasizing the dignity of every child.",
+    "funFact": "He was a talented amateur magician and acrobat, often using tricks to attract children so he could then teach them the catechism.",
+    "enriched": true
+},
+{
+    "name": "St. Dominic Savio",
+    "feastDay": "May 6",
+    "knownFor": "A young pupil of St. John Bosco who achieved great holiness at a very early age.",
+    "patronOf": "choirboys, juveniles, falsely accused people",
+    "dates": "1842-1857",
+    "origin": "Italy",
+    "gender": "Male",
+    "traits": [
+        "purity",
+        "joy",
+        "piety",
+        "obedience",
+        "innocence"
+    ],
+    "quotes": [
+        "Death but not sin!",
+        "I am not alone; I have my Angel Guardian with me."
+    ],
+    "title": "St. Dominic Savio",
+    "lived": "1842-1857",
+    "bio": "Dominic joined Don Bosco's oratory at age 12. He was known for his extraordinary maturity, his peacemaking among other boys, and his intense devotion to the Eucharist. He died of pleurisy at age 14, becoming the youngest non-martyr to be canonized.",
+    "funFact": "His teacher, Don Bosco, was so impressed by him that he wrote the boy's biography, which became a spiritual classic.",
+    "enriched": true
+},
+{
+    "name": "St. Maria Mazzarello",
+    "feastDay": "May 13",
+    "knownFor": "Co-founder of the Salesian Sisters (Daughters of Mary Help of Christians).",
+    "patronOf": "Salesian Sisters",
+    "dates": "1837-1881",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "humility",
+        "joy",
+        "service",
+        "education",
+        "leadership"
+    ],
+    "quotes": [
+        "Be cheerful at all times.",
+        "Work with love and for love."
+    ],
+    "title": "St. Maria Mazzarello",
+    "lived": "1837-1881",
+    "bio": "Maria was a hardworking peasant girl who, after surviving typhus, founded a workshop to teach needlework to young girls and provide them with a Christian education. She teamed up with Don Bosco to form a women's branch of his Salesian mission.",
+    "funFact": "She was known for her incredible endurance and work ethic, often working in the fields all day and spending the nights in prayer or sewing.",
+    "enriched": true
+},
+{
+    "name": "St. Gemma Galgani",
+    "feastDay": "April 11",
+    "knownFor": "A modern mystic known as the 'Flower of Lucca' who bore the stigmata.",
+    "patronOf": "pharmacists, paratroopers, loss of parents",
+    "dates": "1878-1903",
+    "origin": "Italy",
+    "gender": "Female",
+    "traits": [
+        "mysticism",
+        "piety",
+        "endurance",
+        "humility",
+        "devotion"
+    ],
+    "quotes": [
+        "If I could only fly to my Jesus!",
+        "Jesus, I want to be like you."
+    ],
+    "title": "St. Gemma Galgani",
+    "lived": "1878-1903",
+    "bio": "Gemma lived a life of intense suffering and prayer. She claimed frequent conversations with her Guardian Angel and received the wounds of Christ on her hands and feet every week for several years. She died of tuberculosis at age 25.",
+    "funFact": "She reportedly once sent her Guardian Angel with a letter for her confessor because she was too sick to mail it herself.",
+    "enriched": true
+},
+{
+    "name": "St. Charbel Makhlouf",
+    "feastDay": "July 24",
+    "knownFor": "A Maronite monk and hermit from Lebanon known for his extraordinary miracles and the incorruptibility of his body.",
+    "patronOf": "Lebanon, sick people",
+    "dates": "1828-1898",
+    "origin": "Lebanon",
+    "gender": "Male",
+    "traits": [
+        "silence",
+        "humility",
+        "miracles",
+        "contemplation",
+        "asceticism"
+    ],
+    "quotes": [
+        "The world is a shadow; God is the reality."
+    ],
+    "title": "St. Charbel Makhlouf",
+    "lived": "1828-1898",
+    "bio": "Charbel was a monk who spent the last 23 years of his life in a mountain hermitage, living in total silence and perpetual prayer. After his death, a brilliant light was seen over his grave, and his body remained flexible and fragrant for decades.",
+    "funFact": "His intercession is so legendary in Lebanon and beyond that even Muslims and people of other faiths frequently visit his shrine seeking healing.",
+    "enriched": true
+},
+{
+    "name": "St. Rafqa",
+    "feastDay": "March 23",
+    "knownFor": "A Maronite nun known as the 'Flower of Lebanon' who joyfully endured 29 years of severe physical pain.",
+    "patronOf": "blind people, lost parents",
+    "dates": "1832-1914",
+    "origin": "Lebanon",
+    "gender": "Female",
+    "traits": [
+        "patience",
+        "endurance",
+        "joy",
+        "submission",
+        "faithfulness"
+    ],
+    "quotes": [
+        "May God's will be done in me."
+    ],
+    "title": "St. Rafqa",
+    "lived": "1832-1914",
+    "bio": "Rafqa (Rebecca) was a Lebanese Maronite nun who prayed to share in the sufferings of Christ. She became blind and paralyzed, suffering from bone cancer and tuberculosis, but she never complained, continually thanking God for her pain as a gift.",
+    "funFact": "When she was asked if she wanted to be healed, she replied that she preferred her suffering because it brought her closer to God.",
+    "enriched": true
+},
+{
+    "name": "St. Mariam Baouardy",
+    "feastDay": "August 25",
+    "knownFor": "A Palestinian Carmelite mystic known as 'The Little Arab' who received the stigmata and visions.",
+    "patronOf": "Palestinians",
+    "dates": "1846-1878",
+    "origin": "Palestine",
+    "gender": "Female",
+    "traits": [
+        "mysticism",
+        "humility",
+        "simplicity",
+        "devotion",
+        "piety"
+    ],
+    "quotes": [
+        "Holy Spirit, inspire me; Love of God, consume me."
+    ],
+    "title": "St. Mariam Baouardy",
+    "lived": "1846-1878",
+    "bio": "Also known as St. Mary of Jesus Crucified, she was a barely literate peasant girl from I'billin. She founded the Carmelite convent in Bethlehem and was known for her extraordinary spiritual gifts, including levitation and deep mystical insight.",
+    "funFact": "She was once left for dead after a man slashed her throat when she refused to convert to Islam, but she claimed she was healed by a 'nun in blue' (the Virgin Mary).",
+    "enriched": true
+},
+{
+    "name": "St. Elizabeth of the Trinity",
+    "feastDay": "November 8",
+    "knownFor": "A French Carmelite mystic who wrote profoundly on the indwelling of the Trinity in the soul.",
+    "patronOf": "sick people, loss of parents",
+    "dates": "1880-1906",
+    "origin": "France",
+    "gender": "Female",
+    "traits": [
+        "contemplation",
+        "intellect",
+        "piety",
+        "submission",
+        "wisdom"
+    ],
+    "quotes": [
+        "I have found my heaven on earth, for heaven is God, and God is in my soul."
+    ],
+    "title": "St. Elizabeth of the Trinity",
+    "lived": "1880-1906",
+    "bio": "Elizabeth Catez was a talented pianist who entered the Carmel in Dijon. She had a profound sense of the presence of the Father, Son, and Holy Spirit within her 'inner temple'. She died of Addison's disease at age 26.",
+    "funFact": "She spent her final months in intense pain, seeing herself as a 'laudem gloriae' (praise of glory) for God.",
+    "enriched": true
+},
+{
+    "name": "St. Marianne Cope",
+    "feastDay": "January 23",
+    "knownFor": "A Sister of St. Francis who continued the work of St. Damien among the lepers of Molokai.",
+    "patronOf": "outcasts",
+    "dates": "1838-1918",
+    "origin": "Germany/USA",
+    "gender": "Female",
+    "traits": [
+        "service",
+        "courage",
+        "organization",
+        "compassion",
+        "faithfulness"
+    ],
+    "quotes": [
+        "I am hungry for the work."
+    ],
+    "title": "St. Marianne Cope",
+    "lived": "1838-1918",
+    "bio": "Marianne was the administrator of a hospital in New York when she answered the call to go to Hawaii. She spent 30 years caring for the women and girls in the leper colony on Molokai, bringing beauty, dignity, and high medical standards to the community.",
+    "funFact": "Unlike St. Damien, neither Marianne nor any of the sisters who worked with her ever contracted leprosy, which she attributed to their strict hygiene and God's protection.",
+    "enriched": true
+},
+{
+    "name": "St. John Neumann",
+    "feastDay": "January 5",
+    "knownFor": "A missionary from Bohemia who became the fourth Bishop of Philadelphia and founded the first diocesan school system in the US.",
+    "patronOf": "sick children, immigrants",
+    "dates": "1811-1860",
+    "origin": "Czechia/USA",
+    "gender": "Male",
+    "traits": [
+        "education",
+        "humility",
+        "leadership",
+        "zeal",
+        "service"
+    ],
+    "quotes": [
+        "Everyone who breathes is my neighbor."
+    ],
+    "title": "St. John Neumann",
+    "lived": "1811-1860",
+    "bio": "Neumann came to America with only one suit and $1 in his pocket. He was a tireless worker who learned eight languages to serve the diverse immigrant populations of New York and Pennsylvania. He established over 100 schools during his short time as bishop.",
+    "funFact": "He was so physically small (only 5'2\") that children in Philadelphia affectionately called him their 'Little Bishop'.",
+    "enriched": true
+},
+{
+    "name": "St. Rose Philippine Duchesne",
+    "feastDay": "November 18",
+    "knownFor": "A French missionary sister who brought the Society of the Sacred Heart to the American frontier.",
+    "patronOf": "Native American missions",
+    "dates": "1769-1852",
+    "origin": "France/USA",
+    "gender": "Female",
+    "traits": [
+        "perseverance",
+        "prayer",
+        "courage",
+        "endurance",
+        "humility"
+    ],
+    "quotes": [
+        "I had to choose between being a missionary or a martyr; I chose being a missionary."
+    ],
+    "title": "St. Rose Philippine Duchesne",
+    "lived": "1769-1852",
+    "bio": "Rose Philippine came to Missouri at age 49 to serve the Native Americans. Despite struggling to learn the language at her age, her constant prayer was so profound that the Potawatomi people called her 'Quah-kah-ka-num-ad' (the Woman Who Prays Always).",
+    "funFact": "Legend says that children once placed pebbles on her habit while she was kneeling in prayer, and several hours later they were still there because she hadn't moved a muscle.",
+    "enriched": true
+},
+{
+    "name": "St. Isaac Jogues",
+    "feastDay": "October 19",
+    "knownFor": "A Jesuit missionary and one of the North American Martyrs who was captured and tortured by the Iroquois.",
+    "patronOf": "North America",
+    "dates": "1607-1646",
+    "origin": "France/Canada",
+    "gender": "Male",
+    "traits": [
+        "courage",
+        "sacrifice",
+        "endurance",
+        "zeal",
+        "faithfulness"
+    ],
+    "quotes": [
+        "I will go where the Master sends me."
+    ],
+    "title": "St. Isaac Jogues",
+    "lived": "1607-1646",
+    "bio": "Jogues was a pioneer missionary in New France (Canada). He was captured by the Mohawk tribe, brutally tortured, and had several of his fingers bitten off. He escaped to France but requested to return to the mission, where he was ultimately martyred.",
+    "funFact": "Because his hands were mutilated, he needed special permission from the Pope to celebrate Mass, which was granted with the words: 'It would be unjust that a martyr of Christ should not drink the Blood of Christ.'",
+    "enriched": true
+},
+{
+    "name": "St. Junípero Serra",
+    "feastDay": "July 1",
+    "knownFor": "A Spanish Franciscan friar who founded nine of the twenty-one Spanish missions in California.",
+    "patronOf": "California, Vocations",
+    "dates": "1713-1784",
+    "origin": "Spain/USA",
+    "gender": "Male",
+    "traits": [
+        "pioneer",
+        "zeal",
+        "leadership",
+        "endurance",
+        "piety"
+    ],
+    "quotes": [
+        "Siempre adelante, nunca atrás (Always forward, never back)."
+    ],
+    "title": "St. Junípero Serra",
+    "lived": "1713-1784",
+    "bio": "Serra left a prestigious university position in Spain to become a missionary. Despite a chronically ulcerated leg that made walking difficult, he traveled thousands of miles across California to establish missions and protect the indigenous people from military abuse.",
+    "funFact": "His signature 'Siempre adelante' has become a rallying cry for many Catholic missionary and social organizations.",
+    "enriched": true
+},
+{
+    "name": "St. Juan Diego",
+    "feastDay": "December 9",
+    "knownFor": "The indigenous Mexican visionary of Our Lady of Guadalupe.",
+    "patronOf": "indigenous people",
+    "dates": "1474-1548",
+    "origin": "Mexico",
+    "gender": "Male",
+    "traits": [
+        "humility",
+        "simplicity",
+        "obedience",
+        "piety",
+        "faithfulness"
+    ],
+    "quotes": [
+        "Am I not here, I who am your Mother?"
+    ],
+    "title": "St. Juan Diego",
+    "lived": "1474-1548",
+    "bio": "Juan Diego was a Chichimeca peasant when the Virgin Mary appeared to him on Tepeyac Hill in 1531. She asked for a church to be built, and when the bishop requested a sign, the Virgin filled Juan Diego's cloak with out-of-season roses and left her miraculous image on the fabric.",
+    "funFact": "His 'tilma' (cloak) made of cactus fiber survives today in perfect condition in Mexico City, defying all scientific explanation for its durability and the nature of the image.",
+    "enriched": true
+}
+,
+{
+    "name": "St. Martin de Porres",
+    "feastDay": "November 3",
+    "knownFor": "A lay brother of the Dominican Order known for his humility, his care for the poor, and his miraculous healing abilities.",
+    "patronOf": "mixed-race people, innkeepers, barbers, social justice, public health workers",
+    "dates": "1579-1639",
+    "origin": "Peru",
+    "gender": "Male",
+    "traits": [
+        "humility",
+        "charity",
+        "healing",
+        "compassion",
+        "service"
+    ],
+    "quotes": [
+        "Everything, even sweeping, scraping vegetables, weeding a garden and waiting on the sick could be a prayer, if it were offered to God."
+    ],
+    "title": "St. Martin de Porres",
+    "lived": "1579-1639",
+    "bio": "Martin was the daughter of a Spanish nobleman and a formerly enslaved woman from Panama. Despite facing racial discrimination, he became a Dominican lay brother and dedicated his life to serving the poor and the sick in Lima. He founded an orphanage and a children's hospital.",
+    "funFact": "He was famously known as 'Martin of the Broom' for his willingness to do the most menial tasks with great love, and legend says he could bilocate and even communicate with animals.",
+    "enriched": true
+},
+{
+    "name": "St. Rose of Lima",
+    "feastDay": "August 23",
+    "knownFor": "The first person born in the Americas to be canonized as a saint, known for her severe penances and care for the needy.",
+    "patronOf": "Latin America, Peru, Philippines, florists, gardeners",
+    "dates": "1586-1617",
+    "origin": "Peru",
+    "gender": "Female",
+    "traits": [
+        "piety",
+        "fortitude",
+        "sacrifice",
+        "charity",
+        "mysticism"
+    ],
+    "quotes": [
+        "Apart from the cross, there is no other ladder by which we may get to heaven."
+    ],
+    "title": "St. Rose of Lima",
+    "lived": "1586-1617",
+    "bio": "Rose was a Dominican tertiary who lived a life of intense prayer and asceticism in her parents' garden. She was known for her beauty but chose to dedicate her life solely to God, refusing all marriage proposals. She cared for the sick and the poor of Lima, often bringing them into her own home.",
+    "funFact": "Her real name was Isabel, but she was called 'Rosa' because as an infant, a servant claimed to have seen her face transform into a rose.",
+    "enriched": true
+},
+{
+    "name": "St. Peter Claver",
+    "feastDay": "September 9",
+    "knownFor": "A Jesuit missionary who dedicated his life to serving enslaved people in South America, calling himself the 'slave of the slaves forever'.",
+    "patronOf": "slaves, Colombia, racial justice",
+    "dates": "1580-1654",
+    "origin": "Spain/Colombia",
+    "gender": "Male",
+    "traits": [
+        "justice",
+        "charity",
+        "courage",
+        "service",
+        "faithfulness"
+    ],
+    "quotes": [
+        "We must speak to them with our hands by giving, before we try to speak to them with our lips."
+    ],
+    "title": "St. Peter Claver",
+    "lived": "1580-1654",
+    "bio": "Peter Claver spent 44 years in Cartagena, Colombia, meeting the slave ships as they arrived. He provided food, medicine, and spiritual comfort to the terrified captives, baptizing over 300,000 people. He lived among them and fought for their human dignity against the slave traders.",
+    "funFact": "He was so dedicated that he would often spend all night in the stifling, disease-ridden holds of the ships to be with the dying.",
+    "enriched": true
+},
+{
+    "name": "St. Oscar Romero",
+    "feastDay": "March 24",
+    "knownFor": "Archbishop of San Salvador who was martyred for his vocal defense of the poor and victims of social injustice.",
+    "patronOf": "El Salvador, Americas, persecuted Christians",
+    "dates": "1917-1980",
+    "origin": "El Salvador",
+    "gender": "Male",
+    "traits": [
+        "justice",
+        "courage",
+        "charity",
+        "leadership",
+        "sacrifice"
+    ],
+    "quotes": [
+        "I do not believe in death without resurrection. If they kill me, I will rise again in the Salvadoran people.",
+        "Aspire not to have more, but to be more."
+    ],
+    "title": "St. Oscar Romero",
+    "lived": "1917-1980",
+    "bio": "Romero was initially a conservative bishop, but the increasing violence against the poor and the murder of his friend, Fr. Rutilio Grande, transformed him into a 'voice for the voiceless'. He used his weekly radio sermons to denounce the military government's human rights abuses. He was shot while celebrating Mass in 1980.",
+    "funFact": "He was canonized by Pope Francis in 2018 alongside Pope Paul VI.",
+    "enriched": true
+},
+{
+    "name": "St. José Sánchez del Río",
+    "feastDay": "February 10",
+    "knownFor": "A 14-year-old Cristero martyr who refused to renounce his faith despite horrific torture.",
+    "patronOf": "persecuted Christians, children, adolescents",
+    "dates": "1913-1928",
+    "origin": "Mexico",
+    "gender": "Male",
+    "traits": [
+        "courage",
+        "loyalty",
+        "sacrifice",
+        "faithfulness",
+        "bravery"
+    ],
+    "quotes": [
+        "¡Viva Cristo Rey! (Long live Christ the King!)",
+        "I will never give up my faith, even if I have to die."
+    ],
+    "title": "St. José Sánchez del Río",
+    "lived": "1913-1928",
+    "bio": "José was a young boy who joined the Cristeros during the religious persecution in Mexico. After he was captured, he was told his life would be spared if he shouted 'Death to Christ the King'. He refused, even after the soles of his feet were cut and he was forced to walk to his grave. His final cry was once again '¡Viva Cristo Rey!'.",
+    "funFact": "He was featured as a central character in the 2012 film 'For Greater Glory: The True Story of Cristiada'.",
+    "enriched": true
+},
+{
+    "name": "St. Miguel Pro",
+    "feastDay": "November 23",
+    "knownFor": "A Jesuit priest and martyr who used disguises to secretly minister to Catholics during the Mexican persecution.",
+    "patronOf": "Mexico",
+    "dates": "1891-1927",
+    "origin": "Mexico",
+    "gender": "Male",
+    "traits": [
+        "courage",
+        "humor",
+        "zeal",
+        "sacrifice",
+        "creativity"
+    ],
+    "quotes": [
+        "¡Viva Cristo Rey!",
+        "May God have mercy on you."
+    ],
+    "title": "St. Miguel Pro",
+    "lived": "1891-1927",
+    "bio": "Fr. Pro was a joyful and witty priest who returned to Mexico when the Church was underground. He used various disguises—mechanic, dandy, laborer—to evade the police while bringing the Sacraments to the people. He was falsely accused of an assassination attempt and executed by firing squad without a trial.",
+    "funFact": "The government invited photographers to his execution to mock him, but the resulting photos of him dying with his arms outstretched like a cross became a powerful symbol of the resistance.",
+    "enriched": true
+},
+{
+    "name": "St. Matrona of Moscow",
+    "feastDay": "May 2",
+    "knownFor": "A blind and crippled Russian wonderworker who was one of the most beloved saints of the 20th century.",
+    "patronOf": "Moscow, sick people",
+    "dates": "1881-1952",
+    "origin": "Russia",
+    "gender": "Female",
+    "traits": [
+        "patience",
+        "clairvoyance",
+        "kindness",
+        "piety",
+        "resilience"
+    ],
+    "quotes": [
+        "Come to me and tell me as if I were alive, and I will see you and hear you, and help you."
+    ],
+    "title": "St. Matrona of Moscow",
+    "lived": "1881-1952",
+    "bio": "Born blind in a peasant family, Matrona spent her life in prayer and counseling thousands who sought her help during the difficult years of Soviet rule. Despite her physical disabilities and the constant threat of arrest, she was a source of spiritual light and healing for any who came to her.",
+    "funFact": "She reportedly predicted her own death three days in advance and told people to continue visiting her grave for help.",
+    "enriched": true
+},
+{
+    "name": "St. Luke of Simferopol",
+    "feastDay": "June 11",
+    "knownFor": "A brilliant surgeon, professor, and archbishop who continued to serve the sick even while in Soviet exile.",
+    "patronOf": "surgeons, physicians",
+    "dates": "1877-1961",
+    "origin": "Russia/Ukraine",
+    "gender": "Male",
+    "traits": [
+        "intellect",
+        "courage",
+        "professionalism",
+        "faithfulness",
+        "service"
+    ],
+    "quotes": [
+        "I have loved medicine, but I loved my God more."
+    ],
+    "title": "St. Luke of Simferopol",
+    "lived": "1877-1961",
+    "bio": "Dr. Valentin Voyno-Yasenetsky was a world-class surgeon who wrote 'Essays on Purulent Surgery', a textbook used for decades. He became a priest and then a bishop during the height of Stalin's purges. He spent 11 years in various prisons and exiles, often performing surgeries with limited tools to save the lives of fellow prisoners.",
+    "funFact": "He was the only bishop to win the Stalin Prize for his scientific work while simultaneously being a political prisoner.",
+    "enriched": true
+},
+{
+    "name": "St. Seraphim of Vyritsa",
+    "feastDay": "April 3",
+    "knownFor": "A wealthy merchant who gave away his fortune after the Revolution to become a monk and a spiritual elder.",
+    "patronOf": "business people",
+    "dates": "1866-1949",
+    "origin": "Russia",
+    "gender": "Male",
+    "traits": [
+        "sacrifice",
+        "piety",
+        "wisdom",
+        "charity",
+        "humility"
+    ],
+    "quotes": [
+        "The most important thing is to love God and your neighbor."
+    ],
+    "title": "St. Seraphim of Vyritsa",
+    "lived": "1866-1949",
+    "bio": "Vasily Muravyov was a successful businessman/milionaire who entered a monastery with his wife (who became a nun). During WWII, he prayed for 1,000 nights on a rock for the salvation of Russia, mirroring his namesake St. Seraphim of Sarov. He became a beloved elder to whom thousands of people from Leningrad flocked for comfort.",
+    "funFact": "Before the Revolution, he was one of the richest men in Russia, but he lived his final years in a tiny room on a simple wooden bed.",
+    "enriched": true
+},
+{
+    "name": "St. Maria of Gatchina",
+    "feastDay": "February 8",
+    "knownFor": "A bedridden nun and martyr who was a source of spiritual strength for thousands during the Soviet era.",
+    "patronOf": "depressed people, sick people",
+    "dates": "1874-1932",
+    "origin": "Russia",
+    "gender": "Female",
+    "traits": [
+        "patience",
+        "joy",
+        "strength",
+        "piety",
+        "endurance"
+    ],
+    "quotes": [
+        "God is our strength; don't be afraid."
+    ],
+    "title": "St. Maria of Gatchina",
+    "lived": "1874-1932",
+    "bio": "Maria suffered from Parkinson's disease which left her completely paralyzed and in constant pain. Despite this, she was transformed into a spiritual elder who could read souls. People lined up outside her house in Gatchina to receive her counsel. She was finally arrested and died in a prison hospital.",
+    "funFact": "She was known for her incredible gift of 'joyous sorrow'—a deep inner peace that could heal the depression of those who visited her.",
+    "enriched": true
+},
+{
+    "name": "St. Elizabeth the New Martyr",
+    "feastDay": "July 18",
+    "knownFor": "A Grand Duchess of Russia who became a nun after her husband's murder and founded a convent for the poor.",
+    "patronOf": "nurses, converts",
+    "dates": "1864-1918",
+    "origin": "Germany/Russia",
+    "gender": "Female",
+    "traits": [
+        "charity",
+        "forgiveness",
+        "sacrifice",
+        "dignity",
+        "piety"
+    ],
+    "quotes": [
+        "Lord, forgive them, for they know not what they do."
+    ],
+    "title": "St. Elizabeth the New Martyr",
+    "lived": "1864-1918",
+    "bio": "Princess Elizabeth of Hesse was the granddaughter of Queen Victoria and sister to the last Tsarina. After her husband was killed by a bomb, she visited his assassin to forgive him. She became a nun and founded the Martha and Mary Convent in Moscow, serving the city's poorest. She was thrown down a mine shaft alive by the Bolsheviks.",
+    "funFact": "As she lay dying at the bottom of the mine shaft, she was reportedly heard singing hymns and was found to have used her own veil to bandage the wounds of a fellow prisoner.",
+    "enriched": true
+},
+{
+    "name": "St. Barbara the New Martyr",
+    "feastDay": "July 18",
+    "knownFor": "The faithful companion and fellow martyr of St. Elizabeth the New Martyr.",
+    "patronOf": "loyalty",
+    "dates": "d. 1918",
+    "origin": "Russia",
+    "gender": "Female",
+    "traits": [
+        "loyalty",
+        "courage",
+        "faithfulness",
+        "sacrifice",
+        "humility"
+    ],
+    "quotes": [
+        "I will not leave you, no matter what happens."
+    ],
+    "title": "St. Barbara the New Martyr",
+    "lived": "d. 1918",
+    "bio": "Barbara Yakovleva was a novice at the Martha and Mary Convent and a devoted friend of St. Elizabeth. When the secret police came to deport Elizabeth, they offered Barbara her freedom, but she refused to abandon her mentor. She shared in the same horrific death in the Alapaevsk mine shaft.",
+    "funFact": "She is a symbol of the profound holiness that can be found in simple, quiet loyalty.",
+    "enriched": true
+},
+{
+    "name": "St. Vladimir of Kiev",
+    "feastDay": "July 15",
+    "knownFor": "The Grand Prince of Kiev who converted to Christianity and baptized the entire nation of Kievan Rus'.",
+    "patronOf": "Russia, Ukraine",
+    "dates": "c. 958-1015",
+    "origin": "Kyivan Rus'",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "transformation",
+        "zeal",
+        "piety",
+        "nationalism"
+    ],
+    "quotes": [
+        "I have found the true faith."
+    ],
+    "title": "St. Vladimir of Kiev",
+    "lived": "c. 958-1015",
+    "bio": "Vladimir was a fierce pagan ruler who sent envoys to research different religions. They were so moved by the beauty of the liturgy in Constantinople that he chose Orthodoxy. After his conversion, he radically changed his life, dismissing his many wives and building churches and hospitals.",
+    "funFact": "He is often called 'Vladimir the Great' or 'Equal-to-the-Apostles' for his role in bringing Christianity to the Slavic peoples.",
+    "enriched": true
+},
+{
+    "name": "St. Olga of Kiev",
+    "feastDay": "July 11",
+    "knownFor": "The first Christian ruler of Kievan Rus', known for her wisdom and her role in paving the way for her grandson St. Vladimir.",
+    "patronOf": "widows, converts",
+    "dates": "c. 890-969",
+    "origin": "Kyivan Rus'",
+    "gender": "Female",
+    "traits": [
+        "wisdom",
+        "determination",
+        "leadership",
+        "patriotism",
+        "piety"
+    ],
+    "quotes": [
+        "Let my people see the light of Christ."
+    ],
+    "title": "St. Olga of Kiev",
+    "lived": "c. 890-969",
+    "bio": "Olga was a regent who ruled Kyivan Rus' with great skill. She was baptized in Constantinople and attempted to bring Christianity to her people, though her own son refused to convert. She is remembered as the first saint of the Russian Orthodox Church.",
+    "funFact": "Before her conversion, she was famous for her extremely clever and ruthless revenge on the tribe that had murdered her husband.",
+    "enriched": true
+},
+{
+    "name": "St. Boris",
+    "feastDay": "May 2",
+    "knownFor": "Prince of Kiev and martyr who refused to fight his brother for the throne, becoming a 'Passion-bearer'.",
+    "patronOf": "Russia, peacemakers",
+    "dates": "d. 1015",
+    "origin": "Kyivan Rus'",
+    "gender": "Male",
+    "traits": [
+        "peacemaking",
+        "loyalty",
+        "sacrifice",
+        "humility",
+        "patriotism"
+    ],
+    "quotes": [
+        "I will not lift a hand against my brother."
+    ],
+    "title": "St. Boris",
+    "lived": "d. 1015",
+    "bio": "Boris was a son of St. Vladimir. When his elder brother Sviatopolk plotted to seize the throne, Boris's troops urged him to fight back. Instead, Boris chose to model Christ by non-resistance, sending his army home and waiting for his assassins while singing psalms.",
+    "funFact": "He and his brother Gleb were the first saints canonized in Russia and are the founders of the unique Russian tradition of 'Passion-bearing'.",
+    "enriched": true
+},
+{
+    "name": "St. Gleb",
+    "feastDay": "May 2",
+    "knownFor": "Prince of Kiev and fellow martyr with his brother St. Boris.",
+    "patronOf": "Russia, siblings",
+    "dates": "d. 1015",
+    "origin": "Kyivan Rus'",
+    "gender": "Male",
+    "traits": [
+        "loyalty",
+        "sacrifice",
+        "faithfulness",
+        "innocence",
+        "peacemaking"
+    ],
+    "quotes": [
+        "Blessed are the peacemakers."
+    ],
+    "title": "St. Gleb",
+    "lived": "d. 1015",
+    "bio": "Gleb was the younger brother of Boris. Like his brother, he refused to take up arms against Sviatopolk, choosing instead to follow the example of Christ's voluntary suffering. He was murdered shortly after Boris.",
+    "funFact": "Boris and Gleb are almost always depicted together in icons, usually holding crosses and wearing princely robes.",
+    "enriched": true
+},
+{
+    "name": "St. Alexander Nevsky",
+    "feastDay": "November 23",
+    "knownFor": "Grand Prince of Russia and legendary military leader who protected the Orthodox faith from foreign invaders.",
+    "patronOf": "Russia, soldiers, St. Petersburg",
+    "dates": "c. 1220-1263",
+    "origin": "Russia",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "courage",
+        "patriotism",
+        "diplomacy",
+        "piety"
+    ],
+    "quotes": [
+        "God is not in power, but in truth."
+    ],
+    "title": "St. Alexander Nevsky",
+    "lived": "c. 1220-1263",
+    "bio": "Alexander was a brilliant general who defeated the Swedes on the Neva River and the Teutonic Knights on Lake Peipus. He used his diplomatic skills to manage the relationship with the Golden Horde, saving Russia from complete destruction. He took monastic vows on his deathbed.",
+    "funFact": "He was voted the 'Greatest Russian' in a nationwide 2008 TV poll.",
+    "enriched": true
+},
+{
+    "name": "St. Savva of Serbia",
+    "feastDay": "January 14",
+    "knownFor": "The first Archbishop of the autocephalous Serbian Orthodox Church and national hero of Serbia.",
+    "patronOf": "Serbia, students, education",
+    "dates": "c. 1174-1236",
+    "origin": "Serbia",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "diplomacy",
+        "education",
+        "piety",
+        "wisdom"
+    ],
+    "quotes": [
+        "The soul is more precious than the body."
+    ],
+    "title": "St. Savva of Serbia",
+    "lived": "c. 1174-1236",
+    "bio": "Savva was a prince who secretly fled to Mount Athos to become a monk. He later returned to Serbia to establish its independent church, founded schools and hospitals, and negotiated peace between his brothers. He is considered the father of Serbian culture and identity.",
+    "funFact": "He is credited with bringing 'European' education and law to medieval Serbia.",
+    "enriched": true
+},
+{
+    "name": "St. Nino of Georgia",
+    "feastDay": "January 14",
+    "knownFor": "The 'Equal-to-the-Apostles' and 'Enlightener of Georgia' who brought Christianity to the Iberian kingdom.",
+    "patronOf": "Georgia",
+    "dates": "c. 296-338",
+    "origin": "Turkey/Georgia",
+    "gender": "Female",
+    "traits": [
+        "zeal",
+        "leadership",
+        "courage",
+        "faithfulness",
+        "determination"
+    ],
+    "quotes": [
+        "Through this cross, you will be saved."
+    ],
+    "title": "St. Nino of Georgia",
+    "lived": "c. 296-338",
+    "bio": "Nino was a young woman from Cappadocia who traveled to Georgia (Iberia) to preach the Gospel. She converted the Queen and then the King through her miracles and her preaching. She is revered as the primary patron of Georgia.",
+    "funFact": "She is famous for the 'Grapevine Cross' which she made from vine branches bound with her own hair; it remains a symbol of Georgian Christianity today.",
+    "enriched": true
+},
+{
+    "name": "St. David of Wales",
+    "feastDay": "March 1",
+    "knownFor": "The patron saint of Wales and a bishop who founded many monasteries known for their extreme austerity.",
+    "patronOf": "Wales, vegetarians, poets",
+    "dates": "c. 500-589",
+    "origin": "Wales",
+    "gender": "Male",
+    "traits": [
+        "piety",
+        "leadership",
+        "simplicity",
+        "eloquence",
+        "discipline"
+    ],
+    "quotes": [
+        "Be joyful, keep the faith, and do the little things."
+    ],
+    "title": "St. David of Wales",
+    "lived": "c. 500-589",
+    "bio": "David (Dewi Sant) was a prominent figure in the Celtic Church. He was known as 'The Waterman' (Aquaticus) because he and his monks drank only water and ate only bread and herbs. His final words to his followers, 'Do the little things', is a beloved Welsh proverb.",
+    "funFact": "Legend says that while he was preaching to a large crowd, the ground he was standing on rose up to form a hill so everyone could see and hear him, and a white dove settled on his shoulder.",
+    "enriched": true
+},
+{
+    "name": "St. Columba of Iona",
+    "feastDay": "June 9",
+    "knownFor": "The 'Apostle to the Picts', a powerful Irish abbot who founded the monastery of Iona and converted much of Scotland.",
+    "patronOf": "Scotland, Ireland, bookbinders, poets",
+    "dates": "521-597",
+    "origin": "Ireland/Scotland",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "intellect",
+        "courage",
+        "missionary",
+        "artistic"
+    ],
+    "quotes": [
+        "I follow the King of Kings."
+    ],
+    "title": "St. Columba of Iona",
+    "lived": "521-597",
+    "bio": "Columba (Colum Cille) was a prince and a gifted scholar. After a conflict over a copied book led to a battle, he went into exile on the island of Iona. From there, he became a major cultural and religious force, establishing a network of monasteries and spreading the faith throughout the British Isles.",
+    "funFact": "The first written account of a 'monster' in the River Ness (Loch Ness) comes from the life of St. Columba, who reportedly commanded the beast to stop and go back.",
+    "enriched": true
+},
+{
+    "name": "St. Aidan of Lindisfarne",
+    "feastDay": "August 31",
+    "knownFor": "The 'Apostle of Northumbria', known for his gentleness and his practice of traveling on foot to talk to everyone he met.",
+    "patronOf": "Northumbria, firemen",
+    "dates": "d. 651",
+    "origin": "Ireland/England",
+    "gender": "Male",
+    "traits": [
+        "gentleness",
+        "charity",
+        "simplicity",
+        "leadership",
+        "kindness"
+    ],
+    "quotes": [
+        "Let our lives be a sermon."
+    ],
+    "title": "St. Aidan of Lindisfarne",
+    "lived": "d. 651",
+    "bio": "Aidan was an Irish monk from Iona who was sent to convert the Anglo-Saxons. He founded the monastery on Holy Island (Lindisfarne). He was famous for giving away any gifts he received to the poor and for his deep friendship with King Oswald of Northumbria.",
+    "funFact": "He was once given a fine horse by the King, but he immediately gave it to a beggar he met on the road.",
+    "enriched": true
+},
+{
+    "name": "St. Hilda of Whitby",
+    "feastDay": "November 17",
+    "knownFor": "A legendary abbess and advisor to kings who led the double monastery of Whitby (men and women).",
+    "patronOf": "learning, poets",
+    "dates": "c. 614-680",
+    "origin": "England",
+    "gender": "Female",
+    "traits": [
+        "leadership",
+        "wisdom",
+        "education",
+        "justice",
+        "diplomacy"
+    ],
+    "quotes": [
+        "Peace and charity are the highest virtues."
+    ],
+    "title": "St. Hilda of Whitby",
+    "lived": "c. 614-680",
+    "bio": "Hilda was a noblewoman of the kingdom of Deira. She was a powerful and wise administrator who trained five future bishops at her monastery. She hosted the historic Synod of Whitby, which decided how the English Church would calculate the date of Easter.",
+    "funFact": "She is the patroness of Caedmon, the first known English poet, whom she encouraged to write after hearing of his miraculous gift from an angel.",
+    "enriched": true
+},
+{
+    "name": "St. Dunstan",
+    "feastDay": "May 19",
+    "knownFor": "Archbishop of Canterbury who revitalized English monasticism and served as a statesman under several kings.",
+    "patronOf": "goldsmiths, blacksmiths, locksmiths, musicians",
+    "dates": "c. 909-988",
+    "origin": "England",
+    "gender": "Male",
+    "traits": [
+        "leadership",
+        "artistic",
+        "discipline",
+        "justice",
+        "reform"
+    ],
+    "quotes": [
+        "The measure of love is to love without measure."
+    ],
+    "title": "St. Dunstan",
+    "lived": "c. 909-988",
+    "bio": "Dunstan was an artist, a musician, and a skilled metalworker before becoming a monk. He rose to become the most powerful religious leader in England, reforming the clergy and using his influence to bring stability to the country. He was also a noted bell-caster.",
+    "funFact": "A famous legend says that Dunstan, while working at his forge, was tempted by the devil; Dunstan reportedly grabbed the devil's nose with his red-hot tongs.",
+    "enriched": true
+},
+{
+    "name": "St. Edward the Confessor",
+    "feastDay": "October 13",
+    "knownFor": "One of the last Anglo-Saxon kings of England, known for his piety and for rebuilding Westminster Abbey.",
+    "patronOf": "kings, difficult marriages, separate spouses",
+    "dates": "c. 1003-1066",
+    "origin": "England",
+    "gender": "Male",
+    "traits": [
+        "piety",
+        "justice",
+        "simplicity",
+        "peace",
+        "loyalty"
+    ],
+    "quotes": [
+        "May God's peace be upon my people."
+    ],
+    "title": "St. Edward the Confessor",
+    "lived": "c. 1003-1066",
+    "bio": "Edward was a quiet and devout king who was more interested in prayer than in power. He was beloved by his subjects for his kindness and his abolition of heavy taxes. He died shortly before the Norman Conquest, and his shrine in Westminster Abbey remains a major site of pilgrimage.",
+    "funFact": "He was the first English king to be depicted with a crown of light (halo) on the Bayeux Tapestry.",
+    "enriched": true
+}
 ];
 
 // Trait Categories (Preserved)
