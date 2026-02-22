@@ -3764,13 +3764,18 @@
             }
 
             function renderSaints(saints) {
+                if (saints.length === 0) {
+                    grid.innerHTML = '<p style="text-align:center;color:var(--text-light);padding:40px;grid-column:1/-1;">No saints found matching your search.</p>';
+                    countEl.textContent = `Showing 0 of ${saintsDatabase.length} saints`;
+                    return;
+                }
                 grid.innerHTML = saints.map(saint => `
                     <a href="/saints/${slugify(saint.name)}.html" class="saint-card">
                         <h2>${saint.name}</h2>
-                        <span class="feast-day">Feast Day: ${saint.feastDay}</span>
-                        <p class="known-for">${saint.knownFor}</p>
-                        <p class="patron-of"><strong>Patron of:</strong> ${saint.patronOf}</p>
-                        <p class="dates-origin">${saint.dates || saint.lived} | ${saint.origin}</p>
+                        <span class="feast-day">Feast Day: ${saint.feastDay || 'Unknown'}</span>
+                        <p class="known-for">${saint.knownFor || ''}</p>
+                        <p class="patron-of"><strong>Patron of:</strong> ${saint.patronOf || 'Unknown'}</p>
+                        <p class="dates-origin">${saint.dates || saint.lived || ''} | ${saint.origin || ''}</p>
                     </a>
                 `).join('');
                 countEl.textContent = `Showing ${saints.length} of ${saintsDatabase.length} saints`;
@@ -3783,13 +3788,17 @@
                 const region = regionFilter.value;
 
                 const filtered = sortedSaints.filter(saint => {
-                    // Text search
+                    // Text search — guard against undefined fields
+                    const saintPatronOf = (saint.patronOf || '').toLowerCase();
+                    const saintKnownFor = (saint.knownFor || '').toLowerCase();
+                    const saintOrigin = (saint.origin || '').toLowerCase();
+                    const saintTraits = Array.isArray(saint.traits) ? saint.traits : [];
                     const matchesSearch = !query ||
                         saint.name.toLowerCase().includes(query) ||
-                        saint.patronOf.toLowerCase().includes(query) ||
-                        saint.knownFor.toLowerCase().includes(query) ||
-                        saint.traits.some(t => t.toLowerCase().includes(query)) ||
-                        saint.origin.toLowerCase().includes(query);
+                        saintPatronOf.includes(query) ||
+                        saintKnownFor.includes(query) ||
+                        saintTraits.some(t => (t || '').toLowerCase().includes(query)) ||
+                        saintOrigin.includes(query);
 
                     // Gender filter
                     const matchesGender = !gender || saint.gender === gender;
@@ -3798,7 +3807,7 @@
                     const matchesCentury = !century || getCenturyFromDates(saint.dates || saint.lived) === century;
 
                     // Region filter
-                    const matchesRegion = !region || getRegionFromOrigin(saint.origin) === region;
+                    const matchesRegion = !region || getRegionFromOrigin(saint.origin || '') === region;
 
                     return matchesSearch && matchesGender && matchesCentury && matchesRegion;
                 });
