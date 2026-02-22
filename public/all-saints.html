@@ -3713,8 +3713,8 @@
 
             // Populate region filter with unique origins
             const regions = [...new Set(saintsDatabase.map(s => {
-                // Normalize regions
-                const origin = s.origin;
+                // Normalize regions — guard against undefined origin
+                const origin = s.origin || '';
                 if (origin.includes('Italy') || origin === 'Rome' || origin === 'Milan' || origin === 'Assisi') return 'Italy';
                 if (origin.includes('France') || origin === 'Paris' || origin === 'Lisieux') return 'France';
                 if (origin.includes('Spain')) return 'Spain';
@@ -3725,8 +3725,8 @@
                 if (origin.includes('America') || origin.includes('USA') || origin === 'New York' || origin === 'Philadelphia') return 'Americas';
                 if (origin === 'Heaven') return 'Heavenly';
                 if (origin.includes('Palestine') || origin.includes('Galilee') || origin.includes('Nazareth') || origin.includes('Bethlehem') || origin === 'Magdala') return 'Holy Land';
-                return origin;
-            }))].sort();
+                return origin || 'Unknown';
+            }))].filter(Boolean).sort();
 
             regions.forEach(region => {
                 const option = document.createElement('option');
@@ -3750,17 +3750,18 @@
             }
 
             function getRegionFromOrigin(origin) {
-                if (origin.includes('Italy') || origin === 'Rome' || origin === 'Milan' || origin === 'Assisi') return 'Italy';
-                if (origin.includes('France') || origin === 'Paris' || origin === 'Lisieux') return 'France';
-                if (origin.includes('Spain')) return 'Spain';
-                if (origin.includes('Germany') || origin === 'Bavaria') return 'Germany';
-                if (origin.includes('Ireland')) return 'Ireland';
-                if (origin.includes('England') || origin === 'London') return 'England';
-                if (origin.includes('Poland')) return 'Poland';
-                if (origin.includes('America') || origin.includes('USA') || origin === 'New York' || origin === 'Philadelphia') return 'Americas';
-                if (origin === 'Heaven') return 'Heavenly';
-                if (origin.includes('Palestine') || origin.includes('Galilee') || origin.includes('Nazareth') || origin.includes('Bethlehem') || origin === 'Magdala') return 'Holy Land';
-                return origin;
+                const o = (origin || '');
+                if (o.includes('Italy') || o === 'Rome' || o === 'Milan' || o === 'Assisi') return 'Italy';
+                if (o.includes('France') || o === 'Paris' || o === 'Lisieux') return 'France';
+                if (o.includes('Spain')) return 'Spain';
+                if (o.includes('Germany') || o === 'Bavaria') return 'Germany';
+                if (o.includes('Ireland')) return 'Ireland';
+                if (o.includes('England') || o === 'London') return 'England';
+                if (o.includes('Poland')) return 'Poland';
+                if (o.includes('America') || o.includes('USA') || o === 'New York' || o === 'Philadelphia') return 'Americas';
+                if (o === 'Heaven') return 'Heavenly';
+                if (o.includes('Palestine') || o.includes('Galilee') || o.includes('Nazareth') || o.includes('Bethlehem') || o === 'Magdala') return 'Holy Land';
+                return o;
             }
 
             function renderSaints(saints) {
