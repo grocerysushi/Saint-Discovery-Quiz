@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#FAF7F2"/>
+
+  <!-- Decorative border -->
+  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#D4AF37" stroke-width="3" rx="8"/>
+  <rect x="30" y="30" width="1140" height="570" fill="none" stroke="#D4AF37" stroke-width="1" stroke-dasharray="6,4" rx="6"/>
+
+  <!-- Corner ornaments -->
+  <text x="50" y="75" font-family="serif" font-size="36" fill="#D4AF37" opacity="0.6">✦</text>
+  <text x="1110" y="75" font-family="serif" font-size="36" fill="#D4AF37" opacity="0.6">✦</text>
+  <text x="50" y="600" font-family="serif" font-size="36" fill="#D4AF37" opacity="0.6">✦</text>
+  <text x="1110" y="600" font-family="serif" font-size="36" fill="#D4AF37" opacity="0.6">✦</text>
+
+  <!-- Cross icon -->
+  <rect x="588" y="60" width="24" height="90" rx="5" fill="#D4AF37"/>
+  <rect x="555" y="95" width="90" height="20" rx="5" fill="#D4AF37"/>
+
+  <!-- Horizontal divider -->
+  <line x1="200" y1="175" x2="1000" y2="175" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Saint name -->
+  <text x="600" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="bold" fill="#2C1810">Bl. Imelda Lambertini</text>
+
+  <!-- Feast day -->
+  <text x="600" y="318" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#8B4513" font-style="italic">Feast Day: May 13</text>
+
+  <!-- Patronage -->
+  <text x="600" y="378" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" fill="#C4956A">Patron of First Communicants, children</text>
+
+  <!-- Bottom divider -->
+  <line x1="200" y1="560" x2="1000" y2="560" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Branding -->
+  <text x="600" y="595" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#8B4513" letter-spacing="2">SAINT DISCOVERY QUIZ</text>
+</svg>
