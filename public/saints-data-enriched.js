@@ -15028,6 +15028,1370 @@ const saintsDatabase = [
             "funFact": "Her husband and children were present at her canonization in 2004—one of the few times a saint's immediate family witnessed the ceremony.",
             "enriched": true
     }
+,
+    {
+            "name": "St. Kateri Tekakwitha",
+            "feastDay": "July 14",
+            "knownFor": "The first Native American saint, known as the 'Lily of the Mohawks' for her purity and devotion despite persecution from her own tribe.",
+            "patronOf": "ecology, environment, Native Americans",
+            "dates": "1656-1680",
+            "origin": "USA (Mohawk)",
+            "gender": "Female",
+            "traits": [
+                    "purity",
+                    "courage",
+                    "faith",
+                    "nature",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "Who will teach me what is most pleasing to God so that I may do it?",
+                    "I am not my own; I have given myself to Jesus.",
+                    "The Lord has chosen me among many others."
+            ],
+            "title": "St. Kateri Tekakwitha",
+            "associatedDates": [
+                    "July 14"
+            ],
+            "lived": "1656-1680",
+            "bio": "St. Kateri Tekakwitha was a Mohawk-Algonquin woman who converted to Catholicism despite fierce opposition from her tribe. Orphaned by smallpox as a child and left with scarred vision, she fled to a Christian mission near Montreal where she lived a life of extraordinary prayer and penance until her death at 24.",
+            "funFact": "At the moment of her death, witnesses reported that her smallpox scars completely vanished and her face became radiantly beautiful.",
+            "enriched": true
+    },
+    {
+            "name": "St. Josephine Bakhita",
+            "feastDay": "February 8",
+            "knownFor": "A Sudanese woman who was kidnapped into slavery as a child, eventually found freedom and faith, and became a Canossian nun in Italy.",
+            "patronOf": "human trafficking victims, Sudan, modern slavery survivors",
+            "dates": "1869-1947",
+            "origin": "Sudan",
+            "gender": "Female",
+            "traits": [
+                    "forgiveness",
+                    "faith",
+                    "resilience",
+                    "gentleness",
+                    "hope"
+            ],
+            "quotes": [
+                    "If I were to meet those who kidnapped me, and even those who tortured me, I would kneel and kiss their hands.",
+                    "I am definitively loved and whatever happens to me, I am awaited by this Love.",
+                    "The Lord has loved me so much; we must love everyone."
+            ],
+            "title": "St. Josephine Bakhita",
+            "associatedDates": [
+                    "February 8"
+            ],
+            "lived": "1869-1947",
+            "bio": "St. Josephine Bakhita was kidnapped from her village in Darfur at age seven and sold into slavery multiple times. After being bought by an Italian consul, she was brought to Italy where she encountered Christianity. She entered the Canossian Sisters and spent the rest of her life serving God with extraordinary gentleness and joy.",
+            "funFact": "Her kidnappers gave her the name 'Bakhita' meaning 'fortunate one' — she had been so traumatized she had forgotten her birth name.",
+            "enriched": true
+    },
+    {
+            "name": "St. Moses the Black",
+            "feastDay": "August 28",
+            "knownFor": "A former Ethiopian gang leader and robber who converted to Christianity and became one of the greatest Desert Fathers.",
+            "patronOf": "Africa, nonviolence, spiritual conversion",
+            "dates": "c. 330-405",
+            "origin": "Ethiopia",
+            "gender": "Male",
+            "traits": [
+                    "conversion",
+                    "humility",
+                    "nonviolence",
+                    "wisdom",
+                    "courage"
+            ],
+            "quotes": [
+                    "Go, sit in your cell, and your cell will teach you everything.",
+                    "If a man sees his own sins, he cannot see the sins of his neighbor.",
+                    "Violence breeds nothing but violence."
+            ],
+            "title": "St. Moses the Black",
+            "associatedDates": [
+                    "August 28"
+            ],
+            "lived": "c. 330-405",
+            "bio": "St. Moses the Black was an Ethiopian servant dismissed for theft who became the leader of a gang of bandits. After hiding from authorities in a desert monastery, he was so moved by the monks' way of life that he converted and became a monk himself, eventually leading 75 disciples.",
+            "funFact": "He was once robbed by four thieves while in his cell — he overpowered all four and dragged them to the chapel for prayers.",
+            "enriched": true
+    },
+    {
+            "name": "St. Tekle Haymanot",
+            "feastDay": "August 24",
+            "knownFor": "The most celebrated Ethiopian saint, a monk and missionary who spread Christianity throughout southern Ethiopia.",
+            "patronOf": "Ethiopia",
+            "dates": "c. 1215-1313",
+            "origin": "Ethiopia",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "prayer",
+                    "perseverance",
+                    "asceticism",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Prayer is the breath of the soul.",
+                    "Carry the cross with patience and joy.",
+                    "God rewards those who seek Him with their whole heart."
+            ],
+            "title": "St. Tekle Haymanot",
+            "associatedDates": [
+                    "August 24"
+            ],
+            "lived": "c. 1215-1313",
+            "bio": "St. Tekle Haymanot was an Ethiopian monk who founded the monastery of Debre Libanos, which became the most important monastic center in Ethiopian Christianity. He is credited with converting many pagan communities and is venerated as a national saint.",
+            "funFact": "According to Ethiopian tradition, he stood on one foot in prayer for seven years until the other leg fell off, which is why he is often depicted with one leg.",
+            "enriched": true
+    },
+    {
+            "name": "St. Frumentius",
+            "feastDay": "October 27",
+            "knownFor": "The Apostle of Ethiopia who brought Christianity to the ancient kingdom of Aksum in the 4th century.",
+            "patronOf": "Ethiopia, missionaries to Africa",
+            "dates": "c. 300-383",
+            "origin": "Ethiopia",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "diplomacy",
+                    "faith",
+                    "perseverance",
+                    "leadership"
+            ],
+            "quotes": [
+                    "The light of Christ shines even in the most distant lands.",
+                    "God's providence guided my steps to this kingdom.",
+                    "Faith planted in good soil bears fruit for generations."
+            ],
+            "title": "St. Frumentius",
+            "associatedDates": [
+                    "October 27"
+            ],
+            "lived": "c. 300-383",
+            "bio": "St. Frumentius was a young Christian from Tyre who was shipwrecked on the Ethiopian coast and taken to the court of Aksum. He rose to a position of influence, introduced Christianity to the kingdom, and was later consecrated as the first bishop of Aksum by St. Athanasius of Alexandria.",
+            "funFact": "He was shipwrecked as a teenager and ended up converting an entire kingdom to Christianity.",
+            "enriched": true
+    },
+    {
+            "name": "St. Mary of Egypt",
+            "feastDay": "April 1",
+            "knownFor": "A 5th-century penitent who spent 47 years in the desert doing penance after a life of sin in Alexandria.",
+            "patronOf": "penitents, overcoming temptation",
+            "dates": "c. 344-421",
+            "origin": "Egypt",
+            "gender": "Female",
+            "traits": [
+                    "repentance",
+                    "perseverance",
+                    "prayer",
+                    "transformation",
+                    "asceticism"
+            ],
+            "quotes": [
+                    "An invisible force held me back at the door of the church.",
+                    "The Lord does not desire the death of the sinner but that they turn and live.",
+                    "The desert became my paradise."
+            ],
+            "title": "St. Mary of Egypt",
+            "associatedDates": [
+                    "April 1"
+            ],
+            "lived": "c. 344-421",
+            "bio": "St. Mary of Egypt lived as a prostitute in Alexandria for 17 years before experiencing a dramatic conversion while trying to enter the Church of the Holy Sepulchre in Jerusalem. She spent the remaining 47 years of her life as a hermit in the Jordanian desert, living on herbs and divine grace.",
+            "funFact": "According to tradition, when the monk Zosimas found her in the desert, she was able to walk on water to reach him across the Jordan River.",
+            "enriched": true
+    },
+    {
+            "name": "St. Julia of Corsica",
+            "feastDay": "May 22",
+            "knownFor": "A North African Christian woman who was sold into slavery and martyred on the island of Corsica for refusing to worship pagan gods.",
+            "patronOf": "Corsica, torture victims",
+            "dates": "d. c. 450",
+            "origin": "North Africa",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "purity",
+                    "sacrifice",
+                    "endurance"
+            ],
+            "quotes": [
+                    "My freedom is in Christ alone.",
+                    "No chain can bind a soul that belongs to God.",
+                    "I would rather die than deny my Lord."
+            ],
+            "title": "St. Julia of Corsica",
+            "associatedDates": [
+                    "May 22"
+            ],
+            "lived": "d. c. 450",
+            "bio": "St. Julia was a Christian noblewoman from Carthage who was captured and sold into slavery when the Vandals sacked the city. Despite her enslaved status, she remained devout and was eventually crucified on the island of Corsica by a pagan governor for refusing to participate in idol worship.",
+            "funFact": "She is the patron saint of Corsica, and the island's oldest church is dedicated to her.",
+            "enriched": true
+    },
+    {
+            "name": "St. Colette of Corbie",
+            "feastDay": "March 6",
+            "knownFor": "A French reformer who restored the Rule of St. Clare to its original strictness, founding 17 convents across Europe.",
+            "patronOf": "expectant mothers, sick children",
+            "dates": "1381-1447",
+            "origin": "France",
+            "gender": "Female",
+            "traits": [
+                    "reform",
+                    "determination",
+                    "prayer",
+                    "leadership",
+                    "humility"
+            ],
+            "quotes": [
+                    "If there be a true way that leads to the Everlasting Kingdom, it is most certainly through suffering.",
+                    "We must pray without tiring, for the salvation of mankind does not depend on material success.",
+                    "Simplicity is the key to holiness."
+            ],
+            "title": "St. Colette of Corbie",
+            "associatedDates": [
+                    "March 6"
+            ],
+            "lived": "1381-1447",
+            "bio": "St. Colette was a French Franciscan nun who lived as an anchoress before receiving a vision from St. Francis commanding her to reform the Poor Clares. She traveled across Europe founding and reforming convents, restoring the original austerity of the order. She founded 17 new convents and reformed numerous existing ones.",
+            "funFact": "She lived walled up in a small room attached to a church for three years before emerging to begin her reform mission.",
+            "enriched": true
+    },
+    {
+            "name": "St. Bernadette Soubirous",
+            "feastDay": "April 16",
+            "knownFor": "A poor French girl who received 18 apparitions of the Blessed Virgin Mary at the grotto of Lourdes.",
+            "patronOf": "sick people, Lourdes, bodily illness, shepherdesses",
+            "dates": "1844-1879",
+            "origin": "France",
+            "gender": "Female",
+            "traits": [
+                    "humility",
+                    "faith",
+                    "suffering",
+                    "obedience",
+                    "simplicity"
+            ],
+            "quotes": [
+                    "I do not promise to make you happy in this life, but in the next.",
+                    "The Virgin used me as a broom to remove dust. When the work is done, the broom is put back behind the door.",
+                    "I shall spend every moment loving."
+            ],
+            "title": "St. Bernadette Soubirous",
+            "associatedDates": [
+                    "April 16"
+            ],
+            "lived": "1844-1879",
+            "bio": "St. Bernadette Soubirous was a sickly, impoverished girl from Lourdes, France, who in 1858 experienced 18 visions of the Blessed Virgin Mary at the grotto of Massabielle. The spring she uncovered during the apparitions became a site of miraculous healings. She later became a nun and lived a hidden life of prayer and suffering.",
+            "funFact": "When her body was exhumed 30 years after death, it was found incorrupt — her body remains on display in a glass reliquary in Nevers, France.",
+            "enriched": true
+    },
+    {
+            "name": "St. Hildegard of Bingen",
+            "feastDay": "September 17",
+            "knownFor": "A German Benedictine abbess, polymath, mystic, composer, and Doctor of the Church known for her visionary writings on theology, medicine, and nature.",
+            "patronOf": "musicians, writers, natural scientists",
+            "dates": "1098-1179",
+            "origin": "Germany",
+            "gender": "Female",
+            "traits": [
+                    "intellectual",
+                    "mysticism",
+                    "creativity",
+                    "leadership",
+                    "wisdom"
+            ],
+            "quotes": [
+                    "The soul is a breath of living spirit, that with excellent sensitivity, permeates the entire body to give life.",
+                    "Glance at the sun. See the moon and the stars. Gaze at the beauty of earth's greenings. Now, think.",
+                    "Dare to declare who you are."
+            ],
+            "title": "St. Hildegard of Bingen",
+            "associatedDates": [
+                    "September 17"
+            ],
+            "lived": "1098-1179",
+            "bio": "St. Hildegard of Bingen was a German Benedictine abbess who was one of the most remarkable women of the medieval period. She composed music, wrote theological and scientific treatises, corresponded with popes and emperors, and experienced vivid mystical visions that she recorded in illustrated manuscripts. She was declared a Doctor of the Church in 2012.",
+            "funFact": "She composed over 70 songs and an entire morality play — making her the most recorded medieval composer in the modern era.",
+            "enriched": true
+    },
+    {
+            "name": "St. Jadwiga of Poland",
+            "feastDay": "July 17",
+            "knownFor": "A medieval Queen of Poland who used her wealth to restore universities, found hospitals, and unite Poland and Lithuania through her marriage.",
+            "patronOf": "queens, united Europe",
+            "dates": "1373-1399",
+            "origin": "Poland",
+            "gender": "Female",
+            "traits": [
+                    "leadership",
+                    "charity",
+                    "wisdom",
+                    "sacrifice",
+                    "education"
+            ],
+            "quotes": [
+                    "I pledge all my jewels for the glory of God and the education of youth.",
+                    "A crown means nothing if the heart does not serve.",
+                    "Let my kingdom be built on knowledge and compassion."
+            ],
+            "title": "St. Jadwiga of Poland",
+            "associatedDates": [
+                    "July 17"
+            ],
+            "lived": "1373-1399",
+            "bio": "St. Jadwiga was crowned King (not Queen) of Poland at age 10. She sacrificed her personal happiness by breaking her engagement to marry the pagan Grand Duke of Lithuania, leading to the Christianization of Lithuania. She funded the restoration of the Kraków Academy (now Jagiellonian University) and was beloved for her personal charity.",
+            "funFact": "She was crowned 'King' rather than 'Queen' of Poland to ensure full sovereign authority, and she donated her personal crown jewels to fund the university.",
+            "enriched": true
+    },
+    {
+            "name": "St. Olga of Kyiv",
+            "feastDay": "July 11",
+            "knownFor": "A Viking-era princess who became the first ruler of Kyivan Rus' to convert to Christianity, paving the way for the Christianization of Eastern Europe.",
+            "patronOf": "widows, converts",
+            "dates": "c. 890-969",
+            "origin": "Kyivan Rus'",
+            "gender": "Female",
+            "traits": [
+                    "leadership",
+                    "wisdom",
+                    "faith",
+                    "conversion",
+                    "diplomacy"
+            ],
+            "quotes": [
+                    "I have known God and I rejoice.",
+                    "Through faith, a nation is transformed.",
+                    "Wisdom begins with the fear of the Lord."
+            ],
+            "title": "St. Olga of Kyiv",
+            "associatedDates": [
+                    "July 11"
+            ],
+            "lived": "c. 890-969",
+            "bio": "St. Olga was the wife of Igor I of Kyiv, and after his murder, she ruled as regent for their young son. She was baptized in Constantinople and spent her life trying to convert her people. Although she did not succeed in her lifetime, her grandson Vladimir eventually Christianized all of Kyivan Rus'.",
+            "funFact": "Before her conversion, she took brutal revenge on her husband's murderers — including burying ambassadors alive and setting a city on fire.",
+            "enriched": true
+    },
+    {
+            "name": "St. Elias of the Carmelites",
+            "feastDay": "July 20",
+            "knownFor": "The Old Testament prophet who defended the worship of God against the priests of Baal and is considered the spiritual father of the Carmelite Order.",
+            "patronOf": "Carmelites, Bosnia and Herzegovina",
+            "dates": "9th century BC",
+            "origin": "Israel",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "prophetic",
+                    "zeal",
+                    "prayer"
+            ],
+            "quotes": [
+                    "As the Lord lives, before whom I stand.",
+                    "How long will you waver between two opinions?",
+                    "The Lord, He is God!"
+            ],
+            "title": "St. Elias of the Carmelites",
+            "associatedDates": [
+                    "July 20"
+            ],
+            "lived": "9th century BC",
+            "bio": "The prophet Elijah is one of the most dramatic figures in the Old Testament. He challenged 450 prophets of Baal on Mount Carmel, was fed by ravens, raised the dead, and was taken up to heaven in a chariot of fire. The Carmelite Order traces its spiritual lineage to Elijah and the hermits who lived on Mount Carmel.",
+            "funFact": "He never died — according to Scripture, he was taken bodily into heaven in a whirlwind with a chariot and horses of fire.",
+            "enriched": true
+    },
+    {
+            "name": "St. Maroun",
+            "feastDay": "February 9",
+            "knownFor": "A 5th-century hermit whose followers founded the Maronite Church, the largest Christian community in Lebanon.",
+            "patronOf": "Lebanon, Maronite Church",
+            "dates": "d. 410",
+            "origin": "Syria/Lebanon",
+            "gender": "Male",
+            "traits": [
+                    "asceticism",
+                    "healing",
+                    "prayer",
+                    "leadership",
+                    "faith"
+            ],
+            "quotes": [
+                    "The mountain is my cathedral.",
+                    "Solitude brings the soul closer to God.",
+                    "Healing flows from prayer."
+            ],
+            "title": "St. Maroun",
+            "associatedDates": [
+                    "February 9"
+            ],
+            "lived": "d. 410",
+            "bio": "St. Maroun was a hermit monk who lived on a mountain in Syria. He was renowned for his healing gifts and spiritual counsel, attracting many followers. After his death, his disciples formed a distinct community that would become the Maronite Church, which remains the spiritual heart of Lebanese Christianity.",
+            "funFact": "The entire nation of Lebanon's largest Christian denomination, the Maronite Church, is named after him.",
+            "enriched": true
+    },
+    {
+            "name": "St. Charbel Makhlouf",
+            "feastDay": "July 24",
+            "knownFor": "A Lebanese Maronite monk and hermit whose body remained incorrupt and exuded a mysterious liquid after death.",
+            "patronOf": "Lebanon",
+            "dates": "1828-1898",
+            "origin": "Lebanon",
+            "gender": "Male",
+            "traits": [
+                    "asceticism",
+                    "prayer",
+                    "miracles",
+                    "humility",
+                    "silence"
+            ],
+            "quotes": [
+                    "Silence is the language of God.",
+                    "The world is a bridge; cross it, but do not build your house upon it.",
+                    "In solitude, the soul finds its strength."
+            ],
+            "title": "St. Charbel Makhlouf",
+            "associatedDates": [
+                    "July 24"
+            ],
+            "lived": "1828-1898",
+            "bio": "St. Charbel Makhlouf was a Lebanese Maronite monk who lived as a hermit for the last 23 years of his life, spending his days in prayer and manual labor. After his death, his body remained incorrupt and a bright light was seen emanating from his tomb. He is one of the most popular saints in the Middle East.",
+            "funFact": "His tomb exuded a blood-like liquid for decades after his death, and pilgrims from all religions — including Muslims and Druze — visit his shrine seeking miracles.",
+            "enriched": true
+    },
+    {
+            "name": "St. Rafqa",
+            "feastDay": "March 23",
+            "knownFor": "A Lebanese Maronite nun who voluntarily asked God for suffering and endured blindness and crippling pain with extraordinary joy.",
+            "patronOf": "sick people, Lebanon",
+            "dates": "1832-1914",
+            "origin": "Lebanon",
+            "gender": "Female",
+            "traits": [
+                    "suffering",
+                    "patience",
+                    "joy",
+                    "devotion",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I asked my Lord for suffering and He gave it to me abundantly.",
+                    "Pain is the coin with which I buy heaven.",
+                    "In my blindness I see God more clearly."
+            ],
+            "title": "St. Rafqa",
+            "associatedDates": [
+                    "March 23"
+            ],
+            "lived": "1832-1914",
+            "bio": "St. Rafqa (Rebecca) was a Lebanese Maronite nun who, after years of teaching and religious life, prayed to share in the sufferings of Christ. She soon went blind and became paralyzed, enduring 29 years of intense suffering with remarkable joy and patience. She was canonized by Pope Benedict XVI in 2001.",
+            "funFact": "She specifically asked God to let her suffer, and when blindness and bone disease struck her, she thanked God and never complained once in 29 years.",
+            "enriched": true
+    },
+    {
+            "name": "St. Nektarios of Aegina",
+            "feastDay": "November 9",
+            "knownFor": "A Greek Orthodox bishop who was unjustly exiled and slandered, yet responded with humility and built a convent on the island of Aegina.",
+            "patronOf": "cancer patients, Greece",
+            "dates": "1846-1920",
+            "origin": "Greece",
+            "gender": "Male",
+            "traits": [
+                    "humility",
+                    "forgiveness",
+                    "patience",
+                    "teaching",
+                    "faith"
+            ],
+            "quotes": [
+                    "Love all people equally.",
+                    "If you are slandered, do not become angry. The truth will prevail.",
+                    "Keep your mind in hell and do not despair."
+            ],
+            "title": "St. Nektarios of Aegina",
+            "associatedDates": [
+                    "November 9"
+            ],
+            "lived": "1846-1920",
+            "bio": "St. Nektarios was a Greek Orthodox bishop who was falsely accused of corruption and stripped of his position. Rather than fight back, he accepted his disgrace with humility and devoted himself to writing, teaching, and building the Holy Trinity Convent on the island of Aegina. He is one of the most beloved modern Greek saints.",
+            "funFact": "After his death in a hospital, a nurse placed his sweater on a paralyzed man in the next bed, who immediately rose and walked.",
+            "enriched": true
+    },
+    {
+            "name": "St. Herman of Alaska",
+            "feastDay": "December 13",
+            "knownFor": "The first Orthodox saint canonized in the Americas, a Russian monk who defended Native Alaskans from exploitation.",
+            "patronOf": "Alaska, Americas (Orthodox)",
+            "dates": "c. 1756-1836",
+            "origin": "Russia/Alaska",
+            "gender": "Male",
+            "traits": [
+                    "compassion",
+                    "simplicity",
+                    "missionary",
+                    "protection",
+                    "humility"
+            ],
+            "quotes": [
+                    "From this day, from this hour, let us love God above all.",
+                    "I am a poor sinner, but I love God.",
+                    "My joy, my consolation — Christ is risen!"
+            ],
+            "title": "St. Herman of Alaska",
+            "associatedDates": [
+                    "December 13"
+            ],
+            "lived": "c. 1756-1836",
+            "bio": "St. Herman was a Russian Orthodox monk who arrived in Alaska in 1794 as part of a missionary group. He spent over 40 years on Spruce Island, protecting the native Aleut people from exploitation by the Russian-American Company, establishing schools and an orphanage, and living a life of extreme simplicity.",
+            "funFact": "He lived alone on Spruce Island for decades, growing his own food and wearing the same clothes for years, yet was sought out by thousands for spiritual counsel.",
+            "enriched": true
+    },
+    {
+            "name": "St. Nina Martyr of Georgia",
+            "feastDay": "December 15",
+            "knownFor": "A teenage Georgian girl martyred in the Soviet purges for refusing to remove her cross and deny Christ.",
+            "patronOf": "Georgian youth",
+            "dates": "1908-1938",
+            "origin": "Georgia",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "youth",
+                    "faith",
+                    "conviction",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I cannot remove my cross.",
+                    "Christ is my life.",
+                    "I die free because I die for God."
+            ],
+            "title": "St. Nina Martyr of Georgia",
+            "associatedDates": [
+                    "December 15"
+            ],
+            "lived": "1908-1938",
+            "bio": "St. Nina was a young Georgian Christian woman who was arrested during Stalin's Great Purge for her religious activities. She was ordered to renounce her faith and remove her cross necklace. When she refused, she was tortured and executed. She was glorified as a new martyr by the Georgian Orthodox Church.",
+            "funFact": "She was only 30 years old when executed, and her final act of defiance was clutching her cross tightly as she was led away.",
+            "enriched": true
+    },
+    {
+            "name": "St. Mesrop Mashtots",
+            "feastDay": "February 17",
+            "knownFor": "An Armenian monk who invented the Armenian alphabet to translate the Bible and preserve Armenian Christian culture.",
+            "patronOf": "Armenia, translators, linguists",
+            "dates": "c. 362-440",
+            "origin": "Armenia",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "creativity",
+                    "faith",
+                    "perseverance",
+                    "education"
+            ],
+            "quotes": [
+                    "To know the letters is to know God's Word.",
+                    "A people without their own script is a people in darkness.",
+                    "The pen is mightier than the sword of the conqueror."
+            ],
+            "title": "St. Mesrop Mashtots",
+            "associatedDates": [
+                    "February 17"
+            ],
+            "lived": "c. 362-440",
+            "bio": "St. Mesrop Mashtots was an Armenian monk, theologian, and linguist who created the Armenian alphabet around 405 AD. His invention allowed the Bible and liturgical texts to be translated into Armenian, preserving Armenian Christian identity and culture under foreign domination for centuries.",
+            "funFact": "He created an entirely new alphabet of 36 letters in a single inspired effort, and it has been in continuous use for over 1,600 years.",
+            "enriched": true
+    },
+    {
+            "name": "St. Gregory the Illuminator",
+            "feastDay": "September 30",
+            "knownFor": "The patron saint of Armenia who converted King Tiridates III, making Armenia the first nation to adopt Christianity as a state religion in 301 AD.",
+            "patronOf": "Armenia",
+            "dates": "c. 257-331",
+            "origin": "Armenia",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "courage",
+                    "perseverance",
+                    "faith",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Armenia shall be a light to the nations.",
+                    "No dungeon can imprison the truth.",
+                    "The cross conquers all."
+            ],
+            "title": "St. Gregory the Illuminator",
+            "associatedDates": [
+                    "September 30"
+            ],
+            "lived": "c. 257-331",
+            "bio": "St. Gregory the Illuminator was imprisoned in a pit for 13 years by King Tiridates III of Armenia for refusing to worship pagan gods. When the king fell gravely ill, Gregory was released to pray for him. The king was healed and converted, making Armenia the first Christian nation in 301 AD.",
+            "funFact": "He survived 13 years imprisoned in a snake-infested pit called Khor Virap, which is now one of Armenia's most visited pilgrimage sites.",
+            "enriched": true
+    },
+    {
+            "name": "St. Daniel Comboni",
+            "feastDay": "October 10",
+            "knownFor": "An Italian missionary bishop who dedicated his life to Africa, founding missionary congregations for the evangelization of Central Africa.",
+            "patronOf": "missionaries to Africa",
+            "dates": "1831-1881",
+            "origin": "Italy/Sudan",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "compassion",
+                    "perseverance",
+                    "leadership",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "Africa or death!",
+                    "Save Africa with Africa.",
+                    "I will die for Africa, but Africa will not die."
+            ],
+            "title": "St. Daniel Comboni",
+            "associatedDates": [
+                    "October 10"
+            ],
+            "lived": "1831-1881",
+            "bio": "St. Daniel Comboni was an Italian priest who devoted his entire life to the evangelization of Central Africa, particularly Sudan. He founded the Comboni Missionaries and the Comboni Missionary Sisters, and became the first Catholic bishop of Central Africa. He died of exhaustion and fever in Khartoum at age 50.",
+            "funFact": "His motto 'Save Africa with Africa' was revolutionary — he insisted on training native African clergy rather than relying solely on European missionaries.",
+            "enriched": true
+    },
+    {
+            "name": "St. Scholastica",
+            "feastDay": "February 10",
+            "knownFor": "The twin sister of St. Benedict of Nursia and founder of women's Benedictine monasticism.",
+            "patronOf": "nuns, convulsive children, storms",
+            "dates": "c. 480-543",
+            "origin": "Italy",
+            "gender": "Female",
+            "traits": [
+                    "devotion",
+                    "prayer",
+                    "community",
+                    "wisdom",
+                    "love"
+            ],
+            "quotes": [
+                    "I asked you and you would not listen; I asked my God and He listened.",
+                    "Love is stronger than any rule.",
+                    "Prayer opens the gates of heaven."
+            ],
+            "title": "St. Scholastica",
+            "associatedDates": [
+                    "February 10"
+            ],
+            "lived": "c. 480-543",
+            "bio": "St. Scholastica was the twin sister of St. Benedict and is considered the foundress of the Benedictine nuns. She established a convent near Monte Cassino and met her brother once a year for spiritual conversations. She is best known for the miracle of the storm.",
+            "funFact": "When Benedict tried to leave their annual meeting early, she prayed and a violent thunderstorm erupted, forcing him to stay — proving God listened to her prayer over his objection.",
+            "enriched": true
+    },
+    {
+            "name": "St. Brigid of Kildare",
+            "feastDay": "February 1",
+            "knownFor": "One of Ireland's three patron saints, an abbess who founded one of the most important monasteries in Ireland.",
+            "patronOf": "Ireland, dairy workers, newborn babies, nuns",
+            "dates": "c. 451-525",
+            "origin": "Ireland",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "leadership",
+                    "hospitality",
+                    "faith",
+                    "compassion"
+            ],
+            "quotes": [
+                    "I would like a great lake of beer for the King of Kings.",
+                    "Christ dwells in every creature.",
+                    "The Virgin Mary's Son, my friend, come to bless this house."
+            ],
+            "title": "St. Brigid of Kildare",
+            "associatedDates": [
+                    "February 1"
+            ],
+            "lived": "c. 451-525",
+            "bio": "St. Brigid of Kildare was one of the most remarkable women in Irish history. She founded the monastery of Kildare, which became one of the most prestigious in Ireland, and established a tradition of hospitality and learning. She is one of Ireland's three patron saints alongside St. Patrick and St. Columba.",
+            "funFact": "She reportedly asked a king for land for her monastery and he agreed to give her as much as her cloak could cover — it miraculously spread to cover several acres.",
+            "enriched": true
+    },
+    {
+            "name": "St. Columba",
+            "feastDay": "June 9",
+            "knownFor": "An Irish monk who founded the famous monastery of Iona in Scotland and helped spread Christianity throughout the Scottish Highlands.",
+            "patronOf": "Ireland, Scotland, Derry, poets",
+            "dates": "521-597",
+            "origin": "Ireland/Scotland",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "scholarship",
+                    "leadership",
+                    "courage",
+                    "prayer"
+            ],
+            "quotes": [
+                    "Be a pilgrim for Christ's sake.",
+                    "Let me not be cold in acts of mercy.",
+                    "Alone with none but Thee, my God, I journey on my way."
+            ],
+            "title": "St. Columba",
+            "associatedDates": [
+                    "June 9"
+            ],
+            "lived": "521-597",
+            "bio": "St. Columba was an Irish prince-turned-monk who left Ireland with 12 companions and founded the monastery of Iona on a tiny island off the coast of Scotland. From Iona, he and his monks evangelized the Picts and Scots, making it one of the most important centers of Celtic Christianity.",
+            "funFact": "He reportedly left Ireland as penance for a battle he inadvertently caused over a dispute about copying a manuscript.",
+            "enriched": true
+    },
+    {
+            "name": "St. Bakhita of Olossio",
+            "feastDay": "September 15",
+            "knownFor": "A Nigerian convert and catechist who was one of the first indigenous African religious sisters in West Africa.",
+            "patronOf": "Nigerian women, catechists",
+            "dates": "c. 1850-1920",
+            "origin": "Nigeria",
+            "gender": "Female",
+            "traits": [
+                    "faith",
+                    "teaching",
+                    "courage",
+                    "conversion",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "God called me from the darkness of my ancestors' ways.",
+                    "To teach the faith is the greatest gift.",
+                    "My Lord led me by unknown paths."
+            ],
+            "title": "St. Bakhita of Olossio",
+            "associatedDates": [
+                    "September 15"
+            ],
+            "lived": "c. 1850-1920",
+            "bio": "St. Bakhita of Olossio was a Nigerian woman who converted to Christianity through the work of European missionaries. She became a catechist and later joined a religious community, dedicating her life to teaching the faith to her people and caring for the sick in her village.",
+            "funFact": "She walked miles each day to teach catechism in remote villages, earning the love and respect of both Christians and non-Christians.",
+            "enriched": true
+    },
+    {
+            "name": "St. Elizabeth Ann Seton",
+            "feastDay": "January 4",
+            "knownFor": "The first native-born American saint, a convert who founded the first Catholic school system in the United States.",
+            "patronOf": "Catholic schools, widows, death of children",
+            "dates": "1774-1821",
+            "origin": "USA",
+            "gender": "Female",
+            "traits": [
+                    "education",
+                    "motherhood",
+                    "faith",
+                    "resilience",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Live simply so that others may simply live.",
+                    "The first end I propose in our daily work is to do the will of God.",
+                    "We must be so careful to meet our children with a smile."
+            ],
+            "title": "St. Elizabeth Ann Seton",
+            "associatedDates": [
+                    "January 4"
+            ],
+            "lived": "1774-1821",
+            "bio": "St. Elizabeth Ann Seton was a wealthy New York socialite who converted to Catholicism after her husband's death. She founded the Sisters of Charity, the first American religious community for women, and established the first free Catholic school in the nation. She was canonized in 1975.",
+            "funFact": "She was the first native-born American to be canonized, and she was an Episcopalian for most of her life before converting.",
+            "enriched": true
+    },
+    {
+            "name": "St. Frances Xavier Cabrini",
+            "feastDay": "November 13",
+            "knownFor": "An Italian-American nun who founded 67 institutions across the Americas, becoming the first naturalized American citizen to be canonized.",
+            "patronOf": "immigrants, hospital administrators",
+            "dates": "1850-1917",
+            "origin": "Italy/USA",
+            "gender": "Female",
+            "traits": [
+                    "compassion",
+                    "leadership",
+                    "determination",
+                    "charity",
+                    "courage"
+            ],
+            "quotes": [
+                    "I can do all things in Him who strengthens me.",
+                    "We must pray without tiring.",
+                    "The world is too small for what I have in mind."
+            ],
+            "title": "St. Frances Xavier Cabrini",
+            "associatedDates": [
+                    "November 13"
+            ],
+            "lived": "1850-1917",
+            "bio": "St. Frances Xavier Cabrini was an Italian nun who immigrated to the United States to serve Italian immigrants. Despite being told to 'go back,' she stayed and founded schools, orphanages, and hospitals across North and South America. She became a naturalized U.S. citizen and was canonized in 1946.",
+            "funFact": "Pope Leo XIII told her to go 'not East, but West' when she wanted to be a missionary to China — so she went to America instead.",
+            "enriched": true
+    },
+    {
+            "name": "St. Turibius of Mogrovejo",
+            "feastDay": "March 23",
+            "knownFor": "Archbishop of Lima who traveled 40,000 miles on foot through the Andes to visit every parish, defending indigenous rights.",
+            "patronOf": "Latin American bishops, native rights",
+            "dates": "1538-1606",
+            "origin": "Spain/Peru",
+            "gender": "Male",
+            "traits": [
+                    "pastoral",
+                    "justice",
+                    "perseverance",
+                    "compassion",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Christ is found among the lowliest.",
+                    "Time is not our own to waste.",
+                    "The shepherd must know the smell of his sheep."
+            ],
+            "title": "St. Turibius of Mogrovejo",
+            "associatedDates": [
+                    "March 23"
+            ],
+            "lived": "1538-1606",
+            "bio": "St. Turibius was a Spanish layman who was appointed Archbishop of Lima, Peru despite not yet being ordained. He traveled over 40,000 miles through the Andes on foot and mule, visiting every corner of his vast diocese. He championed indigenous rights, learned native languages, and confirmed and baptized hundreds of thousands.",
+            "funFact": "He confirmed St. Rose of Lima, St. Martin de Porres, and St. Juan Macías — three future saints — during his visitations.",
+            "enriched": true
+    },
+    {
+            "name": "St. Cyril of Alexandria",
+            "feastDay": "June 27",
+            "knownFor": "A Doctor of the Church who defended the title 'Theotokos' (Mother of God) for Mary at the Council of Ephesus.",
+            "patronOf": "Alexandria",
+            "dates": "c. 376-444",
+            "origin": "Egypt",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "theological",
+                    "courage",
+                    "leadership",
+                    "faith"
+            ],
+            "quotes": [
+                    "The Word of God became man so that we might become God.",
+                    "Mary is rightly called Theotokos because she bore God incarnate.",
+                    "Truth cannot be silenced by the powerful."
+            ],
+            "title": "St. Cyril of Alexandria",
+            "associatedDates": [
+                    "June 27"
+            ],
+            "lived": "c. 376-444",
+            "bio": "St. Cyril was the Patriarch of Alexandria and one of the most important theologians of the early Church. He presided over the Council of Ephesus in 431, which affirmed that Mary is the Theotokos (God-Bearer). His writings greatly influenced Christological doctrine and he was declared a Doctor of the Church.",
+            "funFact": "He was so passionate in defending doctrine that even other church leaders considered him difficult to deal with.",
+            "enriched": true
+    },
+    {
+            "name": "St. John of Damascus",
+            "feastDay": "December 4",
+            "knownFor": "A Doctor of the Church and the last of the Church Fathers, who defended the veneration of icons during the Iconoclast controversy.",
+            "patronOf": "icon painters, pharmacists, theology students",
+            "dates": "c. 676-749",
+            "origin": "Syria",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "theological",
+                    "courage",
+                    "writing",
+                    "faith"
+            ],
+            "quotes": [
+                    "I do not worship matter, but the Creator of matter.",
+                    "What the written word is to the literate, the icon is to the illiterate.",
+                    "The whole earth is a living icon of the face of God."
+            ],
+            "title": "St. John of Damascus",
+            "associatedDates": [
+                    "December 4"
+            ],
+            "lived": "c. 676-749",
+            "bio": "St. John of Damascus was a Syrian Christian monk and theologian who served as a financial officer in the Islamic Umayyad Caliphate before becoming a monk. He wrote extensively against iconoclasm and composed some of the most important theological treatises of the Eastern Church, including 'The Fount of Knowledge.'",
+            "funFact": "He served as a top administrator in the Muslim caliphate before retiring to a monastery — one of the few saints to hold a senior position in an Islamic government.",
+            "enriched": true
+    },
+    {
+            "name": "St. Hilda of Whitby",
+            "feastDay": "November 17",
+            "knownFor": "An Anglo-Saxon abbess who presided over the famous Synod of Whitby and ran one of the most important monasteries in England.",
+            "patronOf": "learning, culture, poetry",
+            "dates": "614-680",
+            "origin": "England",
+            "gender": "Female",
+            "traits": [
+                    "intellectual",
+                    "leadership",
+                    "wisdom",
+                    "education",
+                    "diplomacy"
+            ],
+            "quotes": [
+                    "All who knew her called her Mother.",
+                    "Let the light of learning shine forth.",
+                    "In serving others, we serve Christ."
+            ],
+            "title": "St. Hilda of Whitby",
+            "associatedDates": [
+                    "November 17"
+            ],
+            "lived": "614-680",
+            "bio": "St. Hilda was a Northumbrian princess who became abbess of the double monastery of Whitby. Under her leadership, five future bishops were trained, and the monastery became one of England's greatest centers of learning. She hosted the Synod of Whitby in 664, which determined the date of Easter for the English Church.",
+            "funFact": "She encouraged the illiterate cowherd Cædmon to sing, and he became the first known English-language poet.",
+            "enriched": true
+    },
+    {
+            "name": "St. Genevieve",
+            "feastDay": "January 3",
+            "knownFor": "The patron saint of Paris who rallied the city's defense against Attila the Hun and organized relief during a siege.",
+            "patronOf": "Paris, disasters, fever, French security forces",
+            "dates": "c. 419-502",
+            "origin": "France",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "prayer",
+                    "leadership",
+                    "charity",
+                    "faith"
+            ],
+            "quotes": [
+                    "Let us pray and God will deliver us.",
+                    "Do not flee, people of Paris. God will protect us.",
+                    "Prayer is the shield of the city."
+            ],
+            "title": "St. Genevieve",
+            "associatedDates": [
+                    "January 3"
+            ],
+            "lived": "c. 419-502",
+            "bio": "St. Genevieve was a Gallo-Roman woman who dedicated her life to God at a young age. When Attila the Hun threatened Paris in 451, she rallied the citizens to pray rather than flee, and the Huns bypassed the city. She later organized a convoy of boats to bring food to Paris during a Frankish siege.",
+            "funFact": "She convinced the terrified Parisians not to flee from Attila the Hun, and the next day his army miraculously changed course and bypassed Paris entirely.",
+            "enriched": true
+    },
+    {
+            "name": "St. Wenceslaus",
+            "feastDay": "September 28",
+            "knownFor": "The 'Good King Wenceslas' of the famous Christmas carol, a Czech duke who promoted Christianity and was murdered by his pagan brother.",
+            "patronOf": "Czech Republic, Bohemia, brewers",
+            "dates": "c. 907-935",
+            "origin": "Bohemia",
+            "gender": "Male",
+            "traits": [
+                    "leadership",
+                    "charity",
+                    "courage",
+                    "faith",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "Let us follow the path of peace.",
+                    "A ruler must serve his people, not himself.",
+                    "Faith is the foundation of a just kingdom."
+            ],
+            "title": "St. Wenceslaus",
+            "associatedDates": [
+                    "September 28"
+            ],
+            "lived": "c. 907-935",
+            "bio": "St. Wenceslaus was the Duke of Bohemia who championed Christianity in a largely pagan land. He was known for his personal piety and charity to the poor. He was assassinated by his brother Boleslav, who opposed his Christian policies, and became the patron saint of the Czech people.",
+            "funFact": "He is the 'Good King Wenceslas' of the beloved Christmas carol, though he was actually a duke, not a king.",
+            "enriched": true
+    },
+    {
+            "name": "St. Elżbieta Hesselblad",
+            "feastDay": "June 4",
+            "knownFor": "A Swedish convert who restored the Bridgettine Order and sheltered Jews during the Holocaust in Rome.",
+            "patronOf": "ecumenism, Sweden",
+            "dates": "1870-1957",
+            "origin": "Sweden",
+            "gender": "Female",
+            "traits": [
+                    "ecumenism",
+                    "courage",
+                    "compassion",
+                    "conversion",
+                    "charity"
+            ],
+            "quotes": [
+                    "Unity among Christians is the will of God.",
+                    "We must build bridges, not walls.",
+                    "Every person is a child of God, regardless of their faith."
+            ],
+            "title": "St. Elżbieta Hesselblad",
+            "associatedDates": [
+                    "June 4"
+            ],
+            "lived": "1870-1957",
+            "bio": "St. Elżbieta Hesselblad was born Lutheran in Sweden, emigrated to America as a nurse, and converted to Catholicism. She refounded the Bridgettine Order and during World War II, hid Jewish families in her convent in Rome, saving at least 12 lives. She was canonized by Pope Francis in 2016.",
+            "funFact": "She was recognized as Righteous Among the Nations by Yad Vashem for sheltering Jews during the Holocaust.",
+            "enriched": true
+    },
+    {
+            "name": "St. Damien of Molokai",
+            "feastDay": "May 10",
+            "knownFor": "A Belgian priest who volunteered to serve the leper colony on Molokai, Hawaii, eventually contracting and dying of the disease himself.",
+            "patronOf": "lepers, outcasts, HIV/AIDS patients, Hawaii",
+            "dates": "1840-1889",
+            "origin": "Belgium/Hawaii",
+            "gender": "Male",
+            "traits": [
+                    "compassion",
+                    "sacrifice",
+                    "courage",
+                    "service",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "I make myself a leper with the lepers to gain all to Jesus Christ.",
+                    "We lepers...",
+                    "I would not have my health restored if it meant leaving my work undone."
+            ],
+            "title": "St. Damien of Molokai",
+            "associatedDates": [
+                    "May 10"
+            ],
+            "lived": "1840-1889",
+            "bio": "St. Damien de Veuster was a Belgian priest who volunteered to serve the isolated leper colony on the island of Molokai in Hawaii. He built houses, hospitals, and churches, and personally cared for the sick. After 16 years of service, he contracted leprosy himself and died among the people he loved.",
+            "funFact": "When he finally contracted leprosy, he began his next sermon with the words 'We lepers...' instead of 'My brethren' — accepting his fate with the community.",
+            "enriched": true
+    },
+    {
+            "name": "St. Marianne Cope",
+            "feastDay": "January 23",
+            "knownFor": "A German-American Franciscan sister who continued St. Damien's work among the lepers of Molokai for over 30 years without ever contracting the disease.",
+            "patronOf": "lepers, outcasts, Hawaii, against HIV/AIDS",
+            "dates": "1838-1918",
+            "origin": "Germany/USA",
+            "gender": "Female",
+            "traits": [
+                    "compassion",
+                    "courage",
+                    "service",
+                    "perseverance",
+                    "faith"
+            ],
+            "quotes": [
+                    "I am not afraid of any disease.",
+                    "I am hungry for the work.",
+                    "Make the best use of the few remaining years of my life."
+            ],
+            "title": "St. Marianne Cope",
+            "associatedDates": [
+                    "January 23"
+            ],
+            "lived": "1838-1918",
+            "bio": "St. Marianne Cope was a German-born American Franciscan sister who arrived in Hawaii in 1883 to manage hospitals and schools. After St. Damien's death, she took over the care of the Molokai leper settlement, serving for over 30 years. Remarkably, she never contracted the disease despite constant close contact.",
+            "funFact": "She never contracted leprosy despite 30 years of intimate contact with patients — a fact considered by many to be miraculous.",
+            "enriched": true
+    },
+    {
+            "name": "St. Pio of Pietrelcina",
+            "feastDay": "September 23",
+            "knownFor": "An Italian Capuchin friar who bore the stigmata for 50 years and was renowned for his mystical gifts of bilocation, prophecy, and reading souls.",
+            "patronOf": "stress relief, adolescents, civil defense volunteers",
+            "dates": "1887-1968",
+            "origin": "Italy",
+            "gender": "Male",
+            "traits": [
+                    "mysticism",
+                    "suffering",
+                    "prayer",
+                    "humility",
+                    "compassion"
+            ],
+            "quotes": [
+                    "Pray, hope, and don't worry.",
+                    "Prayer is the best weapon we have.",
+                    "The rosary is the weapon for these times."
+            ],
+            "title": "St. Pio of Pietrelcina",
+            "associatedDates": [
+                    "September 23"
+            ],
+            "lived": "1887-1968",
+            "bio": "St. Padre Pio was an Italian Capuchin friar who received the stigmata in 1918 and bore the wounds of Christ on his hands, feet, and side for 50 years. He was known for his long hours in the confessional, his ability to read souls, and reports of bilocation and other mystical phenomena.",
+            "funFact": "His stigmata wounds completely vanished without a trace at the moment of his death, leaving perfectly smooth skin.",
+            "enriched": true
+    },
+    {
+            "name": "St. Faustina Kowalska",
+            "feastDay": "October 5",
+            "knownFor": "A Polish nun who received visions of Jesus and promoted the Divine Mercy devotion, which became one of the most popular Catholic devotions worldwide.",
+            "patronOf": "mercy, World Youth Day",
+            "dates": "1905-1938",
+            "origin": "Poland",
+            "gender": "Female",
+            "traits": [
+                    "mysticism",
+                    "mercy",
+                    "humility",
+                    "obedience",
+                    "prayer"
+            ],
+            "quotes": [
+                    "Jesus, I trust in You.",
+                    "The greater the sinner, the greater the right he has to My mercy.",
+                    "Be not afraid of your Savior."
+            ],
+            "title": "St. Faustina Kowalska",
+            "associatedDates": [
+                    "October 5"
+            ],
+            "lived": "1905-1938",
+            "bio": "St. Faustina Kowalska was a Polish nun of the Congregation of the Sisters of Our Lady of Mercy who received private revelations from Jesus about Divine Mercy. She recorded these visions in her diary, which became the basis for the Divine Mercy devotion. She was canonized by Pope John Paul II in 2000.",
+            "funFact": "Her 600-page diary, written at Jesus' request, has been translated into dozens of languages and is one of the most widely read spiritual classics of the 20th century.",
+            "enriched": true
+    },
+    {
+            "name": "St. Maximilian Kolbe",
+            "feastDay": "August 14",
+            "knownFor": "A Polish Franciscan friar who volunteered to die in place of a stranger at the Auschwitz concentration camp.",
+            "patronOf": "drug addicts, prisoners, families, journalists, pro-life movement",
+            "dates": "1894-1941",
+            "origin": "Poland",
+            "gender": "Male",
+            "traits": [
+                    "sacrifice",
+                    "courage",
+                    "charity",
+                    "faith",
+                    "forgiveness"
+            ],
+            "quotes": [
+                    "The most deadly poison of our times is indifference.",
+                    "No one in the world can change Truth.",
+                    "I am a Catholic priest; let me take his place."
+            ],
+            "title": "St. Maximilian Kolbe",
+            "associatedDates": [
+                    "August 14"
+            ],
+            "lived": "1894-1941",
+            "bio": "St. Maximilian Kolbe was a Polish Franciscan friar who was imprisoned in Auschwitz. When a prisoner was selected for death by starvation, Kolbe volunteered to take his place. He led the condemned men in prayer and song for two weeks before being killed by lethal injection. The man he saved survived the war.",
+            "funFact": "The man whose life he saved, Franciszek Gajowniczek, survived the war and attended Kolbe's beatification and canonization ceremonies decades later.",
+            "enriched": true
+    },
+    {
+            "name": "St. Edith Stein",
+            "feastDay": "August 9",
+            "knownFor": "A German Jewish philosopher who converted to Catholicism, became a Carmelite nun, and was killed at Auschwitz.",
+            "patronOf": "Europe, loss of parents, martyrs",
+            "dates": "1891-1942",
+            "origin": "Germany",
+            "gender": "Female",
+            "traits": [
+                    "intellectual",
+                    "courage",
+                    "faith",
+                    "conversion",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "The world doesn't need what women have, it needs what women are.",
+                    "Do not accept anything as the truth if it lacks love.",
+                    "Those who seek truth seek God, whether they know it or not."
+            ],
+            "title": "St. Edith Stein",
+            "associatedDates": [
+                    "August 9"
+            ],
+            "lived": "1891-1942",
+            "bio": "St. Edith Stein (Teresa Benedicta of the Cross) was a brilliant German Jewish philosopher who became an atheist before converting to Catholicism after reading St. Teresa of Ávila's autobiography. She became a Carmelite nun but was arrested by the Nazis because of her Jewish heritage and killed at Auschwitz in 1942.",
+            "funFact": "She was one of the foremost philosophers in Germany — a student of Edmund Husserl — before giving up her academic career to become a cloistered nun.",
+            "enriched": true
+    },
+    {
+            "name": "St. John Henry Newman",
+            "feastDay": "October 9",
+            "knownFor": "An Anglican theologian and cardinal whose conversion to Catholicism shook Victorian England and whose writings profoundly influenced the Second Vatican Council.",
+            "patronOf": "the Ordinariate, converts",
+            "dates": "1801-1890",
+            "origin": "England",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "conversion",
+                    "writing",
+                    "faith",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "To live is to change, and to be perfect is to have changed often.",
+                    "Lead, kindly Light, amid the encircling gloom.",
+                    "A thousand difficulties do not make one doubt."
+            ],
+            "title": "St. John Henry Newman",
+            "associatedDates": [
+                    "October 9"
+            ],
+            "lived": "1801-1890",
+            "bio": "St. John Henry Newman was the most prominent Anglican convert to Catholicism in 19th-century England. A leading intellectual and Oxford professor, his conversion caused a national sensation. He was made a cardinal and wrote extensively on the development of doctrine, the nature of faith, and education.",
+            "funFact": "His motto as cardinal was 'Cor ad cor loquitur' (Heart speaks to heart), and his conversion took decades of agonized study and prayer.",
+            "enriched": true
+    },
+    {
+            "name": "St. Jeanne Jugan",
+            "feastDay": "August 30",
+            "knownFor": "A French laywoman who founded the Little Sisters of the Poor to care for destitute elderly people.",
+            "patronOf": "elderly people, the destitute",
+            "dates": "1792-1879",
+            "origin": "France",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "humility",
+                    "compassion",
+                    "perseverance",
+                    "joy"
+            ],
+            "quotes": [
+                    "It is so good to be poor, to have nothing, to depend on God for everything.",
+                    "Making the elderly happy, that is everything.",
+                    "Never forget that the poor are Our Lord."
+            ],
+            "title": "St. Jeanne Jugan",
+            "associatedDates": [
+                    "August 30"
+            ],
+            "lived": "1792-1879",
+            "bio": "St. Jeanne Jugan founded the Little Sisters of the Poor after bringing a blind, paralyzed elderly woman into her own home. Her work grew rapidly as she begged door-to-door to support her growing community of elderly residents. Despite founding the order, she was unjustly removed from leadership and spent her last 27 years in obscurity.",
+            "funFact": "She was pushed aside by a priest who took credit for founding her order, and she spent her last 27 years in humble obscurity — but the truth was restored after her death.",
+            "enriched": true
+    },
+    {
+            "name": "St. Sharbel Makhlouf",
+            "feastDay": "December 24",
+            "knownFor": "Feast of the finding of St. Charbel's incorrupt body, celebrated in some Maronite traditions.",
+            "patronOf": "Lebanon, healing",
+            "dates": "1828-1898",
+            "origin": "Lebanon",
+            "gender": "Male",
+            "traits": [
+                    "prayer",
+                    "healing",
+                    "asceticism",
+                    "silence",
+                    "miracles"
+            ],
+            "quotes": [
+                    "The silence of God is the loudest sound.",
+                    "In stillness, the soul hears heaven.",
+                    "Fasting feeds the spirit."
+            ],
+            "title": "St. Sharbel Makhlouf",
+            "associatedDates": [
+                    "December 24"
+            ],
+            "lived": "1828-1898",
+            "bio": "This feast commemorates the discovery of St. Charbel's incorrupt body when his tomb was opened and a mysterious light was seen above it. His body had been buried for months but showed no signs of decomposition, leading to increased veneration and eventually his beatification and canonization.",
+            "funFact": "When his tomb was opened, his body was floating in a mud-like liquid, yet was perfectly preserved — a phenomenon that continued for decades.",
+            "enriched": true
+    },
+    {
+            "name": "St. Oscar Arnulfo Romero",
+            "feastDay": "March 24",
+            "knownFor": "Archbishop of San Salvador who was assassinated while saying Mass for his outspoken defense of the poor during El Salvador's civil war.",
+            "patronOf": "El Salvador, the Americas, persecuted Christians",
+            "dates": "1917-1980",
+            "origin": "El Salvador",
+            "gender": "Male",
+            "traits": [
+                    "justice",
+                    "courage",
+                    "compassion",
+                    "pastoral",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "If they kill me, I shall arise in the Salvadoran people.",
+                    "We cannot segregate God's word from the historical reality in which it is proclaimed.",
+                    "Peace is not the product of terror or fear."
+            ],
+            "title": "St. Oscar Arnulfo Romero",
+            "associatedDates": [
+                    "March 24"
+            ],
+            "lived": "1917-1980",
+            "bio": "St. Oscar Romero was a quiet, conservative priest who was appointed Archbishop of San Salvador expecting he would not challenge the status quo. Instead, after witnessing the murder of his friend Fr. Rutilio Grande, he became the most vocal defender of the poor in Latin America. He was shot dead while celebrating Mass in 1980.",
+            "funFact": "He was deliberately chosen as archbishop because the government thought he would be passive — instead he became their fiercest critic.",
+            "enriched": true
+    },
+    {
+            "name": "St. Toribio Romo González",
+            "feastDay": "May 25",
+            "knownFor": "A Mexican priest martyred during the Cristero War who has become the unofficial patron of migrants crossing the US-Mexico border.",
+            "patronOf": "migrants, Mexican Americans",
+            "dates": "1900-1928",
+            "origin": "Mexico",
+            "gender": "Male",
+            "traits": [
+                    "pastoral",
+                    "courage",
+                    "faith",
+                    "sacrifice",
+                    "compassion"
+            ],
+            "quotes": [
+                    "Do not be afraid; I will help you cross.",
+                    "The shepherd does not abandon his flock.",
+                    "You will not die in the desert."
+            ],
+            "title": "St. Toribio Romo González",
+            "associatedDates": [
+                    "May 25"
+            ],
+            "lived": "1900-1928",
+            "bio": "St. Toribio Romo González was a young Mexican priest who was martyred during the Cristero War at age 28. In recent decades, countless Mexican and Central American migrants have reported seeing a mysterious young man who helped them cross the desert safely — they later identified him from pictures as St. Toribio.",
+            "funFact": "Thousands of migrants claim he physically appeared to them in the desert, giving them water and guiding them to safety — making him the most reported apparitional saint in the Americas.",
+            "enriched": true
+    },
+    {
+            "name": "St. María Guadalupe García Zavala",
+            "feastDay": "June 24",
+            "knownFor": "A Mexican co-foundress who sheltered persecuted priests and the Archbishop of Guadalajara during the Cristero War.",
+            "patronOf": "Mexico, persecuted priests",
+            "dates": "1878-1963",
+            "origin": "Mexico",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "charity",
+                    "compassion",
+                    "leadership",
+                    "faith"
+            ],
+            "quotes": [
+                    "Charity and suffering go hand in hand.",
+                    "We must serve the sick as we would serve Christ.",
+                    "Fear is conquered by love."
+            ],
+            "title": "St. María Guadalupe García Zavala",
+            "associatedDates": [
+                    "June 24"
+            ],
+            "lived": "1878-1963",
+            "bio": "St. María Guadalupe García Zavala co-founded the Handmaids of St. Margaret Mary to serve the sick and poor. During the Cristero War, she risked her life by hiding persecuted priests and even the Archbishop of Guadalajara in her hospital. She was canonized by Pope Francis in 2013.",
+            "funFact": "She hid the Archbishop of Guadalajara from government soldiers in her hospital for several years during the Cristero War persecution.",
+            "enriched": true
+    }
 ];
 
 // Trait Categories (Preserved)
