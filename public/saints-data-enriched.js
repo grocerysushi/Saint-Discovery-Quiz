@@ -1,5 +1,5 @@
 // Enriched Saints Database
-// Total: 513
+// Total: 561
 // Generated: 2026-02-18T00:09:53.122Z
 
 const saintsDatabase = [
@@ -13633,6 +13633,1401 @@ const saintsDatabase = [
     "funFact": "He was the first English king to be depicted with a crown of light (halo) on the Bayeux Tapestry.",
     "enriched": true
 }
+,
+    {
+            "name": "St. Perpetua",
+            "feastDay": "March 7",
+            "knownFor": "A young noblewoman and mother who kept a diary of her imprisonment and was martyred in Carthage for refusing to renounce her faith.",
+            "patronOf": "mothers, expectant mothers, ranchers, butchers",
+            "dates": "c. 181-203",
+            "origin": "North Africa",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "motherhood",
+                    "faith",
+                    "determination",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I am a Christian, and I cannot be called by any other name.",
+                    "We saw ourselves taken up from the flesh.",
+                    "Stand fast in the faith, and love one another."
+            ],
+            "title": "St. Perpetua",
+            "associatedDates": [
+                    "March 7"
+            ],
+            "lived": "c. 181-203",
+            "bio": "St. Perpetua was a young, well-educated noblewoman from Carthage who was arrested during the persecution of Emperor Septimius Severus. Despite her father's pleas and her love for her infant son, she refused to renounce her faith. Her prison diary is one of the earliest known writings by a Christian woman and provides a vivid account of early Christian martyrdom.",
+            "funFact": "Her prison diary, the 'Passion of Perpetua and Felicity,' is one of the oldest surviving texts written by a Christian woman.",
+            "enriched": true
+    },
+    {
+            "name": "St. Felicity of Carthage",
+            "feastDay": "March 7",
+            "knownFor": "A slave and companion of St. Perpetua who gave birth in prison and was martyred alongside her mistress in the arena.",
+            "patronOf": "expectant mothers, barren women, death of children",
+            "dates": "d. 203",
+            "origin": "North Africa",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "endurance",
+                    "faith",
+                    "humility",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "What I suffer now, I suffer alone. But then, another will be in me who will suffer for me.",
+                    "We were baptized in our own blood.",
+                    "Christ gives strength to endure all things."
+            ],
+            "title": "St. Felicity of Carthage",
+            "associatedDates": [
+                    "March 7"
+            ],
+            "lived": "d. 203",
+            "bio": "St. Felicity was an enslaved woman who was arrested along with her mistress Perpetua and other catechumens in Carthage. She was eight months pregnant at the time of her arrest and gave birth to a daughter in prison just days before her martyrdom. Her bravery alongside Perpetua has made them inseparable symbols of Christian courage.",
+            "funFact": "She feared she would not be martyred with her companions because Roman law forbade the execution of pregnant women, but she gave birth just in time.",
+            "enriched": true
+    },
+    {
+            "name": "St. Andrew Kim Taegon",
+            "feastDay": "September 20",
+            "knownFor": "The first Korean-born Catholic priest, martyred at age 25 during the severe Korean persecutions.",
+            "patronOf": "Korean clergy, Korea",
+            "dates": "1821-1846",
+            "origin": "Korea",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "missionary",
+                    "determination",
+                    "faith",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "We have received baptism, entrance into the Church, and the grace to be taught by the Lord.",
+                    "Brothers and sisters, know this: our Lord Jesus Christ descended into this world.",
+                    "The immortal life is now upon us."
+            ],
+            "title": "St. Andrew Kim Taegon",
+            "associatedDates": [
+                    "September 20"
+            ],
+            "lived": "1821-1846",
+            "bio": "St. Andrew Kim Taegon was the son of Korean converts who traveled to seminary in Macau and was ordained the first native Korean priest. He secretly returned to Korea to minister to the underground Catholic community during a time of fierce persecution. He was captured, tortured, and beheaded at age 25, becoming a powerful symbol of Korean Catholicism.",
+            "funFact": "He crossed the Korean border disguised as a mourner carrying a coffin to smuggle missionaries into the country.",
+            "enriched": true
+    },
+    {
+            "name": "St. Paul Chong Hasang",
+            "feastDay": "September 20",
+            "knownFor": "A Korean lay catechist and seminarist martyred for his faith during the Joseon Dynasty persecutions.",
+            "patronOf": "Korean laity, catechists",
+            "dates": "1795-1839",
+            "origin": "Korea",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "intellectual",
+                    "missionary",
+                    "faith",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Even if we die, we cannot betray the Lord of heaven whom we serve.",
+                    "The truths of our faith surpass all the knowledge of this world.",
+                    "I rejoice to die for God."
+            ],
+            "title": "St. Paul Chong Hasang",
+            "associatedDates": [
+                    "September 20"
+            ],
+            "lived": "1795-1839",
+            "bio": "St. Paul Chong Hasang was a Korean lay catechist whose father was one of the first Korean martyrs. He worked tirelessly to bring foreign missionaries into Korea and to organize the underground Catholic community. He was arrested, imprisoned, and eventually executed for his faith.",
+            "funFact": "He made nine dangerous trips to Beijing, crossing the border illegally to seek priests and bishops for the Korean Church.",
+            "enriched": true
+    },
+    {
+            "name": "St. André Bessette",
+            "feastDay": "January 6",
+            "knownFor": "A humble Holy Cross brother credited with thousands of healings through devotion to St. Joseph, who built the famous St. Joseph's Oratory in Montreal.",
+            "patronOf": "sick people, caregivers",
+            "dates": "1845-1937",
+            "origin": "Canada",
+            "gender": "Male",
+            "traits": [
+                    "humility",
+                    "faith",
+                    "healing",
+                    "devotion",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "It is St. Joseph who heals. I am only his little dog.",
+                    "When I joined this community, the superiors showed me the door, and I stayed.",
+                    "Do not seek to have your trials taken away. Ask for the grace to bear them well."
+            ],
+            "title": "St. André Bessette",
+            "associatedDates": [
+                    "January 6"
+            ],
+            "lived": "1845-1937",
+            "bio": "St. André Bessette was a sickly orphan from Quebec who was initially rejected from religious life due to his poor health. He served as a doorkeeper at a college for 40 years while quietly healing the sick through prayer and devotion to St. Joseph. His ministry grew so large that he eventually built St. Joseph's Oratory, now the largest church in Canada.",
+            "funFact": "He was so frail as a young man that his religious order almost dismissed him, but his bishop intervened to let him stay.",
+            "enriched": true
+    },
+    {
+            "name": "St. Marguerite Bays",
+            "feastDay": "June 27",
+            "knownFor": "A Swiss laywoman and mystic who received the stigmata and lived a life of extraordinary prayer and charity as a simple seamstress.",
+            "patronOf": "seamstresses, lay people",
+            "dates": "1815-1879",
+            "origin": "Switzerland",
+            "gender": "Female",
+            "traits": [
+                    "mysticism",
+                    "humility",
+                    "charity",
+                    "devotion",
+                    "simplicity"
+            ],
+            "quotes": [
+                    "God does not ask great things of us, only small things with great love.",
+                    "My life is prayer, and my prayer is my life.",
+                    "Suffering accepted with love is a treasure."
+            ],
+            "title": "St. Marguerite Bays",
+            "associatedDates": [
+                    "June 27"
+            ],
+            "lived": "1815-1879",
+            "bio": "St. Marguerite Bays was a Swiss seamstress who lived a hidden life of extraordinary holiness. She was miraculously healed of intestinal cancer and received the stigmata, experiencing the wounds of Christ every Friday. Despite these mystical gifts, she continued her humble life of sewing, teaching catechism, and caring for the sick.",
+            "funFact": "She received the stigmata on the same day the dogma of the Immaculate Conception was proclaimed in 1854.",
+            "enriched": true
+    },
+    {
+            "name": "St. Alberto Hurtado",
+            "feastDay": "August 18",
+            "knownFor": "A Chilean Jesuit priest who founded a nationwide network of shelters for homeless children and championed workers' rights.",
+            "patronOf": "social workers, poor children, Chile",
+            "dates": "1901-1952",
+            "origin": "Chile",
+            "gender": "Male",
+            "traits": [
+                    "charity",
+                    "compassion",
+                    "justice",
+                    "leadership",
+                    "courage"
+            ],
+            "quotes": [
+                    "Christ has no body now on earth but yours.",
+                    "Happy are those who give their lives for others.",
+                    "Our house should be not a hotel for tourists but a home for Christ."
+            ],
+            "title": "St. Alberto Hurtado",
+            "associatedDates": [
+                    "August 18"
+            ],
+            "lived": "1901-1952",
+            "bio": "St. Alberto Hurtado was a Chilean Jesuit who dedicated his life to the poorest of the poor. He founded Hogar de Cristo, a network providing shelter, education, and care for homeless children across Chile. He also advocated for labor rights and wrote extensively on Catholic social teaching.",
+            "funFact": "He drove around Santiago in a green pickup truck collecting homeless children off the streets, earning him the nickname 'the priest of the green truck.'",
+            "enriched": true
+    },
+    {
+            "name": "St. Peter To Rot",
+            "feastDay": "January 12",
+            "knownFor": "A Papuan catechist who was martyred by the Japanese during World War II for defending the sanctity of Christian marriage.",
+            "patronOf": "Papua New Guinea, catechists",
+            "dates": "1912-1945",
+            "origin": "Papua New Guinea",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "leadership",
+                    "conviction",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I must fulfill my duty as a catechist.",
+                    "Marriage is sacred and cannot be destroyed.",
+                    "I am ready to die for my faith."
+            ],
+            "title": "St. Peter To Rot",
+            "associatedDates": [
+                    "January 12"
+            ],
+            "lived": "1912-1945",
+            "bio": "St. Peter To Rot was a catechist from the Tolai people of Papua New Guinea. During the Japanese occupation in World War II, he continued to lead his community in prayer and defended the sanctity of Christian marriage against the occupiers' attempts to impose polygamy. He was arrested and killed by lethal injection.",
+            "funFact": "He was the first person from Papua New Guinea to be beatified, and Pope John Paul II beatified him during a visit to Port Moresby in 1995.",
+            "enriched": true
+    },
+    {
+            "name": "St. Andrew Dung-Lac",
+            "feastDay": "November 24",
+            "knownFor": "A Vietnamese priest who was among 117 martyrs killed during anti-Christian persecutions in Vietnam spanning three centuries.",
+            "patronOf": "Vietnam",
+            "dates": "1795-1839",
+            "origin": "Vietnam",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "perseverance",
+                    "missionary",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "The good God has decreed that I should die. I am content.",
+                    "Heaven is my true homeland.",
+                    "No suffering is too great for the love of Christ."
+            ],
+            "title": "St. Andrew Dung-Lac",
+            "associatedDates": [
+                    "November 24"
+            ],
+            "lived": "1795-1839",
+            "bio": "St. Andrew Dung-Lac was a Vietnamese priest born to a poor pagan family. He converted to Christianity and was ordained, serving his community faithfully despite repeated arrests. He was arrested and beheaded during the persecutions under Emperor Minh Mang, becoming one of the most celebrated of the 117 Vietnamese Martyrs.",
+            "funFact": "He changed his name from 'Dung' to 'Lac' after one of his rescues from prison, hoping to avoid re-arrest.",
+            "enriched": true
+    },
+    {
+            "name": "St. Agnes Le Thi Thanh",
+            "feastDay": "July 12",
+            "knownFor": "A Vietnamese laywoman and mother who was martyred for sheltering priests during the Vietnamese persecutions.",
+            "patronOf": "Vietnamese mothers, persecuted Christians",
+            "dates": "1781-1841",
+            "origin": "Vietnam",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "motherhood",
+                    "hospitality",
+                    "faith",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I would rather die than abandon my religion.",
+                    "My children, remember to keep the faith.",
+                    "God will provide for those I leave behind."
+            ],
+            "title": "St. Agnes Le Thi Thanh",
+            "associatedDates": [
+                    "July 12"
+            ],
+            "lived": "1781-1841",
+            "bio": "St. Agnes Le Thi Thanh was a Vietnamese mother of six who sheltered persecuted priests and missionaries in her home. She was arrested, brutally tortured, and eventually executed for refusing to trample on a crucifix. She is one of the 117 Vietnamese Martyrs canonized by Pope John Paul II.",
+            "funFact": "Despite being offered freedom if she simply stepped on a cross, she chose death, saying she could never trample upon her Lord.",
+            "enriched": true
+    },
+    {
+            "name": "St. Kuriakose Elias Chavara",
+            "feastDay": "January 3",
+            "knownFor": "An Indian Carmelite priest who founded the first indigenous religious congregation for men in India and pioneered education for all castes.",
+            "patronOf": "education, Kerala",
+            "dates": "1805-1871",
+            "origin": "India",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "leadership",
+                    "reform",
+                    "charity",
+                    "education"
+            ],
+            "quotes": [
+                    "Educate the people and they will be transformed.",
+                    "A school beside every church.",
+                    "Love is the foundation of all true education."
+            ],
+            "title": "St. Kuriakose Elias Chavara",
+            "associatedDates": [
+                    "January 3"
+            ],
+            "lived": "1805-1871",
+            "bio": "St. Kuriakose Elias Chavara was an Indian priest of the Syro-Malabar Catholic Church who founded the Carmelites of Mary Immaculate, the first indigenous religious congregation for men in India. He established schools in every parish, including for girls and lower castes, and pioneered a Sanskrit school for interfaith dialogue.",
+            "funFact": "He established the first Catholic printing press in Kerala and started one of the earliest Malayalam-language newspapers.",
+            "enriched": true
+    },
+    {
+            "name": "St. Alphonsa of the Immaculate Conception",
+            "feastDay": "July 28",
+            "knownFor": "The first canonized saint from India, a Franciscan Clarist nun known for her patient suffering and miraculous intercessions.",
+            "patronOf": "sick people, India",
+            "dates": "1910-1946",
+            "origin": "India",
+            "gender": "Female",
+            "traits": [
+                    "patience",
+                    "suffering",
+                    "devotion",
+                    "humility",
+                    "faith"
+            ],
+            "quotes": [
+                    "I want to be sanctified through suffering.",
+                    "Jesus, I suffer for love of You.",
+                    "My sufferings are my treasures."
+            ],
+            "title": "St. Alphonsa of the Immaculate Conception",
+            "associatedDates": [
+                    "July 28"
+            ],
+            "lived": "1910-1946",
+            "bio": "St. Alphonsa was born Anna Muttathupadathu in Kerala, India. She endured a lifetime of severe physical suffering from burns, illness, and disabilities, offering all her pain for the conversion of sinners. She was canonized by Pope Benedict XVI in 2008, becoming the first Indian woman to be declared a saint.",
+            "funFact": "As a young girl, she deliberately burned her foot to avoid an arranged marriage so she could enter religious life.",
+            "enriched": true
+    },
+    {
+            "name": "St. Euphrasia Eluvathingal",
+            "feastDay": "August 29",
+            "knownFor": "An Indian Carmelite nun known as the 'Praying Mother' for her extraordinary life of contemplative prayer and mystical experiences.",
+            "patronOf": "contemplatives, Kerala",
+            "dates": "1877-1952",
+            "origin": "India",
+            "gender": "Female",
+            "traits": [
+                    "contemplation",
+                    "mysticism",
+                    "devotion",
+                    "humility",
+                    "prayer"
+            ],
+            "quotes": [
+                    "My only desire is to love God and to be consumed in His love.",
+                    "Prayer is the breath of the soul.",
+                    "In silence, God speaks to us."
+            ],
+            "title": "St. Euphrasia Eluvathingal",
+            "associatedDates": [
+                    "August 29"
+            ],
+            "lived": "1877-1952",
+            "bio": "St. Euphrasia Eluvathingal was an Indian Carmelite nun of the Syro-Malabar Church known for her deep mystical prayer life. She spent hours in Eucharistic adoration daily and was sought out by people from all walks of life for her spiritual counsel. She was canonized by Pope Francis in 2014.",
+            "funFact": "She was called 'Evuprasiamma' (Mother Euphrasia) by locals who lined up outside her convent seeking her prayers and counsel.",
+            "enriched": true
+    },
+    {
+            "name": "St. Devasahayam Pillai",
+            "feastDay": "January 14",
+            "knownFor": "The first Indian layperson to be canonized, a Hindu convert who was martyred for his faith in 18th-century southern India.",
+            "patronOf": "Indian laity, converts",
+            "dates": "1712-1752",
+            "origin": "India",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "conviction",
+                    "faith",
+                    "transformation",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I have found the truth and I will not abandon it.",
+                    "My new name means 'God is my help.'",
+                    "No threat can separate me from the love of Christ."
+            ],
+            "title": "St. Devasahayam Pillai",
+            "associatedDates": [
+                    "January 14"
+            ],
+            "lived": "1712-1752",
+            "bio": "St. Devasahayam Pillai was born Neelakanta Pillai, a high-caste Hindu official in the kingdom of Travancore. After converting to Christianity under the influence of a Dutch naval commander, he faced severe persecution from the royal court. He endured years of imprisonment and torture before being shot and killed, becoming the first Indian layperson to be canonized.",
+            "funFact": "He was canonized by Pope Francis in 2022, nearly 270 years after his martyrdom.",
+            "enriched": true
+    },
+    {
+            "name": "St. Magdalena of Nagasaki",
+            "feastDay": "October 15",
+            "knownFor": "A Japanese Augustinian tertiary who was martyred during the brutal persecution of Christians in 17th-century Japan.",
+            "patronOf": "Japanese Christians, persecuted women",
+            "dates": "1611-1634",
+            "origin": "Japan",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "endurance",
+                    "devotion",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I am a Christian and I will die a Christian.",
+                    "My heart belongs to God alone.",
+                    "No torment can shake my faith."
+            ],
+            "title": "St. Magdalena of Nagasaki",
+            "associatedDates": [
+                    "October 15"
+            ],
+            "lived": "1611-1634",
+            "bio": "St. Magdalena of Nagasaki was the daughter of Japanese Christian martyrs. She became an Augustinian tertiary and served as an interpreter and catechist for missionaries. During the severe Tokugawa persecution, she was arrested and subjected to the torture of tsurushi (being hung upside down over a pit) for 13 days before dying.",
+            "funFact": "Her parents had been martyred when she was a child, and she was raised by Augustinian missionaries before following their path to martyrdom.",
+            "enriched": true
+    },
+    {
+            "name": "St. Anna Wang",
+            "feastDay": "July 9",
+            "knownFor": "A 14-year-old Chinese girl martyred during the Boxer Rebellion for refusing to renounce her Christian faith.",
+            "patronOf": "Chinese youth, persecuted Christians",
+            "dates": "1886-1900",
+            "origin": "China",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "youth",
+                    "faith",
+                    "conviction",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "The door of heaven is open to all.",
+                    "I believe in God. I am a Christian. I do not renounce God.",
+                    "I would rather die than deny my faith."
+            ],
+            "title": "St. Anna Wang",
+            "associatedDates": [
+                    "July 9"
+            ],
+            "lived": "1886-1900",
+            "bio": "St. Anna Wang was a young Chinese Christian girl from Majiazhuang village who was caught up in the Boxer Rebellion's persecution of Christians. When soldiers demanded she renounce her faith, the 14-year-old refused, saying she would rather die. She was beheaded and is among the 120 Martyrs of China canonized by Pope John Paul II.",
+            "funFact": "She reportedly encouraged her mother to remain strong in faith as they were both led to execution, showing remarkable courage for her age.",
+            "enriched": true
+    },
+    {
+            "name": "St. Kizito",
+            "feastDay": "June 3",
+            "knownFor": "The youngest of the Uganda Martyrs, killed at approximately 13-14 years old for refusing to renounce Christianity.",
+            "patronOf": "children, primary school students",
+            "dates": "c. 1872-1886",
+            "origin": "Uganda",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "youth",
+                    "faith",
+                    "innocence",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I will go wherever Charles Lwanga goes.",
+                    "I am a Christian and I will remain a Christian.",
+                    "Teach me to pray so I can face death."
+            ],
+            "title": "St. Kizito",
+            "associatedDates": [
+                    "June 3"
+            ],
+            "lived": "c. 1872-1886",
+            "bio": "St. Kizito was the youngest of the Uganda Martyrs, a group of Catholic and Anglican converts killed on the orders of King Mwanga II of Buganda. Despite his young age, he refused to renounce his Christian faith. He was baptized by St. Charles Lwanga the night before their execution and was burned alive alongside his companions.",
+            "funFact": "He smiled and laughed as he was led to execution, clinging to the hand of his mentor Charles Lwanga.",
+            "enriched": true
+    },
+    {
+            "name": "St. Anuarite Nengapeta",
+            "feastDay": "December 1",
+            "knownFor": "A Congolese religious sister who was martyred for defending her vow of chastity during the Simba Rebellion.",
+            "patronOf": "Congo, abuse victims, religious sisters",
+            "dates": "1939-1964",
+            "origin": "Congo",
+            "gender": "Female",
+            "traits": [
+                    "courage",
+                    "purity",
+                    "faith",
+                    "sacrifice",
+                    "conviction"
+            ],
+            "quotes": [
+                    "I forgive you because you do not know what you are doing.",
+                    "I have given myself to God.",
+                    "Nothing will separate me from my vow to Christ."
+            ],
+            "title": "St. Anuarite Nengapeta",
+            "associatedDates": [
+                    "December 1"
+            ],
+            "lived": "1939-1964",
+            "bio": "St. Anuarite Nengapeta was a Congolese religious sister of the Holy Family who was martyred during the Simba Rebellion. When rebel soldiers attempted to assault her, she resisted and was beaten and stabbed to death. She forgave her attackers before dying, echoing the words of Christ and St. Stephen.",
+            "funFact": "Pope John Paul II beatified her in 1985 during his visit to Zaire, making her the first Congolese person to be beatified.",
+            "enriched": true
+    },
+    {
+            "name": "St. Mariam Thresia Chiramel",
+            "feastDay": "June 8",
+            "knownFor": "An Indian mystic and foundress who established the Congregation of the Holy Family to serve the sick and marginalized in Kerala.",
+            "patronOf": "families, social workers",
+            "dates": "1876-1926",
+            "origin": "India",
+            "gender": "Female",
+            "traits": [
+                    "mysticism",
+                    "charity",
+                    "courage",
+                    "healing",
+                    "leadership"
+            ],
+            "quotes": [
+                    "My God, let me suffer and love.",
+                    "The family is the foundation of society and the Church.",
+                    "Serve the poorest with the greatest love."
+            ],
+            "title": "St. Mariam Thresia Chiramel",
+            "associatedDates": [
+                    "June 8"
+            ],
+            "lived": "1876-1926",
+            "bio": "St. Mariam Thresia Chiramel Mankidiyan was an Indian mystic of the Syro-Malabar Church who experienced extraordinary spiritual phenomena from childhood. She founded the Congregation of the Holy Family to serve broken families, the sick, and the dying. Despite facing misunderstanding and opposition, she persevered in her mission.",
+            "funFact": "She was initially accused of being possessed by demons due to her mystical experiences, but was eventually vindicated by Church authorities.",
+            "enriched": true
+    },
+    {
+            "name": "St. Narcisa de Jesús",
+            "feastDay": "August 30",
+            "knownFor": "An Ecuadorian laywoman known for her extreme penances, deep prayer life, and mystical experiences.",
+            "patronOf": "Ecuador, lay women",
+            "dates": "1832-1869",
+            "origin": "Ecuador",
+            "gender": "Female",
+            "traits": [
+                    "devotion",
+                    "penance",
+                    "mysticism",
+                    "humility",
+                    "charity"
+            ],
+            "quotes": [
+                    "My only desire is to love God above all things.",
+                    "Suffering is the school of love.",
+                    "I belong entirely to God."
+            ],
+            "title": "St. Narcisa de Jesús",
+            "associatedDates": [
+                    "August 30"
+            ],
+            "lived": "1832-1869",
+            "bio": "St. Narcisa de Jesús Martillo Morán was an Ecuadorian laywoman who lived a life of extraordinary penance and prayer. Though she never joined a religious order, she lived as a consecrated laywoman, spending her days in prayer, fasting, and works of charity. She died in Lima, Peru, at the age of 36.",
+            "funFact": "She is the first canonized laywoman from Ecuador, beatified by Pope Benedict XVI and canonized by Pope Francis.",
+            "enriched": true
+    },
+    {
+            "name": "St. Roque González",
+            "feastDay": "November 17",
+            "knownFor": "A Jesuit missionary who founded several of the famous Guaraní Reductions in South America before being martyred.",
+            "patronOf": "Paraguay, missionaries",
+            "dates": "1576-1628",
+            "origin": "Paraguay",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "courage",
+                    "compassion",
+                    "leadership",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I came to bring the Gospel to the ends of the earth.",
+                    "These people deserve to know the love of God.",
+                    "My blood will water the seeds of faith."
+            ],
+            "title": "St. Roque González",
+            "associatedDates": [
+                    "November 17"
+            ],
+            "lived": "1576-1628",
+            "bio": "St. Roque González de Santa Cruz was a Paraguayan Jesuit and one of the first criollo (American-born) priests in South America. He founded several Jesuit Reductions among the Guaraní people, creating self-sustaining communities. He was killed by a shaman who opposed Christian influence.",
+            "funFact": "He was the first saint born in the Americas to be canonized (born in Asunción, Paraguay).",
+            "enriched": true
+    },
+    {
+            "name": "St. Laura of Saint Catherine of Siena",
+            "feastDay": "October 21",
+            "knownFor": "A Colombian foundress who established schools and missions for indigenous and African-descended peoples.",
+            "patronOf": "Colombia, indigenous peoples, educators",
+            "dates": "1874-1949",
+            "origin": "Colombia",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "education",
+                    "courage",
+                    "compassion",
+                    "leadership"
+            ],
+            "quotes": [
+                    "God has given me the indigenous and the African peoples as my inheritance.",
+                    "Love makes all burdens light.",
+                    "Education is the path to dignity."
+            ],
+            "title": "St. Laura of Saint Catherine of Siena",
+            "associatedDates": [
+                    "October 21"
+            ],
+            "lived": "1874-1949",
+            "bio": "St. Laura Montoya Upegui was a Colombian religious sister who founded the Missionary Sisters of Mary Immaculate and St. Catherine of Siena. She dedicated her life to evangelizing and educating indigenous communities in the Colombian jungle, traveling by canoe and mule to reach remote villages.",
+            "funFact": "She was the first Colombian saint, canonized by Pope Francis in 2013.",
+            "enriched": true
+    },
+    {
+            "name": "St. María de Jesús Sacramentado",
+            "feastDay": "July 30",
+            "knownFor": "A Mexican foundress who established the Daughters of the Sacred Heart to serve the poor and abandoned.",
+            "patronOf": "Mexico, abandoned people",
+            "dates": "1868-1959",
+            "origin": "Mexico",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "devotion",
+                    "leadership",
+                    "compassion",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "The Sacred Heart of Jesus is the fountain of all graces.",
+                    "Serve the poorest with joy.",
+                    "In every suffering person I see the face of Christ."
+            ],
+            "title": "St. María de Jesús Sacramentado",
+            "associatedDates": [
+                    "July 30"
+            ],
+            "lived": "1868-1959",
+            "bio": "St. María de Jesús Sacramentado Venegas de la Torre was a Mexican religious sister who founded the Daughters of the Sacred Heart of Jesus. She dedicated over 50 years to caring for the sick, poor, and abandoned in Guadalajara. She persevered through the Mexican Revolution and Cristero War.",
+            "funFact": "She was the first Mexican-born woman to be canonized, by Pope Benedict XVI in 2000.",
+            "enriched": true
+    },
+    {
+            "name": "St. Felipe de Jesús",
+            "feastDay": "February 5",
+            "knownFor": "A Mexican Franciscan friar who was among the Twenty-Six Martyrs of Japan, crucified in Nagasaki.",
+            "patronOf": "Mexico City",
+            "dates": "1572-1597",
+            "origin": "Mexico",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "missionary",
+                    "sacrifice",
+                    "transformation"
+            ],
+            "quotes": [
+                    "I die happily for Christ.",
+                    "From Mexico to Japan, God's love knows no borders.",
+                    "My cross is my glory."
+            ],
+            "title": "St. Felipe de Jesús",
+            "associatedDates": [
+                    "February 5"
+            ],
+            "lived": "1572-1597",
+            "bio": "St. Felipe de Jesús de las Casas was born in Mexico City and became a Franciscan friar. While traveling from the Philippines to Mexico, his ship was blown off course to Japan, where Christians were being persecuted. He was arrested, marched to Nagasaki, and crucified alongside 25 other Christians.",
+            "funFact": "According to legend, a dried fig tree in his family's home miraculously bloomed on the day of his martyrdom.",
+            "enriched": true
+    },
+    {
+            "name": "St. Walburga",
+            "feastDay": "February 25",
+            "knownFor": "An Anglo-Saxon missionary nun who helped evangelize Germany and became one of the most venerated saints of the medieval period.",
+            "patronOf": "harvests, plague, hydrophobia, sailors",
+            "dates": "c. 710-779",
+            "origin": "England/Germany",
+            "gender": "Female",
+            "traits": [
+                    "missionary",
+                    "education",
+                    "courage",
+                    "healing",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Where there is faith, there is light.",
+                    "Let us carry the Gospel to all peoples.",
+                    "In service to others, we find our true calling."
+            ],
+            "title": "St. Walburga",
+            "associatedDates": [
+                    "February 25",
+                    "May 1 (Walpurgis Night)"
+            ],
+            "lived": "c. 710-779",
+            "bio": "St. Walburga was an Anglo-Saxon princess who left England to join her brothers Sts. Willibald and Winebald in their missionary work in Germany. She became abbess of the double monastery of Heidenheim and was renowned for her healing powers and educational work. She is one of the most celebrated women missionaries of the 8th century.",
+            "funFact": "Walpurgis Night (April 30) is named after her, though the festivities associated with it have nothing to do with the saint herself.",
+            "enriched": true
+    },
+    {
+            "name": "St. Lioba",
+            "feastDay": "September 28",
+            "knownFor": "An Anglo-Saxon missionary nun who was instrumental in the evangelization of Germany under St. Boniface.",
+            "patronOf": "storms, against storms",
+            "dates": "c. 710-782",
+            "origin": "England/Germany",
+            "gender": "Female",
+            "traits": [
+                    "intellectual",
+                    "missionary",
+                    "leadership",
+                    "teaching",
+                    "wisdom"
+            ],
+            "quotes": [
+                    "Let us learn from the Scriptures how to live and how to die.",
+                    "A woman's strength lies in her faith.",
+                    "Knowledge shared is knowledge multiplied."
+            ],
+            "title": "St. Lioba",
+            "associatedDates": [
+                    "September 28"
+            ],
+            "lived": "c. 710-782",
+            "bio": "St. Lioba was an Anglo-Saxon Benedictine nun who was sent by her relative St. Boniface to help establish the Church in Germany. She became abbess of Tauberbischofsheim and was renowned for her learning, wisdom, and spiritual counsel. She was so respected that Charlemagne's wife sought her company.",
+            "funFact": "She was one of the most learned women of her age, known to read Scripture even while sleeping, and her reputation attracted nobles from across the Frankish Empire.",
+            "enriched": true
+    },
+    {
+            "name": "St. Gudula",
+            "feastDay": "January 8",
+            "knownFor": "A Belgian noblewoman who devoted her life to prayer and charity, becoming the patroness of Brussels.",
+            "patronOf": "Brussels, Belgium",
+            "dates": "c. 646-712",
+            "origin": "Belgium",
+            "gender": "Female",
+            "traits": [
+                    "devotion",
+                    "charity",
+                    "humility",
+                    "prayer",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "Light conquers darkness through faith.",
+                    "Each day is an offering to God.",
+                    "In charity, we find our deepest joy."
+            ],
+            "title": "St. Gudula",
+            "associatedDates": [
+                    "January 8"
+            ],
+            "lived": "c. 646-712",
+            "bio": "St. Gudula was a Frankish noblewoman from Brabant who was educated by her cousin, St. Gertrude of Nivelles. She lived a life of extraordinary piety, walking daily from her home to a church two miles away. She is the patron saint of Brussels, and the city's cathedral is named after her.",
+            "funFact": "According to legend, the devil repeatedly blew out her lantern as she walked to church, but she always managed to relight it through prayer.",
+            "enriched": true
+    },
+    {
+            "name": "St. Rabanus Maurus",
+            "feastDay": "February 4",
+            "knownFor": "A Carolingian-era Benedictine monk, archbishop, and scholar known as 'the Teacher of Germany' for his encyclopedic works.",
+            "patronOf": "scholars, Germany",
+            "dates": "c. 780-856",
+            "origin": "Germany",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "teaching",
+                    "writing",
+                    "wisdom",
+                    "leadership"
+            ],
+            "quotes": [
+                    "Come, Holy Spirit, Creator blest.",
+                    "The study of Scripture is the soul's true food.",
+                    "Teaching is the noblest of all vocations."
+            ],
+            "title": "St. Rabanus Maurus",
+            "associatedDates": [
+                    "February 4"
+            ],
+            "lived": "c. 780-856",
+            "bio": "St. Rabanus Maurus was a Frankish Benedictine monk who became Archbishop of Mainz. He was one of the most important scholars of the Carolingian Renaissance, writing encyclopedias, biblical commentaries, and the famous hymn 'Veni Creator Spiritus.' He earned the title 'Praeceptor Germaniae' (Teacher of Germany).",
+            "funFact": "He is traditionally credited with composing the hymn 'Veni Creator Spiritus,' one of the most famous hymns in Christian history.",
+            "enriched": true
+    },
+    {
+            "name": "St. Ansgar",
+            "feastDay": "February 3",
+            "knownFor": "The 'Apostle of the North' who brought Christianity to Scandinavia and served as the first Archbishop of Hamburg-Bremen.",
+            "patronOf": "Scandinavia, Denmark, Germany",
+            "dates": "801-865",
+            "origin": "Germany/Denmark",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "courage",
+                    "perseverance",
+                    "leadership",
+                    "faith"
+            ],
+            "quotes": [
+                    "One miracle I would ask of God: that by His grace He would make me a good man.",
+                    "The harvest is great in the North.",
+                    "Patience and prayer will convert the most hardened hearts."
+            ],
+            "title": "St. Ansgar",
+            "associatedDates": [
+                    "February 3"
+            ],
+            "lived": "801-865",
+            "bio": "St. Ansgar was a Frankish monk who became the first Archbishop of Hamburg-Bremen and dedicated his life to evangelizing Scandinavia. He established the first Christian churches in Denmark and Sweden, enduring raids, setbacks, and the destruction of his mission by Vikings. Despite these challenges, he persevered in his missionary work.",
+            "funFact": "Despite decades of missionary work, much of his progress was undone by Viking raids, and Scandinavia didn't fully convert until centuries later.",
+            "enriched": true
+    },
+    {
+            "name": "St. Methodius of Moravia",
+            "feastDay": "February 14",
+            "knownFor": "Co-creator of the Glagolitic alphabet and Apostle to the Slavs, who translated the Bible and liturgy into Old Church Slavonic.",
+            "patronOf": "Slavic peoples, ecumenism, Europe",
+            "dates": "c. 815-885",
+            "origin": "Byzantine Empire",
+            "gender": "Male",
+            "traits": [
+                    "intellectual",
+                    "missionary",
+                    "linguistic",
+                    "perseverance",
+                    "diplomacy"
+            ],
+            "quotes": [
+                    "Let every tongue confess that Jesus Christ is Lord.",
+                    "The Word of God must be proclaimed in every language.",
+                    "Unity in faith transcends all borders."
+            ],
+            "title": "St. Methodius of Moravia",
+            "associatedDates": [
+                    "February 14",
+                    "May 11 (with St. Cyril)"
+            ],
+            "lived": "c. 815-885",
+            "bio": "St. Methodius, together with his brother St. Cyril, is known as one of the Apostles to the Slavs. They created the Glagolitic alphabet to translate Scripture and liturgical texts into Old Church Slavonic, making Christianity accessible to Slavic peoples. Despite opposition from Frankish clergy, Methodius defended the use of the Slavonic liturgy until his death.",
+            "funFact": "The Cyrillic alphabet used today by hundreds of millions of people was named after his brother Cyril and developed from their work.",
+            "enriched": true
+    },
+    {
+            "name": "St. Adelaide of Italy",
+            "feastDay": "December 16",
+            "knownFor": "A Holy Roman Empress who used her political power for charitable works and the spread of Christianity across Europe.",
+            "patronOf": "empresses, abuse victims, widows, second marriages",
+            "dates": "c. 931-999",
+            "origin": "Burgundy/Italy",
+            "gender": "Female",
+            "traits": [
+                    "leadership",
+                    "charity",
+                    "wisdom",
+                    "forgiveness",
+                    "courage"
+            ],
+            "quotes": [
+                    "Power is given to serve, not to dominate.",
+                    "Forgiveness is the crown of all virtues.",
+                    "In God's service, even an empress must be humble."
+            ],
+            "title": "St. Adelaide of Italy",
+            "associatedDates": [
+                    "December 16"
+            ],
+            "lived": "c. 931-999",
+            "bio": "St. Adelaide was a Burgundian princess who became Holy Roman Empress through her marriage to Otto the Great. She endured imprisonment, political intrigue, and family conflict, yet used her influence to promote monasteries, churches, and charitable institutions across Europe. She spent her final years in prayer and penance.",
+            "funFact": "She was imprisoned in a castle and escaped through underground tunnels before being rescued by Otto the Great, whom she then married.",
+            "enriched": true
+    },
+    {
+            "name": "St. Matilda of Ringelheim",
+            "feastDay": "March 14",
+            "knownFor": "A German queen renowned for her generosity to the poor and her founding of monasteries and charitable institutions.",
+            "patronOf": "large families, disappointed people, widows",
+            "dates": "c. 895-968",
+            "origin": "Germany",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "motherhood",
+                    "humility",
+                    "prayer",
+                    "forgiveness"
+            ],
+            "quotes": [
+                    "The riches of this world mean nothing compared to the treasures of heaven.",
+                    "A mother's prayers never cease.",
+                    "Give to the poor and you give to Christ."
+            ],
+            "title": "St. Matilda of Ringelheim",
+            "associatedDates": [
+                    "March 14"
+            ],
+            "lived": "c. 895-968",
+            "bio": "St. Matilda was the wife of King Henry I of Germany (Henry the Fowler) and mother of Emperor Otto the Great. After her husband's death, she devoted her wealth to founding monasteries, convents, and charitable institutions. Despite being criticized by her sons for her generosity, she continued her charitable work throughout her life.",
+            "funFact": "Her own sons tried to strip her of her dowry because they thought she gave too much to the poor.",
+            "enriched": true
+    },
+    {
+            "name": "St. Margaret of Hungary",
+            "feastDay": "January 18",
+            "knownFor": "A Hungarian princess who willingly embraced a life of extreme penance and prayer as a Dominican nun.",
+            "patronOf": "Hungary, flood prevention",
+            "dates": "1242-1270",
+            "origin": "Hungary",
+            "gender": "Female",
+            "traits": [
+                    "devotion",
+                    "penance",
+                    "humility",
+                    "sacrifice",
+                    "prayer"
+            ],
+            "quotes": [
+                    "I would rather die than leave my convent.",
+                    "My royal blood means nothing next to the Blood of Christ.",
+                    "In prayer, I find my true kingdom."
+            ],
+            "title": "St. Margaret of Hungary",
+            "associatedDates": [
+                    "January 18"
+            ],
+            "lived": "1242-1270",
+            "bio": "St. Margaret was a daughter of King Béla IV of Hungary who was offered to God as a child in thanksgiving for the country's deliverance from the Mongol invasion. She entered a Dominican convent on an island in the Danube (now Margaret Island, Budapest) and chose to live a life of extreme penance, refusing all offers of marriage from European royalty.",
+            "funFact": "Margaret Island in Budapest, one of the city's most popular parks, is named after her.",
+            "enriched": true
+    },
+    {
+            "name": "St. Zélie Martin",
+            "feastDay": "July 12",
+            "knownFor": "Mother of St. Thérèse of Lisieux and a successful businesswoman who raised a family of extraordinary holiness.",
+            "patronOf": "mothers, businesswomen, parents",
+            "dates": "1831-1877",
+            "origin": "France",
+            "gender": "Female",
+            "traits": [
+                    "motherhood",
+                    "faith",
+                    "industry",
+                    "love",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "I want to become a saint, and for that I must suffer much.",
+                    "God gave me many children, and I wish to give them all back to Him.",
+                    "When I sew, I am working for God."
+            ],
+            "title": "St. Zélie Martin",
+            "associatedDates": [
+                    "July 12"
+            ],
+            "lived": "1831-1877",
+            "bio": "St. Zélie Martin (née Guérin) was a French lace-maker and mother of nine children, five of whom became nuns, including St. Thérèse of Lisieux. She ran a successful Alençon lace business while raising her family with deep Catholic devotion. She died of breast cancer at age 45 and was canonized alongside her husband in 2015.",
+            "funFact": "She and her husband Louis are the first married couple to be canonized together in the history of the Catholic Church.",
+            "enriched": true
+    },
+    {
+            "name": "St. Louis Martin",
+            "feastDay": "July 12",
+            "knownFor": "Father of St. Thérèse of Lisieux, a watchmaker and devoted father who raised five daughters who all became nuns.",
+            "patronOf": "fathers, watchmakers, parents",
+            "dates": "1823-1894",
+            "origin": "France",
+            "gender": "Male",
+            "traits": [
+                    "fatherhood",
+                    "devotion",
+                    "patience",
+                    "humility",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "God has given me many crosses, but He has also given me much grace.",
+                    "My little queen, I offer you to God.",
+                    "Everything passes; only God remains."
+            ],
+            "title": "St. Louis Martin",
+            "associatedDates": [
+                    "July 12"
+            ],
+            "lived": "1823-1894",
+            "bio": "St. Louis Martin was a French watchmaker and the father of St. Thérèse of Lisieux. Together with his wife Zélie, he raised five daughters who all entered religious life. After his wife's death, he supported his daughters' vocations with profound faith. He suffered from cerebral arteriosclerosis in his later years, enduring his affliction with great patience.",
+            "funFact": "He originally wanted to become a monk but was turned away because he didn't know Latin.",
+            "enriched": true
+    },
+    {
+            "name": "St. Dulce Lopes Pontes",
+            "feastDay": "August 13",
+            "knownFor": "A Brazilian religious sister known as the 'Mother of the Poor' who built hospitals, orphanages, and schools for the destitute.",
+            "patronOf": "Brazil, poor people",
+            "dates": "1914-1992",
+            "origin": "Brazil",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "compassion",
+                    "courage",
+                    "leadership",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "If there is a problem, there is a solution. If there is no solution, then there is no problem.",
+                    "I cannot see someone suffering and do nothing.",
+                    "The poor are my family."
+            ],
+            "title": "St. Dulce Lopes Pontes",
+            "associatedDates": [
+                    "August 13"
+            ],
+            "lived": "1914-1992",
+            "bio": "St. Dulce Lopes Pontes, known as Irmã Dulce, was a Brazilian Franciscan sister who devoted her life to serving the poorest people of Salvador, Bahia. She transformed an abandoned fish market into a hospital, founded schools, orphanages, and health centers. She was nominated for the Nobel Peace Prize and was canonized by Pope Francis in 2019.",
+            "funFact": "She began her charitable work by bringing sick people into the chicken coop of her convent when she had no other space to shelter them.",
+            "enriched": true
+    },
+    {
+            "name": "St. Nino of Georgia",
+            "feastDay": "January 14",
+            "knownFor": "The 'Enlightener of Georgia' who brought Christianity to the ancient kingdom of Iberia (modern Georgia) in the 4th century.",
+            "patronOf": "Georgia, evangelists",
+            "dates": "c. 296-338",
+            "origin": "Cappadocia/Georgia",
+            "gender": "Female",
+            "traits": [
+                    "missionary",
+                    "courage",
+                    "faith",
+                    "healing",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "Christ is the light of all nations.",
+                    "Through the sign of the cross, I bring hope.",
+                    "My mission is from God, not from men."
+            ],
+            "title": "St. Nino of Georgia",
+            "associatedDates": [
+                    "January 14"
+            ],
+            "lived": "c. 296-338",
+            "bio": "St. Nino was a young woman from Cappadocia who traveled to the ancient kingdom of Iberia (modern Georgia) as a captive or pilgrim. Through her prayers and miracles, she converted Queen Nana and eventually King Mirian III, leading to the declaration of Christianity as the state religion. She is revered as equal to the apostles in the Georgian Orthodox Church.",
+            "funFact": "She carried a cross made from grapevine branches bound with her own hair, which became the symbol of the Georgian Church.",
+            "enriched": true
+    },
+    {
+            "name": "St. Notburga",
+            "feastDay": "September 14",
+            "knownFor": "A Tyrolean peasant servant known for her charity to the poor and her defense of workers' right to rest on Sundays.",
+            "patronOf": "servants, peasants, workers, Tyrol",
+            "dates": "c. 1265-1313",
+            "origin": "Austria",
+            "gender": "Female",
+            "traits": [
+                    "charity",
+                    "humility",
+                    "courage",
+                    "justice",
+                    "devotion"
+            ],
+            "quotes": [
+                    "Give to the poor what belongs to God.",
+                    "Even a servant can serve the Lord.",
+                    "Rest on the Lord's day is sacred."
+            ],
+            "title": "St. Notburga",
+            "associatedDates": [
+                    "September 14"
+            ],
+            "lived": "c. 1265-1313",
+            "bio": "St. Notburga was a Tyrolean kitchen servant who gave leftover food to the poor against her employer's wishes. When fired, she worked for a farmer who agreed to let her attend Mass and rest on Sundays. According to legend, when he reneged on this promise, her sickle floated in the air, proving God's will for Sunday rest.",
+            "funFact": "She is one of the few non-noble women from the Middle Ages to be venerated as a saint, beloved by Alpine farmers to this day.",
+            "enriched": true
+    },
+    {
+            "name": "St. Boris of Bulgaria",
+            "feastDay": "May 2",
+            "knownFor": "The Khan and later Tsar of Bulgaria who converted to Christianity and established it as the state religion.",
+            "patronOf": "Bulgaria",
+            "dates": "c. 831-907",
+            "origin": "Bulgaria",
+            "gender": "Male",
+            "traits": [
+                    "leadership",
+                    "vision",
+                    "faith",
+                    "courage",
+                    "diplomacy"
+            ],
+            "quotes": [
+                    "A nation united in faith is invincible.",
+                    "I leave my throne for the throne of God.",
+                    "Christianity is the foundation of our people."
+            ],
+            "title": "St. Boris of Bulgaria",
+            "associatedDates": [
+                    "May 2"
+            ],
+            "lived": "c. 831-907",
+            "bio": "St. Boris I was the ruler of Bulgaria who converted to Christianity around 864 and established it as the state religion. He navigated complex diplomatic relationships between Rome and Constantinople to secure autonomy for the Bulgarian Church. He eventually abdicated and retired to a monastery, but emerged briefly to prevent his son from restoring paganism.",
+            "funFact": "He came out of monastic retirement to blind and depose his own son Vladimir when he tried to restore paganism in Bulgaria.",
+            "enriched": true
+    },
+    {
+            "name": "St. Teresa of the Andes",
+            "feastDay": "July 13",
+            "knownFor": "A Chilean Discalced Carmelite nun who died at 19, known for her profound joy and mystical union with God.",
+            "patronOf": "young people, sick people, Chile",
+            "dates": "1900-1920",
+            "origin": "Chile",
+            "gender": "Female",
+            "traits": [
+                    "joy",
+                    "devotion",
+                    "mysticism",
+                    "youth",
+                    "love"
+            ],
+            "quotes": [
+                    "God is infinite joy.",
+                    "I am overwhelmed with happiness because I have found God.",
+                    "To love is to give everything, to give oneself entirely."
+            ],
+            "title": "St. Teresa of the Andes",
+            "associatedDates": [
+                    "July 13"
+            ],
+            "lived": "1900-1920",
+            "bio": "St. Teresa of the Andes, born Juanita Fernández Solar, was a Chilean girl from a wealthy family who entered the Discalced Carmelite convent in Los Andes at age 18. She lived only 11 months as a Carmelite before dying of typhus, but her diary and letters reveal an extraordinary mystical life. She was the first Chilean saint.",
+            "funFact": "She died at 19, making her one of the youngest non-martyred saints in modern times, yet she left behind hundreds of deeply spiritual letters.",
+            "enriched": true
+    },
+    {
+            "name": "St. Ezequiel Moreno",
+            "feastDay": "August 19",
+            "knownFor": "A Spanish Augustinian Recollect bishop who served extensively in the Philippines and Colombia, known for his pastoral zeal.",
+            "patronOf": "cancer patients",
+            "dates": "1848-1906",
+            "origin": "Spain/Colombia",
+            "gender": "Male",
+            "traits": [
+                    "missionary",
+                    "pastoral",
+                    "courage",
+                    "devotion",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "Liberalism is sin.",
+                    "I die content knowing I lived for God.",
+                    "Serve the flock entrusted to you with all your heart."
+            ],
+            "title": "St. Ezequiel Moreno",
+            "associatedDates": [
+                    "August 19"
+            ],
+            "lived": "1848-1906",
+            "bio": "St. Ezequiel Moreno was a Spanish Augustinian Recollect who served as a missionary in the Philippines before becoming Bishop of Pasto, Colombia. He was known for his tireless pastoral visitations of remote communities, often traveling by mule through dangerous terrain. He died of cancer and offered his sufferings for his diocese.",
+            "funFact": "He is invoked as patron of cancer patients because he suffered from the disease and offered his pain as a prayer for his people.",
+            "enriched": true
+    },
+    {
+            "name": "St. Lidwina of Schiedam",
+            "feastDay": "April 14",
+            "knownFor": "A Dutch mystic who suffered a skating accident at 15 and spent the rest of her life bedridden, offering her suffering for others.",
+            "patronOf": "ice skaters, chronic illness sufferers, the disabled",
+            "dates": "1380-1433",
+            "origin": "Netherlands",
+            "gender": "Female",
+            "traits": [
+                    "suffering",
+                    "patience",
+                    "mysticism",
+                    "devotion",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "My suffering is my prayer.",
+                    "In pain, I find union with Christ on the cross.",
+                    "Each wound brings me closer to God."
+            ],
+            "title": "St. Lidwina of Schiedam",
+            "associatedDates": [
+                    "April 14"
+            ],
+            "lived": "1380-1433",
+            "bio": "St. Lidwina of Schiedam was a Dutch woman who, at age 15, broke a rib while ice skating and never recovered. For the remaining 38 years of her life, she was bedridden with progressively worsening ailments. She transformed her suffering into a powerful spiritual ministry, experiencing mystical visions and offering her pain for the souls in purgatory.",
+            "funFact": "She is the patron saint of ice skaters because her lifelong suffering began with a skating accident.",
+            "enriched": true
+    },
+    {
+            "name": "St. Lorenzo Ruiz",
+            "feastDay": "September 28",
+            "knownFor": "The first Filipino saint, a lay missionary and calligrapher who was martyred in Japan for refusing to renounce Christianity.",
+            "patronOf": "Philippines, Filipino migrants, the Chinese-Filipino community",
+            "dates": "c. 1600-1637",
+            "origin": "Philippines",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "missionary",
+                    "sacrifice",
+                    "perseverance"
+            ],
+            "quotes": [
+                    "I am a Christian, and I will die for God.",
+                    "Even if I had a thousand lives, I would offer them all to God.",
+                    "My faith is more precious than my life."
+            ],
+            "title": "St. Lorenzo Ruiz",
+            "associatedDates": [
+                    "September 28"
+            ],
+            "lived": "c. 1600-1637",
+            "bio": "St. Lorenzo Ruiz was a Chinese-Filipino binukot (altar server) and calligrapher from Manila who fled to Japan after being falsely accused of a crime. He was captured during the Tokugawa persecution and subjected to the water torture of tsurushi. He refused to renounce his faith and died a martyr, becoming the first Filipino saint.",
+            "funFact": "He originally fled to Japan to escape criminal charges in Manila, never intending to become a missionary martyr.",
+            "enriched": true
+    },
+    {
+            "name": "St. Pedro Calungsod",
+            "feastDay": "April 2",
+            "knownFor": "A teenage Filipino catechist who was martyred in Guam alongside the Jesuit missionary Fr. Diego Luis de San Vitores.",
+            "patronOf": "Filipino youth, Visayan people, catechists",
+            "dates": "c. 1654-1672",
+            "origin": "Philippines",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "youth",
+                    "missionary",
+                    "faith",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I will not abandon Father Diego.",
+                    "To teach the faith is worth any sacrifice.",
+                    "My young life belongs to God."
+            ],
+            "title": "St. Pedro Calungsod",
+            "associatedDates": [
+                    "April 2"
+            ],
+            "lived": "c. 1654-1672",
+            "bio": "St. Pedro Calungsod was a young Filipino catechist from the Visayas who accompanied Jesuit missionaries to the Mariana Islands. At approximately 17 years old, he was killed alongside Fr. Diego Luis de San Vitores on Guam by a chieftain who opposed Christianity. He was canonized by Pope Benedict XVI in 2012.",
+            "funFact": "He could have escaped the attack because of his youth and agility, but chose to stay and die alongside his missionary companion.",
+            "enriched": true
+    },
+    {
+            "name": "St. Paul Miki",
+            "feastDay": "February 6",
+            "knownFor": "A Japanese Jesuit seminarian and one of the Twenty-Six Martyrs crucified in Nagasaki during the persecution of Christians.",
+            "patronOf": "Japan",
+            "dates": "c. 1562-1597",
+            "origin": "Japan",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "eloquence",
+                    "faith",
+                    "missionary",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I have been living as a Japanese and I am dying as a Japanese. This land of mine is the cradle for Christianity.",
+                    "As I come to this supreme moment of my life, I want you to believe me: I want to declare to you that there is no way to salvation other than the one followed by Christians.",
+                    "I forgive all who have had a part in my death."
+            ],
+            "title": "St. Paul Miki",
+            "associatedDates": [
+                    "February 6"
+            ],
+            "lived": "c. 1562-1597",
+            "bio": "St. Paul Miki was a Japanese Jesuit scholastic from a wealthy family who was one of the Twenty-Six Martyrs of Japan. He was arrested during the persecution under Toyotomi Hideyoshi and forced to march 600 miles to Nagasaki in winter. He preached his most powerful sermon from the cross before being killed by lance thrusts.",
+            "funFact": "He preached a sermon from the cross to the crowd of thousands who had gathered to watch the execution, converting many with his final words.",
+            "enriched": true
+    },
+    {
+            "name": "St. Augustine Zhao Rong",
+            "feastDay": "July 9",
+            "knownFor": "A Chinese diocesan priest who was one of 120 Martyrs of China killed during various persecutions from the 17th to 20th centuries.",
+            "patronOf": "China, Chinese Christians",
+            "dates": "1746-1815",
+            "origin": "China",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "faith",
+                    "conversion",
+                    "pastoral",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "I was once a persecutor, now I die for the faith I persecuted.",
+                    "The blood of martyrs is the seed of the Church in China.",
+                    "Christ has conquered my heart completely."
+            ],
+            "title": "St. Augustine Zhao Rong",
+            "associatedDates": [
+                    "July 9"
+            ],
+            "lived": "1746-1815",
+            "bio": "St. Augustine Zhao Rong was a Chinese soldier who guarded a bishop being transported to execution. So moved by the bishop's courage, he converted to Christianity and eventually became a diocesan priest. He was arrested and tortured to death during the Qing Dynasty's persecution of Christians.",
+            "funFact": "He converted after escorting a condemned bishop to his execution—watching the man's faith and courage transformed his own life completely.",
+            "enriched": true
+    },
+    {
+            "name": "St. Charles Lwanga",
+            "feastDay": "June 3",
+            "knownFor": "The chief of the Uganda Martyrs, a young courtier who protected pages from the king's abuse and was burned alive for his faith.",
+            "patronOf": "African Catholic Youth Action, converts, torture victims",
+            "dates": "c. 1860-1886",
+            "origin": "Uganda",
+            "gender": "Male",
+            "traits": [
+                    "courage",
+                    "leadership",
+                    "protection",
+                    "faith",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "A well that has water cannot dry up.",
+                    "You can burn my body, but you cannot harm my soul.",
+                    "Katonda wange—my God."
+            ],
+            "title": "St. Charles Lwanga",
+            "associatedDates": [
+                    "June 3"
+            ],
+            "lived": "c. 1860-1886",
+            "bio": "St. Charles Lwanga was a young page in the court of King Mwanga II of Buganda who became chief of the royal pages. He protected younger pages from the king's sexual abuse and secretly baptized them. When the king ordered the execution of all Christian pages, Charles led them in refusing to renounce their faith. He was burned alive at Namugongo.",
+            "funFact": "He baptized several of the younger pages the night before their execution, including the youngest martyr St. Kizito.",
+            "enriched": true
+    },
+    {
+            "name": "St. Gianna Beretta Molla",
+            "feastDay": "April 28",
+            "knownFor": "An Italian pediatrician who sacrificed her life to save her unborn child, choosing to continue a dangerous pregnancy rather than have an abortion.",
+            "patronOf": "mothers, physicians, unborn children, pro-life movement",
+            "dates": "1922-1962",
+            "origin": "Italy",
+            "gender": "Female",
+            "traits": [
+                    "motherhood",
+                    "courage",
+                    "faith",
+                    "medicine",
+                    "sacrifice"
+            ],
+            "quotes": [
+                    "The life of the child is more important than mine.",
+                    "Love is the most beautiful thing that God has given us.",
+                    "The secret of happiness is to live moment by moment and to thank God for all that He, in His goodness, sends to us day after day."
+            ],
+            "title": "St. Gianna Beretta Molla",
+            "associatedDates": [
+                    "April 28"
+            ],
+            "lived": "1922-1962",
+            "bio": "St. Gianna Beretta Molla was an Italian pediatrician and mother of four. During her fourth pregnancy, she was diagnosed with a uterine fibroma. She chose to have the tumor removed while preserving the pregnancy, refusing a hysterectomy or abortion. She gave birth to a healthy daughter but died a week later from complications.",
+            "funFact": "Her husband and children were present at her canonization in 2004—one of the few times a saint's immediate family witnessed the ceremony.",
+            "enriched": true
+    }
 ];
 
 // Trait Categories (Preserved)
