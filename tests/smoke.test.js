@@ -224,6 +224,7 @@ function testMinifiedFreshness() {
     const pairs = [
         ['public/quiz.js', 'public/quiz.min.js'],
         ['public/saints-data-enriched.js', 'public/saints-data-enriched.min.js'],
+        ['public/saints-data-quiz.js', 'public/saints-data-quiz.min.js'],
     ];
     for (const [src, min] of pairs) {
         const srcPath = path.join(__dirname, '..', src);

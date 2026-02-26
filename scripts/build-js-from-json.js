@@ -64,6 +64,41 @@ const traitCategories = ${JSON.stringify(traitCategories, null, 4)};
     console.log(`Built saints-data.js (${saints.length} saints)`);
 }
 
+function buildQuizJs() {
+    const saints = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, 'saints-data-enriched.json'), 'utf8'));
+    const traitCategories = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, 'trait-categories.json'), 'utf8'));
+
+    // Keep only the fields the quiz needs for scoring and display
+    const quizFields = ['name', 'feastDay', 'knownFor', 'patronOf', 'dates', 'origin', 'gender', 'traits', 'quote'];
+    const slim = saints.map(saint => {
+        const obj = {};
+        for (const field of quizFields) {
+            if (saint[field] !== undefined) obj[field] = saint[field];
+        }
+        return obj;
+    });
+
+    const content = `// Quiz-only Saints Database (slim bundle)
+// Total: ${slim.length}
+// Fields: ${quizFields.join(', ')}
+// Auto-generated from saints-data-enriched.json — do not edit directly
+// Generated: ${new Date().toISOString()}
+
+const saintsDatabase = ${JSON.stringify(slim, null, 4)};
+
+// Trait Categories
+const traitCategories = ${JSON.stringify(traitCategories, null, 4)};
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { saintsDatabase, traitCategories };
+}
+`;
+
+    fs.writeFileSync(path.join(PUBLIC_DIR, 'saints-data-quiz.js'), content, 'utf8');
+    console.log(`Built saints-data-quiz.js (${slim.length} saints, ${quizFields.length} fields each)`);
+}
+
 buildEnrichedJs();
+buildQuizJs();
 buildBaseJs();
 console.log('Done.');

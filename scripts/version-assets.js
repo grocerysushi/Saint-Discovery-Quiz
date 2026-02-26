@@ -20,6 +20,7 @@ const ASSETS = [
     'styles.css',
     'quiz.min.js',
     'saints-data-enriched.min.js',
+    'saints-data-quiz.min.js',
 ];
 
 // Compute short content hash for each asset

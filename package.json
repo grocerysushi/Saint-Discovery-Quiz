@@ -9,9 +9,10 @@
     "dev": "node server/index.js",
     "generate-saints": "node generate-saint-pages.js",
     "build:data": "node scripts/build-js-from-json.js",
-    "build": "npm run build:data && terser public/saints-data-enriched.js -o public/saints-data-enriched.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m && node scripts/version-assets.js",
+    "build": "npm run build:data && terser public/saints-data-enriched.js -o public/saints-data-enriched.min.js -c -m && terser public/saints-data-quiz.js -o public/saints-data-quiz.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m && node scripts/version-assets.js",
     "minify": "npm run build",
-    "test": "node tests/smoke.test.js"
+    "test": "node tests/smoke.test.js",
+    "lint": "eslint server/ scripts/ tests/"
   },
   "dependencies": {
     "@vercel/analytics": "^1.6.1",
@@ -27,6 +28,8 @@
     "node": ">=16.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
     "terser": "^5.46.0",
     "xlsx": "^0.18.5"
   }
