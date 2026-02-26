@@ -159,11 +159,12 @@ app.get('/api/saint-of-the-day', (req, res) => {
     // Find saints whose feast day matches today
     const matchingSaints = saintsDatabase.filter(s => s.feastDay === todayFeastDay);
 
+    const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
+
     let saint;
     if (matchingSaints.length > 0) {
         saint = matchingSaints[today.getFullYear() % matchingSaints.length];
     } else {
-        const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / (1000 * 60 * 60 * 24));
         const saintIndex = dayOfYear % saintsDatabase.length;
         saint = saintsDatabase[saintIndex];
     }
@@ -196,7 +197,13 @@ app.get('/api/feast-day', (req, res) => {
     // Use provided date or default to today
     let targetDate;
     if (req.query.date) {
-        targetDate = new Date(req.query.date);
+        // Parse as local date to avoid timezone offset shifting the day
+        const parts = req.query.date.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+        if (parts) {
+            targetDate = new Date(Number(parts[1]), Number(parts[2]) - 1, Number(parts[3]));
+        } else {
+            targetDate = new Date(req.query.date);
+        }
         if (isNaN(targetDate.getTime())) {
             return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD or MM-DD' });
         }
@@ -307,6 +314,10 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server running on http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
