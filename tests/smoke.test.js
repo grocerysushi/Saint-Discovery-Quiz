@@ -57,6 +57,9 @@ async function testHealth() {
     const res = await fetch('/api/health');
     assert.strictEqual(res.status, 200);
     assert.strictEqual(res.body.status, 'ok');
+    assert(res.body.saints > 0, 'should report saint count');
+    assert(res.body.timestamp, 'should include timestamp');
+    assert(typeof res.body.aiAvailable === 'boolean', 'should report AI availability');
     console.log('  ✓ GET /api/health');
 }
 

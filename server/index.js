@@ -107,7 +107,10 @@ app.use(express.static(path.join(__dirname, '../public'), {
 // Health check endpoint
 app.get('/api/health', (req, res) => {
     res.json({
-        status: 'ok'
+        status: saintsDatabase.length > 0 ? 'ok' : 'degraded',
+        saints: saintsDatabase.length,
+        aiAvailable: isAIAvailable(),
+        timestamp: new Date().toISOString()
     });
 });
 
@@ -263,7 +266,15 @@ app.get('/api/saints', (req, res) => {
         return res.status(500).json({ error: 'Saints database not loaded' });
     }
 
-    // Support optional query params for filtering
+    // Validate query params
+    if (req.query.gender && !['male', 'female'].includes(req.query.gender.toLowerCase())) {
+        return res.status(400).json({ error: 'gender must be "Male" or "Female"' });
+    }
+    if (req.query.search && req.query.search.length > 100) {
+        return res.status(400).json({ error: 'search term must be 100 characters or fewer' });
+    }
+
+    // Filter
     let results = saintsDatabase;
 
     if (req.query.gender) {
