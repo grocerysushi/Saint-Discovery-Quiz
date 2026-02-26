@@ -77,9 +77,11 @@ app.use(express.static(path.join(__dirname, '../public'), {
             filePath.endsWith('.ico') || filePath.endsWith('.svg')) {
             res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // 1 year
         }
-        // Medium cache for CSS and JS (1 week)
+        // CSS and JS use long immutable cache when served with ?v= hash;
+        // the version-assets.js build step stamps content hashes on all
+        // HTML references, so browsers fetch new URLs when files change.
         else if (filePath.endsWith('.css') || filePath.endsWith('.js')) {
-            res.setHeader('Cache-Control', 'public, max-age=604800'); // 1 week
+            res.setHeader('Cache-Control', 'public, max-age=31536000, immutable'); // 1 year
         }
         // Short cache for HTML (to allow updates)
         else if (filePath.endsWith('.html')) {

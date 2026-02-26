@@ -9,7 +9,7 @@
     "dev": "node server/index.js",
     "generate-saints": "node generate-saint-pages.js",
     "build:data": "node scripts/build-js-from-json.js",
-    "build": "npm run build:data && terser public/saints-data-enriched.js -o public/saints-data-enriched.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m",
+    "build": "npm run build:data && terser public/saints-data-enriched.js -o public/saints-data-enriched.min.js -c -m && terser public/quiz.js -o public/quiz.min.js -c -m && node scripts/version-assets.js",
     "minify": "npm run build",
     "test": "node tests/smoke.test.js"
   },
