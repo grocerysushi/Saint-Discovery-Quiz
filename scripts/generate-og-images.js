@@ -254,7 +254,7 @@ fs.writeFileSync(indexPath, indexHtml);
 const allSaintsPath = path.join(PUBLIC_DIR, 'all-saints.html');
 let allSaintsHtml = fs.readFileSync(allSaintsPath, 'utf8');
 const allSaintsSvg = generateSiteSVG({
-  title: '514 Catholic Saints',
+  title: '608 Catholic Saints',
   subtitle: 'Browse Patron Saints by Feast Day, Virtue & Region'
 });
 fs.writeFileSync(path.join(OG_DIR, 'all-saints.svg'), allSaintsSvg);

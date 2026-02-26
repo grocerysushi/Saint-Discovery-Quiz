@@ -1,6 +1,6 @@
 # Saint Discovery Quiz
 
-A web application that helps users discover which Catholic Saint they most identify with through a thoughtful personality quiz. Features AI-powered matching and a comprehensive directory of 137 saints.
+A web application that helps users discover which Catholic Saint they most identify with through a thoughtful personality quiz. Features AI-powered matching and a comprehensive directory of **600+ saints**.
 
 **Live Site:** [saintdiscoveryquiz.com](https://saintdiscoveryquiz.com)
 
@@ -8,7 +8,7 @@ A web application that helps users discover which Catholic Saint they most ident
 
 ### Quiz Experience
 - 12 carefully crafted personality questions
-- Matches users with one of **137 Catholic saints** based on their responses
+- Matches users with one of **600+ Catholic saints** based on their responses
 - Gender-based matching (users are matched with saints of the same gender)
 - Personalized, AI-generated explanations for why each saint was matched
 - Intelligent trait-based algorithm with rarity weighting
@@ -21,7 +21,7 @@ A web application that helps users discover which Catholic Saint they most ident
 - 10-second timeout to prevent endless loading
 
 ### Saint Directory Pages
-- **[All Saints](/all-saints.html)** - Complete searchable directory of 137 saints
+- **[All Saints](/all-saints.html)** - Complete searchable directory of 600+ saints
 - **[Saints by Virtue](/saints-by-virtue.html)** - Saints organized by 11 virtue categories
 - **[Saints by Century](/saints-by-century.html)** - Historical timeline from biblical era to modern saints
 
@@ -35,13 +35,13 @@ A web application that helps users discover which Catholic Saint they most ident
 
 ## Saints Database
 
-The quiz includes **137 Catholic saints** spanning 2000 years of Church history:
+The quiz includes **600+ Catholic saints** spanning 2000 years of Church history:
 
 | Category | Count |
 |----------|-------|
-| Male Saints | 95 |
-| Female Saints | 42 |
-| **Total** | **137** |
+| Male Saints | 404 |
+| Female Saints | 191 |
+| **Total** | **608** |
 
 **Includes:**
 - Biblical figures (Apostles, Evangelists, Holy Family)
@@ -100,7 +100,9 @@ Saint-Discovery-Quiz/
 │   ├── saints-by-century.html  # Saints timeline by era
 │   ├── styles.css          # All styling
 │   ├── quiz.js             # Quiz logic and interactions
-│   ├── saints-data.js      # Saint database (137 saints)
+│   ├── saints-data-enriched.json  # Canonical saint database (608 saints)
+│   ├── saints-data.json    # Base saint data (JSON)
+│   ├── trait-categories.json # Trait category definitions
 │   ├── manifest.json       # PWA manifest
 │   ├── sitemap.xml         # XML sitemap for SEO
 │   ├── robots.txt          # Crawler directives
@@ -108,6 +110,10 @@ Saint-Discovery-Quiz/
 ├── server/
 │   ├── index.js            # Express server with caching & compression
 │   └── ai-matcher.js       # GPT-4o mini integration
+├── scripts/
+│   └── build-js-from-json.js  # Generates client JS from canonical JSON
+├── tests/
+│   └── smoke.test.js       # Endpoint and scoring smoke tests
 ├── .env                    # Environment variables (API keys)
 ├── .env.example            # Template for environment variables
 ├── .gitignore              # Git ignore rules
@@ -181,19 +187,19 @@ AI-enhanced saint matching endpoint. Receives user answers and top candidate sai
 
 ### Adding More Saints
 
-Edit `public/saints-data.js` to add more saints:
+Add saints to `public/saints-data-enriched.json`, then run `npm run build` to regenerate the client JS files:
 
-```javascript
+```json
 {
-    name: "St. New Saint",
-    feastDay: "January 1",
-    knownFor: "Description of what they're known for",
-    patronOf: "List of patronages",
-    dates: "1900-2000",
-    origin: "Country",
-    gender: "Male",  // or "Female"
-    traits: ["trait1", "trait2", "trait3", "trait4", "trait5"],
-    quotes: ["Quote 1", "Quote 2"]
+    "name": "St. New Saint",
+    "feastDay": "January 1",
+    "knownFor": "Description of what they're known for",
+    "patronOf": "List of patronages",
+    "dates": "1900-2000",
+    "origin": "Country",
+    "gender": "Male",
+    "traits": ["trait1", "trait2", "trait3", "trait4", "trait5"],
+    "quotes": ["Quote 1", "Quote 2"]
 }
 ```
 
@@ -210,6 +216,7 @@ Edit `public/quiz.js` to modify questions or add new ones. Each question should 
 |----------|----------|-------------|
 | `PORT` | No | Server port (default: 3000) |
 | `OPENAI_API_KEY` | Yes | OpenAI API key for GPT-4o mini integration |
+| `ALLOWED_ORIGINS` | No | Comma-separated allowed CORS origins (open in dev if unset) |
 
 **Security Note**: Never commit your `.env` file to version control. The `.gitignore` file is configured to exclude it.
 

@@ -10,7 +10,7 @@
   <rect x="588" y="60" width="24" height="90" rx="5" fill="#D4AF37"/>
   <rect x="555" y="95" width="90" height="20" rx="5" fill="#D4AF37"/>
   <line x1="200" y1="175" x2="1000" y2="175" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
-  <text x="600" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#2C1810">514 Catholic Saints</text>
+  <text x="600" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="58" font-weight="bold" fill="#2C1810">608 Catholic Saints</text>
   <text x="600" y="322" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#C4956A">Browse Patron Saints by Feast Day, Virtue &amp; Region</text>
   <line x1="200" y1="560" x2="1000" y2="560" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
   <text x="600" y="595" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#8B4513" letter-spacing="2">SAINT DISCOVERY QUIZ</text>
