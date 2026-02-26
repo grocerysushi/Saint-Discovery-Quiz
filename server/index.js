@@ -91,11 +91,35 @@ app.post('/api/ai-match', async (req, res) => {
     try {
         const { userAnswers, topCandidates, userGender } = req.body;
 
-        if (!userAnswers || !topCandidates || !userGender) {
-            return res.status(400).json({
-                success: false,
-                error: 'Missing required fields'
-            });
+        // Validate required fields and types
+        if (!Array.isArray(userAnswers) || userAnswers.length === 0) {
+            return res.status(400).json({ success: false, error: 'userAnswers must be a non-empty array' });
+        }
+        if (!Array.isArray(topCandidates) || topCandidates.length === 0) {
+            return res.status(400).json({ success: false, error: 'topCandidates must be a non-empty array' });
+        }
+        if (typeof userGender !== 'string' || !userGender.trim()) {
+            return res.status(400).json({ success: false, error: 'userGender must be a non-empty string' });
+        }
+
+        // Validate each answer has a traits array of strings
+        for (let i = 0; i < userAnswers.length; i++) {
+            const a = userAnswers[i];
+            if (!a || !Array.isArray(a.traits) || !a.traits.every(t => typeof t === 'string')) {
+                return res.status(400).json({ success: false, error: `userAnswers[${i}].traits must be an array of strings` });
+            }
+        }
+
+        // Validate each candidate has required saint fields and a numeric score
+        for (let i = 0; i < topCandidates.length; i++) {
+            const c = topCandidates[i];
+            if (!c || typeof c.score !== 'number' || !c.saint) {
+                return res.status(400).json({ success: false, error: `topCandidates[${i}] must have a saint object and numeric score` });
+            }
+            const { name, knownFor, patronOf, dates } = c.saint;
+            if ([name, knownFor, patronOf, dates].some(f => typeof f !== 'string')) {
+                return res.status(400).json({ success: false, error: `topCandidates[${i}].saint must have name, knownFor, patronOf, and dates as strings` });
+            }
         }
 
         const aiResult = await getAIEnhancedMatch(userAnswers, topCandidates, userGender);
