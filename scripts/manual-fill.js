@@ -24,14 +24,11 @@ const manualGaps = [
     { date: "December 30", name: "St. Egwin" } // Avoid Holy Family moving date
 ];
 
-const TARGET_FILE = path.join(__dirname, '../public/saints-data-enriched.js');
+const TARGET_JSON = path.join(__dirname, '../public/saints-data-enriched.json');
 
 function loadSaintsDatabase() {
     try {
-        // Clear cache to ensure fresh data
-        delete require.cache[require.resolve(TARGET_FILE)];
-        const data = require(TARGET_FILE);
-        return data.saintsDatabase || [];
+        return JSON.parse(fs.readFileSync(TARGET_JSON, 'utf8'));
     } catch (error) {
         console.error("Error loading database:", error);
         return [];
@@ -39,28 +36,13 @@ function loadSaintsDatabase() {
 }
 
 function saveDatabase(saints) {
-    const content = `// Enriched Saints Database
-// Total: ${saints.length}
-// Generated: ${new Date().toISOString()}
+    // Write canonical JSON
+    fs.writeFileSync(TARGET_JSON, JSON.stringify(saints, null, 4), 'utf8');
+    console.log(`Saved ${saints.length} saints to ${TARGET_JSON}`);
 
-const saintsDatabase = ${JSON.stringify(saints, null, 4)};
-
-// Trait Categories (Preserved)
-const traitCategories = {
-    "intellectual": ["wisdom", "teaching", "writing", "philosophy", "truth", "light", "prudence"],
-    "monastic": ["contemplation", "prayer", "silence", "solitude", "simplicity", "poverty", "obedience", "discipline"],
-    "service": ["charity", "healing", "service", "compassion", "generosity", "humility", "mercy"],
-    "leadership": ["leadership", "reform", "justice", "courage", "conviction", "strength", "zeal", "protection"],
-    "mystic": ["mysticism", "visionary", "union", "devotion", "piety", "wonder", "joy", "peace"],
-    "missionary": ["evangelization", "preaching", "travel", "adventure", "endurance", "perseverance", "hope", "transformation"]
-};
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { saintsDatabase, traitCategories };
-}
-`;
-    fs.writeFileSync(TARGET_FILE, content);
-    console.log(`Saved ${saints.length} saints to ${TARGET_FILE}`);
+    // Regenerate JS wrapper
+    const { execSync } = require('child_process');
+    execSync('node scripts/build-js-from-json.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
 }
 
 async function enrichSaint(name, date) {

@@ -8,16 +8,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read the saints data file
-const saintsDataPath = path.join(__dirname, 'public', 'saints-data-enriched.js');
-const saintsDataContent = fs.readFileSync(saintsDataPath, 'utf8');
-
-// Parse the file to extract saintsDatabase and traitCategories
-// The file contains: const saintsDatabase = [...]; and const traitCategories = {...};
-// We'll modify it to return these as an object and use Function constructor
-const modifiedContent = saintsDataContent + '\n return { saintsDatabase, traitCategories };';
-const dataFunction = new Function(modifiedContent);
-const { saintsDatabase, traitCategories } = dataFunction();
+// Read the saints data from canonical JSON files
+const saintsDatabase = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'saints-data-enriched.json'), 'utf8'));
+const traitCategories = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'trait-categories.json'), 'utf8'));
 
 const SITE_URL = 'https://saintdiscoveryquiz.com';
 const OUTPUT_DIR = path.join(__dirname, 'public', 'saints');

@@ -5,15 +5,10 @@ const compression = require('compression');
 const path = require('path');
 const fs = require('fs');
 
-// Load saints database from the public JS file
+// Load saints database from the canonical JSON file
 function loadSaintsDatabase() {
-    const saintsFile = fs.readFileSync(path.join(__dirname, '../public/saints-data.js'), 'utf8');
-    // Extract the array from the JS file (it's assigned to const saintsDatabase = [...])
-    const match = saintsFile.match(/const saintsDatabase = (\[[\s\S]*?\]);/);
-    if (match) {
-        return JSON.parse(match[1]);
-    }
-    throw new Error('Could not parse saints database');
+    const jsonPath = path.join(__dirname, '../public/saints-data.json');
+    return JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
 }
 
 let saintsDatabase;

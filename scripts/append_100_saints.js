@@ -406,34 +406,17 @@ const newSaints = [
     }
 ];
 
-// Logic to append to the file
-let content = fs.readFileSync(saintsDataPath, 'utf8');
+// Logic to append to the canonical JSON file
+const saintsJsonPath = path.join(__dirname, '../public/saints-data-enriched.json');
+const saints = JSON.parse(fs.readFileSync(saintsJsonPath, 'utf8'));
+const originalCount = saints.length;
 
-const splitMarker = 'const traitCategories';
-const parts = content.split(splitMarker);
-let saintsPart = parts[0];
+saints.push(...newSaints);
 
-const lastBracketIndex = saintsPart.lastIndexOf(']');
+fs.writeFileSync(saintsJsonPath, JSON.stringify(saints, null, 4), 'utf8');
 
-if (lastBracketIndex === -1) {
-    console.error("Could not find end of saintsDatabase array");
-    process.exit(1);
-}
+// Regenerate JS wrapper
+const { execSync } = require('child_process');
+execSync('node scripts/build-js-from-json.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
 
-const newSaintsString = ',\n' + newSaints.map(s => JSON.stringify(s, null, 4)).join(',\n');
-
-const updatedSaintsPart = saintsPart.substring(0, lastBracketIndex) + newSaintsString + '\n' + saintsPart.substring(lastBracketIndex);
-
-const finalContent = updatedSaintsPart + splitMarker + parts[1];
-
-const totalRegex = /\/\/ Total: (\d+)/;
-const currentTotalMatch = finalContent.match(totalRegex);
-if (currentTotalMatch) {
-    const currentTotal = parseInt(currentTotalMatch[1]);
-    const newTotal = currentTotal + newSaints.length;
-    fs.writeFileSync(saintsDataPath, finalContent.replace(totalRegex, `// Total: ${newTotal}`), 'utf8');
-} else {
-    fs.writeFileSync(saintsDataPath, finalContent, 'utf8');
-}
-
-console.log(`Successfully appended ${newSaints.length} saints.`);
+console.log(`Successfully appended ${newSaints.length} saints (${originalCount} → ${saints.length}).`);

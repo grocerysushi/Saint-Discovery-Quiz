@@ -1,8 +1,4 @@
-// Complete Saints Database from Catholic_Saints_Comprehensive.xlsx
-// Total: 226 saints (including beatified)
-// Auto-generated from saints-data.json — do not edit directly
-
-const saintsDatabase = [
+[
     {
         "name": "St. Peter",
         "feastDay": "June 29",
@@ -4604,66 +4600,4 @@ const saintsDatabase = [
             "Even a shepherd boy can do great things through faith."
         ]
     }
-];
-
-// Trait categories for matching
-const traitCategories = {
-    "intellectual": [
-        "wisdom",
-        "teaching",
-        "writing",
-        "philosophy",
-        "truth",
-        "light",
-        "prudence"
-    ],
-    "monastic": [
-        "contemplation",
-        "prayer",
-        "silence",
-        "solitude",
-        "simplicity",
-        "poverty",
-        "obedience",
-        "discipline"
-    ],
-    "service": [
-        "charity",
-        "healing",
-        "service",
-        "compassion",
-        "generosity",
-        "humility",
-        "mercy"
-    ],
-    "leadership": [
-        "leadership",
-        "reform",
-        "justice",
-        "courage",
-        "conviction",
-        "strength",
-        "zeal",
-        "protection"
-    ],
-    "mystic": [
-        "mysticism",
-        "visionary",
-        "union",
-        "devotion",
-        "piety",
-        "wonder",
-        "joy",
-        "peace"
-    ],
-    "missionary": [
-        "evangelization",
-        "preaching",
-        "travel",
-        "adventure",
-        "endurance",
-        "perseverance",
-        "hope",
-        "transformation"
-    ]
-};
+]

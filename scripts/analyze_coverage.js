@@ -1,14 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read the saints data file
-const saintsDataPath = path.join(__dirname, '../public', 'saints-data-enriched.js');
-const saintsDataContent = fs.readFileSync(saintsDataPath, 'utf8');
-
-// Parse the file similarly to generate-saint-pages.js
-const modifiedContent = saintsDataContent + '\n return { saintsDatabase };';
-const dataFunction = new Function(modifiedContent);
-const { saintsDatabase } = dataFunction();
+// Read the saints data from canonical JSON
+const saintsDataPath = path.join(__dirname, '../public', 'saints-data-enriched.json');
+const saintsDatabase = JSON.parse(fs.readFileSync(saintsDataPath, 'utf8'));
 
 // Helper to normalized date string "Month Day"
 function normalizeDate(dateStr) {

@@ -7,32 +7,21 @@ const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
 });
 
+const TARGET_JSON = path.join(__dirname, '../public/saints-data-enriched.json');
+const TRAITS_JSON = path.join(__dirname, '../public/trait-categories.json');
 const TARGET_FILE = path.join(__dirname, '../public/saints-data-enriched.js');
-const SOURCE_FILE = path.join(__dirname, '../public/saints-data.js');
+const SOURCE_JSON = path.join(__dirname, '../public/saints-data.json');
 
-// Load saints database
+// Load saints database from canonical JSON
 function loadSaintsDatabase() {
-    // If enriched file exists, load it to resume
-    if (fs.existsSync(TARGET_FILE)) {
-        try {
-            const content = fs.readFileSync(TARGET_FILE, 'utf8');
-            const match = content.match(/const saintsDatabase = (\[[\s\S]*?\]);/);
-            if (match) {
-                console.log('Resuming from existing enriched database...');
-                return JSON.parse(match[1]);
-            }
-        } catch (e) {
-            console.log('Error reading existing enriched file, starting fresh from source.');
-        }
+    // If enriched JSON exists, load it to resume
+    if (fs.existsSync(TARGET_JSON)) {
+        console.log('Resuming from existing enriched JSON database...');
+        return JSON.parse(fs.readFileSync(TARGET_JSON, 'utf8'));
     }
 
-    // Otherwise load source
-    const content = fs.readFileSync(SOURCE_FILE, 'utf8');
-    const match = content.match(/const saintsDatabase = (\[[\s\S]*?\]);/);
-    if (match) {
-        return JSON.parse(match[1]);
-    }
-    throw new Error('Could not parse source database');
+    // Otherwise load source JSON
+    return JSON.parse(fs.readFileSync(SOURCE_JSON, 'utf8'));
 }
 
 // Generate all days of the year
@@ -146,31 +135,31 @@ async function generateGapSaint(date) {
 }
 
 function saveDatabase(saints) {
-    const content = `// Enriched Saints Database
+    // Write canonical JSON
+    fs.writeFileSync(TARGET_JSON, JSON.stringify(saints, null, 4), 'utf8');
+    console.log(`Saved ${saints.length} saints to ${TARGET_JSON}`);
+
+    // Read trait categories
+    const traitCategories = JSON.parse(fs.readFileSync(TRAITS_JSON, 'utf8'));
+
+    // Regenerate JS wrapper
+    const jsContent = `// Enriched Saints Database
 // Total: ${saints.length}
+// Auto-generated from saints-data-enriched.json — do not edit directly
 // Generated: ${new Date().toISOString()}
 
 const saintsDatabase = ${JSON.stringify(saints, null, 4)};
 
-// Trait categories (preserved from original)
-const traitCategories = {
-    intellectual: ["intellectual", "teaching", "writing", "wisdom", "philosophy", "seeking", "introspection", "mentorship"],
-    contemplative: ["contemplation", "mysticism", "prayer", "meditation", "devotion", "peace", "balance"],
-    service: ["service", "charity", "compassion", "healing", "generosity", "organization"],
-    leadership: ["leadership", "reform", "activism", "conviction", "discipline", "justice"],
-    missionary: ["missionary", "adventure", "cross-cultural", "preaching", "evangelization"],
-    creative: ["arts", "music", "poetry", "nature", "beauty", "animals"],
-    humble: ["humility", "simplicity", "obedience", "poverty", "patience"],
-    family: ["family", "motherhood", "nurturing", "protection", "children", "youth", "community"],
-    transformative: ["transformation", "forgiveness", "hope", "perseverance", "conversion"],
-    courageous: ["courage", "faith", "strength", "sacrifice", "endurance", "heroism"],
-    warrior: ["warrior", "military", "protection", "justice", "chivalry", "spiritual-warfare"],
-    joyful: ["joy", "innovation", "youth", "education", "love"]
-};
+// Trait Categories
+const traitCategories = ${JSON.stringify(traitCategories, null, 4)};
+
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { saintsDatabase, traitCategories };
+}
 `;
 
-    fs.writeFileSync(TARGET_FILE, content);
-    console.log(`Saved ${saints.length} saints to ${TARGET_FILE}`);
+    fs.writeFileSync(TARGET_FILE, jsContent, 'utf8');
+    console.log(`Regenerated JS wrapper: ${TARGET_FILE}`);
 }
 
 async function main() {

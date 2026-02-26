@@ -2,24 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 // Paths
-const saintsDataPath = path.join(__dirname, '../public/saints-data-enriched.js');
+const saintsDataPath = path.join(__dirname, '../public/saints-data-enriched.json');
 const allSaintsPath = path.join(__dirname, '../public/all-saints.html');
 
-// 1. Read and Parse Data
-let fileContent = fs.readFileSync(saintsDataPath, 'utf8');
-const splitMarker = 'const traitCategories';
-const part1 = fileContent.split(splitMarker)[0];
-const start = part1.indexOf('[');
-const end = part1.lastIndexOf(']') + 1;
-const jsonString = part1.substring(start, end);
-
-let saintsDatabase;
-try {
-    saintsDatabase = JSON.parse(jsonString);
-} catch (e) {
-    console.error("Error parsing JSON:", e);
-    process.exit(1);
-}
+// 1. Read and Parse Data from canonical JSON
+const saintsDatabase = JSON.parse(fs.readFileSync(saintsDataPath, 'utf8'));
 
 // 2. Sort and Generate HTML
 function slugify(name) {

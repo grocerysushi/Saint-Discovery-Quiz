@@ -1,0 +1,60 @@
+{
+    "intellectual": [
+        "wisdom",
+        "teaching",
+        "writing",
+        "philosophy",
+        "truth",
+        "light",
+        "prudence"
+    ],
+    "monastic": [
+        "contemplation",
+        "prayer",
+        "silence",
+        "solitude",
+        "simplicity",
+        "poverty",
+        "obedience",
+        "discipline"
+    ],
+    "service": [
+        "charity",
+        "healing",
+        "service",
+        "compassion",
+        "generosity",
+        "humility",
+        "mercy"
+    ],
+    "leadership": [
+        "leadership",
+        "reform",
+        "justice",
+        "courage",
+        "conviction",
+        "strength",
+        "zeal",
+        "protection"
+    ],
+    "mystic": [
+        "mysticism",
+        "visionary",
+        "union",
+        "devotion",
+        "piety",
+        "wonder",
+        "joy",
+        "peace"
+    ],
+    "missionary": [
+        "evangelization",
+        "preaching",
+        "travel",
+        "adventure",
+        "endurance",
+        "perseverance",
+        "hope",
+        "transformation"
+    ]
+}

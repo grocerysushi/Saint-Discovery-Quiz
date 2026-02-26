@@ -58,29 +58,18 @@ const moreSaints = [
 
 const allNew = newSaints.concat(moreSaints);
 
-// Read the existing file
-let fileContent = fs.readFileSync(saintsDataPath, 'utf8');
+// Logic to append to the canonical JSON file
+const saintsJsonPath = path.join(__dirname, '../public/saints-data-enriched.json');
+const saints = JSON.parse(fs.readFileSync(saintsJsonPath, 'utf8'));
+const originalCount = saints.length;
 
-// Find the end of the saintsDatabase array
-const traitCategoriesIndex = fileContent.indexOf('const traitCategories');
-const lastArrayEnd = fileContent.lastIndexOf('];', traitCategoriesIndex);
+saints.push(...allNew);
 
-if (lastArrayEnd === -1) {
-    console.error('Could not find the end of saintsDatabase array');
-    process.exit(1);
-}
+fs.writeFileSync(saintsJsonPath, JSON.stringify(saints, null, 4), 'utf8');
 
-// Insert new saints before the closing '];'
-const newSaintsJson = allNew.map(s => '    ' + JSON.stringify(s, null, 8).split('\n').map((line, i) => i === 0 ? line : '    ' + line).join('\n')).join(',\n');
-const newContent = fileContent.substring(0, lastArrayEnd) + ',\n' + newSaintsJson + '\n' + fileContent.substring(lastArrayEnd);
+// Regenerate JS wrapper
+const { execSync } = require('child_process');
+execSync('node scripts/build-js-from-json.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
 
-fs.writeFileSync(saintsDataPath, newContent, 'utf8');
-console.log(`Successfully appended ${allNew.length} new saints to saints-data-enriched.js`);
+console.log(`Successfully appended ${allNew.length} saints (${originalCount} → ${saints.length}).`);
 
-// Verify
-const verify = fs.readFileSync(saintsDataPath, 'utf8');
-const vm = verify.split('const traitCategories')[0];
-const vs = vm.indexOf('[');
-const ve = vm.lastIndexOf(']') + 1;
-const allSaints = JSON.parse(vm.substring(vs, ve));
-console.log(`Verified total: ${allSaints.length} saints`);

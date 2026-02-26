@@ -1,9 +1,4 @@
-// Enriched Saints Database
-// Total: 608
-// Auto-generated from saints-data-enriched.json — do not edit directly
-// Generated: 2026-02-26T00:13:34.590Z
-
-const saintsDatabase = [
+[
     {
         "name": "St. Peter",
         "feastDay": "June 29",
@@ -16387,70 +16382,4 @@ const saintsDatabase = [
         "funFact": "She hid the Archbishop of Guadalajara from government soldiers in her hospital for several years during the Cristero War persecution.",
         "enriched": true
     }
-];
-
-// Trait Categories
-const traitCategories = {
-    "intellectual": [
-        "wisdom",
-        "teaching",
-        "writing",
-        "philosophy",
-        "truth",
-        "light",
-        "prudence"
-    ],
-    "monastic": [
-        "contemplation",
-        "prayer",
-        "silence",
-        "solitude",
-        "simplicity",
-        "poverty",
-        "obedience",
-        "discipline"
-    ],
-    "service": [
-        "charity",
-        "healing",
-        "service",
-        "compassion",
-        "generosity",
-        "humility",
-        "mercy"
-    ],
-    "leadership": [
-        "leadership",
-        "reform",
-        "justice",
-        "courage",
-        "conviction",
-        "strength",
-        "zeal",
-        "protection"
-    ],
-    "mystic": [
-        "mysticism",
-        "visionary",
-        "union",
-        "devotion",
-        "piety",
-        "wonder",
-        "joy",
-        "peace"
-    ],
-    "missionary": [
-        "evangelization",
-        "preaching",
-        "travel",
-        "adventure",
-        "endurance",
-        "perseverance",
-        "hope",
-        "transformation"
-    ]
-};
-
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { saintsDatabase, traitCategories };
-}
+]
