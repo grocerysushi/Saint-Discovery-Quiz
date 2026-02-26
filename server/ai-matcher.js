@@ -1,8 +1,20 @@
 const OpenAI = require('openai');
 
-const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY
-});
+let openai;
+
+function getClient() {
+    if (!openai) {
+        if (!process.env.OPENAI_API_KEY) {
+            throw new Error('OPENAI_API_KEY is not configured');
+        }
+        openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+    }
+    return openai;
+}
+
+function isAvailable() {
+    return !!process.env.OPENAI_API_KEY;
+}
 
 async function getAIEnhancedMatch(userAnswers, topCandidates, userGender) {
     try {
@@ -32,7 +44,7 @@ INSPIRATION: [1 specific sentence about how this saint's life can inspire them i
 
 Keep the tone warm, personal, and spiritually uplifting. Make it feel like a meaningful connection, not just a match.`;
 
-        const response = await openai.chat.completions.create({
+        const response = await getClient().chat.completions.create({
             model: 'gpt-4o-mini',
             messages: [{ role: 'user', content: prompt }],
             temperature: 0.7,
@@ -58,4 +70,4 @@ Keep the tone warm, personal, and spiritually uplifting. Make it feel like a mea
     }
 }
 
-module.exports = { getAIEnhancedMatch };
+module.exports = { getAIEnhancedMatch, isAvailable };

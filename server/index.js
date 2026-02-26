@@ -96,9 +96,12 @@ app.get('/api/health', (req, res) => {
 });
 
 // AI-enhanced saint matching endpoint
-const { getAIEnhancedMatch } = require('./ai-matcher');
+const { getAIEnhancedMatch, isAvailable: isAIAvailable } = require('./ai-matcher');
 
 app.post('/api/ai-match', async (req, res) => {
+    if (!isAIAvailable()) {
+        return res.status(503).json({ success: false, error: 'AI matching is not configured (missing OPENAI_API_KEY)' });
+    }
     try {
         const { userAnswers, topCandidates, userGender } = req.body;
 
