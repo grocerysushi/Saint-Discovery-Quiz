@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>API Documentation | Saint Discovery Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a365d;
+      --navy-light: #2c5282;
+      --gold: #d4af37;
+      --gold-light: #e8c864;
+      --gold-dim: rgba(212, 175, 55, 0.12);
+      --cream: #f5f0e8;
+      --cream-light: #faf6f0;
+      --parchment: #f0ead6;
+      --text-dark: #2c2418;
+      --text-medium: #555;
+      --text-light: #888;
+      --border: #d8cebb;
+      --border-light: #e8dfcf;
+      --code-bg: #1c1914;
+      --code-fg: #e8dcc8;
+      --get: #5a8f3e;
+      --get-bg: rgba(90, 143, 62, 0.08);
+      --post: #b8860b;
+      --post-bg: rgba(184, 134, 11, 0.08);
+      --shadow: 0 2px 12px rgba(44, 36, 24, 0.08);
+      --shadow-lg: 0 8px 32px rgba(44, 36, 24, 0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: var(--cream);
+      background-image:
+        radial-gradient(ellipse at 20% 0%, rgba(212, 175, 55, 0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 100%, rgba(26, 54, 93, 0.04) 0%, transparent 60%);
+      color: var(--text-dark);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    /* ── Header ── */
+    .docs-header {
+      text-align: center;
+      padding: 56px 24px 40px;
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+    }
+
+    .docs-header::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--gold);
+      border-radius: 2px;
+    }
+
+    .unlisted-badge {
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 12px;
+      margin-bottom: 20px;
+    }
+
+    .docs-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .docs-header h1 span {
+      color: var(--gold);
+    }
+
+    .docs-header p {
+      color: var(--text-medium);
+      font-size: 15px;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .base-url {
+      display: inline-block;
+      margin-top: 20px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      background: var(--cream-light);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 20px;
+      color: var(--navy);
+      letter-spacing: -0.01em;
+    }
+
+    /* ── Layout ── */
+    .docs-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Table of Contents ── */
+    .toc {
+      margin: 40px 0;
+      padding: 24px 28px;
+      background: var(--cream-light);
+      border: 1px solid var(--border-light);
+      border-radius: 10px;
+    }
+
+    .toc h2 {
+      font-size: 18px;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .toc ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 6px 24px;
+    }
+
+    .toc a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 0;
+      transition: color 0.2s;
+    }
+
+    .toc a:hover { color: var(--gold); }
+
+    .toc .method-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 2px 7px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    .toc .method-badge.get { background: var(--get-bg); color: var(--get); }
+    .toc .method-badge.post { background: var(--post-bg); color: var(--post); }
+
+    /* ── Endpoint Card ── */
+    .endpoint {
+      margin-top: 40px;
+      background: white;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.3s;
+    }
+
+    .endpoint:hover { box-shadow: var(--shadow-lg); }
+
+    .endpoint-head {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border-light);
+      background: var(--cream-light);
+    }
+
+    .method {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 5px 12px;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .method.get { background: var(--get-bg); color: var(--get); border: 1px solid rgba(90, 143, 62, 0.2); }
+    .method.post { background: var(--post-bg); color: var(--post); border: 1px solid rgba(184, 134, 11, 0.2); }
+
+    .endpoint-path {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 15px;
+      color: var(--text-dark);
+      word-break: break-all;
+    }
+
+    .endpoint-body { padding: 24px; }
+
+    .endpoint-body p {
+      font-size: 14px;
+      color: var(--text-medium);
+      margin-bottom: 16px;
+    }
+
+    .endpoint-body h4 {
+      font-size: 15px;
+      color: var(--navy);
+      margin: 20px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .endpoint-body h4:first-child { margin-top: 0; }
+
+    /* ── Params Table ── */
+    .params-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 16px;
+    }
+
+    .params-table th {
+      text-align: left;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-light);
+      padding: 8px 12px;
+      border-bottom: 2px solid var(--border-light);
+    }
+
+    .params-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border-light);
+      vertical-align: top;
+    }
+
+    .params-table tr:last-child td { border-bottom: none; }
+
+    .params-table code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      background: var(--gold-dim);
+      padding: 2px 6px;
+      border-radius: 3px;
+      color: var(--navy);
+    }
+
+    .param-optional {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-light);
+      margin-left: 6px;
+    }
+
+    .param-required {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--post);
+      margin-left: 6px;
+    }
+
+    /* ── Code Blocks ── */
+    .code-block {
+      background: var(--code-bg);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 12px 0;
+    }
+
+    .code-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .code-block-label {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: rgba(232, 220, 200, 0.45);
+    }
+
+    .code-block pre {
+      padding: 16px;
+      overflow-x: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12.5px;
+      line-height: 1.7;
+      color: var(--code-fg);
+      margin: 0;
+    }
+
+    .code-block .key { color: #c9a654; }
+    .code-block .str { color: #a8c47a; }
+    .code-block .num { color: #d4a06a; }
+    .code-block .bool { color: #7ab8c4; }
+    .code-block .null { color: #888; }
+
+    /* ── Try It ── */
+    .try-it-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gold);
+      background: var(--gold-dim);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 6px;
+      padding: 8px 18px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .try-it-btn:hover {
+      background: rgba(212, 175, 55, 0.18);
+      border-color: var(--gold);
+    }
+
+    .try-it-btn::before {
+      content: '▶';
+      font-size: 9px;
+    }
+
+    .try-it-btn.loading { opacity: 0.6; pointer-events: none; }
+    .try-it-btn.loading::before { content: '⏳'; }
+
+    .live-response {
+      display: none;
+      margin-top: 12px;
+    }
+
+    .live-response.visible { display: block; }
+
+    .live-response .code-block-label { color: rgba(168, 196, 122, 0.7); }
+
+    .status-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    .status-pill.ok { background: rgba(90, 143, 62, 0.15); color: #a8c47a; }
+    .status-pill.err { background: rgba(200, 80, 60, 0.15); color: #c87a6a; }
+
+    /* ── Notes ── */
+    .note {
+      font-size: 13px;
+      color: var(--text-medium);
+      background: var(--gold-dim);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 6px 6px 0;
+      padding: 12px 16px;
+      margin: 16px 0;
+    }
+
+    .note strong { color: var(--text-dark); }
+
+    /* ── Footer ── */
+    .docs-footer {
+      text-align: center;
+      padding: 40px 24px;
+      border-top: 1px solid var(--border-light);
+      margin-top: 60px;
+    }
+
+    .docs-footer p {
+      font-size: 13px;
+      color: var(--text-light);
+    }
+
+    .docs-footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .docs-footer a:hover { text-decoration: underline; }
+
+    /* ── Animations ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .endpoint { animation: fadeUp 0.4s ease both; }
+    .endpoint:nth-child(2) { animation-delay: 0.05s; }
+    .endpoint:nth-child(3) { animation-delay: 0.1s; }
+    .endpoint:nth-child(4) { animation-delay: 0.15s; }
+    .endpoint:nth-child(5) { animation-delay: 0.2s; }
+    .endpoint:nth-child(6) { animation-delay: 0.25s; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .endpoint-head { padding: 16px; gap: 10px; }
+      .endpoint-body { padding: 16px; }
+      .endpoint-path { font-size: 13px; }
+      .params-table { font-size: 12px; }
+      .params-table th, .params-table td { padding: 8px 6px; }
+      .toc ul { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="docs-header">
+    <div class="unlisted-badge">Unlisted — Not indexed</div>
+    <h1>Saint Discovery Quiz <span>API</span></h1>
+    <p>REST endpoints for accessing the saints database, feast day calendar, and AI-powered patron saint matching.</p>
+    <div class="base-url">https://saintdiscoveryquiz.com</div>
+  </header>
+
+  <div class="docs-container">
+
+    <nav class="toc">
+      <h2>Endpoints</h2>
+      <ul>
+        <li><a href="#health"><span class="method-badge get">GET</span>/api/health</a></li>
+        <li><a href="#saint-of-the-day"><span class="method-badge get">GET</span>/api/saint-of-the-day</a></li>
+        <li><a href="#feast-day"><span class="method-badge get">GET</span>/api/feast-day</a></li>
+        <li><a href="#saints"><span class="method-badge get">GET</span>/api/saints</a></li>
+        <li><a href="#saints-name"><span class="method-badge get">GET</span>/api/saints/:name</a></li>
+        <li><a href="#ai-match"><span class="method-badge post">POST</span>/api/ai-match</a></li>
+      </ul>
+    </nav>
+
+    <!-- ════════ Health ════════ -->
+    <div class="endpoint" id="health">
+      <div class="endpoint-head">
+        <span class="method get">GET</span>
+        <span class="endpoint-path">/api/health</span>
+      </div>
+      <div class="endpoint-body">
+        <p>Returns server health status. Use for uptime monitoring.</p>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"status"</span>: <span class="str">"ok"</span>
+}</pre>
+        </div>
+        <button class="try-it-btn" onclick="tryEndpoint(this, '/api/health')">Try it</button>
+        <div class="live-response"></div>
+      </div>
+    </div>
+
+    <!-- ════════ Saint of the Day ════════ -->
+    <div class="endpoint" id="saint-of-the-day">
+      <div class="endpoint-head">
+        <span class="method get">GET</span>
+        <span class="endpoint-path">/api/saint-of-the-day</span>
+      </div>
+      <div class="endpoint-body">
+        <p>Returns today's featured saint. Matches by actual feast day when possible; falls back to a deterministic daily rotation.</p>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"date"</span>: <span class="str">"Tuesday, February 25, 2026"</span>,
+  <span class="key">"dayOfYear"</span>: <span class="num">56</span>,
+  <span class="key">"saint"</span>: {
+    <span class="key">"name"</span>: <span class="str">"St. Walburga"</span>,
+    <span class="key">"feastDay"</span>: <span class="str">"February 25"</span>,
+    <span class="key">"knownFor"</span>: <span class="str">"English missionary to Germany..."</span>,
+    <span class="key">"patronOf"</span>: <span class="str">"plague, famine, storms"</span>,
+    <span class="key">"dates"</span>: <span class="str">"c. 710–779"</span>,
+    <span class="key">"origin"</span>: <span class="str">"England/Germany"</span>,
+    <span class="key">"gender"</span>: <span class="str">"Female"</span>,
+    <span class="key">"quote"</span>: <span class="str">"..."</span>
+  }
+}</pre>
+        </div>
+        <button class="try-it-btn" onclick="tryEndpoint(this, '/api/saint-of-the-day')">Try it</button>
+        <div class="live-response"></div>
+      </div>
+    </div>
+
+    <!-- ════════ Feast Day ════════ -->
+    <div class="endpoint" id="feast-day">
+      <div class="endpoint-head">
+        <span class="method get">GET</span>
+        <span class="endpoint-path">/api/feast-day</span>
+      </div>
+      <div class="endpoint-body">
+        <p>Returns all saints whose feast day matches the given date. Defaults to today if no date provided.</p>
+        <h4>Query Parameters</h4>
+        <table class="params-table">
+          <thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>date</code><span class="param-optional">optional</span></td>
+              <td>string</td>
+              <td>Date in <code>YYYY-MM-DD</code> format. Defaults to today.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"date"</span>: <span class="str">"Saturday, June 29, 2024"</span>,
+  <span class="key">"feastDay"</span>: <span class="str">"June 29"</span>,
+  <span class="key">"count"</span>: <span class="num">2</span>,
+  <span class="key">"saints"</span>: [
+    {
+      <span class="key">"name"</span>: <span class="str">"St. Peter"</span>,
+      <span class="key">"feastDay"</span>: <span class="str">"June 29"</span>,
+      <span class="key">"knownFor"</span>: <span class="str">"First Pope, leader of the apostles..."</span>,
+      ...
+    }
+  ]
+}</pre>
+        </div>
+        <button class="try-it-btn" onclick="tryEndpoint(this, '/api/feast-day?date=2024-06-29')">Try it <span style="font-weight:400;opacity:0.7">— June 29</span></button>
+        <div class="live-response"></div>
+      </div>
+    </div>
+
+    <!-- ════════ Saints List ════════ -->
+    <div class="endpoint" id="saints">
+      <div class="endpoint-head">
+        <span class="method get">GET</span>
+        <span class="endpoint-path">/api/saints</span>
+      </div>
+      <div class="endpoint-body">
+        <p>Paginated, filterable saints directory. Returns all saints by default.</p>
+        <h4>Query Parameters</h4>
+        <table class="params-table">
+          <thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>gender</code><span class="param-optional">optional</span></td>
+              <td>string</td>
+              <td><code>Male</code> or <code>Female</code></td>
+            </tr>
+            <tr>
+              <td><code>trait</code><span class="param-optional">optional</span></td>
+              <td>string</td>
+              <td>Filter by trait, e.g. <code>courage</code>, <code>humility</code></td>
+            </tr>
+            <tr>
+              <td><code>search</code><span class="param-optional">optional</span></td>
+              <td>string</td>
+              <td>Text search across name, knownFor, and patronOf</td>
+            </tr>
+            <tr>
+              <td><code>limit</code><span class="param-optional">optional</span></td>
+              <td>integer</td>
+              <td>Max results to return (1–200). Defaults to all.</td>
+            </tr>
+            <tr>
+              <td><code>offset</code><span class="param-optional">optional</span></td>
+              <td>integer</td>
+              <td>Number of results to skip. Defaults to 0.</td>
+            </tr>
+            <tr>
+              <td><code>fields</code><span class="param-optional">optional</span></td>
+              <td>string</td>
+              <td>Comma-separated field names for projection, e.g. <code>name,gender,feastDay</code>. Available: <code>name</code>, <code>feastDay</code>, <code>knownFor</code>, <code>patronOf</code>, <code>dates</code>, <code>origin</code>, <code>gender</code>, <code>traits</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"total"</span>: <span class="num">191</span>,
+  <span class="key">"limit"</span>: <span class="num">3</span>,
+  <span class="key">"offset"</span>: <span class="num">0</span>,
+  <span class="key">"count"</span>: <span class="num">3</span>,
+  <span class="key">"saints"</span>: [
+    { <span class="key">"name"</span>: <span class="str">"St. Mary"</span>, <span class="key">"gender"</span>: <span class="str">"Female"</span>, <span class="key">"feastDay"</span>: <span class="str">"August 15"</span> },
+    ...
+  ]
+}</pre>
+        </div>
+        <button class="try-it-btn" onclick="tryEndpoint(this, '/api/saints?gender=Female&limit=3&fields=name,gender,feastDay')">Try it <span style="font-weight:400;opacity:0.7">— 3 female saints</span></button>
+        <div class="live-response"></div>
+      </div>
+    </div>
+
+    <!-- ════════ Single Saint ════════ -->
+    <div class="endpoint" id="saints-name">
+      <div class="endpoint-head">
+        <span class="method get">GET</span>
+        <span class="endpoint-path">/api/saints/:name</span>
+      </div>
+      <div class="endpoint-body">
+        <p>Returns a single saint by URL-friendly slug name. The slug is the saint's name lowercased with spaces replaced by hyphens.</p>
+        <h4>Path Parameters</h4>
+        <table class="params-table">
+          <thead><tr><th>Param</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>name</code><span class="param-required">required</span></td>
+              <td>string</td>
+              <td>URL slug, e.g. <code>st-thomas-aquinas</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"name"</span>: <span class="str">"St. Thomas Aquinas"</span>,
+  <span class="key">"feastDay"</span>: <span class="str">"January 28"</span>,
+  <span class="key">"knownFor"</span>: <span class="str">"Doctor of the Church, wrote Summa Theologica..."</span>,
+  <span class="key">"patronOf"</span>: <span class="str">"Students, universities, theologians"</span>,
+  <span class="key">"dates"</span>: <span class="str">"1225–1274"</span>,
+  <span class="key">"origin"</span>: <span class="str">"Italy"</span>,
+  <span class="key">"gender"</span>: <span class="str">"Male"</span>,
+  <span class="key">"traits"</span>: [<span class="str">"intellectual"</span>, <span class="str">"wisdom"</span>, <span class="str">"teaching"</span>, ...],
+  <span class="key">"quotes"</span>: [<span class="str">"To one who has faith, no explanation is necessary..."</span>]
+}</pre>
+        </div>
+        <button class="try-it-btn" onclick="tryEndpoint(this, '/api/saints/st-thomas-aquinas')">Try it <span style="font-weight:400;opacity:0.7">— St. Thomas Aquinas</span></button>
+        <div class="live-response"></div>
+      </div>
+    </div>
+
+    <!-- ════════ AI Match ════════ -->
+    <div class="endpoint" id="ai-match">
+      <div class="endpoint-head">
+        <span class="method post">POST</span>
+        <span class="endpoint-path">/api/ai-match</span>
+      </div>
+      <div class="endpoint-body">
+        <p>AI-enhanced patron saint matching powered by GPT-4o mini. Analyzes quiz responses against top candidate saints and returns a personalized match with explanation.</p>
+        <div class="note">
+          <strong>Requires configuration.</strong> Returns <code>503</code> if <code>OPENAI_API_KEY</code> is not set. The quiz client falls back to algorithmic matching automatically.
+        </div>
+        <h4>Request Body</h4>
+        <table class="params-table">
+          <thead><tr><th>Field</th><th>Type</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><code>userAnswers</code><span class="param-required">required</span></td>
+              <td>array</td>
+              <td>Array of answer objects, each with a <code>traits</code> array of strings.</td>
+            </tr>
+            <tr>
+              <td><code>topCandidates</code><span class="param-required">required</span></td>
+              <td>array</td>
+              <td>Array of candidate objects with <code>saint</code> (object with <code>name</code>, <code>dates</code>, <code>knownFor</code>, <code>patronOf</code>) and <code>score</code> (number).</td>
+            </tr>
+            <tr>
+              <td><code>userGender</code><span class="param-required">required</span></td>
+              <td>string</td>
+              <td><code>Male</code> or <code>Female</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <h4>Example Request</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON Body</span></div>
+          <pre>{
+  <span class="key">"userAnswers"</span>: [
+    { <span class="key">"traits"</span>: [<span class="str">"courage"</span>, <span class="str">"faith"</span>] },
+    { <span class="key">"traits"</span>: [<span class="str">"leadership"</span>, <span class="str">"dedication"</span>] }
+  ],
+  <span class="key">"topCandidates"</span>: [
+    {
+      <span class="key">"saint"</span>: {
+        <span class="key">"name"</span>: <span class="str">"St. Joan of Arc"</span>,
+        <span class="key">"dates"</span>: <span class="str">"1412–1431"</span>,
+        <span class="key">"knownFor"</span>: <span class="str">"Led French army, martyred for faith"</span>,
+        <span class="key">"patronOf"</span>: <span class="str">"soldiers, France"</span>
+      },
+      <span class="key">"score"</span>: <span class="num">42.5</span>
+    }
+  ],
+  <span class="key">"userGender"</span>: <span class="str">"Female"</span>
+}</pre>
+        </div>
+        <h4>Response</h4>
+        <div class="code-block">
+          <div class="code-block-header"><span class="code-block-label">JSON</span></div>
+          <pre>{
+  <span class="key">"success"</span>: <span class="bool">true</span>,
+  <span class="key">"saintName"</span>: <span class="str">"St. Joan of Arc"</span>,
+  <span class="key">"explanation"</span>: <span class="str">"Your courageous spirit and deep faith..."</span>,
+  <span class="key">"inspiration"</span>: <span class="str">"Let Joan's fearless trust in God inspire..."</span>,
+  <span class="key">"fullResponse"</span>: <span class="str">"SAINT: St. Joan of Arc\nEXPLANATION: ..."</span>
+}</pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="docs-footer">
+    <p>Saint Discovery Quiz API &middot; <a href="/">Back to Quiz</a></p>
+  </footer>
+
+  <script>
+    async function tryEndpoint(btn, path) {
+      const container = btn.nextElementSibling;
+      btn.classList.add('loading');
+
+      try {
+        const res = await fetch(path);
+        const data = await res.json();
+        const formatted = JSON.stringify(data, null, 2);
+
+        const statusClass = res.ok ? 'ok' : 'err';
+        container.innerHTML = `
+          <div class="code-block">
+            <div class="code-block-header">
+              <span class="code-block-label">Live Response</span>
+              <span class="status-pill ${statusClass}">${res.status}</span>
+            </div>
+            <pre>${escapeAndHighlight(formatted)}</pre>
+          </div>`;
+        container.classList.add('visible');
+      } catch (e) {
+        container.innerHTML = `
+          <div class="code-block">
+            <div class="code-block-header">
+              <span class="code-block-label">Error</span>
+              <span class="status-pill err">ERR</span>
+            </div>
+            <pre style="color:#c87a6a">${escapeHtml(e.message)}</pre>
+          </div>`;
+        container.classList.add('visible');
+      }
+
+      btn.classList.remove('loading');
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function escapeAndHighlight(json) {
+      return escapeHtml(json).replace(
+        /("(?:\\.|[^"\\])*")\s*:/g,
+        '<span class="key">$1</span>:'
+      ).replace(
+        /:\s*("(?:\\.|[^"\\])*")/g,
+        ': <span class="str">$1</span>'
+      ).replace(
+        /:\s*(\d+\.?\d*)/g,
+        ': <span class="num">$1</span>'
+      ).replace(
+        /:\s*(true|false)/g,
+        ': <span class="bool">$1</span>'
+      ).replace(
+        /:\s*(null)/g,
+        ': <span class="null">$1</span>'
+      );
+    }
+  </script>
+
+</body>
+</html>
