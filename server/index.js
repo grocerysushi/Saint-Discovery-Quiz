@@ -2,6 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const compression = require('compression');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const path = require('path');
 const fs = require('fs');
 
@@ -36,19 +38,31 @@ app.use(compression({
     }
 }));
 
-// Security and SEO headers middleware
+// Security headers via helmet
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            scriptSrc: ["'self'", "'unsafe-inline'", "https://www.googletagmanager.com", "https://cdn.vercel-insights.com"],
+            styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+            imgSrc: ["'self'", "data:", "https:"],
+            connectSrc: ["'self'", "https://vitals.vercel-insights.com"],
+        }
+    },
+    crossOriginEmbedderPolicy: false, // allow cross-origin fonts/images
+}));
+
+// SEO header
 app.use((req, res, next) => {
-    // Security headers
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
-    res.setHeader('X-XSS-Protection', '1; mode=block');
-    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
-
-    // SEO-friendly headers
     res.setHeader('X-Robots-Tag', 'index, follow');
-
     next();
 });
+
+// Rate limiting
+const apiLimiter = rateLimit({ windowMs: 60 * 1000, max: 60, message: { error: 'Too many requests, please try again later' } });
+const aiLimiter = rateLimit({ windowMs: 60 * 1000, max: 5, message: { error: 'Too many AI matching requests, please try again later' } });
+app.use('/api/', apiLimiter);
 
 // Middleware
 // Restrict CORS to known origins in production
@@ -100,7 +114,7 @@ app.get('/api/health', (req, res) => {
 // AI-enhanced saint matching endpoint
 const { getAIEnhancedMatch, isAvailable: isAIAvailable } = require('./ai-matcher');
 
-app.post('/api/ai-match', async (req, res) => {
+app.post('/api/ai-match', aiLimiter, async (req, res) => {
     if (!isAIAvailable()) {
         return res.status(503).json({ success: false, error: 'AI matching is not configured (missing OPENAI_API_KEY)' });
     }
@@ -144,8 +158,7 @@ app.post('/api/ai-match', async (req, res) => {
         console.error('AI matching error:', error);
         res.status(500).json({
             success: false,
-            error: 'AI analysis failed',
-            message: error.message
+            error: 'AI analysis failed'
         });
     }
 });
