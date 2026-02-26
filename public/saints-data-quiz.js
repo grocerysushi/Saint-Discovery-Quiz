@@ -1,8 +1,8 @@
 // Quiz-only Saints Database (slim bundle)
-// Total: 608
+// Total: 507
 // Fields: name, feastDay, knownFor, patronOf, dates, origin, gender, traits, quote
 // Auto-generated from saints-data-enriched.json — do not edit directly
-// Generated: 2026-02-26T00:51:11.227Z
+// Generated: 2026-02-26T01:02:14.876Z
 
 const saintsDatabase = [
     {
@@ -598,22 +598,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Christopher",
-        "feastDay": "July 25",
-        "knownFor": "A legendary giant known for his unwavering faith as he carried Christ across a river.",
-        "patronOf": "travelers, drivers, bachelors",
-        "dates": "3rd century",
-        "origin": "Canaan",
-        "gender": "Male",
-        "traits": [
-            "faithful",
-            "devout",
-            "persevering",
-            "loving",
-            "service-oriented"
-        ]
-    },
-    {
         "name": "St. Martin of Tours",
         "feastDay": "November 11",
         "knownFor": "A soldier who became a compassionate bishop known for his acts of charity.",
@@ -870,22 +854,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. John Neumann",
-        "feastDay": "January 5",
-        "knownFor": "Pioneering bishop and educational reformer in the United States.",
-        "patronOf": "Catholic education, immigrants",
-        "dates": "1811-1860",
-        "origin": "USA",
-        "gender": "Male",
-        "traits": [
-            "compassionate",
-            "dedicated",
-            "innovative",
-            "humble",
-            "resilient"
-        ]
-    },
-    {
         "name": "St. Frances Xavier Cabrini",
         "feastDay": "November 13",
         "knownFor": "She was the first naturalized American citizen to be canonized as a saint.",
@@ -934,22 +902,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Damien of Molokai",
-        "feastDay": "May 10",
-        "knownFor": "Devoted his life to serving those afflicted with leprosy in Hawaii.",
-        "patronOf": "Lepers, outcasts, HIV/AIDS patients",
-        "dates": "1840-1889",
-        "origin": "Belgium",
-        "gender": "Male",
-        "traits": [
-            "compassionate",
-            "selfless",
-            "resilient",
-            "dedicated",
-            "humble"
-        ]
-    },
-    {
         "name": "St. Teresa of Calcutta",
         "feastDay": "September 5",
         "knownFor": "St. Teresa of Calcutta is renowned for her unwavering dedication to serving the poorest of the poor through the Missionaries of Charity.",
@@ -963,22 +915,6 @@ const saintsDatabase = [
             "dedication",
             "servitude",
             "leadership"
-        ]
-    },
-    {
-        "name": "St. Maximilian Kolbe",
-        "feastDay": "August 14",
-        "knownFor": "Franciscan priest who sacrificed his life to save another prisoner in Auschwitz.",
-        "patronOf": "drug addicts, journalists, prisoners",
-        "dates": "1894-1941",
-        "origin": "Poland",
-        "gender": "Male",
-        "traits": [
-            "charity",
-            "generosity",
-            "conviction",
-            "courage",
-            "sacrifice"
         ]
     },
     {
@@ -1027,22 +963,6 @@ const saintsDatabase = [
             "humility",
             "piety",
             "resilience"
-        ]
-    },
-    {
-        "name": "St. Faustina Kowalska",
-        "feastDay": "October 5",
-        "knownFor": "Promoting the devotion to Divine Mercy through her diary and visions of Jesus.",
-        "patronOf": "mercy, World Mercy Sunday",
-        "dates": "1905-1938",
-        "origin": "Poland",
-        "gender": "Female",
-        "traits": [
-            "mystical",
-            "devout",
-            "compassionate",
-            "introspective",
-            "humble"
         ]
     },
     {
@@ -1190,22 +1110,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Hilda of Whitby",
-        "feastDay": "November 17",
-        "knownFor": "Significant early Christian leader who presided over the Synod of Whitby.",
-        "patronOf": "learning, culture, Whitby",
-        "dates": "614-680",
-        "origin": "England",
-        "gender": "Female",
-        "traits": [
-            "intellectual",
-            "contemplative",
-            "faithful",
-            "devout",
-            "persevering"
-        ]
-    },
-    {
         "name": "St. Bede the Venerable",
         "feastDay": "May 25",
         "knownFor": "An influential monk and scholar who authored the first comprehensive history of the English church.",
@@ -1219,22 +1123,6 @@ const saintsDatabase = [
             "scholarly",
             "humble",
             "reflective"
-        ]
-    },
-    {
-        "name": "St. Ansgar",
-        "feastDay": "February 3",
-        "knownFor": "St. Ansgar is celebrated for his pioneering missionary work in Scandinavia, earning the title of Apostle of the North.",
-        "patronOf": "Denmark, Scandinavia",
-        "dates": "801-865",
-        "origin": "France",
-        "gender": "Male",
-        "traits": [
-            "missionary",
-            "devout",
-            "perseverant",
-            "compassionate",
-            "humble"
         ]
     },
     {
@@ -1382,38 +1270,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Paul Miki",
-        "feastDay": "February 6",
-        "knownFor": "A courageous Japanese Jesuit and martyr who stood firm in his faith despite persecution.",
-        "patronOf": "Japan, Japanese martyrs",
-        "dates": "c. 1564-1597",
-        "origin": "Japan",
-        "gender": "Male",
-        "traits": [
-            "devout",
-            "fearless",
-            "resilient",
-            "inspirational",
-            "selfless"
-        ]
-    },
-    {
-        "name": "St. Lorenzo Ruiz",
-        "feastDay": "September 28",
-        "knownFor": "St. Lorenzo Ruiz is recognized as the first Filipino saint and a martyr of the Catholic Church.",
-        "patronOf": "Philippines, Filipino youth, altar servers",
-        "dates": "c. 1600-1637",
-        "origin": "Philippines",
-        "gender": "Male",
-        "traits": [
-            "brave",
-            "devout",
-            "charismatic",
-            "compassionate",
-            "determined"
-        ]
-    },
-    {
         "name": "St. Peter Chanel",
         "feastDay": "April 28",
         "knownFor": "A Marist missionary who was martyred in Oceania while spreading the Christian faith.",
@@ -1427,38 +1283,6 @@ const saintsDatabase = [
             "conviction",
             "compassion",
             "selflessness"
-        ]
-    },
-    {
-        "name": "St. Charles Lwanga",
-        "feastDay": "June 3",
-        "knownFor": "St. Charles Lwanga is recognized as a Ugandan martyr and a leader of a group executed for their Christian faith.",
-        "patronOf": "African youth, converts",
-        "dates": "c. 1860-1886",
-        "origin": "Uganda",
-        "gender": "Male",
-        "traits": [
-            "leader",
-            "courageous",
-            "committed",
-            "faithful",
-            "inspirational"
-        ]
-    },
-    {
-        "name": "St. Josephine Bakhita",
-        "feastDay": "February 8",
-        "knownFor": "A former slave from Sudan who dedicated her life to God as a nun in Italy.",
-        "patronOf": "Sudan, human trafficking victims, catechists, African missions, survivors of abuse",
-        "dates": "c. 1869-1947",
-        "origin": "Sudan/Italy",
-        "gender": "Female",
-        "traits": [
-            "compassionate",
-            "resilient",
-            "devoted",
-            "faithful",
-            "humble"
         ]
     },
     {
@@ -2566,22 +2390,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Marianne Cope",
-        "feastDay": "January 23",
-        "knownFor": "She was a Franciscan sister renowned for her dedication to caring for leprosy patients in Hawaii alongside Father Damien.",
-        "patronOf": "lepers, outcasts, Hawaii",
-        "dates": "1838-1918",
-        "origin": "Germany/United States",
-        "gender": "Female",
-        "traits": [
-            "service",
-            "compassion",
-            "courage",
-            "healing",
-            "sacrifice"
-        ]
-    },
-    {
         "name": "St. André Bessette",
         "feastDay": "January 6",
         "knownFor": "A Holy Cross brother renowned for his miraculous healings and the construction of St. Joseph's Oratory in Montreal.",
@@ -2950,22 +2758,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Teresa of the Andes",
-        "feastDay": "July 13",
-        "knownFor": "One of the youngest canonized saints, known for her deep contemplative spirituality.",
-        "patronOf": "Chile, young people, sick people",
-        "dates": "1900-1920",
-        "origin": "Chile",
-        "gender": "Female",
-        "traits": [
-            "thoughtful",
-            "joyful",
-            "contemplative",
-            "generous",
-            "devout"
-        ]
-    },
-    {
         "name": "St. Laura Montoya",
         "feastDay": "October 21",
         "knownFor": "A dedicated Colombian foundress who evangelized and uplifted the indigenous peoples of Latin America.",
@@ -3091,22 +2883,6 @@ const saintsDatabase = [
             "endurance",
             "leadership",
             "sacrifice"
-        ]
-    },
-    {
-        "name": "St. Perpetua",
-        "feastDay": "March 7",
-        "knownFor": "A young noblewoman martyred in Carthage who documented her imprisonment and visions.",
-        "patronOf": "Mothers, expectant mothers, cattle, butchers",
-        "dates": "c. 181-203",
-        "origin": "Carthage (Tunisia)",
-        "gender": "Female",
-        "traits": [
-            "courage",
-            "faith",
-            "motherhood",
-            "sacrifice",
-            "endurance"
         ]
     },
     {
@@ -4972,21 +4748,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Augustine Zhao Rong",
-        "feastDay": "July 9",
-        "knownFor": "A Chinese martyr who dedicated his life to evangelizing Christianity in his homeland.",
-        "patronOf": "China, Chinese priests",
-        "origin": "China",
-        "gender": "Male",
-        "traits": [
-            "brave",
-            "devout",
-            "compassionate",
-            "resilient",
-            "passionate"
-        ]
-    },
-    {
         "name": "St. Rufinus",
         "feastDay": "July 10",
         "knownFor": "Rufinus is venerated as a martyr and saint who died for his faith during the early Christian persecutions.",
@@ -6381,102 +6142,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Maximilian Kolbe",
-        "feastDay": "August 14",
-        "knownFor": "A Polish priest who volunteered to die in place of a stranger in the Auschwitz death camp.",
-        "patronOf": "drug addicts, political prisoners, families, journalists, pro-life movement",
-        "dates": "1894-1941",
-        "origin": "Poland",
-        "gender": "Male",
-        "traits": [
-            "self-sacrifice",
-            "courage",
-            "charity",
-            "devotion",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. Maria Goretti",
-        "feastDay": "July 6",
-        "knownFor": "One of the youngest canonized saints, known for her purity and forgiveness of her murderer.",
-        "patronOf": "youth, young women, purity, victims of rape",
-        "dates": "1890-1902",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "purity",
-            "forgiveness",
-            "fortitude",
-            "faithfulness",
-            "innocence"
-        ]
-    },
-    {
-        "name": "St. Josephine Bakhita",
-        "feastDay": "February 8",
-        "knownFor": "A Sudanese-Italian Canossian religious sister who was kidnapped and sold into slavery as a child.",
-        "patronOf": "Sudan, victims of human trafficking",
-        "dates": "1869-1947",
-        "origin": "Sudan",
-        "gender": "Female",
-        "traits": [
-            "resilience",
-            "forgiveness",
-            "hope",
-            "humility",
-            "joy"
-        ]
-    },
-    {
-        "name": "St. Padre Pio",
-        "feastDay": "September 23",
-        "knownFor": "A Capuchin friar, priest, and mystic known for his stigmata and spiritual guidance.",
-        "patronOf": "civil defense volunteers, adolescents, stress relief, January blues",
-        "dates": "1887-1968",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "mysticism",
-            "piety",
-            "endurance",
-            "wisdom",
-            "compassion"
-        ]
-    },
-    {
-        "name": "St. Faustina Kowalska",
-        "feastDay": "October 5",
-        "knownFor": "A Polish nun who received visions of Jesus as the Divine Mercy.",
-        "patronOf": "mercy",
-        "dates": "1905-1938",
-        "origin": "Poland",
-        "gender": "Female",
-        "traits": [
-            "humility",
-            "trust",
-            "mercy",
-            "obedience",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. John Paul II",
-        "feastDay": "October 22",
-        "knownFor": "Pope from 1978 to 2005, known for his role in ending communism in Poland and Europe.",
-        "patronOf": "families, youth, World Youth Day",
-        "dates": "1920-2005",
-        "origin": "Poland",
-        "gender": "Male",
-        "traits": [
-            "leadership",
-            "courage",
-            "zeal",
-            "intellect",
-            "compassion"
-        ]
-    },
-    {
         "name": "St. Mother Teresa",
         "feastDay": "September 5",
         "knownFor": "Founder of the Missionaries of Charity, dedicated to serving the 'poorest of the poor'.",
@@ -6490,246 +6155,6 @@ const saintsDatabase = [
             "compassion",
             "service",
             "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Edith Stein",
-        "feastDay": "August 9",
-        "knownFor": "A Jewish philosopher who converted to Catholicism, became a Carmelite nun, and was martyred in Auschwitz.",
-        "patronOf": "Europe, converts, philosophers",
-        "dates": "1891-1942",
-        "origin": "Germany",
-        "gender": "Female",
-        "traits": [
-            "intellect",
-            "truth-seeking",
-            "courage",
-            "wisdom",
-            "fortitude"
-        ]
-    },
-    {
-        "name": "St. Gianna Beretta Molla",
-        "feastDay": "April 28",
-        "knownFor": "A pediatrician and mother who chose to save her child's life over her own during a medical crisis.",
-        "patronOf": "mothers, physicians, unborn children",
-        "dates": "1922-1962",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "sacrifice",
-            "love",
-            "professionalism",
-            "courage",
-            "service"
-        ]
-    },
-    {
-        "name": "St. Damien of Molokai",
-        "feastDay": "May 10",
-        "knownFor": "A Belgian priest who dedicated his life to serving those with leprosy in Hawaii.",
-        "patronOf": "lepers, outcasts, people with HIV/AIDS",
-        "dates": "1840-1889",
-        "origin": "Belgium/USA",
-        "gender": "Male",
-        "traits": [
-            "service",
-            "courage",
-            "compassion",
-            "endurance",
-            "zeal"
-        ]
-    },
-    {
-        "name": "St. Elizabeth Ann Seton",
-        "feastDay": "January 4",
-        "knownFor": "The first native-born citizen of the United States to be canonized, and founder of the parochial school system in the US.",
-        "patronOf": "Catholic schools, widows, seafarers",
-        "dates": "1774-1821",
-        "origin": "USA",
-        "gender": "Female",
-        "traits": [
-            "education",
-            "resilience",
-            "leadership",
-            "pioneer",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Katharine Drexel",
-        "feastDay": "March 3",
-        "knownFor": "An American socialite and heiress who gave away her fortune to serve Native and African Americans.",
-        "patronOf": "racial justice, philanthropists",
-        "dates": "1858-1955",
-        "origin": "USA",
-        "gender": "Female",
-        "traits": [
-            "generosity",
-            "justice",
-            "service",
-            "visionary",
-            "dedication"
-        ]
-    },
-    {
-        "name": "St. Kateri Tekakwitha",
-        "feastDay": "July 14",
-        "knownFor": "The first Native American woman to be canonized, known as the 'Lily of the Mohawks'.",
-        "patronOf": "ecology, environment, loss of parents, Native Americans",
-        "dates": "1656-1680",
-        "origin": "North America",
-        "gender": "Female",
-        "traits": [
-            "piety",
-            "fortitude",
-            "purity",
-            "nature-loving",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Bernadette Soubirous",
-        "feastDay": "April 16",
-        "knownFor": "The visionary of Lourdes, who witnessed 18 apparitions of the Virgin Mary.",
-        "patronOf": "illness, poor people, shepherds, Lourdes",
-        "dates": "1844-1879",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "humility",
-            "simplicity",
-            "obedience",
-            "endurance",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. John Vianney",
-        "feastDay": "August 4",
-        "knownFor": "The 'Curé d'Ars', a humble priest known for his extraordinary pastoral work and long hours in the confessional.",
-        "patronOf": "parish priests",
-        "dates": "1786-1859",
-        "origin": "France",
-        "gender": "Male",
-        "traits": [
-            "dedication",
-            "humility",
-            "compassion",
-            "service",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Rita of Cascia",
-        "feastDay": "May 22",
-        "knownFor": "The 'Saint of the Impossible', known for her endurance of a difficult marriage and her mystical stigmata.",
-        "patronOf": "impossible causes, abused women, loneliness",
-        "dates": "1381-1457",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "patience",
-            "forgiveness",
-            "piety",
-            "mysticism",
-            "fortitude"
-        ]
-    },
-    {
-        "name": "St. Jude Thaddeus",
-        "feastDay": "October 28",
-        "knownFor": "One of the twelve apostles, often invoked for help in desperate situations.",
-        "patronOf": "lost causes, desperate situations, hospitals",
-        "dates": "1st century",
-        "origin": "Galilee",
-        "gender": "Male",
-        "traits": [
-            "faithfulness",
-            "courage",
-            "leadership",
-            "hope",
-            "loyalty"
-        ]
-    },
-    {
-        "name": "St. Polycarp",
-        "feastDay": "February 23",
-        "knownFor": "A direct disciple of St. John the Apostle and a courageous early Christian martyr.",
-        "patronOf": "earaches, dysentery",
-        "dates": "c. 69-155",
-        "origin": "Smyrna",
-        "gender": "Male",
-        "traits": [
-            "fortitude",
-            "loyalty",
-            "wisdom",
-            "courage",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Ignatius of Antioch",
-        "feastDay": "October 17",
-        "knownFor": "The third Bishop of Antioch and a martyr who wrote seven influential letters on his way to execution in Rome.",
-        "patronOf": "throat ailments",
-        "dates": "c. 35-107",
-        "origin": "Antioch",
-        "gender": "Male",
-        "traits": [
-            "zeal",
-            "theology",
-            "courage",
-            "sacrifice",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Monica",
-        "feastDay": "August 27",
-        "knownFor": "The mother of St. Augustine, who prayed for his conversion for over 30 years.",
-        "patronOf": "mothers, wives, difficult marriages, alcoholics",
-        "dates": "331-387",
-        "origin": "North Africa",
-        "gender": "Female",
-        "traits": [
-            "persistence",
-            "piety",
-            "patience",
-            "love",
-            "hope"
-        ]
-    },
-    {
-        "name": "St. Ambrose",
-        "feastDay": "December 7",
-        "knownFor": "A great Bishop of Milan and a Doctor of the Church who baptized St. Augustine.",
-        "patronOf": "beekeepers, learning, students",
-        "dates": "c. 340-397",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "intellect",
-            "leadership",
-            "eloquence",
-            "courage",
-            "theology"
-        ]
-    },
-    {
-        "name": "St. Jerome",
-        "feastDay": "September 30",
-        "knownFor": "A Doctor of the Church who translated the entire Bible into Latin (the Vulgate).",
-        "patronOf": "librarians, translators, scholars",
-        "dates": "c. 347-420",
-        "origin": "Dalmatia/Bethlehem",
-        "gender": "Male",
-        "traits": [
-            "intellect",
-            "discipline",
-            "asceticism",
-            "curiosity",
-            "precision"
         ]
     },
     {
@@ -6749,22 +6174,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Herman of Alaska",
-        "feastDay": "August 9",
-        "knownFor": "The first Orthodox saint of North America, a monk who protected the Aleut people from exploitation.",
-        "patronOf": "Alaska, North America",
-        "dates": "1751-1837",
-        "origin": "Russia/Alaska",
-        "gender": "Male",
-        "traits": [
-            "compassion",
-            "justice",
-            "simplicity",
-            "nature-loving",
-            "piety"
-        ]
-    },
-    {
         "name": "St. Paisios of Mount Athos",
         "feastDay": "July 12",
         "knownFor": "A modern Athonite elder known for his profound spiritual wisdom and prophecies.",
@@ -6777,134 +6186,6 @@ const saintsDatabase = [
             "humility",
             "charity",
             "insight",
-            "patience"
-        ]
-    },
-    {
-        "name": "St. Athanasius",
-        "feastDay": "May 2",
-        "knownFor": "Bishop of Alexandria and champion of the divinity of Christ against Arianism.",
-        "patronOf": "theologians",
-        "dates": "c. 296-373",
-        "origin": "Egypt",
-        "gender": "Male",
-        "traits": [
-            "fortitude",
-            "intellect",
-            "leadership",
-            "theology",
-            "determination"
-        ]
-    },
-    {
-        "name": "St. Basil the Great",
-        "feastDay": "January 2",
-        "knownFor": "One of the Three Holy Hierarchs, father of Eastern monasticism and defender of the Holy Spirit.",
-        "patronOf": "hospital administrators, reformers",
-        "dates": "329-379",
-        "origin": "Cappadocia",
-        "gender": "Male",
-        "traits": [
-            "leadership",
-            "theology",
-            "charity",
-            "discipline",
-            "wisdom"
-        ]
-    },
-    {
-        "name": "St. Gregory of Nazianzus",
-        "feastDay": "January 2",
-        "knownFor": "The 'Theologian', known for his eloquent defense of the Trinity and his beautiful poetry.",
-        "patronOf": "poets, harvests",
-        "dates": "c. 329-389",
-        "origin": "Cappadocia",
-        "gender": "Male",
-        "traits": [
-            "eloquence",
-            "theology",
-            "poetry",
-            "contemplation",
-            "intellect"
-        ]
-    },
-    {
-        "name": "St. John Chrysostom",
-        "feastDay": "September 13",
-        "knownFor": "The 'Golden-Mouthed' preacher, Archbishop of Constantinople, and protector of the poor.",
-        "patronOf": "preachers, speakers",
-        "dates": "c. 347-407",
-        "origin": "Antioch/Constantinople",
-        "gender": "Male",
-        "traits": [
-            "eloquence",
-            "justice",
-            "courage",
-            "charity",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Leo the Great",
-        "feastDay": "November 10",
-        "knownFor": "Pope who saved Rome from Attila the Hun and solidified the authority of the papacy.",
-        "patronOf": "popes, singers",
-        "dates": "c. 400-461",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "leadership",
-            "courage",
-            "theology",
-            "diplomacy",
-            "visionary"
-        ]
-    },
-    {
-        "name": "St. Martin of Tours",
-        "feastDay": "November 11",
-        "knownFor": "The soldier-saint who cut his cloak in half to share it with a beggar.",
-        "patronOf": "soldiers, beggars, geese, France",
-        "dates": "316-397",
-        "origin": "Hungary/France",
-        "gender": "Male",
-        "traits": [
-            "charity",
-            "humility",
-            "courage",
-            "simplicity",
-            "service"
-        ]
-    },
-    {
-        "name": "St. Ephrem the Syrian",
-        "feastDay": "June 9",
-        "knownFor": "The 'Harp of the Spirit', a deacon and poet who wrote thousands of hymns defending the faith.",
-        "patronOf": "spiritual directors, poets",
-        "dates": "c. 306-373",
-        "origin": "Syria",
-        "gender": "Male",
-        "traits": [
-            "poetry",
-            "theology",
-            "humility",
-            "piety",
-            "artistic"
-        ]
-    },
-    {
-        "name": "St. John Damascene",
-        "feastDay": "December 4",
-        "knownFor": "A high-ranking official in the Arab Caliphate who became a monk and defended holy icons.",
-        "patronOf": "artists, pharmacists, iconography",
-        "dates": "c. 675-749",
-        "origin": "Syria",
-        "gender": "Male",
-        "traits": [
-            "intellect",
-            "courage",
-            "theology",
-            "artistic",
             "patience"
         ]
     },
@@ -6925,22 +6206,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Anthony the Great",
-        "feastDay": "January 17",
-        "knownFor": "The 'Father of Monasticism' who lived in the Egyptian desert for over 80 years.",
-        "patronOf": "gravediggers, skin diseases, animals",
-        "dates": "c. 251-356",
-        "origin": "Egypt",
-        "gender": "Male",
-        "traits": [
-            "discipline",
-            "asceticism",
-            "wisdom",
-            "perseverance",
-            "fortitude"
-        ]
-    },
-    {
         "name": "St. Pachomius",
         "feastDay": "May 9",
         "knownFor": "The founder of 'cenobitic' (community) monasticism.",
@@ -6954,22 +6219,6 @@ const saintsDatabase = [
             "humility",
             "visionary",
             "service"
-        ]
-    },
-    {
-        "name": "St. Mary of Egypt",
-        "feastDay": "April 1",
-        "knownFor": "A legendary desert mother and symbol of radical repentance.",
-        "patronOf": "chastity, skin diseases",
-        "dates": "c. 344-421",
-        "origin": "Egypt",
-        "gender": "Female",
-        "traits": [
-            "repentance",
-            "asceticism",
-            "perseverance",
-            "faithfulness",
-            "humility"
         ]
     },
     {
@@ -6989,166 +6238,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Bridget of Sweden",
-        "feastDay": "July 23",
-        "knownFor": "A mystic, mother, and founder of the Brigittine Order who advised popes and kings.",
-        "patronOf": "Sweden, Europe, widows",
-        "dates": "1303-1373",
-        "origin": "Sweden",
-        "gender": "Female",
-        "traits": [
-            "visionary",
-            "courage",
-            "leadership",
-            "piety",
-            "determination"
-        ]
-    },
-    {
-        "name": "St. Catherine of Genoa",
-        "feastDay": "September 15",
-        "knownFor": "A mystic known for her work with the sick and her profound writings on Purgatory.",
-        "patronOf": "hospitals, Italian brides",
-        "dates": "1447-1510",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "mysticism",
-            "charity",
-            "intellect",
-            "service",
-            "insight"
-        ]
-    },
-    {
-        "name": "St. Philip Neri",
-        "feastDay": "May 26",
-        "knownFor": "The 'Apostle of Rome' and founder of the Oratory, known for his humor and joy.",
-        "patronOf": "Rome, joy, humor",
-        "dates": "1515-1595",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "joy",
-            "humor",
-            "charity",
-            "humility",
-            "friendliness"
-        ]
-    },
-    {
-        "name": "St. Charles Borromeo",
-        "feastDay": "November 4",
-        "knownFor": "A key figure of the Counter-Reformation and Archbishop of Milan who reformed the clergy.",
-        "patronOf": "seminarians, bishops, catechists",
-        "dates": "1538-1584",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "reform",
-            "discipline",
-            "charity",
-            "courage",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Robert Bellarmine",
-        "feastDay": "September 17",
-        "knownFor": "A Jesuit cardinal and Doctor of the Church who was one of the most important figures of the Counter-Reformation.",
-        "patronOf": "catechists, canon lawyers",
-        "dates": "1542-1621",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "intellect",
-            "theology",
-            "justice",
-            "humility",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Francis de Sales",
-        "feastDay": "January 24",
-        "knownFor": "Bishop of Geneva and Doctor of the Church known for his gentleness and his 'Introduction to the Devout Life'.",
-        "patronOf": "writers, journalists, the deaf",
-        "dates": "1567-1622",
-        "origin": "France",
-        "gender": "Male",
-        "traits": [
-            "gentleness",
-            "wisdom",
-            "patience",
-            "eloquence",
-            "kindness"
-        ]
-    },
-    {
-        "name": "St. Jane Frances de Chantal",
-        "feastDay": "August 12",
-        "knownFor": "A mother who became a nun and co-founded the Order of the Visitation with St. Francis de Sales.",
-        "patronOf": "forgotten people, widows",
-        "dates": "1572-1641",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "perseverance",
-            "service",
-            "patience",
-            "love",
-            "friendliness"
-        ]
-    },
-    {
-        "name": "St. Vincent de Paul",
-        "feastDay": "September 27",
-        "knownFor": "The great 'Apostle of Charity' who revolutionized social work and the care of the poor.",
-        "patronOf": "charitable societies, horses",
-        "dates": "1581-1660",
-        "origin": "France",
-        "gender": "Male",
-        "traits": [
-            "charity",
-            "humility",
-            "practicality",
-            "compassion",
-            "service"
-        ]
-    },
-    {
-        "name": "St. Louise de Marillac",
-        "feastDay": "March 15",
-        "knownFor": "Widow and co-founder of the Daughters of Charity, known for her dedication to the sick and poor.",
-        "patronOf": "social workers",
-        "dates": "1591-1660",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "service",
-            "compassion",
-            "leadership",
-            "organization",
-            "patience"
-        ]
-    },
-    {
-        "name": "St. Margaret Mary Alacoque",
-        "feastDay": "October 16",
-        "knownFor": "A Visitation nun who received visions of the Sacred Heart of Jesus.",
-        "patronOf": "those suffering from the loss of parents",
-        "dates": "1647-1690",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "devotion",
-            "piety",
-            "endurance",
-            "humility",
-            "mysticism"
-        ]
-    },
-    {
         "name": "St. Louis de Montfort",
         "feastDay": "April 28",
         "knownFor": "Promoter of the Rosary and 'True Devotion to Mary'.",
@@ -7162,70 +6251,6 @@ const saintsDatabase = [
             "piety",
             "preaching",
             "humility"
-        ]
-    },
-    {
-        "name": "St. Alphonsus Liguori",
-        "feastDay": "August 18",
-        "knownFor": "Founder of the Redemptorists and one of the most prolific writers on moral theology and prayer.",
-        "patronOf": "confessors, scrupulous people",
-        "dates": "1696-1787",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "intellect",
-            "compassion",
-            "theology",
-            "determination",
-            "music"
-        ]
-    },
-    {
-        "name": "St. Elizabeth of Hungary",
-        "feastDay": "November 17",
-        "knownFor": "A princess who used her wealth and position to serve the poor and sick.",
-        "patronOf": "bakers, beggars, hospitals, nursing, widows",
-        "dates": "1207-1231",
-        "origin": "Hungary/Germany",
-        "gender": "Female",
-        "traits": [
-            "charity",
-            "humility",
-            "compassion",
-            "sacrifice",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. Catherine of Alexandria",
-        "feastDay": "November 25",
-        "knownFor": "A brilliant philosopher and martyr who defeated 50 pagan scholars in debate.",
-        "patronOf": "philosophers, students, lawyers, librarians",
-        "dates": "c. 287-305",
-        "origin": "Egypt",
-        "gender": "Female",
-        "traits": [
-            "intellect",
-            "courage",
-            "eloquence",
-            "wisdom",
-            "fortitude"
-        ]
-    },
-    {
-        "name": "St. Barbara",
-        "feastDay": "December 4",
-        "knownFor": "A virgin martyr who was imprisoned in a tower by her father for her faith.",
-        "patronOf": "artillerymen, miners, firemen, architects, protection against lightning",
-        "dates": "3rd century",
-        "origin": "Turkey",
-        "gender": "Female",
-        "traits": [
-            "fortitude",
-            "courage",
-            "faithfulness",
-            "patience",
-            "purity"
         ]
     },
     {
@@ -7245,38 +6270,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Apollonia",
-        "feastDay": "February 9",
-        "knownFor": "An elderly deaconess and martyr who had her teeth shattered for her faith.",
-        "patronOf": "dentists, toothache sufferers",
-        "dates": "d. c. 249",
-        "origin": "Egypt",
-        "gender": "Female",
-        "traits": [
-            "courage",
-            "steadfastness",
-            "sacrifice",
-            "faithfulness",
-            "patience"
-        ]
-    },
-    {
-        "name": "St. Agatha",
-        "feastDay": "February 5",
-        "knownFor": "A Sicilian martyr who endured horrific torture for her commitment to her faith and her vow of virginity.",
-        "patronOf": "breast cancer patients, nurses, bell-founders, bakers",
-        "dates": "c. 231-251",
-        "origin": "Sicily",
-        "gender": "Female",
-        "traits": [
-            "purity",
-            "fortitude",
-            "patience",
-            "faithfulness",
-            "bravery"
-        ]
-    },
-    {
         "name": "St. Anastasia",
         "feastDay": "December 25",
         "knownFor": "A Roman martyr who was known for visiting and caring for imprisoned Christians.",
@@ -7293,22 +6286,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Genevieve",
-        "feastDay": "January 3",
-        "knownFor": "Patroness of Paris who saved the city from Attila the Hun through prayer and fasting.",
-        "patronOf": "Paris, security forces, protection against disasters",
-        "dates": "c. 419-512",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "piety",
-            "leadership",
-            "courage",
-            "patriotism",
-            "simplicity"
-        ]
-    },
-    {
         "name": "St. Ursula",
         "feastDay": "October 21",
         "knownFor": "A legendary British princess who traveled across Europe with 11,000 virgins and was martyred by the Huns.",
@@ -7322,54 +6299,6 @@ const saintsDatabase = [
             "faithfulness",
             "courage",
             "purity"
-        ]
-    },
-    {
-        "name": "St. Valentine",
-        "feastDay": "February 14",
-        "knownFor": "A priest and martyr who secretly married Christian couples under Roman persecution.",
-        "patronOf": "love, marriage, young people, beekeepers",
-        "dates": "d. c. 269",
-        "origin": "Rome",
-        "gender": "Male",
-        "traits": [
-            "love",
-            "courage",
-            "kindness",
-            "loyalty",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. Blaise",
-        "feastDay": "February 3",
-        "knownFor": "A bishop and martyr famous for healing diseases of the throat.",
-        "patronOf": "throat ailments, veterinarians, wool-combers",
-        "dates": "d. c. 316",
-        "origin": "Armenia",
-        "gender": "Male",
-        "traits": [
-            "healing",
-            "leadership",
-            "courage",
-            "kindness",
-            "humility"
-        ]
-    },
-    {
-        "name": "St. John Bosco",
-        "feastDay": "January 31",
-        "knownFor": "Founder of the Salesians, dedicated to the education and care of poor youth.",
-        "patronOf": "youth, apprentices, editors, magicians",
-        "dates": "1815-1888",
-        "origin": "Italy",
-        "gender": "Male",
-        "traits": [
-            "joy",
-            "kindness",
-            "leadership",
-            "education",
-            "optimism"
         ]
     },
     {
@@ -7405,54 +6334,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Gemma Galgani",
-        "feastDay": "April 11",
-        "knownFor": "A modern mystic known as the 'Flower of Lucca' who bore the stigmata.",
-        "patronOf": "pharmacists, paratroopers, loss of parents",
-        "dates": "1878-1903",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "mysticism",
-            "piety",
-            "endurance",
-            "humility",
-            "devotion"
-        ]
-    },
-    {
-        "name": "St. Charbel Makhlouf",
-        "feastDay": "July 24",
-        "knownFor": "A Maronite monk and hermit from Lebanon known for his extraordinary miracles and the incorruptibility of his body.",
-        "patronOf": "Lebanon, sick people",
-        "dates": "1828-1898",
-        "origin": "Lebanon",
-        "gender": "Male",
-        "traits": [
-            "silence",
-            "humility",
-            "miracles",
-            "contemplation",
-            "asceticism"
-        ]
-    },
-    {
-        "name": "St. Rafqa",
-        "feastDay": "March 23",
-        "knownFor": "A Maronite nun known as the 'Flower of Lebanon' who joyfully endured 29 years of severe physical pain.",
-        "patronOf": "blind people, lost parents",
-        "dates": "1832-1914",
-        "origin": "Lebanon",
-        "gender": "Female",
-        "traits": [
-            "patience",
-            "endurance",
-            "joy",
-            "submission",
-            "faithfulness"
-        ]
-    },
-    {
         "name": "St. Mariam Baouardy",
         "feastDay": "August 25",
         "knownFor": "A Palestinian Carmelite mystic known as 'The Little Arab' who received the stigmata and visions.",
@@ -7469,38 +6350,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Elizabeth of the Trinity",
-        "feastDay": "November 8",
-        "knownFor": "A French Carmelite mystic who wrote profoundly on the indwelling of the Trinity in the soul.",
-        "patronOf": "sick people, loss of parents",
-        "dates": "1880-1906",
-        "origin": "France",
-        "gender": "Female",
-        "traits": [
-            "contemplation",
-            "intellect",
-            "piety",
-            "submission",
-            "wisdom"
-        ]
-    },
-    {
-        "name": "St. Marianne Cope",
-        "feastDay": "January 23",
-        "knownFor": "A Sister of St. Francis who continued the work of St. Damien among the lepers of Molokai.",
-        "patronOf": "outcasts",
-        "dates": "1838-1918",
-        "origin": "Germany/USA",
-        "gender": "Female",
-        "traits": [
-            "service",
-            "courage",
-            "organization",
-            "compassion",
-            "faithfulness"
-        ]
-    },
-    {
         "name": "St. John Neumann",
         "feastDay": "January 5",
         "knownFor": "A missionary from Bohemia who became the fourth Bishop of Philadelphia and founded the first diocesan school system in the US.",
@@ -7514,150 +6363,6 @@ const saintsDatabase = [
             "leadership",
             "zeal",
             "service"
-        ]
-    },
-    {
-        "name": "St. Rose Philippine Duchesne",
-        "feastDay": "November 18",
-        "knownFor": "A French missionary sister who brought the Society of the Sacred Heart to the American frontier.",
-        "patronOf": "Native American missions",
-        "dates": "1769-1852",
-        "origin": "France/USA",
-        "gender": "Female",
-        "traits": [
-            "perseverance",
-            "prayer",
-            "courage",
-            "endurance",
-            "humility"
-        ]
-    },
-    {
-        "name": "St. Isaac Jogues",
-        "feastDay": "October 19",
-        "knownFor": "A Jesuit missionary and one of the North American Martyrs who was captured and tortured by the Iroquois.",
-        "patronOf": "North America",
-        "dates": "1607-1646",
-        "origin": "France/Canada",
-        "gender": "Male",
-        "traits": [
-            "courage",
-            "sacrifice",
-            "endurance",
-            "zeal",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Junípero Serra",
-        "feastDay": "July 1",
-        "knownFor": "A Spanish Franciscan friar who founded nine of the twenty-one Spanish missions in California.",
-        "patronOf": "California, Vocations",
-        "dates": "1713-1784",
-        "origin": "Spain/USA",
-        "gender": "Male",
-        "traits": [
-            "pioneer",
-            "zeal",
-            "leadership",
-            "endurance",
-            "piety"
-        ]
-    },
-    {
-        "name": "St. Juan Diego",
-        "feastDay": "December 9",
-        "knownFor": "The indigenous Mexican visionary of Our Lady of Guadalupe.",
-        "patronOf": "indigenous people",
-        "dates": "1474-1548",
-        "origin": "Mexico",
-        "gender": "Male",
-        "traits": [
-            "humility",
-            "simplicity",
-            "obedience",
-            "piety",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Martin de Porres",
-        "feastDay": "November 3",
-        "knownFor": "A lay brother of the Dominican Order known for his humility, his care for the poor, and his miraculous healing abilities.",
-        "patronOf": "mixed-race people, innkeepers, barbers, social justice, public health workers",
-        "dates": "1579-1639",
-        "origin": "Peru",
-        "gender": "Male",
-        "traits": [
-            "humility",
-            "charity",
-            "healing",
-            "compassion",
-            "service"
-        ]
-    },
-    {
-        "name": "St. Rose of Lima",
-        "feastDay": "August 23",
-        "knownFor": "The first person born in the Americas to be canonized as a saint, known for her severe penances and care for the needy.",
-        "patronOf": "Latin America, Peru, Philippines, florists, gardeners",
-        "dates": "1586-1617",
-        "origin": "Peru",
-        "gender": "Female",
-        "traits": [
-            "piety",
-            "fortitude",
-            "sacrifice",
-            "charity",
-            "mysticism"
-        ]
-    },
-    {
-        "name": "St. Peter Claver",
-        "feastDay": "September 9",
-        "knownFor": "A Jesuit missionary who dedicated his life to serving enslaved people in South America, calling himself the 'slave of the slaves forever'.",
-        "patronOf": "slaves, Colombia, racial justice",
-        "dates": "1580-1654",
-        "origin": "Spain/Colombia",
-        "gender": "Male",
-        "traits": [
-            "justice",
-            "charity",
-            "courage",
-            "service",
-            "faithfulness"
-        ]
-    },
-    {
-        "name": "St. Oscar Romero",
-        "feastDay": "March 24",
-        "knownFor": "Archbishop of San Salvador who was martyred for his vocal defense of the poor and victims of social injustice.",
-        "patronOf": "El Salvador, Americas, persecuted Christians",
-        "dates": "1917-1980",
-        "origin": "El Salvador",
-        "gender": "Male",
-        "traits": [
-            "justice",
-            "courage",
-            "charity",
-            "leadership",
-            "sacrifice"
-        ]
-    },
-    {
-        "name": "St. José Sánchez del Río",
-        "feastDay": "February 10",
-        "knownFor": "A 14-year-old Cristero martyr who refused to renounce his faith despite horrific torture.",
-        "patronOf": "persecuted Christians, children, adolescents",
-        "dates": "1913-1928",
-        "origin": "Mexico",
-        "gender": "Male",
-        "traits": [
-            "courage",
-            "loyalty",
-            "sacrifice",
-            "faithfulness",
-            "bravery"
         ]
     },
     {
@@ -7869,22 +6574,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Nino of Georgia",
-        "feastDay": "January 14",
-        "knownFor": "The 'Equal-to-the-Apostles' and 'Enlightener of Georgia' who brought Christianity to the Iberian kingdom.",
-        "patronOf": "Georgia",
-        "dates": "c. 296-338",
-        "origin": "Turkey/Georgia",
-        "gender": "Female",
-        "traits": [
-            "zeal",
-            "leadership",
-            "courage",
-            "faithfulness",
-            "determination"
-        ]
-    },
-    {
         "name": "St. David of Wales",
         "feastDay": "March 1",
         "knownFor": "The patron saint of Wales and a bishop who founded many monasteries known for their extreme austerity.",
@@ -7917,38 +6606,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Aidan of Lindisfarne",
-        "feastDay": "August 31",
-        "knownFor": "The 'Apostle of Northumbria', known for his gentleness and his practice of traveling on foot to talk to everyone he met.",
-        "patronOf": "Northumbria, firemen",
-        "dates": "d. 651",
-        "origin": "Ireland/England",
-        "gender": "Male",
-        "traits": [
-            "gentleness",
-            "charity",
-            "simplicity",
-            "leadership",
-            "kindness"
-        ]
-    },
-    {
-        "name": "St. Hilda of Whitby",
-        "feastDay": "November 17",
-        "knownFor": "A legendary abbess and advisor to kings who led the double monastery of Whitby (men and women).",
-        "patronOf": "learning, poets",
-        "dates": "c. 614-680",
-        "origin": "England",
-        "gender": "Female",
-        "traits": [
-            "leadership",
-            "wisdom",
-            "education",
-            "justice",
-            "diplomacy"
-        ]
-    },
-    {
         "name": "St. Dunstan",
         "feastDay": "May 19",
         "knownFor": "Archbishop of Canterbury who revitalized English monasticism and served as a statesman under several kings.",
@@ -7962,22 +6619,6 @@ const saintsDatabase = [
             "discipline",
             "justice",
             "reform"
-        ]
-    },
-    {
-        "name": "St. Edward the Confessor",
-        "feastDay": "October 13",
-        "knownFor": "One of the last Anglo-Saxon kings of England, known for his piety and for rebuilding Westminster Abbey.",
-        "patronOf": "kings, difficult marriages, separate spouses",
-        "dates": "c. 1003-1066",
-        "origin": "England",
-        "gender": "Male",
-        "traits": [
-            "piety",
-            "justice",
-            "simplicity",
-            "peace",
-            "loyalty"
         ]
     },
     {
@@ -8013,22 +6654,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Andrew Kim Taegon",
-        "feastDay": "September 20",
-        "knownFor": "The first Korean-born Catholic priest, martyred at age 25 during the severe Korean persecutions.",
-        "patronOf": "Korean clergy, Korea",
-        "dates": "1821-1846",
-        "origin": "Korea",
-        "gender": "Male",
-        "traits": [
-            "courage",
-            "missionary",
-            "determination",
-            "faith",
-            "sacrifice"
-        ]
-    },
-    {
         "name": "St. Paul Chong Hasang",
         "feastDay": "September 20",
         "knownFor": "A Korean lay catechist and seminarist martyred for his faith during the Joseon Dynasty persecutions.",
@@ -8042,22 +6667,6 @@ const saintsDatabase = [
             "missionary",
             "faith",
             "leadership"
-        ]
-    },
-    {
-        "name": "St. André Bessette",
-        "feastDay": "January 6",
-        "knownFor": "A humble Holy Cross brother credited with thousands of healings through devotion to St. Joseph, who built the famous St. Joseph's Oratory in Montreal.",
-        "patronOf": "sick people, caregivers",
-        "dates": "1845-1937",
-        "origin": "Canada",
-        "gender": "Male",
-        "traits": [
-            "humility",
-            "faith",
-            "healing",
-            "devotion",
-            "perseverance"
         ]
     },
     {
@@ -8109,22 +6718,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Andrew Dung-Lac",
-        "feastDay": "November 24",
-        "knownFor": "A Vietnamese priest who was among 117 martyrs killed during anti-Christian persecutions in Vietnam spanning three centuries.",
-        "patronOf": "Vietnam",
-        "dates": "1795-1839",
-        "origin": "Vietnam",
-        "gender": "Male",
-        "traits": [
-            "courage",
-            "faith",
-            "perseverance",
-            "missionary",
-            "sacrifice"
-        ]
-    },
-    {
         "name": "St. Agnes Le Thi Thanh",
         "feastDay": "July 12",
         "knownFor": "A Vietnamese laywoman and mother who was martyred for sheltering priests during the Vietnamese persecutions.",
@@ -8154,22 +6747,6 @@ const saintsDatabase = [
             "reform",
             "charity",
             "education"
-        ]
-    },
-    {
-        "name": "St. Alphonsa of the Immaculate Conception",
-        "feastDay": "July 28",
-        "knownFor": "The first canonized saint from India, a Franciscan Clarist nun known for her patient suffering and miraculous intercessions.",
-        "patronOf": "sick people, India",
-        "dates": "1910-1946",
-        "origin": "India",
-        "gender": "Female",
-        "traits": [
-            "patience",
-            "suffering",
-            "devotion",
-            "humility",
-            "faith"
         ]
     },
     {
@@ -8669,22 +7246,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Pedro Calungsod",
-        "feastDay": "April 2",
-        "knownFor": "A teenage Filipino catechist who was martyred in Guam alongside the Jesuit missionary Fr. Diego Luis de San Vitores.",
-        "patronOf": "Filipino youth, Visayan people, catechists",
-        "dates": "c. 1654-1672",
-        "origin": "Philippines",
-        "gender": "Male",
-        "traits": [
-            "courage",
-            "youth",
-            "missionary",
-            "faith",
-            "sacrifice"
-        ]
-    },
-    {
         "name": "St. Paul Miki",
         "feastDay": "February 6",
         "knownFor": "A Japanese Jesuit seminarian and one of the Twenty-Six Martyrs crucified in Nagasaki during the persecution of Christians.",
@@ -8746,22 +7307,6 @@ const saintsDatabase = [
             "faith",
             "medicine",
             "sacrifice"
-        ]
-    },
-    {
-        "name": "St. Kateri Tekakwitha",
-        "feastDay": "July 14",
-        "knownFor": "The first Native American saint, known as the 'Lily of the Mohawks' for her purity and devotion despite persecution from her own tribe.",
-        "patronOf": "ecology, environment, Native Americans",
-        "dates": "1656-1680",
-        "origin": "USA (Mohawk)",
-        "gender": "Female",
-        "traits": [
-            "purity",
-            "courage",
-            "faith",
-            "nature",
-            "perseverance"
         ]
     },
     {
@@ -8893,22 +7438,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Hildegard of Bingen",
-        "feastDay": "September 17",
-        "knownFor": "A German Benedictine abbess, polymath, mystic, composer, and Doctor of the Church known for her visionary writings on theology, medicine, and nature.",
-        "patronOf": "musicians, writers, natural scientists",
-        "dates": "1098-1179",
-        "origin": "Germany",
-        "gender": "Female",
-        "traits": [
-            "intellectual",
-            "mysticism",
-            "creativity",
-            "leadership",
-            "wisdom"
-        ]
-    },
-    {
         "name": "St. Jadwiga of Poland",
         "feastDay": "July 17",
         "knownFor": "A medieval Queen of Poland who used her wealth to restore universities, found hospitals, and unite Poland and Lithuania through her marriage.",
@@ -8970,22 +7499,6 @@ const saintsDatabase = [
             "prayer",
             "leadership",
             "faith"
-        ]
-    },
-    {
-        "name": "St. Charbel Makhlouf",
-        "feastDay": "July 24",
-        "knownFor": "A Lebanese Maronite monk and hermit whose body remained incorrupt and exuded a mysterious liquid after death.",
-        "patronOf": "Lebanon",
-        "dates": "1828-1898",
-        "origin": "Lebanon",
-        "gender": "Male",
-        "traits": [
-            "asceticism",
-            "prayer",
-            "miracles",
-            "humility",
-            "silence"
         ]
     },
     {
@@ -9101,22 +7614,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Scholastica",
-        "feastDay": "February 10",
-        "knownFor": "The twin sister of St. Benedict of Nursia and founder of women's Benedictine monasticism.",
-        "patronOf": "nuns, convulsive children, storms",
-        "dates": "c. 480-543",
-        "origin": "Italy",
-        "gender": "Female",
-        "traits": [
-            "devotion",
-            "prayer",
-            "community",
-            "wisdom",
-            "love"
-        ]
-    },
-    {
         "name": "St. Brigid of Kildare",
         "feastDay": "February 1",
         "knownFor": "One of Ireland's three patron saints, an abbess who founded one of the most important monasteries in Ireland.",
@@ -9133,22 +7630,6 @@ const saintsDatabase = [
         ]
     },
     {
-        "name": "St. Columba",
-        "feastDay": "June 9",
-        "knownFor": "An Irish monk who founded the famous monastery of Iona in Scotland and helped spread Christianity throughout the Scottish Highlands.",
-        "patronOf": "Ireland, Scotland, Derry, poets",
-        "dates": "521-597",
-        "origin": "Ireland/Scotland",
-        "gender": "Male",
-        "traits": [
-            "missionary",
-            "scholarship",
-            "leadership",
-            "courage",
-            "prayer"
-        ]
-    },
-    {
         "name": "St. Bakhita of Olossio",
         "feastDay": "September 15",
         "knownFor": "A Nigerian convert and catechist who was one of the first indigenous African religious sisters in West Africa.",
@@ -9162,70 +7643,6 @@ const saintsDatabase = [
             "courage",
             "conversion",
             "perseverance"
-        ]
-    },
-    {
-        "name": "St. Elizabeth Ann Seton",
-        "feastDay": "January 4",
-        "knownFor": "The first native-born American saint, a convert who founded the first Catholic school system in the United States.",
-        "patronOf": "Catholic schools, widows, death of children",
-        "dates": "1774-1821",
-        "origin": "USA",
-        "gender": "Female",
-        "traits": [
-            "education",
-            "motherhood",
-            "faith",
-            "resilience",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Frances Xavier Cabrini",
-        "feastDay": "November 13",
-        "knownFor": "An Italian-American nun who founded 67 institutions across the Americas, becoming the first naturalized American citizen to be canonized.",
-        "patronOf": "immigrants, hospital administrators",
-        "dates": "1850-1917",
-        "origin": "Italy/USA",
-        "gender": "Female",
-        "traits": [
-            "compassion",
-            "leadership",
-            "determination",
-            "charity",
-            "courage"
-        ]
-    },
-    {
-        "name": "St. Turibius of Mogrovejo",
-        "feastDay": "March 23",
-        "knownFor": "Archbishop of Lima who traveled 40,000 miles on foot through the Andes to visit every parish, defending indigenous rights.",
-        "patronOf": "Latin American bishops, native rights",
-        "dates": "1538-1606",
-        "origin": "Spain/Peru",
-        "gender": "Male",
-        "traits": [
-            "pastoral",
-            "justice",
-            "perseverance",
-            "compassion",
-            "leadership"
-        ]
-    },
-    {
-        "name": "St. Cyril of Alexandria",
-        "feastDay": "June 27",
-        "knownFor": "A Doctor of the Church who defended the title 'Theotokos' (Mother of God) for Mary at the Council of Ephesus.",
-        "patronOf": "Alexandria",
-        "dates": "c. 376-444",
-        "origin": "Egypt",
-        "gender": "Male",
-        "traits": [
-            "intellectual",
-            "theological",
-            "courage",
-            "leadership",
-            "faith"
         ]
     },
     {
@@ -9274,22 +7691,6 @@ const saintsDatabase = [
             "leadership",
             "charity",
             "faith"
-        ]
-    },
-    {
-        "name": "St. Wenceslaus",
-        "feastDay": "September 28",
-        "knownFor": "The 'Good King Wenceslas' of the famous Christmas carol, a Czech duke who promoted Christianity and was murdered by his pagan brother.",
-        "patronOf": "Czech Republic, Bohemia, brewers",
-        "dates": "c. 907-935",
-        "origin": "Bohemia",
-        "gender": "Male",
-        "traits": [
-            "leadership",
-            "charity",
-            "courage",
-            "faith",
-            "sacrifice"
         ]
     },
     {
@@ -9386,22 +7787,6 @@ const saintsDatabase = [
             "charity",
             "faith",
             "forgiveness"
-        ]
-    },
-    {
-        "name": "St. Edith Stein",
-        "feastDay": "August 9",
-        "knownFor": "A German Jewish philosopher who converted to Catholicism, became a Carmelite nun, and was killed at Auschwitz.",
-        "patronOf": "Europe, loss of parents, martyrs",
-        "dates": "1891-1942",
-        "origin": "Germany",
-        "gender": "Female",
-        "traits": [
-            "intellectual",
-            "courage",
-            "faith",
-            "conversion",
-            "sacrifice"
         ]
     },
     {

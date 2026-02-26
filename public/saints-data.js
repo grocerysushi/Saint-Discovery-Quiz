@@ -1,5 +1,5 @@
 // Complete Saints Database from Catholic_Saints_Comprehensive.xlsx
-// Total: 226 saints (including beatified)
+// Total: 225 saints (including beatified)
 // Auto-generated from saints-data.json — do not edit directly
 
 const saintsDatabase = [
@@ -2354,25 +2354,6 @@ const saintsDatabase = [
             "activism",
             "courage",
             "family"
-        ],
-        "quotes": [
-            "For to me, to live is Christ and to die is gain.",
-            "Lord, make me an instrument of your peace.",
-            "All for the greater glory of God."
-        ]
-    },
-    {
-        "name": "St. Christopher",
-        "feastDay": "July 25",
-        "knownFor": "Carried Christ child, martyred",
-        "patronOf": "Travelers, motorists, storms",
-        "dates": "3rd century",
-        "origin": "Canaan",
-        "gender": "Male",
-        "traits": [
-            "conviction",
-            "courage",
-            "sacrifice"
         ],
         "quotes": [
             "For to me, to live is Christ and to die is gain.",
