@@ -460,7 +460,7 @@
   <!-- Preload Critical Resources -->
   <link rel="preload" href="styles.css?v=dddd2646" as="style">
   <link rel="preload" href="saints-data-enriched.min.js?v=5bfc70a4" as="script">
-  <link rel="preload" href="quiz.min.js?v=94c43568" as="script">
+  <link rel="preload" href="quiz.min.js?v=1cd1995c" as="script">
 
   <!-- Fonts -->
   <link
@@ -647,13 +647,13 @@
       <p class="form-intro">We'll match you with a saint of the same gender. Please select your gender to see your
         personalized result.</p>
 
-      <div class="gender-selection">
-        <button class="gender-btn" onclick="revealResult('Male')">
-          <span class="gender-icon">&#9794;</span>
+      <div class="gender-selection" role="group" aria-label="Gender selection">
+        <button class="gender-btn" onclick="revealResult('Male')" aria-label="Match with male saints">
+          <span class="gender-icon" aria-hidden="true">&#9794;</span>
           <span>Male</span>
         </button>
-        <button class="gender-btn" onclick="revealResult('Female')">
-          <span class="gender-icon">&#9792;</span>
+        <button class="gender-btn" onclick="revealResult('Female')" aria-label="Match with female saints">
+          <span class="gender-icon" aria-hidden="true">&#9792;</span>
           <span>Female</span>
         </button>
       </div>
@@ -703,7 +703,7 @@
     </div>
 
     <script src="saints-data-enriched.min.js?v=5bfc70a4" defer></script>
-    <script src="quiz.min.js?v=94c43568" defer></script>
+    <script src="quiz.min.js?v=1cd1995c" defer></script>
     <script>
       function slugify(name) {
         return name.toLowerCase().replace(/\./g, '').replace(/['']/g, '').replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-').trim();

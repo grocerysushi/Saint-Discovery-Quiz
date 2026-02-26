@@ -4,8 +4,20 @@ const cors = require('cors');
 const compression = require('compression');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const crypto = require('crypto');
 const path = require('path');
 const fs = require('fs');
+
+// Structured logging helper
+function logError(req, endpoint, error) {
+    console.error(JSON.stringify({
+        timestamp: new Date().toISOString(),
+        requestId: req.id,
+        endpoint,
+        error: error.message,
+        stack: error.stack
+    }));
+}
 
 // Load saints database from the canonical JSON file
 function loadSaintsDatabase() {
@@ -24,6 +36,12 @@ try {
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Assign a unique request ID for structured logging
+app.use((req, res, next) => {
+    req.id = crypto.randomUUID();
+    next();
+});
 
 // Enable gzip compression for all responses (improves Core Web Vitals)
 app.use(compression({
@@ -158,7 +176,7 @@ app.post('/api/ai-match', aiLimiter, async (req, res) => {
         const aiResult = await getAIEnhancedMatch(userAnswers, topCandidates, userGender);
         res.json({ success: true, ...aiResult });
     } catch (error) {
-        console.error('AI matching error:', error);
+        logError(req, '/api/ai-match', error);
         res.status(500).json({
             success: false,
             error: 'AI analysis failed'

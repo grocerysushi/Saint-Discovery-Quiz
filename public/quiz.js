@@ -859,6 +859,14 @@ function showScreen(screenId) {
     document.querySelectorAll('.screen').forEach(screen => {
         screen.classList.remove('active');
     });
-    document.getElementById(screenId).classList.add('active');
+    const target = document.getElementById(screenId);
+    target.classList.add('active');
     window.scrollTo(0, 0);
+
+    // Move focus to the first heading for screen reader users
+    const heading = target.querySelector('h1, h2');
+    if (heading) {
+        heading.setAttribute('tabindex', '-1');
+        heading.focus({ preventScroll: true });
+    }
 }
