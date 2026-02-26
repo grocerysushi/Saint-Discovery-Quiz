@@ -51,7 +51,18 @@ app.use((req, res, next) => {
 });
 
 // Middleware
-app.use(cors());
+// Restrict CORS to known origins in production
+const ALLOWED_ORIGINS = process.env.ALLOWED_ORIGINS
+    ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
+    : null;
+
+app.use(cors(ALLOWED_ORIGINS ? {
+    origin(origin, cb) {
+        // Allow requests with no origin (same-origin, curl, server-to-server)
+        if (!origin || ALLOWED_ORIGINS.includes(origin)) return cb(null, true);
+        cb(new Error('Not allowed by CORS'));
+    }
+} : undefined));
 app.use(express.json());
 
 // Static file serving with caching headers for better Core Web Vitals
