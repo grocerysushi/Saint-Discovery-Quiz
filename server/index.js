@@ -270,18 +270,34 @@ app.get('/api/saints', (req, res) => {
         );
     }
 
+    const total = results.length;
+
+    // Pagination
+    const rawLimit = parseInt(req.query.limit);
+    const limit = rawLimit > 0 ? Math.min(rawLimit, 200) : total;
+    const offset = Math.max(parseInt(req.query.offset) || 0, 0);
+    results = results.slice(offset, offset + limit);
+
+    // Field projection — ?fields=name,feastDay,gender
+    const ALL_FIELDS = ['name', 'feastDay', 'knownFor', 'patronOf', 'dates', 'origin', 'gender', 'traits'];
+    let fields = ALL_FIELDS;
+    if (req.query.fields) {
+        fields = req.query.fields.split(',').filter(f => ALL_FIELDS.includes(f));
+        if (fields.length === 0) fields = ALL_FIELDS;
+    }
+
+    const project = (s) => {
+        const out = {};
+        for (const f of fields) out[f] = s[f];
+        return out;
+    };
+
     res.json({
+        total,
+        limit,
+        offset,
         count: results.length,
-        saints: results.map(s => ({
-            name: s.name,
-            feastDay: s.feastDay,
-            knownFor: s.knownFor,
-            patronOf: s.patronOf,
-            dates: s.dates,
-            origin: s.origin,
-            gender: s.gender,
-            traits: s.traits
-        }))
+        saints: results.map(project)
     });
 });
 

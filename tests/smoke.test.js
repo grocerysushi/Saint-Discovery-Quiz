@@ -85,6 +85,32 @@ async function testFeastDayInvalidDate() {
     console.log('  ✓ GET /api/feast-day rejects invalid date');
 }
 
+async function testSaintsPagination() {
+    // Default returns all
+    const all = await fetch('/api/saints');
+    assert.strictEqual(all.status, 200);
+    assert(all.body.total > 0, 'should have saints');
+    assert.strictEqual(all.body.count, all.body.total);
+
+    // Limit + offset
+    const page = await fetch('/api/saints?limit=5&offset=2');
+    assert.strictEqual(page.status, 200);
+    assert.strictEqual(page.body.limit, 5);
+    assert.strictEqual(page.body.offset, 2);
+    assert.strictEqual(page.body.count, 5);
+    assert(page.body.total > 5);
+
+    // Field projection
+    const proj = await fetch('/api/saints?limit=1&fields=name,gender');
+    assert.strictEqual(proj.status, 200);
+    const saint = proj.body.saints[0];
+    assert(saint.name, 'should have name');
+    assert(saint.gender, 'should have gender');
+    assert.strictEqual(saint.knownFor, undefined, 'should not have knownFor');
+
+    console.log('  ✓ GET /api/saints pagination + projection');
+}
+
 async function testAiMatchValidation() {
     // Missing fields
     const res1 = await fetch('/api/ai-match', {
@@ -223,7 +249,7 @@ async function run() {
 
     console.log('\nEndpoint tests:');
     await startServer();
-    for (const test of [testHealth, testSaintOfTheDay, testFeastDay, testFeastDayInvalidDate, testAiMatchValidation]) {
+    for (const test of [testHealth, testSaintOfTheDay, testFeastDay, testFeastDayInvalidDate, testSaintsPagination, testAiMatchValidation]) {
         try { await test(); } catch (e) { console.error(`  ✗ ${test.name}:`, e.message); failures++; }
     }
     await stopServer();
