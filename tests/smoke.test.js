@@ -188,12 +188,38 @@ function testScoring() {
     console.log(`  ✓ Scoring: "${top.name}" is top match (score=${top.score.toFixed(1)}, ${top.directMatches} direct)`);
 }
 
+// ── Asset staleness test ──
+
+function testMinifiedFreshness() {
+    const fs = require('fs');
+    const pairs = [
+        ['public/quiz.js', 'public/quiz.min.js'],
+        ['public/saints-data-enriched.js', 'public/saints-data-enriched.min.js'],
+    ];
+    for (const [src, min] of pairs) {
+        const srcPath = path.join(__dirname, '..', src);
+        const minPath = path.join(__dirname, '..', min);
+        if (!fs.existsSync(minPath)) {
+            throw new Error(`${min} does not exist — run "npm run build"`);
+        }
+        const srcMtime = fs.statSync(srcPath).mtimeMs;
+        const minMtime = fs.statSync(minPath).mtimeMs;
+        if (srcMtime > minMtime) {
+            throw new Error(`${min} is older than ${src} — run "npm run build" to regenerate`);
+        }
+    }
+    console.log('  ✓ Minified assets are up to date');
+}
+
 // ── Runner ──
 
 async function run() {
     let failures = 0;
     console.log('\nScoring tests:');
     try { testScoring(); } catch (e) { console.error('  ✗ Scoring:', e.message); failures++; }
+
+    console.log('\nBuild tests:');
+    try { testMinifiedFreshness(); } catch (e) { console.error('  ✗ Minified freshness:', e.message); failures++; }
 
     console.log('\nEndpoint tests:');
     await startServer();
